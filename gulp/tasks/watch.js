@@ -7,7 +7,7 @@ gulp.task('watch', [
     'sass:watch',
     'copy:watch',
     'html:watch',
-    'jade:watch',
+    // 'jade:watch',
     'font:watch',
     'js:watch'
 ]);
