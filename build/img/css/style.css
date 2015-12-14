@@ -29,7 +29,15 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon-skrill:before { content: ""; }
 
-body { font-family: Arial, sans-serif; font-size: 12px; line-height: 1.4; }
+@font-face { font-family: segoeuii; src: url("fonts/segoeuii.eot"); src: url("fonts/segoeuii.eot?#iefix") format("embedded-opentype"), url("fonts/segoeuii.woff2") format("woff2"), url("fonts/segoeuii.woff") format("woff"), url("fonts/segoeuii.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: segoeuil; src: url("fonts/segoeuil.eot"); src: url("fonts/segoeuil.eot?#iefix") format("embedded-opentype"), url("fonts/segoeuil.woff2") format("woff2"), url("fonts/segoeuil.woff") format("woff"), url("fonts/segoeuil.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: PTRouble-sans; src: url("fonts/PTRouble-sans.eot"); src: url("fonts/PTRouble-sans.eot?#iefix") format("embedded-opentype"), url("fonts/PTRouble-sans.woff2") format("woff2"), url("fonts/PTRouble-sans.woff") format("woff"), url("fonts/PTRouble-sans.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: pfdindisplaypro-light; src: url("fonts/pfdindisplaypro-light.eot"); src: url("fonts/pfdindisplaypro-light.eot?#iefix") format("embedded-opentype"), url("fonts/pfdindisplaypro-light.woff2") format("woff2"), url("fonts/pfdindisplaypro-light.woff") format("woff"), url("fonts/pfdindisplaypro-light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+html { font-size: 62.5%; }
+
+body { font-family: "Roboto", Arial, sans-serif; font-size: 1.5rem; line-height: 1.4; background: #fbf8da url("../body-bg.png") 0 0 repeat; }
+
+.out { position: relative; max-width: 1200px; margin: 0 auto; background: #fff; -webkit-box-shadow: 0 0 23px rgba(0, 0, 0, 0.5); box-shadow: 0 0 23px rgba(0, 0, 0, 0.5); }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }

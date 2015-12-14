@@ -23,14 +23,31 @@
 //				display: none
 // ## fonts
 // Save fonts to /src/fonts
-// +font(book, cytiapro-black-webfont)
-// and create mixin
-// =book
-// 	font-family: "book", Arial, sans-serif
-
++font(segoeuii, segoeuii)
+=segi
+	font-family: "segoeuii", Arial, sans-serif
++font(segoeuil, segoeuil)
+=segl
+	font-family: "segoeuil", Arial, sans-serif
++font(PTRouble-sans, PTRouble-sans)
+=rub
+	font-family: "PTRouble-sans", Arial, sans-serif
++font(pfdindisplaypro-light, pfdindisplaypro-light)
+=pfdl
+	font-family: "pfdindisplaypro-light", Arial, sans-serif
+=roboto
+	font-family: 'Roboto', Arial, sans-serif
+html
+	font-size: 62.5%
 body
-	font-family: Arial, sans-serif
-	font-size: 12px
+	+roboto
+	font-size: 1.5rem
 	line-height: 1.4
-	
+	background: #fbf8da url("../body-bg.png") 0 0 repeat 
 // common blocks
+.out
+	position: relative
+	max-width: 1200px
+	margin: 0 auto
+	background: #fff
+	box-shadow: 0 0 23px rgba(#000,.5)  
