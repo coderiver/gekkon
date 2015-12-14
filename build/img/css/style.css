@@ -39,6 +39,9 @@ body { font-family: "Roboto", Arial, sans-serif; font-size: 1.5rem; line-height:
 
 .out { position: relative; max-width: 1200px; margin: 0 auto; background: #fff; -webkit-box-shadow: 0 0 23px rgba(0, 0, 0, 0.5); box-shadow: 0 0 23px rgba(0, 0, 0, 0.5); }
 
+.number { position: relative; display: inline-block; vertical-align: middle; height: 26px; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 2px 25px 2px 2px; }
+.number__input { display: inline-block; height: 22px; width: 100px; text-align: center; font-size: 18px; }
+.number__plus, .number__minus { width: 22px; height: 22px; color: #fff; background: #000; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 
