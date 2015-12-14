@@ -16,7 +16,7 @@ gulp.task('sass', function() {
             sort: function (a, b) {
                 a = a.replace(/\D/g,'');
                 b = b.replace(/\D/g,'');
-                return b-a;
+                return a-b;
                 // replace this with a-b for Mobile First approach
             }
         })

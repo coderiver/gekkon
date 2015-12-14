@@ -9,7 +9,7 @@ module.exports = {
   },
   dest:{
     root    : 'build/',
-    css     : 'build/img/css/',
+    css     : 'build/css/',
     html    : 'build/',
     js      : 'build/js/',
     img     : 'build/img/'

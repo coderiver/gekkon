@@ -37,20 +37,28 @@
 	font-family: "pfdindisplaypro-light", Arial, sans-serif
 =roboto
 	font-family: 'Roboto', Arial, sans-serif
-html
-	font-size: 62.5%
+=light
+	font-weight: 300
+=reg
+	font-weight: 400 
+=bold
+	font-weight: 700 
 body
 	+roboto
+	+light
 	font-size: 1.5rem
 	line-height: 1.4
-	background: #fbf8da url("../body-bg.png") 0 0 repeat 
+	color: $text 
+	background: #fbf8da url(../img/body-bg.png) 0 0 repeat 
 // common blocks
-.out
+.inner
 	position: relative
 	max-width: 1200px
 	margin: 0 auto
-	background: #fff
-	box-shadow: 0 0 23px rgba(#000,.5) 
+	&_main
+		background: #fff 
+		
+
 .number
 	position: relative
 	display: inline-block
@@ -70,4 +78,46 @@ body
 		height: 22px
 		color: #fff
 		background: #000
+.link-dots
+	border-bottom: 1px dotted
+	&:hover	
+		border-color: transparent
+		text-decoration: none
+.form-action
+	position: relative
+	&__table
+		display: table
+		width: 100%
+	&__cell
+		display: table-cell
+		vertical-align: middle
+	&__input
+		display: inline-block
+		vertical-align: middle
+		padding: 0 12px 
+		width: 100%
+		height: 21px
+		background: #fff
+		font-size: 13px
+		+roboto
+		+reg
+		color: $text 
+		+placeholder
+			color: #959595 
+	&__btn
+		display: inline-block
+		vertical-align: middle
+		padding: 0 8px
+		height: 21px
+		background: $btn
+		line-height: 1  
+.tel
+	text-align: right
+	font-size: 20px
+	line-height: 1
+	.link-dots
+		font-size: 13px
+	span
+		display: block
+	 
 	 
