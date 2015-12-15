@@ -26,7 +26,7 @@ gulp.task('font', function(){
                 glyphs: glyphs,
                 fontName: fontname,
                 fontPath: 'fonts/',
-                className: 'icon'
+                className: 'i-icon'
             }))
             .pipe(gulp.dest(config.src.sass+'lib/'));
         gulp.src(config.src.helpers+'icons.html')
@@ -35,7 +35,7 @@ gulp.task('font', function(){
                 fontName: fontname,
                 fontPath: 'fonts/',
                 className: 'icon',
-                htmlBefore: '<i class="icon ',
+                htmlBefore: '<i class="i-icon ',
                 htmlAfter: '"></i>',
                 htmlBr: ''
             }))

@@ -49,8 +49,10 @@ body
 	font-size: 1.5rem
 	line-height: 1.4
 	color: $text 
-	background: #fbf8da url(../img/body-bg.png) 0 0 repeat 
+	background: #fbf8da url(../img/body-bg.png) 0 0 repeat
 // common blocks
+.rub
+	+rub
 .inner
 	position: relative
 	max-width: 1280px
@@ -78,8 +80,13 @@ body
 		height: 22px
 		color: #fff
 		background: #000
-.link-dots
+.btn-dots
+	display: inline-block
+	line-height: 1.1
+	background: none 
 	border-bottom: 1px dotted
+	+roboto
+	+reg
 	&:hover	
 		border-color: transparent
 		text-decoration: none
@@ -109,13 +116,18 @@ body
 		vertical-align: middle
 		padding: 0 8px
 		height: 21px
+		+roboto
+		+reg
+		font-size: 13px
 		background: $btn
 		line-height: 1  
+	label
+		+reg
 .tel
 	text-align: right
 	font-size: 20px
 	line-height: 1
-	.link-dots
+	.btn-dots
 		font-size: 13px
 	span
 		display: block
@@ -136,13 +148,27 @@ body
 	font-size: 28px
 	a
 		display: inline-block
-	&__fb
-		+s(fb)
-	&__tw
-		+s(tw)
-	&__in
-		+s(in)
-	&__vk
-		+s(vk)
-	&__yt
-		+s(yt)
+		background: #fff 
+		+tr(color .3s)
+		&:hover
+			text-decoration: none
+.i-icon-fb
+	color: #4065b4
+	&:hover
+		color: darken(#4065b4, 5%)
+.i-icon-tw
+	color: #39b9dc
+	&:hover
+		color: darken(#39b9dc, 5%)
+.i-icon-in
+	color: #157fb9
+	&:hover
+		color: darken(#157fb9, 5%)
+.i-icon-vk
+	color: #4e759d
+	&:hover
+		color: darken(#4e759d, 5%)
+.i-icon-yt
+	color: #c13a35
+	&:hover
+		color: darken(#c13a35, 5%)

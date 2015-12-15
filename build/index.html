@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta name="format-detection" content="telephone=no"/>
 	<meta name="theme-color" content="#fff"/>
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic-ext' rel='stylesheet'/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700&subset=latin,cyrillic-ext" rel="stylesheet"/>
 	<link rel="stylesheet" media="all" href="img/css/bootstrap.min.css"/>
 	<link rel="stylesheet" media="all" href="img/css/bootstrap-theme.min.css"/>
 	<link rel="stylesheet" media="all" href="css/style.css"/>
@@ -20,7 +20,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-2">
-							Ваш город: <a class="link-dots" href="#">Москва</a>
+							Ваш город: <button class="btn-dots" data-toggle="modal" data-target="#modal-city" type="button">Москва</button>
 						</div>
 						<div class="col-lg-4">
 							<nav class="nav">
@@ -49,14 +49,14 @@
 						</div>
 						<div class="col-lg-2">
 							<div class="login-box">
-								<a class="link-dots" href="#">Вход</a> / 
-								<a class="link-dots" href="#">Регистрация</a> 
+								<button class="btn-dots" data-toggle="modal" data-target="#modal-enter"  type="button">Вход</button> / 
+								<button class="btn-dots" data-toggle="modal" data-target="#modal-reg"  type="button">Регистрация</button> 
 							</div>
 						</div>
 						<div class="col-lg-2">
 							<div class="tel">
 								<span>8 800 555 65 56</span>
-								<a class="link-dots" href="#">Перезвоните мне</a>
+								<button class="btn-dots" data-toggle="modal" data-target="#modal-call"  type="button">Перезвоните мне</button>
 							</div>
 						</div>
 					</div>
@@ -66,407 +66,418 @@
 		<div class="header__main">
 			<div class="inner">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-2">
-							<a href="#" class="logo">
-								<img src="img/logo.jpg" alt="Gekkon">
-								<span>Gekkon</span>
-								<strong>Натуральные продукты и экотовары</strong>
-							</a>
-						</div>
-						<div class="col-lg-8">
-							<div class="menu">
-								<div class="row">
-									<div class="col-lg-3">
-										<a class="menu__item" href="#">
-											<div class="menu__img">
-												<span class="icon-menu-food"></span>
-											</div>
-											<strong class="menu__title">Продукты питания</strong>
-											<span class="menu__info">со всего мира</span>
-										</a>
-										<div class="menu__drop">
-											<div class="row">
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Бакалея</a></li>
-														<li><a href="#">Молочные продукты и яйца</a></li>
-														<li><a href="#">Чай и кофе</a></li>
-														<li><a href="#">Детсое питание</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Сыры</a></li>
-														<li><a href="#">Мясные деликатесы и колбасы</a></li>
-														<li><a href="#">Хлеб и выпечка</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Овощи и фрукты</a></li>
-														<li><a href="#">Мясо и птица</a></li>
-														<li><a href="#">Рыба и морепродукты</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Замороженные товары</a></li>
-														<li><a href="#">Вода, напитки и соки</a></li>
-														<li><a href="#">Шоколад и сладости</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-4">
-													<div class="row">
-														<div class="col-lg-12">
-															<div class="promo">
-																<div class="row">
-																	<div class="col-lg-3">
-																		<div class="prom__img">
-																			<img src="/" alt="">
-																		</div>
-																	</div>
-																	<div class="col-lg-9">
-																		<div class="promo__title">
-																			Недели <span>Испании</span>
-																			<a href="#">Все акции</a>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-lg-6">
-															<div class="promo">
-																<div class="row">
-																	<div class="col-lg-6">
-																		<div class="prom__img">
-																			<img src="/" alt="">
-																		</div>
-																	</div>
-																	<div class="col-lg-6">
-																		<a href="#">Подарочные наборы</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-6">
-															<div class="promo">
-																<div class="row">
-																	<div class="col-lg-6">
-																		<div class="prom__img">
-																			<img src="/" alt="">
-																		</div>
-																	</div>
-																	<div class="col-lg-6">
-																		<a href="#">Рецепты</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-3">
-										<a class="menu__item" href="#">
-											<div class="menu__img">
-												<span class="icon-menu-prod"></span>
-											</div>
-											<strong class="menu__title">Продукты питания</strong>
-											<span class="menu__info">со всего мира</span>
-										</a>
-										<div class="menu__drop">
-											<div class="row">
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Бакалея</a></li>
-														<li><a href="#">Молочные продукты и яйца</a></li>
-														<li><a href="#">Чай и кофе</a></li>
-														<li><a href="#">Детсое питание</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Сыры</a></li>
-														<li><a href="#">Мясные деликатесы и колбасы</a></li>
-														<li><a href="#">Хлеб и выпечка</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Овощи и фрукты</a></li>
-														<li><a href="#">Мясо и птица</a></li>
-														<li><a href="#">Рыба и морепродукты</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Замороженные товары</a></li>
-														<li><a href="#">Вода, напитки и соки</a></li>
-														<li><a href="#">Шоколад и сладости</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-4">
-													<div class="row">
-														<div class="col-lg-12">
-															<div class="promo">
-																<div class="row">
-																	<div class="col-lg-3">
-																		<div class="prom__img">
-																			<img src="/" alt="">
-																		</div>
-																	</div>
-																	<div class="col-lg-9">
-																		<div class="promo__title">
-																			Недели <span>Испании</span>
-																			<a href="#">Все акции</a>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-lg-6">
-															<div class="promo">
-																<div class="row">
-																	<div class="col-lg-6">
-																		<div class="prom__img">
-																			<img src="/" alt="">
-																		</div>
-																	</div>
-																	<div class="col-lg-6">
-																		<a href="#">Подарочные наборы</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-6">
-															<div class="promo">
-																<div class="row">
-																	<div class="col-lg-6">
-																		<div class="prom__img">
-																			<img src="/" alt="">
-																		</div>
-																	</div>
-																	<div class="col-lg-6">
-																		<a href="#">Рецепты</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-3">
-										<a class="menu__item" href="#">
-											<div class="menu__img">
-												<span class="icon-menu-goods"></span>
-											</div>
-											<strong class="menu__title">Продукты питания</strong>
-											<span class="menu__info">со всего мира</span>
-										</a>
-										<div class="menu__drop">
-											<div class="row">
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Бакалея</a></li>
-														<li><a href="#">Молочные продукты и яйца</a></li>
-														<li><a href="#">Чай и кофе</a></li>
-														<li><a href="#">Детсое питание</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Сыры</a></li>
-														<li><a href="#">Мясные деликатесы и колбасы</a></li>
-														<li><a href="#">Хлеб и выпечка</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Овощи и фрукты</a></li>
-														<li><a href="#">Мясо и птица</a></li>
-														<li><a href="#">Рыба и морепродукты</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Замороженные товары</a></li>
-														<li><a href="#">Вода, напитки и соки</a></li>
-														<li><a href="#">Шоколад и сладости</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-4">
-													<div class="row">
-														<div class="col-lg-12">
-															<div class="promo">
-																<div class="row">
-																	<div class="col-lg-3">
-																		<div class="prom__img">
-																			<img src="/" alt="">
-																		</div>
-																	</div>
-																	<div class="col-lg-9">
-																		<div class="promo__title">
-																			Недели <span>Испании</span>
-																			<a href="#">Все акции</a>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-lg-6">
-															<div class="promo">
-																<div class="row">
-																	<div class="col-lg-6">
-																		<div class="prom__img">
-																			<img src="/" alt="">
-																		</div>
-																	</div>
-																	<div class="col-lg-6">
-																		<a href="#">Подарочные наборы</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-6">
-															<div class="promo">
-																<div class="row">
-																	<div class="col-lg-6">
-																		<div class="prom__img">
-																			<img src="/" alt="">
-																		</div>
-																	</div>
-																	<div class="col-lg-6">
-																		<a href="#">Рецепты</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-lg-3">
-										<a class="menu__item" href="#">
-											<div class="menu__img">
-												<span class="icon-menu-for-animal"></span>
-											</div>
-											<strong class="menu__title">Продукты питания</strong>
-											<span class="menu__info">со всего мира</span>
-										</a>
-										<div class="menu__drop">
-											<div class="row">
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Бакалея</a></li>
-														<li><a href="#">Молочные продукты и яйца</a></li>
-														<li><a href="#">Чай и кофе</a></li>
-														<li><a href="#">Детсое питание</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Сыры</a></li>
-														<li><a href="#">Мясные деликатесы и колбасы</a></li>
-														<li><a href="#">Хлеб и выпечка</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Овощи и фрукты</a></li>
-														<li><a href="#">Мясо и птица</a></li>
-														<li><a href="#">Рыба и морепродукты</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-2">
-													<ul>
-														<li><a href="#">Замороженные товары</a></li>
-														<li><a href="#">Вода, напитки и соки</a></li>
-														<li><a href="#">Шоколад и сладости</a></li>
-													</ul>
-												</div>
-												<div class="col-lg-4">
-													<div class="row">
-														<div class="col-lg-12">
-															<div class="promo">
-																<div class="row">
-																	<div class="col-lg-3">
-																		<div class="prom__img">
-																			<img src="/" alt="">
-																		</div>
-																	</div>
-																	<div class="col-lg-9">
-																		<div class="promo__title">
-																			Недели <span>Испании</span>
-																			<a href="#">Все акции</a>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="row">
-														<div class="col-lg-6">
-															<div class="promo">
-																<div class="row">
-																	<div class="col-lg-6">
-																		<div class="prom__img">
-																			<img src="/" alt="">
-																		</div>
-																	</div>
-																	<div class="col-lg-6">
-																		<a href="#">Подарочные наборы</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="col-lg-6">
-															<div class="promo">
-																<div class="row">
-																	<div class="col-lg-6">
-																		<div class="prom__img">
-																			<img src="/" alt="">
-																		</div>
-																	</div>
-																	<div class="col-lg-6">
-																		<a href="#">Рецепты</a>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								
+					<div class="header__menu">
+						<div class="row">
+							<div class="col-lg-2">
+								<a href="#" class="logo">
+									<img src="img/logo.png" height="78" alt="Gekkon">
+									<strong>Натуральные <span>продукты и экотовары</span></strong>
+								</a>
 							</div>
-						</div>
-						<div class="col-lg-2">
-							<div class="cart">
-								<span class="icon-cart"></span>
-								<span>В корзине</span>
-								<div class="cart__info">
-									<a href="#">3 товара</a> на 12 980 у
+							<div class="col-lg-8">
+								<div class="menu">
+									<div class="row">
+										<div class="col-lg-3">
+											<div class="menu__item">
+												<a class="menu__link" href="#">
+													<div class="menu__img">
+														<span class="icon-pear"></span>
+													</div>
+													<strong class="menu__title">Продукты питания</strong>
+													<span class="menu__info">со всего мира</span>
+												</a>
+												<div class="menu__drop">
+													<div class="row">
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Бакалея</a></li>
+																<li><a href="#">Молочные продукты и яйца</a></li>
+																<li><a href="#">Чай и кофе</a></li>
+																<li><a href="#">Детсое питание</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Сыры</a></li>
+																<li><a href="#">Мясные деликатесы и колбасы</a></li>
+																<li><a href="#">Хлеб и выпечка</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Овощи и фрукты</a></li>
+																<li><a href="#">Мясо и птица</a></li>
+																<li><a href="#">Рыба и морепродукты</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Замороженные товары</a></li>
+																<li><a href="#">Вода, напитки и соки</a></li>
+																<li><a href="#">Шоколад и сладости</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-4">
+															<div class="row">
+																<div class="col-lg-12">
+																	<div class="promo">
+																		<div class="row">
+																			<div class="col-lg-3">
+																				<div class="prom__img">
+																					<img src="/" alt="">
+																				</div>
+																			</div>
+																			<div class="col-lg-9">
+																				<div class="promo__title">
+																					Недели <span>Испании</span>
+																					<a href="#">Все акции</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="row">
+																			<div class="col-lg-6">
+																				<div class="prom__img">
+																					<img src="/" alt="">
+																				</div>
+																			</div>
+																			<div class="col-lg-6">
+																				<a href="#">Подарочные наборы</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="row">
+																			<div class="col-lg-6">
+																				<div class="prom__img">
+																					<img src="/" alt="">
+																				</div>
+																			</div>
+																			<div class="col-lg-6">
+																				<a href="#">Рецепты</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										<div class="col-lg-3">
+											<div class="menu__item">
+												<a class="menu__link" href="#">
+													<div class="menu__img">
+														<span class="icon-sun"></span>
+													</div>
+													<strong class="menu__title">Продукты питания</strong>
+													<span class="menu__info">со всего мира</span>
+												</a>
+												<div class="menu__drop">
+													<div class="row">
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Бакалея</a></li>
+																<li><a href="#">Молочные продукты и яйца</a></li>
+																<li><a href="#">Чай и кофе</a></li>
+																<li><a href="#">Детсое питание</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Сыры</a></li>
+																<li><a href="#">Мясные деликатесы и колбасы</a></li>
+																<li><a href="#">Хлеб и выпечка</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Овощи и фрукты</a></li>
+																<li><a href="#">Мясо и птица</a></li>
+																<li><a href="#">Рыба и морепродукты</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Замороженные товары</a></li>
+																<li><a href="#">Вода, напитки и соки</a></li>
+																<li><a href="#">Шоколад и сладости</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-4">
+															<div class="row">
+																<div class="col-lg-12">
+																	<div class="promo">
+																		<div class="row">
+																			<div class="col-lg-3">
+																				<div class="prom__img">
+																					<img src="/" alt="">
+																				</div>
+																			</div>
+																			<div class="col-lg-9">
+																				<div class="promo__title">
+																					Недели <span>Испании</span>
+																					<a href="#">Все акции</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="row">
+																			<div class="col-lg-6">
+																				<div class="prom__img">
+																					<img src="/" alt="">
+																				</div>
+																			</div>
+																			<div class="col-lg-6">
+																				<a href="#">Подарочные наборы</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="row">
+																			<div class="col-lg-6">
+																				<div class="prom__img">
+																					<img src="/" alt="">
+																				</div>
+																			</div>
+																			<div class="col-lg-6">
+																				<a href="#">Рецепты</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="menu__item">
+												<a class="menu__link" href="#">
+													<div class="menu__img">
+														<span class="icon-creams4"></span>
+													</div>
+													<strong class="menu__title">Продукты питания</strong>
+													<span class="menu__info">со всего мира</span>
+												</a>
+												<div class="menu__drop">
+													<div class="row">
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Бакалея</a></li>
+																<li><a href="#">Молочные продукты и яйца</a></li>
+																<li><a href="#">Чай и кофе</a></li>
+																<li><a href="#">Детсое питание</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Сыры</a></li>
+																<li><a href="#">Мясные деликатесы и колбасы</a></li>
+																<li><a href="#">Хлеб и выпечка</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Овощи и фрукты</a></li>
+																<li><a href="#">Мясо и птица</a></li>
+																<li><a href="#">Рыба и морепродукты</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Замороженные товары</a></li>
+																<li><a href="#">Вода, напитки и соки</a></li>
+																<li><a href="#">Шоколад и сладости</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-4">
+															<div class="row">
+																<div class="col-lg-12">
+																	<div class="promo">
+																		<div class="row">
+																			<div class="col-lg-3">
+																				<div class="prom__img">
+																					<img src="/" alt="">
+																				</div>
+																			</div>
+																			<div class="col-lg-9">
+																				<div class="promo__title">
+																					Недели <span>Испании</span>
+																					<a href="#">Все акции</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="row">
+																			<div class="col-lg-6">
+																				<div class="prom__img">
+																					<img src="/" alt="">
+																				</div>
+																			</div>
+																			<div class="col-lg-6">
+																				<a href="#">Подарочные наборы</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="row">
+																			<div class="col-lg-6">
+																				<div class="prom__img">
+																					<img src="/" alt="">
+																				</div>
+																			</div>
+																			<div class="col-lg-6">
+																				<a href="#">Рецепты</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="menu__item">
+												<a class="menu__link" href="#">
+													<div class="menu__img">
+														<span class="icon-dog75"></span>
+													</div>
+													<strong class="menu__title">Продукты питания</strong>
+													<span class="menu__info">со всего мира</span>
+												</a>
+												<div class="menu__drop">
+													<div class="row">
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Бакалея</a></li>
+																<li><a href="#">Молочные продукты и яйца</a></li>
+																<li><a href="#">Чай и кофе</a></li>
+																<li><a href="#">Детсое питание</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Сыры</a></li>
+																<li><a href="#">Мясные деликатесы и колбасы</a></li>
+																<li><a href="#">Хлеб и выпечка</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Овощи и фрукты</a></li>
+																<li><a href="#">Мясо и птица</a></li>
+																<li><a href="#">Рыба и морепродукты</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<ul>
+																<li><a href="#">Замороженные товары</a></li>
+																<li><a href="#">Вода, напитки и соки</a></li>
+																<li><a href="#">Шоколад и сладости</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-4">
+															<div class="row">
+																<div class="col-lg-12">
+																	<div class="promo">
+																		<div class="row">
+																			<div class="col-lg-3">
+																				<div class="prom__img">
+																					<img src="/" alt="">
+																				</div>
+																			</div>
+																			<div class="col-lg-9">
+																				<div class="promo__title">
+																					Недели <span>Испании</span>
+																					<a href="#">Все акции</a>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="row">
+																			<div class="col-lg-6">
+																				<div class="prom__img">
+																					<img src="/" alt="">
+																				</div>
+																			</div>
+																			<div class="col-lg-6">
+																				<a href="#">Подарочные наборы</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="row">
+																			<div class="col-lg-6">
+																				<div class="prom__img">
+																					<img src="/" alt="">
+																				</div>
+																			</div>
+																			<div class="col-lg-6">
+																				<a href="#">Рецепты</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="col-lg-2">
+								<div class="cart">
+									<span class="i-icon-cart"></span>
+									<span>В корзине</span>
+									<div class="cart__info">
+										<a href="#">3 товара</a> на 12 980 <span class="rub">у</span>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -775,10 +786,7 @@
 						<form action="#">
 	
 	
-	
-	
-	
-							<label>
+							<label for="subscribe-email">
 	
 	
 								Подписаться на новости и акции:
@@ -793,7 +801,7 @@
 								<div class="form-action__cell">
 	
 	
-									<input class="form-action__input" type="text" placeholder="Ваш email">
+									<input class="form-action__input" type="email" placeholder="Ваш email" id="subscribe-email">
 	
 	
 								</div>
@@ -820,19 +828,19 @@
 					<div class="soc">
 	
 	
-						<a class="soc__fb" href="#"></a>
+						<a class="i-icon-fb" href="#"></a>
 	
 	
-						<a class="soc__tw" href="#"></a>
+						<a class="i-icon-tw" href="#"></a>
 	
 	
-						<a class="soc__in" href="#"></a>
+						<a class="i-icon-in" href="#"></a>
 	
 	
-						<a class="soc__vk" href="#"></a>
+						<a class="i-icon-vk" href="#"></a>
 	
 	
-						<a class="soc__yt" href="#"></a>
+						<a class="i-icon-yt" href="#"></a>
 	
 	
 					</div>
@@ -886,16 +894,16 @@
 						<div class="payments__list">
 	
 	
-							<img src="img/visa.jpg" alt="">
+							<img src="img/visa-logo.png" height="27" alt="visa">
 	
 	
-							<img src="img/mcard.jpg" alt="">
+							<img src="img/mc-logo.png" height="27" alt="mastercard">
 	
 	
-							<img src="img/wmoney.jpg" alt="">
+							<img src="img/wm-logo.png" height="27" alt="webmoney">
 	
 	
-							<img src="img/bank.jpg" alt="">
+							<img src="img/sberbank-logo.png" height="27" alt="сбербанк">
 	
 	
 						</div>
@@ -904,7 +912,7 @@
 					</div>
 	
 	
-					<a href="#" class="link-dots">Доставляем по всей России</a>
+					<button class="btn-dots" data-toggle="modal" data-target="#modal-city" type="button">Доставляем по всей России</button>
 	
 	
 				</div>
@@ -952,7 +960,7 @@
 						<span>8 800 555 65 56</span>
 	
 	
-						<a class="link-dots" href="#">Перезвоните мне</a>
+						<button class="btn-dots" data-toggle="modal" data-target="#modal-call"  type="button">Перезвоните мне</button>
 	
 	
 					</div>

@@ -4,13 +4,12 @@
 			<div class="col-lg-3">
 				<div class="form-action">
 					<form action="#">
-
-						<label>
+						<label for="subscribe-email">
 							Подписаться на новости и акции:
 						</label>
 						<div class="form-action__table">
 							<div class="form-action__cell">
-								<input class="form-action__input" type="text" placeholder="Ваш email">
+								<input class="form-action__input" type="email" placeholder="Ваш email" id="subscribe-email">
 							</div>
 							<div class="form-action__cell">
 								<button class="form-action__btn" type="submit">Подписаться</button>
@@ -19,11 +18,11 @@
 					</form>
 				</div>
 				<div class="soc">
-					<a class="soc__fb" href="#"></a>
-					<a class="soc__tw" href="#"></a>
-					<a class="soc__in" href="#"></a>
-					<a class="soc__vk" href="#"></a>
-					<a class="soc__yt" href="#"></a>
+					<a class="i-icon-fb" href="#"></a>
+					<a class="i-icon-tw" href="#"></a>
+					<a class="i-icon-in" href="#"></a>
+					<a class="i-icon-vk" href="#"></a>
+					<a class="i-icon-yt" href="#"></a>
 				</div>
 				<div class="footer__meta">
 					<p>© 2015 Gekkon. Натуальные продукты и экотовары</p>
@@ -41,13 +40,13 @@
 				<div class="payments">
 					Принимаем  к оплате:
 					<div class="payments__list">
-						<img src="img/visa.jpg" alt="">
-						<img src="img/mcard.jpg" alt="">
-						<img src="img/wmoney.jpg" alt="">
-						<img src="img/bank.jpg" alt="">
+						<img src="img/visa-logo.png" height="27" alt="visa">
+						<img src="img/mc-logo.png" height="27" alt="mastercard">
+						<img src="img/wm-logo.png" height="27" alt="webmoney">
+						<img src="img/sberbank-logo.png" height="27" alt="сбербанк">
 					</div>
 				</div>
-				<a href="#" class="link-dots">Доставляем по всей России</a>
+				<button class="btn-dots" data-toggle="modal" data-target="#modal-city" type="button">Доставляем по всей России</button>
 			</div>
 			<div class="col-lg-3">
 				<div class="title title_h3">Покупателям</div>
@@ -63,7 +62,7 @@
 			<div class="col-lg-3">
 				<div class="tel">
 					<span>8 800 555 65 56</span>
-					<a class="link-dots" href="#">Перезвоните мне</a>
+					<button class="btn-dots" data-toggle="modal" data-target="#modal-call"  type="button">Перезвоните мне</button>
 				</div>
 				<ul class="visit-card">
 					<li><a href="#">info@gekkonmarket.ru</a></li>

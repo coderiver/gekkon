@@ -1,6 +1,7 @@
 .header
 	position: relative
 	z-index: 2
+	+reg
 .header__nav
 	background: $primary 
 	font-size: 13px
@@ -16,19 +17,117 @@
 	.tel
 		margin-top: 12px
 .nav
+	font-size: 0
 	a
 		display: inline-block
 		vertical-align: middle
 		padding: 0 9px 
 		+tr(background .3s)
+		font-size: 13px
 		&:hover
 			background: $btn 
-.header__main
+.header__main 
 	.inner
 		background: #fff
 		&:before
 			background: #fff 
+.header__menu
+	position: relative
+	z-index: 9
+	border-bottom: 1px solid $border
+	.row
+		> div
+			position: static
 .logo
-	img
-		width: 100%
-		height: auto
+	position: relative
+	display: inline-block
+	margin-top: 13px
+	color: $text 
+	&:hover
+		color: $text 
+	strong
+		position: absolute
+		bottom: -18px
+		left: 47px
+		font-size: 13px
+		+light
+		font-style: italic
+	span
+		white-space: nowrap
+.menu
+	&__item
+		&:hover
+			.menu__link
+				color: $primary 
+				text-decoration: none
+				&:after
+					opacity: 1
+					visibility: visible
+				&:before
+					display: block
+			.menu__drop
+				opacity: 1
+				visibility: visible
+		
+	&__link
+		position: relative
+		display: block
+		padding: 7px 0 22px
+		text-align: center
+		color: $text
+		+tr(color .3s)
+		+light
+		font-size: 13px
+		&:before,
+		&:after
+			content: ""
+			position: absolute
+			left: 50%
+		&:after
+			margin-left: -10px
+			bottom: 0
+			opacity: 0
+			visibility: hidden
+			+tr(opacity .3s)
+			+arr(20,15,$border,t) 
+		&:before
+			display: none
+			z-index: 2
+			margin-left: -9px
+			bottom: -1px
+			+arr(18,15,#fff,t) 
+	&__img
+		color: $primary 
+		height: 60px
+		span
+			font-size: 43px
+			display: inline-block
+		.icon-sun
+			margin-top: -8px
+	&__title
+		display: block
+		+bold
+		font-size: 15px
+	&__drop
+		position: absolute
+		left: 0
+		right: 0
+		top: 100%
+		opacity: 0
+		visibility: hidden
+		border: 1px solid $border
+		padding: 30px 15px 
+		+tr(opacity .3s)
+		background: #fff 
+		font-size: 15px
+		+light
+		
+.cart
+	margin-top: 45px
+	font-size: 13px
+	+bold
+	.i-icon-cart
+		margin-right: 3px
+	&__info
+		margin-top: 5px
+		+light
