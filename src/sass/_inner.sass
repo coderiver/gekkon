@@ -32,7 +32,6 @@
 	font-size: 13px 
 	background: transparent
 	padding-left: 0 
-	margin-top: 30px
 	& > li+ li:before
 		content: '>'
 		color: inherit
@@ -40,9 +39,11 @@
 		color: #333
 		
 .img-nav
-	padding-bottom: 20px 
+	margin-top: 15px 
+	margin-bottom: 35px 
 	&__link
-		display: inline-block
+		display: block
+		margin: 0 auto
 		color: #c2c2c2
 		text-align: center
 		transition: color 250ms
@@ -75,3 +76,19 @@
 				color: $btn
 			h3
 				+bold
+.recipes-item
+	display: block
+	margin-bottom: 25px
+	&__img
+		margin-bottom: 20px 
+		font-size: 0
+		img
+			max-width: 100%
+	&__header
+		font-size: 20px
+		color: #353130
+		transition: color 250ms
+	&:hover
+		text-decoration: none
+		.recipes-item__header
+			color: $btn
