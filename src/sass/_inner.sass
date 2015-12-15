@@ -32,6 +32,7 @@
 	font-size: 13px 
 	background: transparent
 	padding-left: 0 
+	margin-top: 30px
 	& > li+ li:before
 		content: '>'
 		color: inherit
@@ -44,16 +45,21 @@
 		display: inline-block
 		color: #c2c2c2
 		text-align: center
+		transition: color 250ms
 		&.is-active
 			color: $primary
 			.img-nav__text
 				color: $btn
 				+bold
+		&:hover
+			text-decoration: none
 	&__main
 		& > i
 			font-size: 48px 
-			
+.blog
+	margin-bottom: -20px 			
 .blog-item
+	margin-bottom: 20px 
 	&__img
 		margin-bottom: 20px
 		font-size: 0
