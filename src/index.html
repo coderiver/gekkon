@@ -11,8 +11,11 @@
 	<div class="inner inner_main">
 		<div class="container">
 			<div class="banner">
+				<div class="banner__img">
+					<img src="img/banner1.jpg" alt="img">
+				</div>
 				<div class="row">
-					<div class="col-lg-4 col-lg-offset-7">
+					<div class="col-lg-5 col-lg-offset-7">
 						<div class="banner__title">
 							<strong>Недели <span>Испании</span></strong>
 							в нашем магазине
@@ -20,37 +23,53 @@
 						<div class="banner__text">
 							Скидки до <span>70%</span> на товары и продукты из Испании
 						</div>
-						<a href="#" class="btn btn-success">Посмотреть</a>
+						<a href="#" class="btn btn-danger">Посмотреть</a>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-6">
-					<ul class="tabs-link">
-						<li class="is-active"><a href="#">Натуральные товары из-за рубежа</a></li>
-						<li><a href="#">Фермерские продукты из России</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-6">
-					<ul class="view">
-						<li>
-							<a href="#">
-								<span class="icon-view-map"></span>
-								<span class="link-dots">Карта</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<span class="icon-view-list"></span>
-								<span class="link-dots">Список</span>
-							</a>
-						</li>
-					</ul>
+			<div class="map-nav">
+				<div class="row">
+					<div class="col-lg-6">
+						<ul class="tabs-link js-tabs" role="tablist">
+							<li class="active">
+								<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Натуральные товары из-за рубежа</a>
+							</li>
+							<li>
+								<a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Фермерские продукты из России</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-6 text-right">
+						<ul class="tabs-view js-tabs" role="tablist">
+							<li class="active">
+								<a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">
+									<span class="icon-pointer17"></span>
+									<span class="link-dots">Карта</span>
+								</a>
+							</li>
+							<li>
+								<a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">
+									<span class="icon-setup7"></span>
+									<span class="link-dots">Список</span>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-			<div class="map">
-				<img src="img/map-holder.jpg" alt="">
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane fade in active" id="tab1">
+					<div class="map">
+						<img src="img/map-holder.jpg" alt="">
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="tab2">
+					<div class="map">
+						<img src="img/map-holder.jpg" alt="">
+					</div>
+				</div>
 			</div>
+			
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="item">
@@ -64,8 +83,8 @@
 							<div class="item__action">
 								<div class="price">320 в</div>
 								<div class="number js-number" data-max-number="9">
-								 	<button class="number__minus js-minus-number" type="button">-</button>
-								 	<input type="text" class="number__input" value="3">
+									<button class="number__minus js-minus-number" type="button">-</button>
+									<input type="text" class="number__input" value="3">
 									<button class="number__plus js-plus-number" type="button">+</button>
 								</div>
 							</div>
@@ -127,8 +146,8 @@
 							<div class="item__action">
 								<div class="price">320 в</div>
 								<div class="number js-number" data-max-number="9">
-								 	<button class="number__minus js-minus-number" type="button">-</button>
-								 	<input type="text" class="number__input" value="3">
+									<button class="number__minus js-minus-number" type="button">-</button>
+									<input type="text" class="number__input" value="3">
 									<button class="number__plus js-plus-number" type="button">+</button>
 								</div>
 							</div>
@@ -149,8 +168,8 @@
 								<div class="price price_old">540 в</div>
 								<div class="price price_new">320 в</div>
 								<div class="number js-number" data-max-number="9">
-								 	<button class="number__minus js-minus-number" type="button">-</button>
-								 	<input type="text" class="number__input" value="3">
+									<button class="number__minus js-minus-number" type="button">-</button>
+									<input type="text" class="number__input" value="3">
 									<button class="number__plus js-plus-number" type="button">+</button>
 								</div>
 							</div>
@@ -170,8 +189,8 @@
 							<div class="item__action">
 								<div class="price">320 в</div>
 								<div class="number js-number" data-max-number="9">
-								 	<button class="number__minus js-minus-number" type="button">-</button>
-								 	<input type="text" class="number__input" value="3">
+									<button class="number__minus js-minus-number" type="button">-</button>
+									<input type="text" class="number__input" value="3">
 									<button class="number__plus js-plus-number" type="button">+</button>
 								</div>
 							</div>
@@ -191,8 +210,8 @@
 							<div class="item__action">
 								<div class="price">320 в</div>
 								<div class="number js-number" data-max-number="9">
-								 	<button class="number__minus js-minus-number" type="button">-</button>
-								 	<input type="text" class="number__input" value="3">
+									<button class="number__minus js-minus-number" type="button">-</button>
+									<input type="text" class="number__input" value="3">
 									<button class="number__plus js-plus-number" type="button">+</button>
 								</div>
 							</div>
@@ -208,10 +227,10 @@
 						<div class="post__img">
 							<div class="row">
 								<div class="col-lg-6">
-									<a href="#"><img src="img/" alt="img"></a>
+									<a href="#"><img src="img/4.png" alt="img"></a>
 								</div>
 								<div class="col-lg-6">
-									<a href="#"><img src="img/" alt="img"></a>
+									<a href="#"><img src="img/5.png" alt="img"></a>
 								</div>
 							</div>
 						</div>
@@ -263,28 +282,28 @@
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="benefit">
-						<span class="icon-quality"></span>
+						<span class="icon-decoration34"></span>
 						<div class="benefit__title">Качество</div>
 						<div class="benefit__text">Мы работаем только с лучшими поставщиками по всему миру и точно знаем, как каждый товар появился на свет.</div>
 					</div>
 				</div>
 				<div class="col-lg-3">
 					<div class="benefit">
-						<span class="icon-quality"></span>
+						<span class="icon-drop44"></span>
 						<div class="benefit__title">Свежесть</div>
 						<div class="benefit__text">Все доставленные в Россию продукты хранятся в автоматизированном  мультитемпературном складском комплексе.</div>
 					</div>
 				</div>
 				<div class="col-lg-3">
 					<div class="benefit">
-						<span class="icon-quality"></span>
+						<span class="icon-sun24"></span>
 						<div class="benefit__title">Экологичность</div>
 						<div class="benefit__text">Мы следуем стандартам экологической сертификации. Все товары производятся без вреда здоровью человека и окружающей среде.</div>
 					</div>
 				</div>
 				<div class="col-lg-3">
 					<div class="benefit">
-						<span class="icon-quality"></span>
+						<span class="icon-money425"></span>
 						<div class="benefit__title">Ответственность</div>
 						<div class="benefit__text">Если вам не понравился продукт, мы вернем деньги.</div>
 					</div>

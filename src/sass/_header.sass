@@ -116,12 +116,27 @@
 		opacity: 0
 		visibility: hidden
 		border: 1px solid $border
-		padding: 30px 15px 
+		padding: 30px 15px 5px
 		+tr(opacity .3s)
 		background: #fff 
-		font-size: 15px
+		font-size: 13px
 		+light
-		
+	.promo
+		margin-bottom: 25px
+	&__list
+		margin: 10px 0 20px
+		li
+			margin-bottom: 5px
+			&:last-child
+				margin-bottom: 0
+	&__list-title
+		+reg
+		font-size: 15px
+	&__more
+		a
+			color: $text
+			&:hover
+				color: $primary 
 .cart
 	margin-top: 45px
 	font-size: 13px
@@ -130,4 +145,34 @@
 		margin-right: 3px
 	&__info
 		margin-top: 5px
+		+light
+.promo
+	+clr
+	font-size: 15px
+	+light
+	&__img
+		float: left
+		margin-right: 15px
+		width: 80px
+		img
+			display: block
+			width: 100%
+	&__main
+		overflow: hidden
+		span
+			color: $promo
+			+bold
+			font-size: 20px 
+	&__title
+
+		strong
+			display: inline-block
+			margin-right: 5px
+			text-transform: uppercase
+			+bold
+			font-size: 20px
+			a
+				color: $text 
+	&__text
+		font-size: 15px
 		+light
