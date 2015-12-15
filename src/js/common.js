@@ -39,4 +39,8 @@ $(document).ready(function() {
 		});
 	}
 	number();
+	// masonry
+	$('.js-masonry').masonry({
+		 itemSelector: '.js-masonry > div'
+	})
 });

@@ -1584,7 +1584,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .well { background-image: -webkit-linear-gradient(top, #e8e8e8 0, #f5f5f5 100%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e8e8e8), to(#f5f5f5)); background-image: linear-gradient(to bottom, #e8e8e8 0, #f5f5f5 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8e8e8', endColorstr='#fff5f5f5', GradientType=0); border-color: #dcdcdc; -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1); box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1); }
 
-@font-face { font-family: 'trb'; src: url("font/trb.eot?21454821"); src: url("font/trb.eot?21454821#iefix") format("embedded-opentype"), url("font/trb.woff?21454821") format("woff"), url("font/trb.ttf?21454821") format("truetype"), url("font/trb.svg?21454821#trb") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'trb'; src: url("fonts/trb.eot?21454821"); src: url("fonts/trb.eot?21454821#iefix") format("embedded-opentype"), url("fonts/trb.woff?21454821") format("woff"), url("fonts/trb.ttf?21454821") format("truetype"), url("fonts/trb.svg?21454821#trb") format("svg"); font-weight: normal; font-style: normal; }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -1595,163 +1595,163 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .icon-pear:before { content: '\e800'; }
 
-/* '' */
+/* 'юаА' */
 .icon-pasta7:before { content: '\e801'; }
 
-/* '' */
+/* 'юаБ' */
 .icon-pointer17:before { content: '\e802'; }
 
-/* '' */
+/* 'юаВ' */
 .icon-receive:before { content: '\e803'; }
 
-/* '' */
+/* 'юаГ' */
 .icon-right39:before { content: '\e804'; }
 
-/* '' */
+/* 'юаД' */
 .icon-list-1:before { content: '\e805'; }
 
-/* '' */
+/* 'юаЕ' */
 .icon-marker20:before { content: '\e806'; }
 
-/* '' */
+/* 'юаЖ' */
 .icon-menu48:before { content: '\e807'; }
 
-/* '' */
+/* 'юаЗ' */
 .icon-money425:before { content: '\e808'; }
 
-/* '' */
+/* 'юаИ' */
 .icon-transport449:before { content: '\e809'; }
 
-/* '' */
+/* 'юаЙ' */
 .icon-supermarket86:before { content: '\e80a'; }
 
-/* '' */
+/* 'юаК' */
 .icon-user7:before { content: '\e80b'; }
 
-/* '' */
+/* 'юаЛ' */
 .icon-tree1:before { content: '\e80c'; }
 
-/* '' */
+/* 'юаМ' */
 .icon-add186:before { content: '\e80d'; }
 
-/* '' */
+/* 'юаН' */
 .icon-animal276:before { content: '\e80e'; }
 
-/* '' */
+/* 'юаО' */
 .icon-alcohol93:before { content: '\e80f'; }
 
-/* '' */
+/* 'юаП' */
 .icon-apple16:before { content: '\e810'; }
 
-/* '' */
+/* 'юаР' */
 .icon-arrowheads3:before { content: '\e811'; }
 
-/* '' */
+/* 'юаС' */
 .icon-bank62:before { content: '\e812'; }
 
-/* '' */
+/* 'юаТ' */
 .icon-breakfast39:before { content: '\e813'; }
 
-/* '' */
+/* 'юаУ' */
 .icon-checkbox2:before { content: '\e814'; }
 
-/* '' */
+/* 'юаФ' */
 .icon-carrot:before { content: '\e815'; }
 
-/* '' */
+/* 'юаХ' */
 .icon-clock169:before { content: '\e816'; }
 
-/* '' */
+/* 'юаЦ' */
 .icon-christmas252:before { content: '\e817'; }
 
-/* '' */
+/* 'юаЧ' */
 .icon-decoration34:before { content: '\e818'; }
 
-/* '' */
+/* 'юаШ' */
 .icon-creams4:before { content: '\e819'; }
 
-/* '' */
+/* 'юаЩ' */
 .icon-down-arrow25:before { content: '\e81a'; }
 
-/* '' */
+/* 'юаЪ' */
 .icon-dog75:before { content: '\e81b'; }
 
-/* '' */
+/* 'юаЫ' */
 .icon-exclamation11:before { content: '\e81c'; }
 
-/* '' */
+/* 'юаЬ' */
 .icon-drop44:before { content: '\e81d'; }
 
-/* '' */
+/* 'юаЭ' */
 .icon-favorite22:before { content: '\e81e'; }
 
-/* '' */
+/* 'юаЮ' */
 .icon-favourite24:before { content: '\e81f'; }
 
-/* '' */
+/* 'юаЯ' */
 .icon-giftbox55:before { content: '\e820'; }
 
-/* '' */
+/* 'юаа' */
 .icon-giftbox13:before { content: '\e821'; }
 
-/* '' */
+/* 'юаб' */
 .icon-horizontal39:before { content: '\e822'; }
 
-/* '' */
+/* 'юав' */
 .icon-hearts64:before { content: '\e823'; }
 
-/* '' */
+/* 'юаг' */
 .icon-house20:before { content: '\e824'; }
 
-/* '' */
+/* 'юад' */
 .icon-juice7:before { content: '\e825'; }
 
-/* '' */
+/* 'юае' */
 .icon-setup7:before { content: '\e826'; }
 
-/* '' */
+/* 'юаж' */
 .icon-setup8:before { content: '\e827'; }
 
-/* '' */
+/* 'юаз' */
 .icon-stick-man120:before { content: '\e828'; }
 
-/* '' */
+/* 'юаи' */
 .icon-soup20:before { content: '\e829'; }
 
-/* '' */
+/* 'юай' */
 .icon-summer50:before { content: '\e82a'; }
 
-/* '' */
+/* 'юак' */
 .icon-sun24:before { content: '\e82b'; }
 
-/* '' */
+/* 'юал' */
 .icon-supermarket67:before { content: '\e82c'; }
 
-/* '' */
+/* 'юам' */
 .icon-noun_148595_cc:before { content: '\e82d'; }
 
-/* '' */
+/* 'юан' */
 .icon-sun:before { content: '\e82e'; }
 
-/* '' */
+/* 'юао' */
 .icon-yandex:before { content: '\e82f'; }
 
-/* '' */
+/* 'юап' */
 .icon-oil23:before { content: '\e830'; }
 
-/* '' */
+/* 'юа░' */
 .icon-mark1:before { content: '\e831'; }
 
-/* '' */
+/* 'юа▒' */
 .icon-left-arrow23:before { content: '\e832'; }
 
-/* '' */
+/* 'юа▓' */
 .icon-close47:before { content: '\e833'; }
 
-/* '' */
+/* 'юа│' */
 .icon-arrow158:before { content: '\e834'; }
 
-/* '' */
+/* 'юа┤' */
 @font-face { font-family: segoeuii; src: url("fonts/segoeuii.eot"); src: url("fonts/segoeuii.eot?#iefix") format("embedded-opentype"), url("fonts/segoeuii.woff2") format("woff2"), url("fonts/segoeuii.woff") format("woff"), url("fonts/segoeuii.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: segoeuil; src: url("fonts/segoeuil.eot"); src: url("fonts/segoeuil.eot?#iefix") format("embedded-opentype"), url("fonts/segoeuil.woff2") format("woff2"), url("fonts/segoeuil.woff") format("woff"), url("fonts/segoeuil.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: PTRouble-sans; src: url("fonts/PTRouble-sans.eot"); src: url("fonts/PTRouble-sans.eot?#iefix") format("embedded-opentype"), url("fonts/PTRouble-sans.woff2") format("woff2"), url("fonts/PTRouble-sans.woff") format("woff"), url("fonts/PTRouble-sans.ttf") format("truetype"); font-weight: normal; font-style: normal; }
@@ -1859,6 +1859,31 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .footer .form-action + .link-small { margin-top: 10px; display: inline-block; }
 .footer .soc { margin: 30px 0 25px; }
 .footer__meta a, .footer__nav a, .footer .visit-card a { color: #fff; }
+
+.row_ib { font-size: 0; }
+.row_ib > div { display: inline-block; vertical-align: top; font-size: 15px; float: none; }
+
+.pagination > li { display: inline-block; vertical-align: middle; }
+.pagination > li > a, .pagination > li > span { border: 0; line-height: 1; padding-left: 10px; padding-right: 10px; }
+.pagination > li.active > span { background: transparent; border: 0; font-weight: 700; }
+.pagination > li.active > span:hover, .pagination > li.active > span:focus, .pagination > li.active > span:active { background: transparent; }
+.pagination > li:first-child, .pagination > li:last-child { font-size: 24px; line-height: 1; position: relative; top: -1px; }
+
+.breadcrumb { font-size: 13px; background: transparent; padding-left: 0; }
+.breadcrumb > li + li:before { content: ">"; color: inherit; }
+.breadcrumb > .active { color: #333; }
+
+.img-nav { padding-bottom: 20px; }
+.img-nav__link { display: inline-block; color: #c2c2c2; text-align: center; }
+.img-nav__link.is-active { color: #a7c66d; }
+.img-nav__link.is-active .img-nav__text { color: #799a2a; font-weight: 700; }
+.img-nav__main > i { font-size: 48px; }
+
+.blog-item__img { margin-bottom: 20px; font-size: 0; display: block; }
+.blog-item__img img { max-width: 100%; }
+.blog-item__text > a { color: #353130; -webkit-transition: color 250ms; transition: color 250ms; }
+.blog-item__text > a:hover { text-decoration: none; color: #799a2a; }
+.blog-item__text > a h3 { font-weight: 700; }
 @media print{
  *, *:before, *:after{ background: transparent !important; color: #000 !important; -webkit-box-shadow: none !important; box-shadow: none !important; text-shadow: none !important; }
  a, a:visited{ text-decoration: underline; }

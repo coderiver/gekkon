@@ -1,0 +1,71 @@
+// 01-06-blog
+.row
+	&_ib
+		font-size: 0
+		& > div
+			display: inline-block
+			vertical-align: top
+			font-size: 15px 
+			float: none
+.pagination
+	& > li
+		display: inline-block
+		vertical-align: middle
+		& > a, & > span
+			border: 0
+			line-height: 1 
+			padding-left: 10px 
+			padding-right: 10px 
+		&.active > span
+			background: transparent
+			border: 0
+			+bold
+			&:hover, &:focus, &:active
+				background: transparent 
+		&:first-child,
+		&:last-child,
+			font-size: 24px 
+			line-height: 1
+			position: relative
+			top: -1px 
+.breadcrumb
+	font-size: 13px 
+	background: transparent
+	padding-left: 0 
+	& > li+ li:before
+		content: '>'
+		color: inherit
+	& > .active
+		color: #333
+		
+.img-nav
+	padding-bottom: 20px 
+	&__link
+		display: inline-block
+		color: #c2c2c2
+		text-align: center
+		&.is-active
+			color: $primary
+			.img-nav__text
+				color: $btn
+				+bold
+	&__main
+		& > i
+			font-size: 48px 
+			
+.blog-item
+	&__img
+		margin-bottom: 20px
+		font-size: 0
+		display: block
+		img
+			max-width: 100%
+	&__text
+		& > a
+			color: #353130
+			transition: color 250ms
+			&:hover
+				text-decoration: none
+				color: $btn
+			h3
+				+bold
