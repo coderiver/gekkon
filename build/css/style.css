@@ -1761,7 +1761,12 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .rub { font-family: "PTRouble-sans", Arial, sans-serif; }
 
 .inner { position: relative; max-width: 1280px; margin: 0 auto; }
-.inner_main { background: #fff; }
+.inner_main { padding: 27px 0 40px; background: #fff; }
+
+.title { font-weight: 300; line-height: 1.4; }
+.title_h1 { font-size: 40px; }
+.title_h2 { font-size: 30px; }
+.title_h3 { font-size: 20px; }
 
 .number { position: relative; display: inline-block; vertical-align: middle; height: 26px; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 2px 25px 2px 2px; }
 .number__input { display: inline-block; height: 22px; width: 100px; text-align: center; font-size: 18px; }
@@ -1769,6 +1774,14 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 
 .btn-dots { display: inline-block; line-height: 1.1; background: none; border-bottom: 1px dotted; font-family: "Roboto", Arial, sans-serif; font-weight: 400; }
 .btn-dots:hover { border-color: transparent; text-decoration: none; }
+
+.btn-danger { border: 0; padding: 10px 25px; line-height: 1; font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 20px; background: #7a0026; -webkit-transition: background 0.3s; transition: background 0.3s; }
+.btn-danger:hover { background: #94002e; }
+.btn-danger:focus, .btn-danger:active { background: #ad0036; }
+
+.btn-info { border: 2px solid #799a2a; background: none; text-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #799a2a; -webkit-transition: color, background, border, 0.3s; transition: color, background, border, 0.3s; }
+.btn-info:hover { background: #a7c66d; color: #fff; border-color: #a7c66d; }
+.btn-info:active, .btn-info:focus { background: #9cbf5b; border-color: #9cbf5b; color: #fff; -webkit-box-shadow: none; box-shadow: none; }
 
 .form-action { position: relative; }
 .form-action__table { display: table; width: 100%; }
@@ -1810,6 +1823,39 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .i-icon-yt { color: #c13a35; }
 .i-icon-yt:hover { color: #ad3430; }
 
+.tabs-link { margin: 0; line-height: 1.2; font-size: 15px; font-weight: 300; }
+.tabs-link li { display: inline-block; margin-right: 25px; vertical-align: middle; }
+.tabs-link li.active a { border-color: transparent; color: #353130; font-weight: 700; }
+.tabs-link a { display: inline-block; border-bottom: 1px dotted; -webkit-transition: border 0.3s; transition: border 0.3s; }
+.tabs-link a:hover { text-decoration: none; border-color: transparent; }
+
+.tabs-view { margin: 0; padding: 0 20px; line-height: 1.2; font-size: 15px; font-weight: 300; }
+.tabs-view li { display: inline-block; margin-left: 25px; vertical-align: middle; }
+.tabs-view li.active span { border-color: transparent; color: #353130; font-weight: 700; }
+.tabs-view a { display: inline-block; }
+.tabs-view a:hover { text-decoration: none; }
+.tabs-view span:last-child { display: inline-block; border-bottom: 1px dotted; -webkit-transition: border 0.3s; transition: border 0.3s; }
+.tabs-view span:last-child:hover { text-decoration: none; border-color: transparent; }
+
+.post__img { margin-bottom: 23px; }
+.post__img img { display: block; width: 100%; height: auto; }
+.post__main { line-height: 1.66; font-size: 15px; font-weight: 300; }
+
+.banner { margin-bottom: 55px; position: relative; padding: 25px; overflow: hidden; }
+.banner span { color: #7a0026; }
+.banner__img { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
+.banner__img img { min-height: 100%; min-width: 100%; width: auto; height: auto; }
+.banner__title { margin-bottom: 10px; width: 90%; font-size: 45px; font-weight: 300; line-height: 0.8; }
+.banner__title strong { text-transform: uppercase; }
+.banner__text { margin-bottom: 10px; font-size: 25px; font-weight: 300; }
+.banner__text span { font-size: 35px; font-weight: 700; }
+
+.map-nav { margin-bottom: 15px; }
+
+.benefit { text-align: center; font-size: 15px; font-weight: 300; line-height: 1.66; }
+.benefit > span { font-size: 94px; color: #799a2a; }
+.benefit__title { margin-bottom: 5px; font-size: 20px; font-weight: 700; }
+
 .header { position: relative; z-index: 2; font-weight: 400; }
 
 .header__nav { background: #a7c66d; font-size: 13px; color: #fff; height: 65px; line-height: 65px; }
@@ -1845,11 +1891,28 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .menu__img span { font-size: 43px; display: inline-block; }
 .menu__img .icon-sun { margin-top: -8px; }
 .menu__title { display: block; font-weight: 700; font-size: 15px; }
-.menu__drop { position: absolute; left: 0; right: 0; top: 100%; opacity: 0; visibility: hidden; border: 1px solid #eee; padding: 30px 15px; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; background: #fff; font-size: 15px; font-weight: 300; }
+.menu__drop { position: absolute; left: 0; right: 0; top: 100%; opacity: 0; visibility: hidden; border: 1px solid #eee; padding: 30px 15px 5px; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; background: #fff; font-size: 13px; font-weight: 300; }
+.menu .promo { margin-bottom: 25px; }
+.menu__list { margin: 10px 0 20px; }
+.menu__list li { margin-bottom: 5px; }
+.menu__list li:last-child { margin-bottom: 0; }
+.menu__list-title { font-weight: 400; font-size: 15px; }
+.menu__more a { color: #353130; }
+.menu__more a:hover { color: #a7c66d; }
 
 .cart { margin-top: 45px; font-size: 13px; font-weight: 700; }
 .cart .i-icon-cart { margin-right: 3px; }
 .cart__info { margin-top: 5px; font-weight: 300; }
+
+.promo { *zoom: 1; font-size: 15px; font-weight: 300; }
+.promo:after { content: " "; display: table; clear: both; }
+.promo__img { float: left; margin-right: 15px; width: 80px; }
+.promo__img img { display: block; width: 100%; }
+.promo__main { overflow: hidden; }
+.promo__main span { color: #7a0026; font-weight: 700; font-size: 20px; }
+.promo__title strong { display: inline-block; margin-right: 5px; text-transform: uppercase; font-weight: 700; font-size: 20px; }
+.promo__title strong a { color: #353130; }
+.promo__text { font-size: 15px; font-weight: 300; }
 
 .footer { background: #a7c66d; padding: 30px 0; color: #fff; font-size: 15px; font-weight: 400; }
 .footer .link-dots { color: #fff; }

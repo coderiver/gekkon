@@ -58,8 +58,17 @@ body
 	max-width: 1280px
 	margin: 0 auto
 	&_main
+		padding: 27px 0 40px
 		background: #fff 
-		
+.title
+	+light
+	line-height: 1.4
+	&_h1
+		font-size: 40px	
+	&_h2
+		font-size: 30px
+	&_h3
+		font-size: 20px
 
 .number
 	position: relative
@@ -90,6 +99,38 @@ body
 	&:hover	
 		border-color: transparent
 		text-decoration: none
+.btn-danger
+	border: 0
+	padding: 10px 25px
+	line-height: 1
+	+roboto
+	+light
+	font-size: 20px
+	background: $promo
+	+tr(background .3s)
+	&:hover
+		background: lighten($promo, 5%) 
+	&:focus,
+	&:active
+		background: lighten($promo, 10%)
+.btn-info
+	border: 2px solid $btn
+	background: none
+	text-shadow: none
+	box-shadow: none
+	color: $btn
+	transition: color, background, border, .3s
+	&:hover
+		background: $primary
+		color: #fff  
+		border-color: $primary
+	&:active,
+	&:focus
+		background: darken($primary, 5%)
+		border-color: darken($primary, 5%)
+		color: #fff
+		box-shadow: none 
+
 .form-action
 	position: relative
 	&__table
@@ -172,3 +213,62 @@ body
 	color: #c13a35
 	&:hover
 		color: darken(#c13a35, 5%)
+.tabs-link
+	margin: 0
+	line-height: 1.2
+	font-size: 15px
+	+light
+	li
+		display: inline-block
+		margin-right: 25px
+		vertical-align: middle
+		&.active
+			a
+				border-color: transparent
+				color: $text
+				+bold  
+	a
+		display: inline-block
+		border-bottom: 1px dotted 
+		+tr(border .3s)
+		&:hover
+			text-decoration: none
+			border-color: transparent 
+.tabs-view
+	margin: 0
+	padding: 0 20px 
+	line-height: 1.2
+	font-size: 15px
+	+light
+	li
+		display: inline-block
+		margin-left: 25px
+		vertical-align: middle
+		&.active
+			span
+				border-color: transparent
+				color: $text
+				+bold  
+	a
+		display: inline-block
+		&:hover
+			text-decoration: none
+	span
+		&:last-child
+			display: inline-block
+			border-bottom: 1px dotted 
+			+tr(border .3s)
+			&:hover
+				text-decoration: none
+				border-color: transparent 
+.post
+	&__img
+		margin-bottom: 23px
+		img
+			display: block
+			width: 100%
+			height: auto
+	&__main
+		line-height: 1.66
+		font-size: 15px
+		+light

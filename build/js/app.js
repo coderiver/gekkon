@@ -75,4 +75,9 @@ $(document).ready(function() {
 		});
 	}
 	number();
+
+	$('.js-tabs a').on("click", function(event) {
+		event.preventDefault();
+		$(this).tab('show');
+	});
 });
