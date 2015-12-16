@@ -1964,7 +1964,7 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .article ol { list-style-type: decimal; margin-left: 20px; }
 .article ul { list-style-type: disc; margin-left: 20px; }
 .article img { max-width: 100%; height: auto; margin: 60px 0 35px; }
-.article table { width: 70%; margin: 30px 0; min-width: 500px; }
+.article table { width: 60%; margin: 30px 0; min-width: 500px; }
 .article table thead tr { background: #a7c66d; height: 38px; }
 .article table thead th { font-weight: 300; color: #fff; }
 .article table th, .article table td { vertical-align: middle; text-align: center; }
@@ -1974,6 +1974,13 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 
 .sidebar h2 { margin-bottom: 30px; }
 .sidebar h2:first-child { margin-top: 0; }
+
+.gift-box__header { margin-bottom: 20px; }
+.gift-box__img { margin-bottom: 20px; font-size: 0; }
+.gift-box__img img { max-width: 100%; }
+
+.gift-promo h3:first-child { margin-top: 0; }
+.gift-promo__tel { color: #000; font-size: 30px; }
 @media print{
  *, *:before, *:after{ background: transparent !important; color: #000 !important; -webkit-box-shadow: none !important; box-shadow: none !important; text-shadow: none !important; }
  a, a:visited{ text-decoration: underline; }
