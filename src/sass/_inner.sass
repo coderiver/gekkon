@@ -76,6 +76,9 @@
 				color: $btn
 			h3
 				+bold
+.img-wrap
+	& > i
+		display: inline-block
 .recipes-item
 	display: block
 	margin-bottom: 25px
@@ -142,6 +145,19 @@
 	&__img
 		margin-bottom: 20px 
 		font-size: 0
+		position: relative
+		&.is-border
+			display: inline-block
+			overflow: hidden
+			position: relative
+			z-index: 2
+			.gift-box__imgmain
+				position: absolute
+				top: 0
+				left: 0 
+				z-index: -1
+				img
+					max-width: none 
 		img
 			max-width: 100%
 

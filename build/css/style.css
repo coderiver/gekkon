@@ -20,9 +20,11 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 *, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
 
-.icon-codedby { width: 47px; height: 5px; background-image: url("../img/icons.png"); background-position: 0px -9px; }
+.icon-codedby { width: 47px; height: 5px; background-image: url("../img/icons.png"); background-position: -53px -147px; }
 
-.icon-coderiver { width: 49px; height: 5px; background-image: url("../img/icons.png"); background-position: 0px 0px; }
+.icon-coderiver { width: 49px; height: 5px; background-image: url("../img/icons.png"); background-position: 0px -147px; }
+
+.icon-gift-box { width: 180px; height: 143px; background-image: url("../img/icons.png"); background-position: 0px 0px; }
 
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 [class^="i-icon-"], [class*=" i-icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -1952,6 +1954,8 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .blog-item__text > a:hover { text-decoration: none; color: #799a2a; }
 .blog-item__text > a h3 { font-weight: 700; }
 
+.img-wrap > i { display: inline-block; }
+
 .recipes-item { display: block; margin-bottom: 25px; }
 .recipes-item__img { margin-bottom: 20px; font-size: 0; }
 .recipes-item__img img { max-width: 100%; }
@@ -1976,7 +1980,10 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .sidebar h2:first-child { margin-top: 0; }
 
 .gift-box__header { margin-bottom: 20px; }
-.gift-box__img { margin-bottom: 20px; font-size: 0; }
+.gift-box__img { margin-bottom: 20px; font-size: 0; position: relative; }
+.gift-box__img.is-border { display: inline-block; overflow: hidden; position: relative; z-index: 2; }
+.gift-box__img.is-border .gift-box__imgmain { position: absolute; top: 0; left: 0; z-index: -1; }
+.gift-box__img.is-border .gift-box__imgmain img { max-width: none; }
 .gift-box__img img { max-width: 100%; }
 
 .gift-promo h3:first-child { margin-top: 0; }
