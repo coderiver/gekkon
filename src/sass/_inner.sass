@@ -84,11 +84,54 @@
 		font-size: 0
 		img
 			max-width: 100%
-	&__header
+	& > h3
 		font-size: 20px
 		color: #353130
 		transition: color 250ms
 	&:hover
 		text-decoration: none
-		.recipes-item__header
+		& > h3
 			color: $btn
+.table-wrap
+	overflow: auto		
+.article
+	ol
+		list-style-type: decimal
+		margin-left: 20px 
+	ul
+		list-style-type: disc
+		margin-left: 20px
+	img
+		max-width: 100%
+		height: auto
+		margin: 60px 0 35px
+	table
+		width: 70% 
+		margin: 30px 0 
+		min-width: 500px 
+		thead
+			tr
+				background: $primary
+				height: 38px 
+			th
+				+light
+				color: #fff
+		th,td
+			vertical-align: middle
+			text-align: center
+			&:first-child
+				padding-left: 15px
+				text-align: left
+				
+		tbody
+			tr
+				height: 40px
+				border-bottom: 1px dashed #ddd 
+				&:last-child
+					border-bottom: 1px solid $primary
+
+.sidebar
+	h2
+		margin-bottom: 30px 
+		&:first-child
+			margin-top: 0
