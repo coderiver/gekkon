@@ -57,6 +57,19 @@ body
 	position: relative
 	max-width: 1280px
 	margin: 0 auto
+	&:before,
+	&:after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 0
+		width: 1px
+		z-index: -1
+		box-shadow: 0 0 40px rgba(#000, 1) 
+	&:before
+		left: 0
+	&:after
+		right: 0
 	&_main
 		padding: 27px 0 40px
 		background: #fff 
