@@ -3,7 +3,7 @@ var config = require('../config');
 
 // copy static files
 gulp.task('copy', function() {
-   gulp.src(config.src.img+'*.*')
+   gulp.src(config.src.img)
    .pipe(gulp.dest(config.dest.img));
    gulp.src(config.src.root+'fonts/*.*')
    .pipe(gulp.dest(config.dest.css+'fonts/'));

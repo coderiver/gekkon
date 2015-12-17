@@ -62,33 +62,48 @@ body
 		background: #fff 
 .title
 	+light
-	line-height: 1.4
+	line-height: 1.2
 	&_h1
+		margin: 27px 0
 		font-size: 40px	
 	&_h2
 		font-size: 30px
 	&_h3
 		font-size: 20px
-
+	a
+		font-size: 15px
+		display: inline-block
+		margin-left: 5px
 .number
 	position: relative
 	display: inline-block
-	vertical-align: middle
-	height: 26px
-	box-sizing: border-box
-	padding: 2px 25px 2px 2px 
+	height: 25px
+	white-space: nowrap
+	border: 1px solid #ddd
 	&__input
 		display: inline-block
-		height: 22px
-		width: 100px
+		vertical-align: top
+		height: 23px
+		width: 30px
 		text-align: center
-		font-size: 18px
+		font-size: 15px
+		+reg
+		+roboto
 	&__plus,
+	&__minus	
+		vertical-align: top 
+		width: 23px
+		height: 23px
+		color: $text
+		background: #f3f2f2
+		&:hover
+			background: darken(#f3f2f2, 5%)
+		&:active
+			background: darken(#f3f2f2, 10%)
+	&__plus
+		border-left: 1px solid #ddd 
 	&__minus
-		width: 22px
-		height: 22px
-		color: #fff
-		background: #000
+		border-right: 1px solid #ddd 
 .btn-dots
 	display: inline-block
 	line-height: 1.1
@@ -99,13 +114,22 @@ body
 	&:hover	
 		border-color: transparent
 		text-decoration: none
-.btn-danger
-	border: 0
-	padding: 10px 25px
-	line-height: 1
+
+.btn
+	padding: 11px 10px 12px
 	+roboto
 	+light
 	font-size: 20px
+	line-height: 1
+	transition: background .3s
+	+ .btn
+		margin-top: 23px
+	&:focus
+		outline: none
+.btn-danger
+	border: 0
+	padding-left: 25px
+	padding-right: 25px
 	background: $promo
 	+tr(background .3s)
 	&:hover
@@ -115,6 +139,7 @@ body
 		background: lighten($promo, 10%)
 .btn-info
 	border: 2px solid $btn
+	padding: 9px 10px 10px
 	background: none
 	text-shadow: none
 	box-shadow: none
@@ -126,11 +151,32 @@ body
 		border-color: $primary
 	&:active,
 	&:focus
-		background: darken($primary, 5%)
-		border-color: darken($primary, 5%)
+		background: darken($primary, 10%)
+		border-color: darken($primary, 10%)
 		color: #fff
 		box-shadow: none 
-
+		outline: none
+		&:focus
+			background: darken($primary, 10%)
+			border-color: darken($primary, 10%)
+			color: #fff
+			box-shadow: none 
+			outline: none
+.btn-default
+	padding-left: 33px
+	padding-right: 33px 
+	background: $btn
+	border: 0
+	box-shadow: none
+	&:hover
+		background: $primary
+		
+	&:active, &:focus
+		background: darken($primary, 10%)
+		box-shadow: none
+		&:hover
+			background: darken($primary, 10%)
+			box-shadow: none
 .form-action
 	position: relative
 	&__table
@@ -261,7 +307,11 @@ body
 			&:hover
 				text-decoration: none
 				border-color: transparent 
+.title
+	+ .post
+		margin-top: 15px
 .post
+	margin-bottom: 22px
 	&__img
 		margin-bottom: 23px
 		img
@@ -272,3 +322,91 @@ body
 		line-height: 1.66
 		font-size: 15px
 		+light
+		+ .post__img
+			margin-top: 20px
+	&__head
+		margin-bottom: 17px
+		a
+			font-size: 20px
+	.title
+		margin-bottom: 20px
+.post_box
+	border: 1px solid $btn
+	padding: 15px 15px 33px
+.meta
+	font-size: 13px
+	+light
+	color: $meta 
+.item
+	position: relative
+	margin-bottom: 43px
+	padding: 0 20px 
+	transition: box-shadow .2s
+	&:hover
+		box-shadow: 0 0 0 3px $btn
+	&__img
+		position: relative
+		padding: 15px 0 
+		height: 158px
+		+vertical
+		display: block
+		overflow: hidden
+		img
+			display: inline-block
+			vertical-align: middle
+			max-width: 100%
+			max-height: 100%
+	&__main
+		padding-bottom: 20px
+	&__name
+		height: 87px
+		overflow: hidden
+	&__link
+		display: inline-block
+		font-size: 20px
+		+light
+		&:hover
+			text-decoration: none
+			span
+				border-bottom: 1px solid 
+		img
+			margin-right: 5px
+	&__action
+		+clr
+		margin-bottom: 13px
+		.price
+			float: left
+		.number
+			float: right
+			margin-top: 4px
+		
+.item_marked
+	box-shadow: 0 0 0 3px $marked
+	&:hover
+		box-shadow: 0 0 0 3px $marked
+.price
+	font-size: 25px
+	+bold
+	line-height: 1
+	&__old
+		display: inline-block
+		vertical-align: top
+		font-size: 15px
+		text-decoration: line-through
+	&__new
+		color: $promo
+.badge
+	position: absolute
+	right: 15px
+	top: 15px
+	padding: 3px 5px 2px 
+	border-radius: 0
+	font-size: 15px
+	+light
+	&_new
+		background: $marked
+		color: $text
+	&_hot
+		background: $hot
+		color: #fff  
+		  

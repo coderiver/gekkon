@@ -31,8 +31,33 @@
 		span
 			font-size: 35px
 			+bold
+.slider-info
+	&__title
+		display: table
+		width: 100%
+		line-height: 1
+		span
+			display: table-cell
+			vertical-align: top
+			width: 110px
+			font-size: 80px
+			color: $primary 
+			&:before
+				display: block
+				margin: 0
+		strong
+			padding-top: 10px
+			display: table-cell
+			vertical-align: top
+			font-size: 25px
+	&__text
+		margin: 20px 0 30px 
+		font-size: 15px
+		+light
 .map-nav
 	margin-bottom: 15px
+.section-items
+	margin-bottom: 40px
 .benefit
 	text-align: center
 	font-size: 15px
@@ -45,3 +70,11 @@
 		margin-bottom: 5px
 		font-size: 20px
 		+bold 
+.banner-img
+	display: block
+	img
+		display: block
+		width: 100%
+		height: auto
+.location-box
+	margin-bottom: 33px

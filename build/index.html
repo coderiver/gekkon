@@ -6,8 +6,6 @@
 	<meta name="format-detection" content="telephone=no"/>
 	<meta name="theme-color" content="#fff"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700&subset=latin,cyrillic-ext" rel="stylesheet"/>
-	<link rel="stylesheet" media="all" href="img/css/bootstrap.min.css"/>
-	<link rel="stylesheet" media="all" href="img/css/bootstrap-theme.min.css"/>
 	<link rel="stylesheet" media="all" href="css/style.css"/>
 	<title>index</title>
 </head>
@@ -592,201 +590,232 @@
 					</div>
 				</div>
 			</div>
-			<div class="map-nav">
-				<div class="row">
-					<div class="col-lg-6">
-						<ul class="tabs-link js-tabs" role="tablist">
-							<li class="active">
-								<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Натуральные товары из-за рубежа</a>
-							</li>
-							<li>
-								<a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Фермерские продукты из России</a>
-							</li>
-						</ul>
+			<div class="location-box">	
+				<div class="map-nav">
+					<div class="row">
+						<div class="col-lg-6">
+							<ul class="tabs-link js-tabs" role="tablist">
+								<li class="active">
+									<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Натуральные товары из-за рубежа</a>
+								</li>
+								<li>
+									<a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Фермерские продукты из России</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 text-right">
+							<ul class="tabs-view js-tabs" role="tablist">
+								<li class="active">
+									<a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">
+										<span class="icon-pointer17"></span>
+										<span class="link-dots">Карта</span>
+									</a>
+								</li>
+								<li>
+									<a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">
+										<span class="icon-setup7"></span>
+										<span class="link-dots">Список</span>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="col-lg-6 text-right">
-						<ul class="tabs-view js-tabs" role="tablist">
-							<li class="active">
-								<a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">
-									<span class="icon-pointer17"></span>
-									<span class="link-dots">Карта</span>
-								</a>
-							</li>
-							<li>
-								<a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">
-									<span class="icon-setup7"></span>
-									<span class="link-dots">Список</span>
-								</a>
-							</li>
-						</ul>
+				</div>
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane fade in active" id="tab1">
+						<div class="map">
+							<img src="img/map-holder.jpg" alt="">
+						</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="tab2">
+						<div class="map">
+							<img src="img/map-holder.jpg" alt="">
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="tab-content">
-				<div role="tabpanel" class="tab-pane fade in active" id="tab1">
-					<div class="map">
-						<img src="img/map-holder.jpg" alt="">
-					</div>
-				</div>
-				<div role="tabpanel" class="tab-pane" id="tab2">
-					<div class="map">
-						<img src="img/map-holder.jpg" alt="">
-					</div>
-				</div>
-			</div>
-			
 			<div class="row">
 				<div class="col-lg-3">
-					<div class="item">
+					<div class="item item_marked">
+						<div class="badge badge_new">New!</div>
 						<a class="item__img" href="#">
-							<img src="img/item1.png" alt="img">
+							<img src="img/item1.jpg" alt="img">
 						</a>
 						<div class="item__main">
 							<div class="item__name">
-								<a href="#" class="item__link"><img src="img/flag-spain.png" alt="spain"> Блокнот с джутовой обложкой Lejoys</a>
+								<a href="#" class="item__link">
+									<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания">
+									<span>Блокнот с джутовой обложкой Lejoys</span>
+								</a>
 							</div>
 							<div class="item__action">
-								<div class="price">320 в</div>
+								<div class="price">320 <span class="rub">в</span></div>
 								<div class="number js-number" data-max-number="9">
 									<button class="number__minus js-minus-number" type="button">-</button>
 									<input type="text" class="number__input" value="3">
 									<button class="number__plus js-plus-number" type="button">+</button>
 								</div>
 							</div>
-							<button class="btn btn-default" type="button">В корзину</button>
+							<button class="btn btn-default btn-block" type="button">В корзину</button>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-3 col-lg-offset-1">
-					<div class="slider-info js-slider-single">
+					<div class="slider-info js-slider-info">
 						<div>
 							<div class="slider-info__title">
-								<span class="icon-delivery"></span>
-								Доставка прямо домой
+								<span class="icon-transport449"></span>
+								<strong>Доставка прямо домой</strong>
 							</div>
 							<div class="slider-info__text">
 								Бесплатная доставка в пределах МКАД при заказе от 3000 рублей и выше.
 							</div>
-							<a href="#" class="btn bnt-info">Подробнее о доставке</a>
+							<a href="#" class="btn btn-info">Подробнее о доставке</a>
 						</div>
 						<div>
 							<div class="slider-info__title">
-								<span class="icon-delivery"></span>
-								Доставка прямо домой
+								<span class="icon-transport449"></span>
+								<strong>Доставка прямо домой</strong>
 							</div>
 							<div class="slider-info__text">
 								Бесплатная доставка в пределах МКАД при заказе от 3000 рублей и выше.
 							</div>
-							<a href="#" class="btn bnt-info">Подробнее о доставке</a>
+							<a href="#" class="btn btn-info">Подробнее о доставке</a>
 						</div>
 						<div>
 							<div class="slider-info__title">
-								<span class="icon-delivery"></span>
-								Доставка прямо домой
+								<span class="icon-transport449"></span>
+								<strong>Доставка прямо домой</strong>
 							</div>
 							<div class="slider-info__text">
 								Бесплатная доставка в пределах МКАД при заказе от 3000 рублей и выше.
 							</div>
-							<a href="#" class="btn bnt-info">Подробнее о доставке</a>
+							<a href="#" class="btn btn-info">Подробнее о доставке</a>
+						</div>
+						<div>
+							<div class="slider-info__title">
+								<span class="icon-transport449"></span>
+								<strong>Доставка прямо домой</strong>
+							</div>
+							<div class="slider-info__text">
+								Бесплатная доставка в пределах МКАД при заказе от 3000 рублей и выше.
+							</div>
+							<a href="#" class="btn btn-info">Подробнее о доставке</a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-lg-offset-1">
 					<a class="banner-img" href="#">
-						<img src="img/" alt="img">
+						<img src="img/banner2.jpg" alt="img">
 					</a>
 				</div>
 			</div>
-			<div class="title title_h1">Популярные товары</div>
-			<div class="row">
-				<div class="col-lg-3">
-					<div class="item">
-						<a class="item__img" href="#">
-							<img src="img/item2.png" alt="img">
-						</a>
-						<div class="item__main">
-							<div class="item__name">
-								<a href="#" class="item__link"><img src="img/flag-spain.png" alt="spain">Сыр из козьего молока «Бургос», 500 гр.</a>
-							</div>
-							<div class="item__action">
-								<div class="price">320 в</div>
-								<div class="number js-number" data-max-number="9">
-									<button class="number__minus js-minus-number" type="button">-</button>
-									<input type="text" class="number__input" value="3">
-									<button class="number__plus js-plus-number" type="button">+</button>
+			<div class="section-items">
+				<div class="title title_h1">Популярные товары</div>
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="item">
+							<a class="item__img" href="#">
+								<img src="img/item2.jpg" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="#" class="item__link">	
+										<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+										<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+									</a>
 								</div>
+								<div class="item__action">
+									<div class="price">1200 <span class="rub">в</span></div>
+									<div class="number js-number" data-max-number="9">
+										<button class="number__minus js-minus-number" type="button">-</button>
+										<input type="text" class="number__input" value="3">
+										<button class="number__plus js-plus-number" type="button">+</button>
+									</div>
+								</div>
+								<button class="btn btn-default btn-block" type="button">В корзину</button>
 							</div>
-							<button class="btn btn-default" type="button">В корзину</button>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="item">
-						<a class="item__img" href="#">
-							<img src="img/item3.png" alt="img">
-						</a>
-						<div class="item__main">
-							<div class="item__name">
-								<a href="#" class="item__link"><img src="img/flag-poland.png" alt="poland">Масло сливочное «Крестьянское», 170 гр</a>
-							</div>
-							<div class="item__action">
-								<div class="price price_old">540 в</div>
-								<div class="price price_new">320 в</div>
-								<div class="number js-number" data-max-number="9">
-									<button class="number__minus js-minus-number" type="button">-</button>
-									<input type="text" class="number__input" value="3">
-									<button class="number__plus js-plus-number" type="button">+</button>
+					<div class="col-lg-3">
+						<div class="item">
+							<a class="item__img" href="#">
+								<img src="img/item3.jpg" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="#" class="item__link">
+										<img src="img/flags/PL.png" width="24" alt="Польша" title="Польша">
+										<span>Масло сливочное «Крестьянское», 170 гр</span>
+									</a>
 								</div>
+								<div class="item__action">
+									<div class="price">
+										<span class="price__old">540 <span class="rub">в</span></span>
+										<span class="price__new">320 <span class="rub">в</span></span>
+									</div>
+									<div class="number js-number" data-max-number="9">
+										<button class="number__minus js-minus-number" type="button">-</button>
+										<input type="text" class="number__input" value="3">
+										<button class="number__plus js-plus-number" type="button">+</button>
+									</div>
+								</div>
+								<button class="btn btn-default btn-block" type="button">В корзину</button>
 							</div>
-							<button class="btn btn-default" type="button">В корзину</button>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="item">
-						<a class="item__img" href="#">
-							<img src="img/item4.png" alt="img">
-						</a>
-						<div class="item__main">
-							<div class="item__name">
-								<a href="#" class="item__link"><img src="img/flag-norway.png" alt="norway">Биомороженое в рожке сливочное, 90 гр. «Здоровье»</a>
-							</div>
-							<div class="item__action">
-								<div class="price">320 в</div>
-								<div class="number js-number" data-max-number="9">
-									<button class="number__minus js-minus-number" type="button">-</button>
-									<input type="text" class="number__input" value="3">
-									<button class="number__plus js-plus-number" type="button">+</button>
+					<div class="col-lg-3">
+						<div class="item">
+							<a class="item__img" href="#">
+								<img src="img/item4.jpg" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="#" class="item__link">
+										<img src="img/flags/NO.png" width="24" alt="Новегия" title="Новегия">
+										<span>Биомороженое в рожке сливочное, 90 гр.</span>
+									</a>
 								</div>
+								<div class="item__action">
+									<div class="price">320 <span class="rub">в</span></div>
+									<div class="number js-number" data-max-number="9">
+										<button class="number__minus js-minus-number" type="button">-</button>
+										<input type="text" class="number__input" value="3">
+										<button class="number__plus js-plus-number" type="button">+</button>
+									</div>
+								</div>
+								<button class="btn btn-default btn-block" type="button">В корзину</button>
 							</div>
-							<button class="btn btn-default" type="button">В корзину</button>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="item">
-						<a class="item__img" href="#">
-							<img src="img/item5.png" alt="img">
-						</a>
-						<div class="item__main">
-							<div class="item__name">
-								<a href="#" class="item__link"><img src="img/flag-finland.png" alt="finland">Соль Fleur de sel de Guerande Danival, 500 гр.</a>
-							</div>
-							<div class="item__action">
-								<div class="price">320 в</div>
-								<div class="number js-number" data-max-number="9">
-									<button class="number__minus js-minus-number" type="button">-</button>
-									<input type="text" class="number__input" value="3">
-									<button class="number__plus js-plus-number" type="button">+</button>
+					<div class="col-lg-3">
+						<div class="item">
+							<a class="item__img" href="#">
+								<img src="img/item5.jpg" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="#" class="item__link">
+										<img src="img/flags/FL.png" width="24" alt="Финляндия" title="Финляндия">
+										<span>Соль Fleur de sel de Guerande Danival, 500 гр.</span>
+									</a>
 								</div>
+								<div class="item__action">
+									<div class="price">320 <span class="rub">в</span></div>
+									<div class="number js-number" data-max-number="9">
+										<button class="number__minus js-minus-number" type="button">-</button>
+										<input type="text" class="number__input" value="3">
+										<button class="number__plus js-plus-number" type="button">+</button>
+									</div>
+								</div>
+								<button class="btn btn-default btn-block" type="button">В корзину</button>
 							</div>
-							<button class="btn btn-default" type="button">В корзину</button>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3">
+				<div class="col-sm-4">
 					<div class="title title_h2">Подарочные наборы и упаковка</div>
 					<div class="post">
 						<div class="post__img">
@@ -806,7 +835,7 @@
 						<a class="btn btn-default btn-block" href="#">Купить подарочный набор</a>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-sm-4">
 					<div class="title title_h2">Блог <a href="#">Все статьи</a></div>
 					<div class="post">
 						<div class="post__head">
@@ -814,7 +843,7 @@
 							<a href="#">Польза и вред кофе</a>
 						</div>
 						<div class="post__img">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="img/6.png" alt="img"></a>
 						</div>
 						<div class="post__main">
 							<p>Вкус и польза кофе в любом случае зависят от многих факторов: от места произрастания семян, от их обработки, от степени и времени обжарки...</p>
@@ -830,14 +859,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-sm-4">
 					<div class="post post_box">	
 						<div class="title title_h2">Тест: какая страна вам подходит?</div>
 						<div class="post__main">
 							<p>Лучшие продукты из страны, которая близка вам по духу. Ответьте на 5 простых вопросов и получите список товаров для вдохновения.</p>
 						</div>
 						<div class="post__img">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="img/7.png" alt="img"></a>
 						</div>
 						<a class="btn btn-default" href="#">Начать тест</a>
 					</div>
