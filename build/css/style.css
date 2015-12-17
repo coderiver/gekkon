@@ -20,9 +20,11 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 *, *:before, *:after { -webkit-box-sizing: inherit; box-sizing: inherit; }
 
-.icon-codedby { width: 47px; height: 5px; background-image: url("../img/icons.png"); background-position: 0px -9px; }
+.icon-codedby { width: 47px; height: 5px; background-image: url("../img/icons.png"); background-position: -53px -147px; }
 
-.icon-coderiver { width: 49px; height: 5px; background-image: url("../img/icons.png"); background-position: 0px 0px; }
+.icon-coderiver { width: 49px; height: 5px; background-image: url("../img/icons.png"); background-position: 0px -147px; }
+
+.icon-gift-box { width: 180px; height: 143px; background-image: url("../img/icons.png"); background-position: 0px 0px; }
 
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 [class^="i-icon-"], [class*=" i-icon-"] { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
@@ -1584,7 +1586,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .well { background-image: -webkit-linear-gradient(top, #e8e8e8 0, #f5f5f5 100%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #e8e8e8), to(#f5f5f5)); background-image: linear-gradient(to bottom, #e8e8e8 0, #f5f5f5 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8e8e8', endColorstr='#fff5f5f5', GradientType=0); border-color: #dcdcdc; -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1); box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1); }
 
-@font-face { font-family: 'trb'; src: url("font/trb.eot?21454821"); src: url("font/trb.eot?21454821#iefix") format("embedded-opentype"), url("font/trb.woff?21454821") format("woff"), url("font/trb.ttf?21454821") format("truetype"), url("font/trb.svg?21454821#trb") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'trb'; src: url("fonts/trb.eot?21454821"); src: url("fonts/trb.eot?21454821#iefix") format("embedded-opentype"), url("fonts/trb.woff?21454821") format("woff"), url("fonts/trb.ttf?21454821") format("truetype"), url("fonts/trb.svg?21454821#trb") format("svg"); font-weight: normal; font-style: normal; }
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
 /*
@@ -1595,163 +1597,163 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .icon-pear:before { content: '\e800'; }
 
-/* '' */
+/* 'εáÇ' */
 .icon-pasta7:before { content: '\e801'; }
 
-/* '' */
+/* 'εáü' */
 .icon-pointer17:before { content: '\e802'; }
 
-/* '' */
+/* 'εáé' */
 .icon-receive:before { content: '\e803'; }
 
-/* '' */
+/* 'εáâ' */
 .icon-right39:before { content: '\e804'; }
 
-/* '' */
+/* 'εáä' */
 .icon-list-1:before { content: '\e805'; }
 
-/* '' */
+/* 'εáà' */
 .icon-marker20:before { content: '\e806'; }
 
-/* '' */
+/* 'εáå' */
 .icon-menu48:before { content: '\e807'; }
 
-/* '' */
+/* 'εáç' */
 .icon-money425:before { content: '\e808'; }
 
-/* '' */
+/* 'εáê' */
 .icon-transport449:before { content: '\e809'; }
 
-/* '' */
+/* 'εáë' */
 .icon-supermarket86:before { content: '\e80a'; }
 
-/* '' */
+/* 'εáè' */
 .icon-user7:before { content: '\e80b'; }
 
-/* '' */
+/* 'εáï' */
 .icon-tree1:before { content: '\e80c'; }
 
-/* '' */
+/* 'εáî' */
 .icon-add186:before { content: '\e80d'; }
 
-/* '' */
+/* 'εáì' */
 .icon-animal276:before { content: '\e80e'; }
 
-/* '' */
+/* 'εáÄ' */
 .icon-alcohol93:before { content: '\e80f'; }
 
-/* '' */
+/* 'εáÅ' */
 .icon-apple16:before { content: '\e810'; }
 
-/* '' */
+/* 'εáÉ' */
 .icon-arrowheads3:before { content: '\e811'; }
 
-/* '' */
+/* 'εáæ' */
 .icon-bank62:before { content: '\e812'; }
 
-/* '' */
+/* 'εáÆ' */
 .icon-breakfast39:before { content: '\e813'; }
 
-/* '' */
+/* 'εáô' */
 .icon-checkbox2:before { content: '\e814'; }
 
-/* '' */
+/* 'εáö' */
 .icon-carrot:before { content: '\e815'; }
 
-/* '' */
+/* 'εáò' */
 .icon-clock169:before { content: '\e816'; }
 
-/* '' */
+/* 'εáû' */
 .icon-christmas252:before { content: '\e817'; }
 
-/* '' */
+/* 'εáù' */
 .icon-decoration34:before { content: '\e818'; }
 
-/* '' */
+/* 'εáÿ' */
 .icon-creams4:before { content: '\e819'; }
 
-/* '' */
+/* 'εáÖ' */
 .icon-down-arrow25:before { content: '\e81a'; }
 
-/* '' */
+/* 'εáÜ' */
 .icon-dog75:before { content: '\e81b'; }
 
-/* '' */
+/* 'εá¢' */
 .icon-exclamation11:before { content: '\e81c'; }
 
-/* '' */
+/* 'εá£' */
 .icon-drop44:before { content: '\e81d'; }
 
-/* '' */
+/* 'εá¥' */
 .icon-favorite22:before { content: '\e81e'; }
 
-/* '' */
+/* 'εá₧' */
 .icon-favourite24:before { content: '\e81f'; }
 
-/* '' */
+/* 'εáƒ' */
 .icon-giftbox55:before { content: '\e820'; }
 
-/* '' */
+/* 'εáá' */
 .icon-giftbox13:before { content: '\e821'; }
 
-/* '' */
+/* 'εáí' */
 .icon-horizontal39:before { content: '\e822'; }
 
-/* '' */
+/* 'εáó' */
 .icon-hearts64:before { content: '\e823'; }
 
-/* '' */
+/* 'εáú' */
 .icon-house20:before { content: '\e824'; }
 
-/* '' */
+/* 'εáñ' */
 .icon-juice7:before { content: '\e825'; }
 
-/* '' */
+/* 'εáÑ' */
 .icon-setup7:before { content: '\e826'; }
 
-/* '' */
+/* 'εáª' */
 .icon-setup8:before { content: '\e827'; }
 
-/* '' */
+/* 'εáº' */
 .icon-stick-man120:before { content: '\e828'; }
 
-/* '' */
+/* 'εá¿' */
 .icon-soup20:before { content: '\e829'; }
 
-/* '' */
+/* 'εá⌐' */
 .icon-summer50:before { content: '\e82a'; }
 
-/* '' */
+/* 'εá¬' */
 .icon-sun24:before { content: '\e82b'; }
 
-/* '' */
+/* 'εá½' */
 .icon-supermarket67:before { content: '\e82c'; }
 
-/* '' */
+/* 'εá¼' */
 .icon-noun_148595_cc:before { content: '\e82d'; }
 
-/* '' */
+/* 'εá¡' */
 .icon-sun:before { content: '\e82e'; }
 
-/* '' */
+/* 'εá«' */
 .icon-yandex:before { content: '\e82f'; }
 
-/* '' */
+/* 'εá»' */
 .icon-oil23:before { content: '\e830'; }
 
-/* '' */
+/* 'εá░' */
 .icon-mark1:before { content: '\e831'; }
 
-/* '' */
+/* 'εá▒' */
 .icon-left-arrow23:before { content: '\e832'; }
 
-/* '' */
+/* 'εá▓' */
 .icon-close47:before { content: '\e833'; }
 
-/* '' */
+/* 'εá│' */
 .icon-arrow158:before { content: '\e834'; }
 
-/* '' */
+/* 'εá┤' */
 @font-face { font-family: segoeuii; src: url("fonts/segoeuii.eot"); src: url("fonts/segoeuii.eot?#iefix") format("embedded-opentype"), url("fonts/segoeuii.woff2") format("woff2"), url("fonts/segoeuii.woff") format("woff"), url("fonts/segoeuii.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: segoeuil; src: url("fonts/segoeuil.eot"); src: url("fonts/segoeuil.eot?#iefix") format("embedded-opentype"), url("fonts/segoeuil.woff2") format("woff2"), url("fonts/segoeuil.woff") format("woff"), url("fonts/segoeuil.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: PTRouble-sans; src: url("fonts/PTRouble-sans.eot"); src: url("fonts/PTRouble-sans.eot?#iefix") format("embedded-opentype"), url("fonts/PTRouble-sans.woff2") format("woff2"), url("fonts/PTRouble-sans.woff") format("woff"), url("fonts/PTRouble-sans.ttf") format("truetype"); font-weight: normal; font-style: normal; }
@@ -1922,6 +1924,70 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .footer .form-action + .link-small { margin-top: 10px; display: inline-block; }
 .footer .soc { margin: 30px 0 25px; }
 .footer__meta a, .footer__nav a, .footer .visit-card a { color: #fff; }
+
+.row_ib { font-size: 0; }
+.row_ib > div { display: inline-block; vertical-align: top; font-size: 15px; float: none; }
+
+.pagination > li { display: inline-block; vertical-align: middle; }
+.pagination > li > a, .pagination > li > span { border: 0; line-height: 1; padding-left: 10px; padding-right: 10px; }
+.pagination > li.active > span { background: transparent; border: 0; font-weight: 700; }
+.pagination > li.active > span:hover, .pagination > li.active > span:focus, .pagination > li.active > span:active { background: transparent; }
+.pagination > li:first-child, .pagination > li:last-child { font-size: 24px; line-height: 1; position: relative; top: -1px; }
+
+.breadcrumb { font-size: 13px; background: transparent; padding-left: 0; }
+.breadcrumb > li + li:before { content: ">"; color: inherit; }
+.breadcrumb > .active { color: #333; }
+
+.img-nav { margin-top: 15px; margin-bottom: 35px; }
+.img-nav__link { display: block; margin: 0 auto; color: #c2c2c2; text-align: center; -webkit-transition: color 250ms; transition: color 250ms; }
+.img-nav__link.is-active { color: #a7c66d; }
+.img-nav__link.is-active .img-nav__text { color: #799a2a; font-weight: 700; }
+.img-nav__link:hover { text-decoration: none; }
+.img-nav__main > i { font-size: 48px; }
+
+.blog { margin-bottom: -20px; }
+
+.blog-item { margin-bottom: 20px; }
+.blog-item__img { margin-bottom: 20px; font-size: 0; display: block; }
+.blog-item__img img { max-width: 100%; }
+.blog-item__text > a { color: #353130; -webkit-transition: color 250ms; transition: color 250ms; }
+.blog-item__text > a:hover { text-decoration: none; color: #799a2a; }
+.blog-item__text > a h3 { font-weight: 700; }
+
+.img-wrap > i { display: inline-block; }
+
+.recipes-item { display: block; margin-bottom: 25px; }
+.recipes-item__img { margin-bottom: 20px; font-size: 0; }
+.recipes-item__img img { max-width: 100%; }
+.recipes-item > h3 { font-size: 20px; color: #353130; -webkit-transition: color 250ms; transition: color 250ms; }
+.recipes-item:hover { text-decoration: none; }
+.recipes-item:hover > h3 { color: #799a2a; }
+
+.table-wrap { overflow: auto; }
+
+.article ol { list-style-type: decimal; margin-left: 20px; }
+.article ul { list-style-type: disc; margin-left: 20px; }
+.article img { max-width: 100%; height: auto; margin: 60px 0 35px; }
+.article table { width: 60%; margin: 30px 0; min-width: 500px; }
+.article table thead tr { background: #a7c66d; height: 38px; }
+.article table thead th { font-weight: 300; color: #fff; }
+.article table th, .article table td { vertical-align: middle; text-align: center; }
+.article table th:first-child, .article table td:first-child { padding-left: 15px; text-align: left; }
+.article table tbody tr { height: 40px; border-bottom: 1px dashed #ddd; }
+.article table tbody tr:last-child { border-bottom: 1px solid #a7c66d; }
+
+.sidebar h2 { margin-bottom: 30px; }
+.sidebar h2:first-child { margin-top: 0; }
+
+.gift-box__header { margin-bottom: 20px; }
+.gift-box__img { margin-bottom: 20px; font-size: 0; position: relative; }
+.gift-box__img.is-border { display: inline-block; overflow: hidden; position: relative; z-index: 2; }
+.gift-box__img.is-border .gift-box__imgmain { position: absolute; top: 0; left: 0; z-index: -1; }
+.gift-box__img.is-border .gift-box__imgmain img { max-width: none; }
+.gift-box__img img { max-width: 100%; }
+
+.gift-promo h3:first-child { margin-top: 0; }
+.gift-promo__tel { color: #000; font-size: 30px; }
 @media print{
  *, *:before, *:after{ background: transparent !important; color: #000 !important; -webkit-box-shadow: none !important; box-shadow: none !important; text-shadow: none !important; }
  a, a:visited{ text-decoration: underline; }

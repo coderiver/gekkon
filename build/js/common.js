@@ -40,8 +40,14 @@ $(document).ready(function() {
 	}
 	number();
 
+	// masonry
+	$('.js-masonry').masonry({
+		 itemSelector: '.js-masonry > div'
+	})
+
 	$('.js-tabs a').on("click", function(event) {
 		event.preventDefault();
 		$(this).tab('show');
 	});
+
 });

@@ -1,0 +1,171 @@
+// 01-06-blog
+.row
+	&_ib
+		font-size: 0
+		& > div
+			display: inline-block
+			vertical-align: top
+			font-size: 15px 
+			float: none
+.pagination
+	& > li
+		display: inline-block
+		vertical-align: middle
+		& > a, & > span
+			border: 0
+			line-height: 1 
+			padding-left: 10px 
+			padding-right: 10px 
+		&.active > span
+			background: transparent
+			border: 0
+			+bold
+			&:hover, &:focus, &:active
+				background: transparent 
+		&:first-child,
+		&:last-child,
+			font-size: 24px 
+			line-height: 1
+			position: relative
+			top: -1px 
+.breadcrumb
+	font-size: 13px 
+	background: transparent
+	padding-left: 0 
+	& > li+ li:before
+		content: '>'
+		color: inherit
+	& > .active
+		color: #333
+		
+.img-nav
+	margin-top: 15px 
+	margin-bottom: 35px 
+	&__link
+		display: block
+		margin: 0 auto
+		color: #c2c2c2
+		text-align: center
+		transition: color 250ms
+		&.is-active
+			color: $primary
+			.img-nav__text
+				color: $btn
+				+bold
+		&:hover
+			text-decoration: none
+	&__main
+		& > i
+			font-size: 48px 
+.blog
+	margin-bottom: -20px 			
+.blog-item
+	margin-bottom: 20px 
+	&__img
+		margin-bottom: 20px
+		font-size: 0
+		display: block
+		img
+			max-width: 100%
+	&__text
+		& > a
+			color: #353130
+			transition: color 250ms
+			&:hover
+				text-decoration: none
+				color: $btn
+			h3
+				+bold
+.img-wrap
+	& > i
+		display: inline-block
+.recipes-item
+	display: block
+	margin-bottom: 25px
+	&__img
+		margin-bottom: 20px 
+		font-size: 0
+		img
+			max-width: 100%
+	& > h3
+		font-size: 20px
+		color: #353130
+		transition: color 250ms
+	&:hover
+		text-decoration: none
+		& > h3
+			color: $btn
+.table-wrap
+	overflow: auto		
+.article
+	ol
+		list-style-type: decimal
+		margin-left: 20px 
+	ul
+		list-style-type: disc
+		margin-left: 20px
+	img
+		max-width: 100%
+		height: auto
+		margin: 60px 0 35px
+	table
+		width: 60% 
+		margin: 30px 0 
+		min-width: 500px 
+		thead
+			tr
+				background: $primary
+				height: 38px 
+			th
+				+light
+				color: #fff
+		th,td
+			vertical-align: middle
+			text-align: center
+			&:first-child
+				padding-left: 15px
+				text-align: left
+				
+		tbody
+			tr
+				height: 40px
+				border-bottom: 1px dashed #ddd 
+				&:last-child
+					border-bottom: 1px solid $primary
+
+.sidebar
+	h2
+		margin-bottom: 30px 
+		&:first-child
+			margin-top: 0
+
+.gift-box
+	&__header
+		margin-bottom: 20px 
+	&__img
+		margin-bottom: 20px 
+		font-size: 0
+		position: relative
+		&.is-border
+			display: inline-block
+			overflow: hidden
+			position: relative
+			z-index: 2
+			.gift-box__imgmain
+				position: absolute
+				top: 0
+				left: 0 
+				z-index: -1
+				img
+					max-width: none 
+		img
+			max-width: 100%
+
+.gift-promo
+	h3
+		&:first-child
+			margin-top: 0
+	&__tel
+		color: #000
+		font-size: 30px 
+		 

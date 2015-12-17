@@ -1,0 +1,889 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="theme-color" content="#fff"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700&subset=latin,cyrillic-ext" rel="stylesheet"/>
+	<link rel="stylesheet" media="all" href="img/css/bootstrap.min.css"/>
+	<link rel="stylesheet" media="all" href="img/css/bootstrap-theme.min.css"/>
+	<link rel="stylesheet" media="all" href="css/style.css"/>
+	<title>Blog Article</title>
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	<header class="header">	
+		<div class="header__nav">
+			<div class="inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-2">
+							Ваш город: <button class="btn-dots" data-toggle="modal" data-target="#modal-city" type="button">Москва</button>
+						</div>
+						<div class="col-lg-4">
+							<nav class="nav">
+								<a href="#">Доставка</a>      
+								<a href="#">Оплата</a>        
+								<a href="#">О компании</a>        
+								<a href="#">Блог</a>
+								<a href="#">Подарки</a>
+							</nav>
+						</div>
+						<div class="col-lg-2">
+							<div class="form-action">
+								<form action="#">
+									<div class="form-action__table">
+										<div class="form-action__cell">
+											<input class="form-action__input" type="text" placeholder="Поиск...">
+										</div>
+										<div class="form-action__cell">
+											<button class="form-action__btn" type="submit">Найти</button>
+										</div>
+									</div>
+									
+									
+								</form>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="login-box">
+								<button class="btn-dots" data-toggle="modal" data-target="#modal-enter"  type="button">Вход</button> / 
+								<button class="btn-dots" data-toggle="modal" data-target="#modal-reg"  type="button">Регистрация</button> 
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<div class="tel">
+								<span>8 800 555 65 56</span>
+								<button class="btn-dots" data-toggle="modal" data-target="#modal-call"  type="button">Перезвоните мне</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__main">
+			<div class="inner">
+				<div class="container">
+					<div class="header__menu">
+						<div class="row">
+							<div class="col-lg-2">
+								<a href="#" class="logo">
+									<img src="img/logo.png" height="78" alt="Gekkon">
+									<strong>Натуральные <span>продукты и экотовары</span></strong>
+								</a>
+							</div>
+							<div class="col-lg-8">
+								<div class="menu">
+									<div class="row">
+										<div class="col-lg-3">
+											<div class="menu__item">
+												<a class="menu__link" href="#">
+													<div class="menu__img">
+														<span class="icon-pear"></span>
+													</div>
+													<strong class="menu__title">Продукты питания</strong>
+													<span class="menu__info">со всего мира</span>
+												</a>
+												<div class="menu__drop">
+													<div class="row">
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Хлеб и выпечка</a>
+															<ul class="menu__list">
+																<li><a href="#">Сладкая выпечка</a></li>
+																<li><a href="#">Пирожки, Булочки</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Кондитерские изделия</a>
+															<ul class="menu__list">
+																<li><a href="#">Шоколад</a></li>
+																<li><a href="#">Торт</a></li>
+																<li class="menu__more"><a href="#">Все товары ></a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Фрукты и овощи</a>
+															<ul class="menu__list">
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Напитки</a>
+															<ul class="menu__list">
+																<li><a href="#">Сок</a></li>
+																<li><a href="#">Вода</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Птица</a>
+															<ul class="menu__list">
+																<li><a href="#">Утка</a></li>
+																<li><a href="#">Ещё категория</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Кофе</a>
+															<ul class="menu__list">
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Чай</a>
+															<ul class="menu__list">
+																<li><a href="#">Черный</a></li>
+																<li><a href="#">Зеленый</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Алкоголь</a>
+															<ul class="menu__list">
+																<li><a href="#">Вино</a></li>
+																<li><a href="#">Пиво</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Мясные деликатесы</a>
+															<ul class="menu__list">
+																<li><a href="#">Хамон</a></li>
+																<li><a href="#">Ещё категория</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Птица</a>
+															<ul class="menu__list">
+																<li><a href="#">Утка</a></li>
+																<li><a href="#">Ещё категория</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-4">
+															<div class="row">
+																<div class="col-lg-12">
+																	<div class="promo">
+																		<div class="promo__img">
+																			<a href="#"><img src="img/1.png" alt="img"></a>
+																		</div>
+																		<div class="promo__main">
+																			<div class="promo__title">
+																				<strong><a href="#">Недели <span>Испании</span></a></strong>
+																				<a href="#">Все акции</a>
+																			</div>
+																			<div class="promo__text">Скидки до <span>70%</span> на товары  и продукты из Испании</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="promo__img">
+																			<a href="#"><img src="img/2.png" alt="img"></a>
+																		</div>
+																		<div class="promo__main">
+																			<a href="#">Подарочные наборы</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="promo__img">
+																			<a href="#"><img src="img/3.png" alt="img"></a>
+																		</div>
+																		<div class="promo__main">
+																			<a href="#">Рецепты</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="menu__item">
+												<a class="menu__link" href="#">
+													<div class="menu__img">
+														<span class="icon-sun"></span>
+													</div>
+													<strong class="menu__title">Продукты питания</strong>
+													<span class="menu__info">со всего мира</span>
+												</a>
+												<div class="menu__drop">
+													<div class="row">
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Хлеб и выпечка</a>
+															<ul class="menu__list">
+																<li><a href="#">Сладкая выпечка</a></li>
+																<li><a href="#">Пирожки, Булочки</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Кондитерские изделия</a>
+															<ul class="menu__list">
+																<li><a href="#">Шоколад</a></li>
+																<li><a href="#">Торт</a></li>
+																<li class="menu__more"><a href="#">Все товары ></a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Фрукты и овощи</a>
+															<ul class="menu__list">
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Напитки</a>
+															<ul class="menu__list">
+																<li><a href="#">Сок</a></li>
+																<li><a href="#">Вода</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Птица</a>
+															<ul class="menu__list">
+																<li><a href="#">Утка</a></li>
+																<li><a href="#">Ещё категория</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Кофе</a>
+															<ul class="menu__list">
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Чай</a>
+															<ul class="menu__list">
+																<li><a href="#">Черный</a></li>
+																<li><a href="#">Зеленый</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Алкоголь</a>
+															<ul class="menu__list">
+																<li><a href="#">Вино</a></li>
+																<li><a href="#">Пиво</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Мясные деликатесы</a>
+															<ul class="menu__list">
+																<li><a href="#">Хамон</a></li>
+																<li><a href="#">Ещё категория</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Птица</a>
+															<ul class="menu__list">
+																<li><a href="#">Утка</a></li>
+																<li><a href="#">Ещё категория</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-4">
+															<div class="row">
+																<div class="col-lg-12">
+																	<div class="promo">
+																		<div class="promo__img">
+																			<a href="#"><img src="img/1.png" alt="img"></a>
+																		</div>
+																		<div class="promo__main">
+																			<div class="promo__title">
+																				<strong><a href="#">Недели <span>Испании</span></a></strong>
+																				<a href="#">Все акции</a>
+																			</div>
+																			<div class="promo__text">Скидки до <span>70%</span> на товары  и продукты из Испании</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="promo__img">
+																			<a href="#"><img src="img/2.png" alt="img"></a>
+																		</div>
+																		<div class="promo__main">
+																			<a href="#">Подарочные наборы</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="promo__img">
+																			<a href="#"><img src="img/3.png" alt="img"></a>
+																		</div>
+																		<div class="promo__main">
+																			<a href="#">Рецепты</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="menu__item">
+												<a class="menu__link" href="#">
+													<div class="menu__img">
+														<span class="icon-creams4"></span>
+													</div>
+													<strong class="menu__title">Продукты питания</strong>
+													<span class="menu__info">со всего мира</span>
+												</a>
+												<div class="menu__drop">
+													<div class="row">
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Хлеб и выпечка</a>
+															<ul class="menu__list">
+																<li><a href="#">Сладкая выпечка</a></li>
+																<li><a href="#">Пирожки, Булочки</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Кондитерские изделия</a>
+															<ul class="menu__list">
+																<li><a href="#">Шоколад</a></li>
+																<li><a href="#">Торт</a></li>
+																<li class="menu__more"><a href="#">Все товары ></a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Фрукты и овощи</a>
+															<ul class="menu__list">
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Напитки</a>
+															<ul class="menu__list">
+																<li><a href="#">Сок</a></li>
+																<li><a href="#">Вода</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Птица</a>
+															<ul class="menu__list">
+																<li><a href="#">Утка</a></li>
+																<li><a href="#">Ещё категория</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Кофе</a>
+															<ul class="menu__list">
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Чай</a>
+															<ul class="menu__list">
+																<li><a href="#">Черный</a></li>
+																<li><a href="#">Зеленый</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Алкоголь</a>
+															<ul class="menu__list">
+																<li><a href="#">Вино</a></li>
+																<li><a href="#">Пиво</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Мясные деликатесы</a>
+															<ul class="menu__list">
+																<li><a href="#">Хамон</a></li>
+																<li><a href="#">Ещё категория</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Птица</a>
+															<ul class="menu__list">
+																<li><a href="#">Утка</a></li>
+																<li><a href="#">Ещё категория</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-4">
+															<div class="row">
+																<div class="col-lg-12">
+																	<div class="promo">
+																		<div class="promo__img">
+																			<a href="#"><img src="img/1.png" alt="img"></a>
+																		</div>
+																		<div class="promo__main">
+																			<div class="promo__title">
+																				<strong><a href="#">Недели <span>Испании</span></a></strong>
+																				<a href="#">Все акции</a>
+																			</div>
+																			<div class="promo__text">Скидки до <span>70%</span> на товары  и продукты из Испании</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="promo__img">
+																			<a href="#"><img src="img/2.png" alt="img"></a>
+																		</div>
+																		<div class="promo__main">
+																			<a href="#">Подарочные наборы</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="promo__img">
+																			<a href="#"><img src="img/3.png" alt="img"></a>
+																		</div>
+																		<div class="promo__main">
+																			<a href="#">Рецепты</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="menu__item">
+												<a class="menu__link" href="#">
+													<div class="menu__img">
+														<span class="icon-dog75"></span>
+													</div>
+													<strong class="menu__title">Продукты питания</strong>
+													<span class="menu__info">со всего мира</span>
+												</a>
+												<div class="menu__drop">
+													<div class="row">
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Хлеб и выпечка</a>
+															<ul class="menu__list">
+																<li><a href="#">Сладкая выпечка</a></li>
+																<li><a href="#">Пирожки, Булочки</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Кондитерские изделия</a>
+															<ul class="menu__list">
+																<li><a href="#">Шоколад</a></li>
+																<li><a href="#">Торт</a></li>
+																<li class="menu__more"><a href="#">Все товары ></a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Фрукты и овощи</a>
+															<ul class="menu__list">
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Напитки</a>
+															<ul class="menu__list">
+																<li><a href="#">Сок</a></li>
+																<li><a href="#">Вода</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Птица</a>
+															<ul class="menu__list">
+																<li><a href="#">Утка</a></li>
+																<li><a href="#">Ещё категория</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Кофе</a>
+															<ul class="menu__list">
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Чай</a>
+															<ul class="menu__list">
+																<li><a href="#">Черный</a></li>
+																<li><a href="#">Зеленый</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Алкоголь</a>
+															<ul class="menu__list">
+																<li><a href="#">Вино</a></li>
+																<li><a href="#">Пиво</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-2">
+															<a class="menu__list-title" href="#">Мясные деликатесы</a>
+															<ul class="menu__list">
+																<li><a href="#">Хамон</a></li>
+																<li><a href="#">Ещё категория</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+															<a class="menu__list-title" href="#">Птица</a>
+															<ul class="menu__list">
+																<li><a href="#">Утка</a></li>
+																<li><a href="#">Ещё категория</a></li>
+																<li class="menu__more"><a href="#">Все товары &gt;</a></li>
+															</ul>
+														</div>
+														<div class="col-lg-4">
+															<div class="row">
+																<div class="col-lg-12">
+																	<div class="promo">
+																		<div class="promo__img">
+																			<a href="#"><img src="img/1.png" alt="img"></a>
+																		</div>
+																		<div class="promo__main">
+																			<div class="promo__title">
+																				<strong><a href="#">Недели <span>Испании</span></a></strong>
+																				<a href="#">Все акции</a>
+																			</div>
+																			<div class="promo__text">Скидки до <span>70%</span> на товары  и продукты из Испании</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="promo__img">
+																			<a href="#"><img src="img/2.png" alt="img"></a>
+																		</div>
+																		<div class="promo__main">
+																			<a href="#">Подарочные наборы</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-lg-6">
+																	<div class="promo">
+																		<div class="promo__img">
+																			<a href="#"><img src="img/3.png" alt="img"></a>
+																		</div>
+																		<div class="promo__main">
+																			<a href="#">Рецепты</a>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="col-lg-2">
+								<div class="cart">
+									<span class="i-icon-cart"></span>
+									<span>В корзине</span>
+									<div class="cart__info">
+										<a href="#">3 товара</a> на 12 980 <span class="rub">у</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="inner inner_main">
+		<div class="container">
+			<ol class="breadcrumb">
+			  <li><a href="#">Главная</a></li>
+			  <li><a href="#">Блог</a></li>
+			  <li class="active">В погоне за страусом</li>
+			</ol>
+			<h1>В погоне за страусом</h1>
+			<div class="row">
+				<div class="col-md-9">
+					<!-- BEGIN article  -->
+					 <div class="article">
+						<p>Страусиное мясо наконец-то завоевало внимание широкой публики. Современное общество заботиться о своем здоровье, ведь фактически — это здоровый выбор.</p>
+						<h3><strong>Знаете ли Вы?</strong></h3>
+						<p>Особенностью мяса страуса является его низкая калорийность, относительно небольшое содержание холестерина, а также большой набор жирных кислот. Готовить страуса одно удовольствие в ритме современного мегаполиса — из-за низкого содержания жира.</p>
+						<h3><strong>7 причин выбрать страусиное мясо:</strong></h3>
+						<ol>
+							<li>Низкое содержание жира – 1,4 гр на 100 г.</li>
+							<li>Богато белком – 22 гр на 100 г.</li>
+							<li>Низкое содержание холестерина – 60 мг на 100 г.</li>
+							<li>Низкое содержание коллагена – самое усваемое красное мясо.</li>
+							<li>Хороший источник биологически доступного железа – 3,2 мг на 100 г.</li>
+							<li>Является постным – 377 кДж на 100 г.</li>
+							<li>Без гормонов и стимуляторов роста.</li>
+						</ol>
+						<h3><strong>Пищевая ценность мяса</strong></h3>
+						<p>(Из расчета 85 г на порцию).</p>
+						<div class="table-wrap">
+							<table>
+								<thead>
+									<tr>
+										<th>Мясо</th>
+										<th>Калории</th>
+										<th>Белок</th>
+										<th>Жир</th>
+										<th>Холестерин</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><strong>Газель</strong></td>
+										<td>130</td>
+										<td>22</td>
+										<td>3</td>
+										<td>62</td>
+									</tr>
+										<td><strong>Страус</strong></td>
+										<td>100</td>
+										<td>22</td>
+										<td>5</td>
+										<td>32</td>
+									</tr>
+										<td><strong>Говядина</strong></td>
+										<td>240</td>
+										<td>62</td>
+										<td>3</td>
+										<td>22</td>
+									</tr>
+										<td><strong>Ягненок</strong></td>
+										<td>22</td>
+										<td>130</td>
+										<td>3</td>
+										<td>62</td>
+									</tr>
+										<td><strong>Свинина</strong></td>
+										<td>140</td>
+										<td>12</td>
+										<td>5</td>
+										<td>61</td>
+									</tr>
+										<td><strong>Ципленок</strong></td>
+										<td>130</td>
+										<td>22</td>
+										<td>3</td>
+										<td>55</td>
+									</tr>
+										<td><strong>Индейка</strong></td>
+										<td>120</td>
+										<td>20</td>
+										<td>7</td>
+										<td>32</td>
+									</tr>
+								</tbody>	
+							</table>
+						</div>
+						<h4><strong>Родина</strong></h4>
+						<p>ЮАР. Родина страуса — Южная Африка и его истинный дом находится в регионе Klein Karoo. Южная Африка является лидером в страусовой промышленности и имеет 70% долю мирового рынка. Klein Karoo International Ltd успешно продает страусиное мясо вот уже 130 лет и их мясо считается самым лучшим.</p>
+						<h4><strong>Ассортимент</strong></h4>
+						<p>Для разнообразия ассортимента блюд кафе и ресторанов компания «Аллигатор» предлагает целую линейку продукции из страусиного мяса - бескостные «Премиальное филе», «Стейк малый» и «Стейк большой», «Филе малое», гуляш, строганов и тримминг из мяса страуса. Появление блюд из мяса страуса в меню несомненно повысит интерес клиентов к вашему заведению.</p>
+						<h4><strong>Способ приготовления</strong></h4>
+						<p>Интересно, что страусиное мясо берется в основном из бедра этой птицы и почти 2/3 — это сырье высшего качества, предназначенное для бифштексов, стейков и гуляша.</p>
+						<ul>
+							<li>Мясо готовится путем быстрого «запечатывания» с обеих сторон на горячей  сковороде, и потом доготовка в течение 2-3
+								<div>минут для нужной степени прожарки  rare или medium rare. Самое главное не передержать, а то сухое будет.</div></li>
+						 	<li>Очень хорошо впитывает специи и прекрасно для разных блюд мексиканской, китайской и итальянской кухни.</li>
+						 	<li>Принцип приготовления страуса — кратчайшее время при самой высокой  температуре.</li>
+						</ul> 
+						<img src="img/blog_big.jpg" alt="img">
+						<h4><strong>Здоровый и полезный страус</strong></h4>
+						<p>Страусиное мясо – лучший выбор для современного потребителя. Особенность и многосторонность данного мяса позволяет поварам разнообразить свою еду и предложить своим клиентам лучший выбор. От питательных ланчей до изысканного ужина. В страусином мясе есть содержание железа, что делает его идеальным источником белка для людей, страдающих анемией.  Если вы ведете здоровый образ жизни, тем самым думая о своем здоровье – оно для Вас.</p>
+						<h4><strong>Где приобрести</strong></h4>
+						<p>Сегодня Вы можете приобрести страусиное мясо  у нас в магазине «Геккон-Маркет»</p>
+					 </div>
+					<!-- END article -->
+				</div>
+				<div class="col-md-3">
+					<div class="sidebar">
+						<h2>Купить</h2>
+						<div class="item">
+							<a class="item__img" href="#">
+								<img src="img/item1.png" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="#" class="item__link"><img src="img/flag-spain.png" alt="spain"> Блокнот с джутовой обложкой Lejoys</a>
+								</div>
+								<div class="item__action">
+									<div class="price">320 в</div>
+									<div class="number js-number" data-max-number="9">
+										<button class="number__minus js-minus-number" type="button">-</button>
+										<input type="text" class="number__input" value="3">
+										<button class="number__plus js-plus-number" type="button">+</button>
+									</div>
+								</div>
+								<button class="btn btn-default" type="button">В корзину</button>
+							</div>
+						</div>
+						<div class="item">
+							<a class="item__img" href="#">
+								<img src="img/item1.png" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="#" class="item__link"><img src="img/flag-spain.png" alt="spain"> Блокнот с джутовой обложкой Lejoys</a>
+								</div>
+								<div class="item__action">
+									<div class="price">320 в</div>
+									<div class="number js-number" data-max-number="9">
+										<button class="number__minus js-minus-number" type="button">-</button>
+										<input type="text" class="number__input" value="3">
+										<button class="number__plus js-plus-number" type="button">+</button>
+									</div>
+								</div>
+								<button class="btn btn-default" type="button">В корзину</button>
+							</div>
+						</div>
+						<div class="item">
+							<a class="item__img" href="#">
+								<img src="img/item1.png" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="#" class="item__link"><img src="img/flag-spain.png" alt="spain"> Блокнот с джутовой обложкой Lejoys</a>
+								</div>
+								<div class="item__action">
+									<div class="price">320 в</div>
+									<div class="number js-number" data-max-number="9">
+										<button class="number__minus js-minus-number" type="button">-</button>
+										<input type="text" class="number__input" value="3">
+										<button class="number__plus js-plus-number" type="button">+</button>
+									</div>
+								</div>
+								<button class="btn btn-default" type="button">В корзину</button>
+							</div>
+						</div>
+						<div class="item">
+							<a class="item__img" href="#">
+								<img src="img/item1.png" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="#" class="item__link"><img src="img/flag-spain.png" alt="spain"> Блокнот с джутовой обложкой Lejoys</a>
+								</div>
+								<div class="item__action">
+									<div class="price">320 в</div>
+									<div class="number js-number" data-max-number="9">
+										<button class="number__minus js-minus-number" type="button">-</button>
+										<input type="text" class="number__input" value="3">
+										<button class="number__plus js-plus-number" type="button">+</button>
+									</div>
+								</div>
+								<button class="btn btn-default" type="button">В корзину</button>
+							</div>
+						</div>
+						<div class="item">
+							<a class="item__img" href="#">
+								<img src="img/item1.png" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="#" class="item__link"><img src="img/flag-spain.png" alt="spain"> Блокнот с джутовой обложкой Lejoys</a>
+								</div>
+								<div class="item__action">
+									<div class="price">320 в</div>
+									<div class="number js-number" data-max-number="9">
+										<button class="number__minus js-minus-number" type="button">-</button>
+										<input type="text" class="number__input" value="3">
+										<button class="number__plus js-plus-number" type="button">+</button>
+									</div>
+								</div>
+								<button class="btn btn-default" type="button">В корзину</button>
+							</div>
+						</div>
+						<h2>Приготовить</h2>
+						<a href="#" class="recipes-item">
+							<div class="recipes-item__img">
+								<img src="img/recip3.jpg" alt="">
+							</div>
+							<h3>Шпинат с кедровыми <div>орешками и изюмом</div></h3>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="form-action">
+						<form action="#">
+							<label for="subscribe-email">
+								Подписаться на новости и акции:
+							</label>
+							<div class="form-action__table">
+								<div class="form-action__cell">
+									<input class="form-action__input" type="email" placeholder="Ваш email" id="subscribe-email">
+								</div>
+								<div class="form-action__cell">
+									<button class="form-action__btn" type="submit">Подписаться</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="soc">
+						<a class="i-icon-fb" href="#"></a>
+						<a class="i-icon-tw" href="#"></a>
+						<a class="i-icon-in" href="#"></a>
+						<a class="i-icon-vk" href="#"></a>
+						<a class="i-icon-yt" href="#"></a>
+					</div>
+					<div class="footer__meta">
+						<p>© 2015 Gekkon. Натуальные продукты и экотовары</p>
+						<p>Создание сайта — <a href="#">Individ</a></p>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="title title_h3">Каталог товаров</div>
+					<ul class="footer__nav">
+						<li><a href="#">Продукты со всего мира</a></li>
+						<li><a href="#">Фермерская продукция из России</a></li>
+						<li><a href="#">Товары для дома</a></li>
+						<li><a href="#">Товары для животных</a></li>
+					</ul>
+					<div class="payments">
+						Принимаем  к оплате:
+						<div class="payments__list">
+							<img src="img/visa-logo.png" height="27" alt="visa">
+							<img src="img/mc-logo.png" height="27" alt="mastercard">
+							<img src="img/wm-logo.png" height="27" alt="webmoney">
+							<img src="img/sberbank-logo.png" height="27" alt="сбербанк">
+						</div>
+					</div>
+					<button class="btn-dots" data-toggle="modal" data-target="#modal-city" type="button">Доставляем по всей России</button>
+				</div>
+				<div class="col-lg-3">
+					<div class="title title_h3">Покупателям</div>
+					<ul class="footer__nav">
+						<li><a href="#">Оплата</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Система скидок</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Блог</a></li>
+						<li><a href="#">Подарочная упаковка</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3">
+					<div class="tel">
+						<span>8 800 555 65 56</span>
+						<button class="btn-dots" data-toggle="modal" data-target="#modal-call"  type="button">Перезвоните мне</button>
+					</div>
+					<ul class="visit-card">
+						<li><a href="#">info@gekkonmarket.ru</a></li>
+						<li>
+							<strong>Юридический адрес:</strong>
+							<div class="visit-card__city">127273, Москва,</div>
+							<div class="visit-card__street">ул. Отрадная, д. 2Б стр. 6</div>
+							
+						</li>
+					</ul>
+					<div class="form-action">
+						<form action="#">
+							<div class="form-action__table">
+								<div class="form-action__cell">
+									<input class="form-action__input" type="text" placeholder="Поиск...">
+								</div>
+								<div class="form-action__cell">
+									<button class="form-action__btn" type="submit">Найти</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<a href="#" class="link-small">Карта сайта</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/app.js"></script>
+</div>
+<!-- END out-->
+</body>
+</html>
