@@ -1806,6 +1806,8 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .title_h3 { font-size: 20px; }
 .title a { font-size: 15px; display: inline-block; margin-left: 5px; }
 
+.h1_mb { margin-bottom: 20px; }
+
 .number { position: relative; display: inline-block; height: 25px; white-space: nowrap; border: 1px solid #ddd; }
 .number__input { display: inline-block; vertical-align: top; height: 23px; width: 30px; text-align: center; font-size: 15px; font-weight: 400; font-family: "Roboto", Arial, sans-serif; }
 .number__plus, .number__minus { vertical-align: top; width: 23px; height: 23px; color: #353130; background: #f3f2f2; }
@@ -1923,6 +1925,11 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .item_marked { -webkit-box-shadow: 0 0 0 3px #ffde00; box-shadow: 0 0 0 3px #ffde00; }
 .item_marked:hover { -webkit-box-shadow: 0 0 0 3px #ffde00; box-shadow: 0 0 0 3px #ffde00; }
 
+.item_small .item__link { font-size: 15px; }
+.item_small .item__name { height: 70px; }
+.item_small .item__img { height: 130px; }
+.item_small .price { float: none; }
+
 .price { font-size: 25px; font-weight: 700; line-height: 1; }
 .price__old { display: inline-block; vertical-align: top; font-size: 15px; text-decoration: line-through; }
 .price__new { color: #7a0026; }
@@ -1942,6 +1949,12 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 
 .cols-counter { -webkit-column-count: 2; -moz-column-count: 2; column-count: 2; }
 .cols-counter .checkbox { padding-right: 5px; }
+
+.form-group label { font-size: 15px; font-weight: 300; }
+
+.form-control { font-size: 13px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; }
+
+select.form-control { margin-top: -2px; height: 24px; }
 
 .banner { margin-bottom: 55px; position: relative; padding: 25px; overflow: hidden; }
 .banner span { color: #7a0026; }
@@ -2118,6 +2131,18 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .list-nav span { color: #777; }
 .list-nav a { display: inline-block; padding: 2px 0; }
 .list-nav a:hover span { color: #799a2a; }
+
+.main { padding: 20px 0; }
+
+.sort { margin-bottom: 30px; }
+.sort__title { font-size: 20px; font-weight: 300; }
+.sort .form-group { padding-top: 7px; }
+.sort .view { padding-top: 7px; }
+
+.view { text-align: right; }
+.view span, .view a { display: inline-block; color: #353130; }
+.view span { margin-right: 10px; }
+.view a.is-active { color: #a7c66d; }
 @media print{
  *, *:before, *:after{ background: transparent !important; color: #000 !important; -webkit-box-shadow: none !important; box-shadow: none !important; text-shadow: none !important; }
  a, a:visited{ text-decoration: underline; }
