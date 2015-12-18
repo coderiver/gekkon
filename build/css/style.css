@@ -2143,6 +2143,15 @@ select.form-control { margin-top: -2px; height: 24px; }
 .view span, .view a { display: inline-block; color: #353130; }
 .view span { margin-right: 10px; }
 .view a.is-active { color: #a7c66d; }
+
+.catalog { margin-bottom: 40px; font-size: 15px; }
+.catalog__img { margin-bottom: 10px; }
+.catalog__img img { display: block; width: 100%; height: auto; }
+.catalog__title { margin-bottom: 20px; font-weight: 700; font-size: 18px; }
+.catalog__title span { color: #777; font-weight: 300; font-size: 15px; }
+.catalog__list { font-weight: 300; }
+.catalog__list li { margin-bottom: 4px; }
+.catalog__list a { display: inline-block; padding: 1px 0; }
 @media print{
  *, *:before, *:after{ background: transparent !important; color: #000 !important; -webkit-box-shadow: none !important; box-shadow: none !important; text-shadow: none !important; }
  a, a:visited{ text-decoration: underline; }
