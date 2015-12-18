@@ -160,7 +160,10 @@
 					max-width: none 
 		img
 			max-width: 100%
-
+.gift-promo-img
+	i
+		color: $primary
+		font-size: 120px 
 .gift-promo
 	h3
 		&:first-child
@@ -171,4 +174,25 @@
 		
 .testing
 	background: $primary 
-		 
+.testing-slide
+	&__text
+		text-align: center
+		color: #fff
+	&__box
+		background: url('../img/bd_test.png') top left no-repeat
+		background-size: contain 
+		padding: 40px 77px
+
+.test-form
+	&__field
+		cursor: pointer
+	&__input
+		float: left
+	&__text
+		overflow: hidden
+		+clr
+		img
+			float: left
+		span
+			overflow: hidden 
+
