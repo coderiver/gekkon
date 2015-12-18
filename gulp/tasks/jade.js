@@ -16,7 +16,7 @@
 //         .pipe(gulp.dest(config.dest.html));
 // });
 
-// //compile all jade files
+
 // gulp.task('jade-all', function() {
 //     return gulp.src([
 //         config.src.jade + '/*.jade', 

@@ -80,7 +80,7 @@
       text-align: left;
       padding-left: 10px;
     }
-    .icon {
+    .i-icon {
       font-family: "svgfont";
       display: inline-block;
       vertical-align: middle;
@@ -94,29 +94,32 @@
       -moz-osx-font-smoothing: grayscale;
     }
     
-    .icon-sepa:before {
+    .i-icon-sepa:before {
       content: "\EA01";
     }
-    .icon-skrill:before {
+    .i-icon-skrill:before {
       content: "\EA02";
     }
-    .icon-tw:before {
+    .i-icon-tw:before {
       content: "\EA03";
     }
-    .icon-yt:before {
+    .i-icon-yt:before {
       content: "\EA04";
     }
-    .icon-fb:before {
+    .i-icon-fb:before {
       content: "\EA05";
     }
-    .icon-in:before {
+    .i-icon-in:before {
       content: "\EA06";
     }
-    .icon-vk:before {
+    .i-icon-vk:before {
       content: "\EA07";
     }
-    .icon-cart:before {
+    .i-icon-cart:before {
       content: "\EA08";
+    }
+    .i-icon-check:before {
+      content: "\EA09";
     }
   </style>
 </head>
@@ -131,66 +134,74 @@
   <ul class="icons-list">
     
     <li class="icon-box">
-      <input class="icon-class-name autoselect" type="text" value=".icon-sepa" readonly>
+      <input class="icon-class-name autoselect" type="text" value=".i-icon-sepa" readonly>
       <input class="icon-unicode autoselect" type="text" value="\EA01" readonly>
       <div class="icon-container">
-        <i class="icon icon-sepa"></i>
+        <i class="i-icon i-icon-sepa"></i>
       </div>
     </li>
     
     <li class="icon-box">
-      <input class="icon-class-name autoselect" type="text" value=".icon-skrill" readonly>
+      <input class="icon-class-name autoselect" type="text" value=".i-icon-skrill" readonly>
       <input class="icon-unicode autoselect" type="text" value="\EA02" readonly>
       <div class="icon-container">
-        <i class="icon icon-skrill"></i>
+        <i class="i-icon i-icon-skrill"></i>
       </div>
     </li>
     
     <li class="icon-box">
-      <input class="icon-class-name autoselect" type="text" value=".icon-tw" readonly>
+      <input class="icon-class-name autoselect" type="text" value=".i-icon-tw" readonly>
       <input class="icon-unicode autoselect" type="text" value="\EA03" readonly>
       <div class="icon-container">
-        <i class="icon icon-tw"></i>
+        <i class="i-icon i-icon-tw"></i>
       </div>
     </li>
     
     <li class="icon-box">
-      <input class="icon-class-name autoselect" type="text" value=".icon-yt" readonly>
+      <input class="icon-class-name autoselect" type="text" value=".i-icon-yt" readonly>
       <input class="icon-unicode autoselect" type="text" value="\EA04" readonly>
       <div class="icon-container">
-        <i class="icon icon-yt"></i>
+        <i class="i-icon i-icon-yt"></i>
       </div>
     </li>
     
     <li class="icon-box">
-      <input class="icon-class-name autoselect" type="text" value=".icon-fb" readonly>
+      <input class="icon-class-name autoselect" type="text" value=".i-icon-fb" readonly>
       <input class="icon-unicode autoselect" type="text" value="\EA05" readonly>
       <div class="icon-container">
-        <i class="icon icon-fb"></i>
+        <i class="i-icon i-icon-fb"></i>
       </div>
     </li>
     
     <li class="icon-box">
-      <input class="icon-class-name autoselect" type="text" value=".icon-in" readonly>
+      <input class="icon-class-name autoselect" type="text" value=".i-icon-in" readonly>
       <input class="icon-unicode autoselect" type="text" value="\EA06" readonly>
       <div class="icon-container">
-        <i class="icon icon-in"></i>
+        <i class="i-icon i-icon-in"></i>
       </div>
     </li>
     
     <li class="icon-box">
-      <input class="icon-class-name autoselect" type="text" value=".icon-vk" readonly>
+      <input class="icon-class-name autoselect" type="text" value=".i-icon-vk" readonly>
       <input class="icon-unicode autoselect" type="text" value="\EA07" readonly>
       <div class="icon-container">
-        <i class="icon icon-vk"></i>
+        <i class="i-icon i-icon-vk"></i>
       </div>
     </li>
     
     <li class="icon-box">
-      <input class="icon-class-name autoselect" type="text" value=".icon-cart" readonly>
+      <input class="icon-class-name autoselect" type="text" value=".i-icon-cart" readonly>
       <input class="icon-unicode autoselect" type="text" value="\EA08" readonly>
       <div class="icon-container">
-        <i class="icon icon-cart"></i>
+        <i class="i-icon i-icon-cart"></i>
+      </div>
+    </li>
+    
+    <li class="icon-box">
+      <input class="icon-class-name autoselect" type="text" value=".i-icon-check" readonly>
+      <input class="icon-unicode autoselect" type="text" value="\EA09" readonly>
+      <div class="icon-container">
+        <i class="i-icon i-icon-check"></i>
       </div>
     </li>
     
@@ -201,7 +212,7 @@
     var changevalue = document.getElementById('change-value');
     var count = document.getElementById('count');
     var autoselect = document.getElementsByClassName('autoselect');
-    var icons = document.getElementsByClassName('icon');
+    var icons = document.getElementsByClassName('i-icon');
     Array.prototype.forEach.call(autoselect, function(el) {
       el.onclick = function() {
         this.focus();

@@ -13,6 +13,7 @@ $i-icon-fb: "\EA05"
 $i-icon-in: "\EA06"
 $i-icon-vk: "\EA07"
 $i-icon-cart: "\EA08"
+$i-icon-check: "\EA09"
 
 
 %i-icon
@@ -25,7 +26,7 @@ $i-icon-cart: "\EA08"
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
 
-[class^="i-icon-"], [class*=" i-icon-"]
+.i-icon, [class^="i-icon-"], [class*=" i-icon-"]
 	@extend %i-icon
 	display: inline-block
 
@@ -45,3 +46,5 @@ $i-icon-cart: "\EA08"
 	content: $i-icon-vk
 .i-icon-cart:before
 	content: $i-icon-cart
+.i-icon-check:before
+	content: $i-icon-check

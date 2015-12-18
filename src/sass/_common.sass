@@ -29,9 +29,9 @@
 +font(segoeuil, segoeuil)
 =segl
 	font-family: "segoeuil", Arial, sans-serif
-+font(PTRouble-sans, PTRouble-sans)
++font(PTRoubleSans, PTRoubleSans)
 =rub
-	font-family: "PTRouble-sans", Arial, sans-serif
+	font-family: "PTRoubleSans", Arial, sans-serif
 +font(pfdindisplaypro-light, pfdindisplaypro-light)
 =pfdl
 	font-family: "pfdindisplaypro-light", Arial, sans-serif
@@ -119,11 +119,12 @@ body
 		border-right: 1px solid #ddd 
 .btn-dots
 	display: inline-block
-	line-height: 1.1
+	line-height: 1.3
 	background: none 
 	border-bottom: 1px dotted
 	+roboto
 	+reg
+	color: $primary 
 	&:hover	
 		border-color: transparent
 		text-decoration: none
@@ -422,4 +423,46 @@ body
 	&_hot
 		background: $hot
 		color: #fff  
-		  
+
+.checkbox
+	position: relative
+	margin: 0 0 5px 
+	font-size: 13px
+	+light
+	color: $text 
+	+ .checkbox
+		margin: 0 0 5px 
+	input
+		position: absolute
+		opacity: 0
+		&:checked
+			+ span
+				&:after
+					display: block
+				&:before
+					border-color: $btn 
+	span
+		display: block
+		position: relative
+		+nosel
+		&:before
+			content: ""
+			position: absolute
+			left: -20px
+			top: 2px
+			border: 1px solid #000
+			width: 13px
+			height: 13px
+		&:after
+			content: $i-icon-check
+			position: absolute 
+			left: -18px
+			top: 5px
+			font-size: 7px
+			+i-icon
+			color: $btn 
+			display: none
+.cols-counter
+	column-count: 2
+	.checkbox
+		padding-right: 5px

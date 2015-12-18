@@ -4,7 +4,7 @@ module.exports = {
     jade    : 'src/jade',
     sass    : 'src/sass/',
     js      : 'src/js/',
-    img     : 'src/img/**/*.*',
+    img     : 'src/img/',
     helpers : 'gulp/helpers/'
   },
   dest:{
