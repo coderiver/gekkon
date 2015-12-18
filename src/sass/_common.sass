@@ -87,6 +87,8 @@ body
 		font-size: 15px
 		display: inline-block
 		margin-left: 5px
+.h1_mb
+	margin-bottom: 20px
 .number
 	position: relative
 	display: inline-block
@@ -398,6 +400,15 @@ body
 	box-shadow: 0 0 0 3px $marked
 	&:hover
 		box-shadow: 0 0 0 3px $marked
+.item_small
+	.item__link
+		font-size: 15px
+	.item__name
+		height: 70px
+	.item__img
+		height: 130px
+	.price
+		float: none
 .price
 	font-size: 25px
 	+bold
@@ -466,3 +477,15 @@ body
 	column-count: 2
 	.checkbox
 		padding-right: 5px
+.form-group
+	label
+		font-size: 15px
+		+light
+.form-control
+	font-size: 13px
+	+roboto
+	+light
+select
+	&.form-control
+		margin-top: -2px
+		height: 24px
