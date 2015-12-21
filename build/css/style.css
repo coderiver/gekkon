@@ -2165,6 +2165,9 @@ select.form-control { margin-top: -2px; height: 24px; }
 .sidebar__group .sidebar__group { margin: 20px 0; }
 .sidebar__group .note-text { margin: 20px 0; }
 .sidebar .cols-counter { margin-bottom: 20px; }
+.sidebar .sort-result { position: absolute; left: 0; top: 0; border: 2px solid; border-left: 0; padding: 0 10px; background: #fff; height: 32px; font-size: 15px; font-weight: 300; color: #799a2a; line-height: 28px; }
+.sidebar .sort-result:before { content: ""; position: absolute; left: -12px; top: -2px; width: 0px; height: 0px; border-style: solid; border-width: 16px 12px 16px 0; border-color: transparent #799a2a transparent transparent; }
+.sidebar .sort-result:after { content: ""; position: absolute; left: -10px; top: 0; width: 0px; height: 0px; border-style: solid; border-width: 14px 10px 14px 0; border-color: transparent #fff transparent transparent; }
 
 .title-cat { margin-bottom: 17px; font-size: 20px; font-weight: 700; }
 

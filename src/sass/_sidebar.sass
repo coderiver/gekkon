@@ -8,6 +8,31 @@
 			margin: 20px 0 
 	.cols-counter
 		margin-bottom: 20px
+	.sort-result
+		position: absolute
+		left: 0
+		top: 0
+		border: 2px solid
+		border-left: 0
+		padding: 0 10px 
+		background: #fff 
+		height: 32px
+		font-size: 15px
+		+light
+		color: $btn 
+		line-height: 28px
+		&:before
+			content: "" 
+			position: absolute
+			left: -12px
+			top: -2px
+			+arr(12,32,$btn,l)
+		&:after
+			content: "" 
+			position: absolute
+			left: -10px
+			top: 0
+			+arr(10,28,#fff,l)
 .title-cat
 	margin-bottom: 17px
 	font-size: 20px
