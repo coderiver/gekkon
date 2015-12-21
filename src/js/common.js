@@ -1,5 +1,6 @@
 "use strict";
 $(document).ready(function() {
+	"use strict";
 	function number() { 
 		var number = $(".js-number");
 		number.each(function(){
@@ -60,6 +61,40 @@ $(document).ready(function() {
 		pauseOnHover: true,
 		pauseOnDotsHover: true
 
-	})
+	});
+
+	$('.js-slider-for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.js-slider-nav'
+	});
+	$('.js-slider-nav').slick({
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		arrows: false,
+		asNavFor: '.js-slider-for',
+		dots: false,
+		focusOnSelect: true
+	});
+
+	$(".js-raty").raty({
+		score: function() {
+			return $(this).attr('data-score');
+		},
+		starType: "i",
+		hints: ['1', '2', '3', '4', '5']
+		
+	});
+	$('.js-raty-readonly').raty({
+		readOnly: true,
+		score: function() {
+		    return $(this).attr('data-score');
+		},
+		hints: ['1', '2', '3', '4', '5'],
+		starType: "i",
+	});
+			
 
 });

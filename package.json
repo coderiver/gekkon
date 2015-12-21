@@ -9,6 +9,8 @@
   },
   "devDependencies": {
     "autoprefixer": "~6.0.3",
+    "babel-plugin-transform-es2015-block-scoping": "^6.3.13",
+    "babel-plugin-transform-es2015-template-literals": "^6.3.13",
     "browser-sync": "~2.9.3",
     "css-mqpacker": "^4.0.0",
     "gulp": "~3.9.0",

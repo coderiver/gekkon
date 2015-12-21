@@ -1,0 +1,81 @@
+.carousel
+	.slick-slide
+		+vertical
+		img
+			display: inline-block
+			vertical-align: middle
+			max-height: 100%
+	&__main
+		height: 530px
+	&__nav
+		height: 86px
+		.slick-slide
+			padding: 5px 
+			height: 86px
+			cursor: pointer
+		.slick-current
+			&:after
+				content: ""
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 50%
+				margin-left: -43px
+				width: 86px 
+				border: 3px solid $btn
+.product-info
+	color: $text
+	font-size: 15px
+	+light
+	.row
+		margin-bottom: 20px
+		p
+			margin: 15px 0 
+.country
+	img
+		vertical-align: bottom
+	a
+		margin-left: 10px
+.raty
+	font-size: 15px
+	&__icons
+		white-space: nowrap
+		display: inline-block
+		font-size: 20px
+		height: 20px
+		line-height: 1
+		.star-off-png,
+		.star-on-png
+			display: inline-block
+			vertical-align: middle
+			&:before
+				content: "\e831"
+				+icon
+				margin: 0
+		.star-off-png
+			color: #cecece 
+		.star-on-png
+			color: #fec71d 
+	.btn-dots
+		margin-left: 15px
+.info-text
+	font-size: 15px
+	+light
+	&_denger
+		color: $hot
+	&_success
+		color: $btn 
+.box
+	border: 3px solid $btn
+	padding: 20px 15px
+	&__head
+		margin-bottom: 20px
+	&__item
+		margin-bottom: 20px
+		&:last-child
+			margin-bottom: 0
+		p
+			margin: 10px 0
+		.number,
+		.meta
+			vertical-align: bottom

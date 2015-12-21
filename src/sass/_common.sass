@@ -126,11 +126,22 @@ body
 	border-bottom: 1px dotted
 	+roboto
 	+reg
-	color: $primary 
+	color: $btn 
 	&:hover	
 		border-color: transparent
 		text-decoration: none
-
+	&_light
+		+light
+	&_icon
+		border: 0
+		span
+			display: inline-block
+			border-bottom: 1px dotted
+		&:hover
+			span
+				border-color: transparent
+	&_big
+		font-size: 20px
 .btn
 	padding: 11px 10px 12px
 	+roboto
@@ -353,6 +364,9 @@ body
 	font-size: 13px
 	+light
 	color: $meta 
+	&_big
+		font-size: 15px
+
 .item
 	position: relative
 	margin-bottom: 43px
@@ -415,11 +429,25 @@ body
 	line-height: 1
 	&__old
 		display: inline-block
-		vertical-align: top
 		font-size: 15px
 		text-decoration: line-through
 	&__new
 		color: $promo
+.price_inline
+	display: inline-block
+	vertical-align: baseline 
+	&__old
+		vertical-align: baseline
+.price_promo
+	color: $btn
+	font-size: 40px
+	+bold
+	.price__weight
+		font-size: 20px
+		+light
+		color: $text 
+.price_small
+	font-size: 15px
 .badge
 	position: absolute
 	right: 15px
@@ -452,27 +480,30 @@ body
 					display: block
 				&:before
 					border-color: $btn 
-	span
-		display: block
-		position: relative
-		+nosel
-		&:before
-			content: ""
-			position: absolute
-			left: -20px
-			top: 2px
-			border: 1px solid #000
-			width: 13px
-			height: 13px
-		&:after
-			content: $i-icon-check
-			position: absolute 
-			left: -18px
-			top: 5px
-			font-size: 7px
-			+i-icon
-			color: $btn 
-			display: none
+	label
+		> span
+			display: block
+			position: relative
+			+nosel
+			&:before
+				content: ""
+				position: absolute
+				left: -20px
+				top: 2px
+				border: 1px solid #000
+				width: 13px
+				height: 13px
+			&:after
+				content: $i-icon-check
+				position: absolute 
+				left: -18px
+				top: 5px
+				font-size: 7px
+				+i-icon
+				color: $btn 
+				display: none
+	.btn-dots
+		font-size: 15px
 .cols-counter
 	column-count: 2
 	.checkbox

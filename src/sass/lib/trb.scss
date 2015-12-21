@@ -53,7 +53,23 @@
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
+@mixin icon {
+  font-family: "trb";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .icon-pear:before { content: '\e800'; } /* '' */
 .icon-pasta7:before { content: '\e801'; } /* '' */
 .icon-pointer17:before { content: '\e802'; } /* '' */
