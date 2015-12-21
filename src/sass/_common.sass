@@ -51,6 +51,8 @@ body
 	color: $text 
 	background: #fbf8da url(../img/body-bg.png) 0 0 repeat
 // common blocks
+.wrap
+	+clr
 .rub
 	+rub
 .inner
@@ -87,6 +89,21 @@ body
 		font-size: 15px
 		display: inline-block
 		margin-left: 5px
+
+.h1
+	font-size: 40px
+	+light
+	line-height: 1.2	
+.h2
+	font-size: 30px
+	+light
+	line-height: 1.2
+.h3
+	font-size: 20px
+	+light
+	line-height: 1.2
+	&_primary
+		color: $btn 
 .h1_mb
 	margin-bottom: 20px
 .number
@@ -423,6 +440,31 @@ body
 		height: 130px
 	.price
 		float: none
+.item_list
+	display: table
+	margin-bottom: 20px
+	padding: 10px 0 
+	width: 100%
+	.item__img,
+	.item__main,
+	.item__action
+		display: table-cell
+		vertical-align: bottom
+		padding: 0 15px 
+	.item__img
+		height: auto
+		padding: 15px 
+		width: 20%
+	.item__main
+		width: 50%
+	.item__action
+		width: 30%
+	.item__name
+		height: 60px
+		margin-bottom: 5px
+	.btn
+		margin: 20px 0
+		 
 .price
 	font-size: 25px
 	+bold
@@ -433,6 +475,10 @@ body
 		text-decoration: line-through
 	&__new
 		color: $promo
+	.price__weight
+		font-size: 13px
+		+light
+		color: $text
 .price_inline
 	display: inline-block
 	vertical-align: baseline 
@@ -520,3 +566,21 @@ select
 	&.form-control
 		margin-top: -2px
 		height: 24px
+
+.list
+	li
+		position: relative
+		padding-left: 13px
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			top: 8px
+			width: 4px
+			height: 4px
+			border-radius: 50%  
+			background: $btn 
+.note-text
+	font-size: 13px
+	+light
+	font-style: italic

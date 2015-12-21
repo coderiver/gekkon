@@ -1792,6 +1792,9 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 @font-face { font-family: pfdindisplaypro-light; src: url("fonts/pfdindisplaypro-light.eot"); src: url("fonts/pfdindisplaypro-light.eot?#iefix") format("embedded-opentype"), url("fonts/pfdindisplaypro-light.woff2") format("woff2"), url("fonts/pfdindisplaypro-light.woff") format("woff"), url("fonts/pfdindisplaypro-light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.5rem; line-height: 1.4; color: #353130; background: #fbf8da url(../img/body-bg.png) 0 0 repeat; }
 
+.wrap { *zoom: 1; }
+.wrap:after { content: " "; display: table; clear: both; }
+
 .rub { font-family: "PTRoubleSans", Arial, sans-serif; }
 
 .inner { position: relative; max-width: 1280px; margin: 0 auto; }
@@ -1805,6 +1808,13 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .title_h2 { font-size: 30px; }
 .title_h3 { font-size: 20px; }
 .title a { font-size: 15px; display: inline-block; margin-left: 5px; }
+
+.h1 { font-size: 40px; font-weight: 300; line-height: 1.2; }
+
+.h2 { font-size: 30px; font-weight: 300; line-height: 1.2; }
+
+.h3 { font-size: 20px; font-weight: 300; line-height: 1.2; }
+.h3_primary { color: #799a2a; }
 
 .h1_mb { margin-bottom: 20px; }
 
@@ -1936,9 +1946,18 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .item_small .item__img { height: 130px; }
 .item_small .price { float: none; }
 
+.item_list { display: table; margin-bottom: 20px; padding: 10px 0; width: 100%; }
+.item_list .item__img, .item_list .item__main, .item_list .item__action { display: table-cell; vertical-align: bottom; padding: 0 15px; }
+.item_list .item__img { height: auto; padding: 15px; width: 20%; }
+.item_list .item__main { width: 50%; }
+.item_list .item__action { width: 30%; }
+.item_list .item__name { height: 60px; margin-bottom: 5px; }
+.item_list .btn { margin: 20px 0; }
+
 .price { font-size: 25px; font-weight: 700; line-height: 1; }
 .price__old { display: inline-block; font-size: 15px; text-decoration: line-through; }
 .price__new { color: #7a0026; }
+.price .price__weight { font-size: 13px; font-weight: 300; color: #353130; }
 
 .price_inline { display: inline-block; vertical-align: baseline; }
 .price_inline__old { vertical-align: baseline; }
@@ -1970,6 +1989,11 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .form-control { font-size: 13px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; }
 
 select.form-control { margin-top: -2px; height: 24px; }
+
+.list li { position: relative; padding-left: 13px; }
+.list li:before { content: ""; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; -webkit-border-radius: 50%; border-radius: 50%; background: #799a2a; }
+
+.note-text { font-size: 13px; font-weight: 300; font-style: italic; }
 
 .banner { margin-bottom: 55px; position: relative; padding: 25px; overflow: hidden; }
 .banner span { color: #7a0026; }
@@ -2138,6 +2162,9 @@ select.form-control { margin-top: -2px; height: 24px; }
 
 .sidebar { position: relative; }
 .sidebar__group { margin-bottom: 45px; }
+.sidebar__group .sidebar__group { margin: 20px 0; }
+.sidebar__group .note-text { margin: 20px 0; }
+.sidebar .cols-counter { margin-bottom: 20px; }
 
 .title-cat { margin-bottom: 17px; font-size: 20px; font-weight: 700; }
 
@@ -2190,6 +2217,8 @@ select.form-control { margin-top: -2px; height: 24px; }
 .raty__icons .star-off-png { color: #cecece; }
 .raty__icons .star-on-png { color: #fec71d; }
 .raty .btn-dots { margin-left: 15px; }
+.raty_small .raty__icons { font-size: 15px; }
+.raty_small .btn-dots { font-size: 13px; }
 
 .info-text { font-size: 15px; font-weight: 300; }
 .info-text_denger { color: #ea4924; }
