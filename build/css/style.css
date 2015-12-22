@@ -1971,8 +1971,9 @@ body { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.
 .badge_new { background: #ffde00; color: #353130; }
 .badge_hot { background: #ea4924; color: #fff; }
 
-.checkbox { position: relative; margin: 0 0 5px; font-size: 13px; font-weight: 300; color: #353130; }
+.checkbox { margin: 0 0 5px; position: static; font-weight: 300; color: #353130; }
 .checkbox + .checkbox { margin: 0 0 5px; }
+.checkbox label { display: inline-block; position: relative; font-size: 13px; }
 .checkbox input { position: absolute; opacity: 0; }
 .checkbox input:checked + span:after { display: block; }
 .checkbox input:checked + span:before { border-color: #799a2a; }
@@ -2161,13 +2162,14 @@ select.form-control { margin-top: -2px; height: 24px; }
 .testing { background: #a7c66d; }
 
 .sidebar { position: relative; }
-.sidebar__group { margin-bottom: 45px; }
+.sidebar__group { margin-bottom: 45px; position: relative; }
 .sidebar__group .sidebar__group { margin: 20px 0; }
 .sidebar__group .note-text { margin: 20px 0; }
 .sidebar .cols-counter { margin-bottom: 20px; }
-.sidebar .sort-result { position: absolute; left: 0; top: 0; border: 2px solid; border-left: 0; padding: 0 10px; background: #fff; height: 32px; font-size: 15px; font-weight: 300; color: #799a2a; line-height: 28px; }
-.sidebar .sort-result:before { content: ""; position: absolute; left: -12px; top: -2px; width: 0px; height: 0px; border-style: solid; border-width: 16px 12px 16px 0; border-color: transparent #799a2a transparent transparent; }
-.sidebar .sort-result:after { content: ""; position: absolute; left: -10px; top: 0; width: 0px; height: 0px; border-style: solid; border-width: 14px 10px 14px 0; border-color: transparent #fff transparent transparent; }
+
+.sort-result { display: none; position: absolute; left: 0; top: 0; z-index: 10; margin: -7px 0 0 20px; border: 2px solid; border-left: 0; padding: 0 10px; background: #fff; height: 32px; font-size: 15px; font-weight: 300; color: #799a2a; line-height: 28px; white-space: nowrap; }
+.sort-result:before { content: ""; position: absolute; left: -12px; top: -2px; width: 0px; height: 0px; border-style: solid; border-width: 16px 12px 16px 0; border-color: transparent #799a2a transparent transparent; }
+.sort-result:after { content: ""; position: absolute; left: -10px; top: 0; width: 0px; height: 0px; border-style: solid; border-width: 14px 10px 14px 0; border-color: transparent #fff transparent transparent; }
 
 .title-cat { margin-bottom: 17px; font-size: 20px; font-weight: 700; }
 

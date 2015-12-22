@@ -902,6 +902,40 @@ $(document).ready(function() {
 		hints: ['1', '2', '3', '4', '5'],
 		starType: "i",
 	});
+
+	var connect = {
+		init: function() {
+			this._dom();
+			this._bindEvent();
+		},
+		_dom: function() {
+			this._$el = $(".js-connector");
+			this._$target = $(".js-connect");
+			this._root = ".js-connector-root";
+		},
+		_bindEvent: function() {
+			this._$el.on("click", this._changePos.bind(this));
+		},
+		_changePos: function(event) {
+			var $el = $(event.currentTarget);
+			var top = $el.position({
+				of: this._root
+			}).top;
+			var left = $el.position({
+				of: this._root
+			}).left;
+			var width = $(event.currentTarget).outerWidth();
+			console.log(top);
+			console.log(left);
+			console.log(event.currentTarget);
+			this._$target.css({
+				left: +left+width,
+				top: top,
+				display: "block"
+			});
+		}
+	}
+	connect.init();
 			
 
 });

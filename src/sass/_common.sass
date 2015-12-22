@@ -510,13 +510,16 @@ body
 		color: #fff  
 
 .checkbox
-	position: relative
 	margin: 0 0 5px 
-	font-size: 13px
+	position: static
 	+light
 	color: $text 
 	+ .checkbox
 		margin: 0 0 5px 
+	label
+		display: inline-block
+		position: relative
+		font-size: 13px
 	input
 		position: absolute
 		opacity: 0
