@@ -89,19 +89,27 @@ body
 		font-size: 15px
 		display: inline-block
 		margin-left: 5px
+	span
+		color: $btn 
 
 .h1
 	font-size: 40px
 	+light
-	line-height: 1.2	
+	line-height: 1.2
+	span
+		color: $btn	
 .h2
 	font-size: 30px
 	+light
 	line-height: 1.2
+	span
+		color: $btn
 .h3
 	font-size: 20px
 	+light
 	line-height: 1.2
+	span
+		color: $btn
 	&_primary
 		color: $btn 
 .h1_mb
@@ -170,6 +178,9 @@ body
 		margin-top: 23px
 	&:focus
 		outline: none
+	&:hover
+		&:focus
+			outline: none
 .btn-danger
 	border: 0
 	padding-left: 25px
@@ -283,6 +294,13 @@ body
 		+tr(color .3s)
 		&:hover
 			text-decoration: none
+	&_small
+		font-size: 20px
+		span
+			font-size: 15px
+	span
+		display: block
+		margin-bottom: 10px
 .i-icon-fb
 	color: #4065b4
 	&:hover
@@ -553,10 +571,17 @@ body
 				display: none
 	.btn-dots
 		font-size: 15px
+
 .cols-counter
-	column-count: 2
-	.checkbox
-		padding-right: 5px
+	&[data-cols="2"]
+		column-count: 2
+		.checkbox
+			padding-right: 5px
+	&[data-cols="3"]
+		column-count: 3
+		column-gap: 30px
+		line-height: 1.7
+		font-size: 15px
 .form-group
 	label
 		font-size: 15px
@@ -583,7 +608,54 @@ select
 			height: 4px
 			border-radius: 50%  
 			background: $btn 
+.list-ol
+	+counter(1, ".")
+	line-height: 1.7
+	li
+		position: relative
+		margin-bottom: 15px
+		padding-left: 25px 
+		&:before
+			position: absolute
+			top: -2px
+			left: 0
+			color: $btn
+			font-size: 20px
+			+bold 
+			line-height: 1
 .note-text
 	font-size: 13px
 	+light
 	font-style: italic
+.nav-tabs
+	margin: 40px 0 
+	li
+		&.active
+			> a
+				background: #fff
+				font-weight: bold
+				color: $text  
+				&:hover,
+				&:focus
+					background: #fff
+					color: $text  
+				> span
+					border: 0
+		> a
+			margin: 0
+			padding: 15px 50px 
+			&:hover
+				border-color: transparent 
+				background: none 
+				> span
+					border-color: transparent 
+			> span
+				border-bottom: 1px dotted 
+.required-text
+	color: $hot
+.form-inline_raty
+	margin-bottom: 15px
+	.raty
+		display: inline-block
+		vertical-align: middle
+		margin: 0 0 5px 15px 

@@ -84,3 +84,57 @@
 		.number,
 		.meta
 			vertical-align: bottom
+.plan-box
+	margin: 55px 0 
+	.h2
+		margin-bottom: 35px
+	.h3
+		margin: 0 0 20px
+.cat-list
+	&__group
+		position: relative
+		margin-bottom: 10px
+		&:before
+			content: "" 
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 6px
+			height: 1px
+			background: #ebebeb 
+	&__row
+		position: relative
+		display: table
+		width: 100%
+	&__item
+		position: relative
+		z-index: 2
+		display: table-cell
+		vertical-align: bottom
+		&:first-child
+			> span
+				padding-left: 0
+		&:last-child
+			text-align: right
+			> span
+				padding-right: 0
+		> span
+			padding: 0 10px 
+			background: #fff
+		
+.nowrap
+	white-space: nowrap
+.review
+	margin-bottom: 30px
+	&__head
+		position: relative
+		margin-bottom: 15px
+		.raty
+			text-align: right
+	&__author
+		font-weight: bold
+	&__body
+		margin-bottom: 15px
+.review-form
+	.h2
+		margin-top: 0
