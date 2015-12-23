@@ -187,19 +187,19 @@
 					</div>
 				</div>
 				<ul class="nav nav-tabs" role="tablist">
-					<li role="presentation">
+					<li role="presentation" class="active">
 						<a href="#about" aria-controls="about" role="tab" data-toggle="tab">
 							<span>О продуке</span>
 						</a>
 					</li>
-					<li role="presentation" class="active">
+					<li role="presentation">
 						<a href="#reviews" aria-controls="reviews" role="tab" data-toggle="tab">
 							<span>Отзывы (4)</span>
 						</a>
 					</li>
 				</ul>
 				<div class="tab-content">
-					<div role="tabpanel" class="tab-pane" id="about">
+					<div role="tabpanel" class="tab-pane active" id="about">
 						<div class="cols-counter" data-cols="3">
 							<p>Оливковое масло холодного отжима Premium Organic Extra Virgin — это лучшее по качеству масло. Оно производится только из зрелых и свежих оливок, выращенных органическим способом в самых лучших районах Пулии. </p>
 							<p>Данный сорт масла считается самым лучшим и самым полезным, поскольку при первом отжиме оливок сохраняются практически все их полезные свойства. Данный сорт масла усваивается на 100%</p>
@@ -221,10 +221,10 @@
 						
 						
 					</div>
-					<div role="tabpanel" class="tab-pane active" id="reviews">
+					<div role="tabpanel" class="tab-pane" id="reviews">
 						<div class="row">
 							<div class="col-md-8">
-								<div class="review js-concat">
+								<div class="review js-concat is-concated">
 									<div class="review__head">
 										<div class="row">
 											<div class="col-sm-6">
@@ -327,7 +327,9 @@
 								<div class="cat-list__group">
 									<div class="cat-list__row">
 										<div class="cat-list__item">
-											<span><a href="#" class="btn-dots btn-dots_light">авокадо</a></span>
+											<span>
+												<button class="btn-dots btn-dots_light js-check-target" type="button" data-target="js-test-1">авокадо</button>
+											</span>
 										</div>
 										<div class="cat-list__item nowrap">
 											<span>1 шт</span>
@@ -337,7 +339,9 @@
 								<div class="cat-list__group">
 									<div class="cat-list__row">
 										<div class="cat-list__item">
-											<span><a href="#" class="btn-dots btn-dots_light">филе индейки</a></span>
+											<span>
+												<button class="btn-dots btn-dots_light js-check-target" type="button" data-target="js-test-2">филе индейки</button>
+											</span>
 										</div>
 										<div class="cat-list__item nowrap">
 											<span>150 гр</span>
@@ -357,7 +361,9 @@
 								<div class="cat-list__group">
 									<div class="cat-list__row">
 										<div class="cat-list__item">
-											<span><a href="#" class="btn-dots btn-dots_light">авокадо</a></span>
+											<span>
+												<button class="btn-dots btn-dots_light js-check-target" type="button" data-target="js-test-1">авокадо</button>
+											</span>
 										</div>
 										<div class="cat-list__item nowrap">
 											<span>1 шт</span>
@@ -367,7 +373,9 @@
 								<div class="cat-list__group">
 									<div class="cat-list__row">
 										<div class="cat-list__item">
-											<span><a href="#" class="btn-dots btn-dots_light">филе индейки</a></span>
+											<span>
+												<button class="btn-dots btn-dots_light js-check-target" type="button" data-target="js-test-2">филе индейки</button>
+											</span>
 										</div>
 										<div class="cat-list__item nowrap">
 											<span>150 гр</span>
@@ -387,7 +395,9 @@
 								<div class="cat-list__group">
 									<div class="cat-list__row">
 										<div class="cat-list__item">
-											<span><a href="#" class="btn-dots btn-dots_light">авокадо</a></span>
+											<span>
+												<button class="btn-dots btn-dots_light js-check-target" type="button" data-target="js-test-1">авокадо</button>
+											</span>
 										</div>
 										<div class="cat-list__item nowrap">
 											<span>1 шт</span>
@@ -397,7 +407,9 @@
 								<div class="cat-list__group">
 									<div class="cat-list__row">
 										<div class="cat-list__item">
-											<span><a href="#" class="btn-dots btn-dots_light">филе индейки</a></span>
+											<span>
+												<button class="btn-dots btn-dots_light js-check-target" type="button" data-target="js-test-2">филе индейки</button>
+											</span>
 										</div>
 										<div class="cat-list__item nowrap">
 											<span>150 гр</span>
@@ -434,10 +446,271 @@
 								<li>Для заправки смешайте оливковое масло и лимонные сок. Посолите и поперчите по вкусу. На сервировочную тарелку выложите листья салата. Авокадо, черри, перец и курицу перемешайте, выложите на салатный микс. Полейте заправкой.</li>
 								<li>Подавайте, украсив зеленым луком.</li>
 							</ol>
-							<p><strong>ПРИЯТНОГО АППЕТИТА!</strong></p>
-							<p><a href="#">Все рецепты</a></p>
+							<div class="text-offset">
+								<p><strong>ПРИЯТНОГО АППЕТИТА!</strong></p>
+								<p><a href="#">Все рецепты</a></p>
+							</div>
 						</div>
 					</div>
+				</div>
+				<div class="slider-items">
+					<div class="row">
+						<div class="col-sm-12">
+							<ul class="tabs-link tab-link_action">
+								<li class="active">
+									<a href="#">Продукты в рецепте</a>
+								</li>
+								<li>
+									<a href="#">Выделить все</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="js-slider-items">
+								<div>
+									<div class="item js-check">
+										<div class="checkbox checkbox_big">
+											<label>
+												<input type="checkbox" class="js-checkbox" data-target-name="js-test-1"> 
+												<span></span>
+											</label>
+										</div>
+										<a class="item__img" href="#">
+											<img src="img/item2.jpg" alt="img">
+										</a>
+										<div class="item__main">
+											<div class="item__name">
+												<a href="#" class="item__link">	
+													<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+													<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+												</a>
+											</div>
+											<div class="item__action">
+												<div class="price">1200 <span class="rub">в</span></div>
+												<div class="number js-number" data-max-number="100">
+													<button class="number__minus js-minus-number" type="button">-</button>
+													<input type="text" class="number__input" value="1">
+													<button class="number__plus js-plus-number" type="button">+</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="item js-check">
+										<div class="checkbox checkbox_big">
+											<label>
+												<input type="checkbox" class="js-checkbox" data-target-name="js-test-2"> 
+												<span></span>
+											</label>
+										</div>
+										<a class="item__img" href="#">
+											<img src="img/item3.jpg" alt="img">
+										</a>
+										<div class="item__main">
+											<div class="item__name">
+												<a href="#" class="item__link">
+													<img src="img/flags/PL.png" width="24" alt="Польша" title="Польша">
+													<span>Масло сливочное «Крестьянское», 170 гр</span>
+												</a>
+											</div>
+											<div class="item__action">
+												<div class="price">
+													<span class="price__old">540 <span class="rub">в</span></span>
+													<span class="price__new">320 <span class="rub">в</span></span>
+												</div>
+												<div class="number js-number" data-max-number="100">
+													<button class="number__minus js-minus-number" type="button">-</button>
+													<input type="text" class="number__input" value="1">
+													<button class="number__plus js-plus-number" type="button">+</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="item js-check">
+										<div class="checkbox checkbox_big">
+											<label>
+												<input type="checkbox" class="js-checkbox"> 
+												<span></span>
+											</label>
+										</div>
+										<a class="item__img" href="#">
+											<img src="img/item4.jpg" alt="img">
+										</a>
+										<div class="item__main">
+											<div class="item__name">
+												<a href="#" class="item__link">
+													<img src="img/flags/NO.png" width="24" alt="Новегия" title="Новегия">
+													<span>Биомороженое в рожке сливочное, 90 гр.</span>
+												</a>
+											</div>
+											<div class="item__action">
+												<div class="price">320 <span class="rub">в</span></div>
+												<div class="number js-number" data-max-number="100">
+													<button class="number__minus js-minus-number" type="button">-</button>
+													<input type="text" class="number__input" value="1">
+													<button class="number__plus js-plus-number" type="button">+</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="item js-check">
+										<div class="checkbox checkbox_big">
+											<label>
+												<input type="checkbox" class="js-checkbox"> 
+												<span></span>
+											</label>
+										</div>
+										<a class="item__img" href="#">
+											<img src="img/item5.jpg" alt="img">
+										</a>
+										<div class="item__main">
+											<div class="item__name">
+												<a href="#" class="item__link">
+													<img src="img/flags/FL.png" width="24" alt="Финляндия" title="Финляндия">
+													<span>Соль Fleur de sel de Guerande Danival, 500 гр.</span>
+												</a>
+											</div>
+											<div class="item__action">
+												<div class="price">320 <span class="rub">в</span></div>
+												<div class="number js-number" data-max-number="100">
+													<button class="number__minus js-minus-number" type="button">-</button>
+													<input type="text" class="number__input" value="1">
+													<button class="number__plus js-plus-number" type="button">+</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="item js-check">
+										<div class="checkbox checkbox_big">
+											<label>
+												<input type="checkbox" class="js-checkbox"> 
+												<span></span>
+											</label>
+										</div>
+										<a class="item__img" href="#">
+											<img src="img/item2.jpg" alt="img">
+										</a>
+										<div class="item__main">
+											<div class="item__name">
+												<a href="#" class="item__link">	
+													<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+													<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+												</a>
+											</div>
+											<div class="item__action">
+												<div class="price">1200 <span class="rub">в</span></div>
+												<div class="number js-number" data-max-number="100">
+													<button class="number__minus js-minus-number" type="button">-</button>
+													<input type="text" class="number__input" value="1">
+													<button class="number__plus js-plus-number" type="button">+</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="item js-check">
+										<div class="checkbox checkbox_big">
+											<label>
+												<input type="checkbox" class="js-checkbox"> 
+												<span></span>
+											</label>
+										</div>
+										<a class="item__img" href="#">
+											<img src="img/item3.jpg" alt="img">
+										</a>
+										<div class="item__main">
+											<div class="item__name">
+												<a href="#" class="item__link">
+													<img src="img/flags/PL.png" width="24" alt="Польша" title="Польша">
+													<span>Масло сливочное «Крестьянское», 170 гр</span>
+												</a>
+											</div>
+											<div class="item__action">
+												<div class="price">
+													<span class="price__old">540 <span class="rub">в</span></span>
+													<span class="price__new">320 <span class="rub">в</span></span>
+												</div>
+												<div class="number js-number" data-max-number="100">
+													<button class="number__minus js-minus-number" type="button">-</button>
+													<input type="text" class="number__input" value="1">
+													<button class="number__plus js-plus-number" type="button">+</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="item js-check">
+										<div class="checkbox checkbox_big">
+											<label>
+												<input type="checkbox" class="js-checkbox"> 
+												<span></span>
+											</label>
+										</div>
+										<a class="item__img" href="#">
+											<img src="img/item4.jpg" alt="img">
+										</a>
+										<div class="item__main">
+											<div class="item__name">
+												<a href="#" class="item__link">
+													<img src="img/flags/NO.png" width="24" alt="Новегия" title="Новегия">
+													<span>Биомороженое в рожке сливочное, 90 гр.</span>
+												</a>
+											</div>
+											<div class="item__action">
+												<div class="price">320 <span class="rub">в</span></div>
+												<div class="number js-number" data-max-number="100">
+													<button class="number__minus js-minus-number" type="button">-</button>
+													<input type="text" class="number__input" value="1">
+													<button class="number__plus js-plus-number" type="button">+</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="item js-check">
+										<div class="checkbox checkbox_big">
+											<label>
+												<input type="checkbox" class="js-checkbox"> 
+												<span></span>
+											</label>
+										</div>
+										<a class="item__img" href="#">
+											<img src="img/item5.jpg" alt="img">
+										</a>
+										<div class="item__main">
+											<div class="item__name">
+												<a href="#" class="item__link">
+													<img src="img/flags/FL.png" width="24" alt="Финляндия" title="Финляндия">
+													<span>Соль Fleur de sel de Guerande Danival, 500 гр.</span>
+												</a>
+											</div>
+											<div class="item__action">
+												<div class="price">320 <span class="rub">в</span></div>
+												<div class="number js-number" data-max-number="100">
+													<button class="number__minus js-minus-number" type="button">-</button>
+													<input type="text" class="number__input" value="1">
+													<button class="number__plus js-plus-number" type="button">+</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 				<div class="row">
 					<div class="h1 h1_mb">Недавно просмотренные</div>

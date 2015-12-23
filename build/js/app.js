@@ -807,7 +807,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 
 "use strict";
 $(document).ready(function() {
-	"use strict";
+
 	function number() { 
 		var number = $(".js-number");
 		number.each(function(){
@@ -877,6 +877,7 @@ $(document).ready(function() {
 		fade: true,
 		asNavFor: '.js-slider-nav'
 	});
+
 	$('.js-slider-nav').slick({
 		slidesToShow: 6,
 		slidesToScroll: 1,
@@ -884,6 +885,25 @@ $(document).ready(function() {
 		asNavFor: '.js-slider-for',
 		dots: false,
 		focusOnSelect: true
+	});
+
+	$(".js-slider-info").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		pauseOnHover: true,
+		pauseOnDotsHover: true
+
+	});
+
+	$(".js-slider-items").slick({
+		slidesToShow: 4,
+		slidesToScroll: 4,
+		infinite: false,
+		appendArrows: ".slider-items"
 	});
 
 	$(".js-raty").raty({
@@ -894,6 +914,7 @@ $(document).ready(function() {
 		hints: ['1', '2', '3', '4', '5']
 		
 	});
+
 	$('.js-raty-readonly').raty({
 		readOnly: true,
 		score: function() {
@@ -936,6 +957,68 @@ $(document).ready(function() {
 		}
 	}
 	connect.init();
+
+	var checkbox = {
+		init: function(option) {
+			this._parentClass = option.parent;
+			this._$checkbox = $(option.checkbox);
+			this._bindEvent();
+		},
+		reset: function(option) {
+			this._parentClass = option.parent;
+			this._$checkbox = $(option.checkbox);
+			this._$reset = $(option.reset);
+			this._resetEvent();
+		},
+		_bindEvent: function() {
+			this._$checkbox.on("change", this._changeStates);
+		},
+		_changeStates: function(event) {
+			var checkbox = $(event.currentTarget);
+			if(checkbox.is(":checked")) {
+				checkbox.parents(this._parentClass).addClass("is-active");
+			}
+			else {
+				checkbox.parents(this._parentClass).removeClass("is-active");
+			}
+		},
+		_resetEvent: function() {
+			this._$reset.on("click", this._resetStates);
+		},
+		_resetStates: function() {
+			this._$checkbox.attr("checked", false);
+		}
+	}
+	checkbox.init({
+		parent: ".js-check",
+		checkbox: ".js-checkbox"
+	});
+
+	checkbox.reset({
+		reset: ".js-clear-checkbox",
+		parent: ".js-check",
+		checkbox: ".js-checkbox"
+	});
+
+	var checkTarget = {
+		init: function(option) {
+			this._$el = $(".js-check-target");
+			this._bindEvent();
+		},
+		_bindEvent: function() {
+			this._$el.on("click", this._selectTarget);
+		},
+		_selectTarget: function(event) {
+			var el = $(event.target);
+			var target = $('[data-target-name="'+el.data("target")+'"]');
+			if (target.length) {
+				target.trigger("click");
+			}
+			event.stopPropagation();
+		}
+	}
+	checkTarget.init();
+
 			
 
 });

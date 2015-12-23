@@ -126,6 +126,9 @@
 	white-space: nowrap
 .review
 	margin-bottom: 30px
+	&.is-concated
+		.btn-dots
+			display: block
 	&__head
 		position: relative
 		margin-bottom: 15px
@@ -135,6 +138,18 @@
 		font-weight: bold
 	&__body
 		margin-bottom: 15px
+	.btn-dots
+		display: none
 .review-form
 	.h2
 		margin-top: 0
+.slider-items
+	position: relative
+	.tabs-link
+		margin-bottom: 30px
+	.slick-slider
+		margin: -3px -15px 
+	.slick-slide
+		padding: 3px 15px 
+		img
+			display: inline-block

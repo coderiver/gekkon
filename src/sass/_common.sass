@@ -174,6 +174,7 @@ body
 	font-size: 20px
 	line-height: 1
 	transition: background .3s
+	text-shadow: none
 	+ .btn
 		margin-top: 23px
 	&:focus
@@ -181,6 +182,10 @@ body
 	&:hover
 		&:focus
 			outline: none
+	&:active
+		&:focus
+			outline: none
+			background: $btn 
 .btn-danger
 	border: 0
 	padding-left: 25px
@@ -407,7 +412,8 @@ body
 	margin-bottom: 43px
 	padding: 0 20px 
 	transition: box-shadow .2s
-	&:hover
+	&:hover,
+	&.is-active
 		box-shadow: 0 0 0 3px $btn
 	&__img
 		position: relative
@@ -438,12 +444,18 @@ body
 			margin-right: 5px
 	&__action
 		+clr
-		margin-bottom: 13px
 		.price
 			float: left
 		.number
 			float: right
 			margin-top: 4px
+	.btn
+		margin-top: 13px
+	.checkbox_big
+		position: absolute
+		top: 20px
+		left: 20px
+		z-index: 2
 		
 .item_marked
 	box-shadow: 0 0 0 3px $marked
@@ -571,7 +583,20 @@ body
 				display: none
 	.btn-dots
 		font-size: 15px
-
+.checkbox_big
+	label
+		padding-left: 40px
+		min-height: 31px
+		font-size: 20px
+		> span
+			&:before
+				left: -40px
+				width: 27px
+				height: 27px
+			&:after
+				top: 8px
+				left: -37px
+				font-size: 16px
 .cols-counter
 	&[data-cols="2"]
 		column-count: 2
@@ -623,10 +648,15 @@ select
 			font-size: 20px
 			+bold 
 			line-height: 1
+.text-offset
+	padding-left: 25px
+	a
+		font-size: 20px
 .note-text
 	font-size: 13px
 	+light
 	font-style: italic
+	
 .nav-tabs
 	margin: 40px 0 
 	li
@@ -659,3 +689,14 @@ select
 		display: inline-block
 		vertical-align: middle
 		margin: 0 0 5px 15px 
+
+.modal-header
+	border: 0
+	.h3
+		margin: 0
+	.close
+		font-size: 15px
+		color: $text
+		opacity: 1
+		&:hover
+			color: $hot 

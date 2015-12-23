@@ -69,32 +69,33 @@
 .slick-prev,
 .slick-next
 	position: absolute
-	top: 50%
-	margin-top: -10px
-	+hide-text
-	height: 20px
+	z-index: 2
+	top: 0
+	border: 1px solid
+	width: 30px
+	height: 30px
+	color: #aaa 
 	background: none
-	left: 0
-	z-index: 1 
-	&:focus
-		outline: none
-	&.slick-disabled
-		opacity: 0.2
+	font-size: 0
+	transition: color, background, .3s
+	&:hover
+		border-color: $btn
+		color: #fff
+		background: $btn
 	&:before
-		height: 30px
-		line-height: 30px
-		content: "prev"
 		display: inline-block
 		vertical-align: middle
+		+icon
+.slick-prev
+	right: 29px
+	&:before
+		content: "\e832"
 		font-size: 15px
-		color: #fff
-		background: #000 
 .slick-next
 	right: 0
-	left: auto
 	&:before
-		content: "next"
-		display: inline-block
+		content: "\e834"
+		font-size: 20px
 .slick-dots
 	text-align: left
 	position: absolute
