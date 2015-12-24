@@ -56,3 +56,36 @@
 				font-size: 17px
 				vertical-align: middle
 				margin: -3px 5px 0 0
+.table
+	display: table
+	width: 100%
+	&__head
+		background: #F2F2F2
+		display: table-header-group
+	&__body
+		display: table-row-group 
+	&__row
+		display: table-row
+	&__cell
+		display: table-cell
+		padding: 10px 13px
+		vertical-align: middle
+.table_cart
+	margin: 40px 0 
+	.table__cell
+		&:first-child
+			width: 45%
+		&:last-child
+			width: 5%
+			text-align: center
+	.item
+		margin-bottom: 0
+		&:hover
+			box-shadow: none
+		&__main,
+		&__img
+			vertical-align: middle 
+.action-add
+	margin: 30px 0 
+	.btn
+		margin-top: 20px
