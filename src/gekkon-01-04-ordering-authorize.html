@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+	//=include partials/head.html
+	<title>order</title>
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	//=include partials/header.html
+	<div class="inner inner_main">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="#">Главная</a></li>
+				<li class="active">Заказ товара</li>
+			</ol>
+			<h1 class="h1">Заказ товара</h1>
+			<div class="main">	
+				<ul class="steps">
+					<li class="is-last"><span><i class="i-icon-check2"></i>Корзина</span></li>
+					<li class="is-last"><span><i class="i-icon-check2"></i>Авторизация</span></li>
+					<li class="is-active"><span><i class="i-icon-check2"></i>Заказ товара</span></li>
+					<li><span><i class="i-icon-check2"></i>Подтверждение заказа</span></li>
+				</ul>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="h3 h3_mb">Я постоянный клиент</div>
+						<form>
+							<div class="form-group">
+								<label for="loginEmail1">Email:</label>
+								<input type="email" class="form-control" id="loginEmail1" required="">
+							</div>
+							<div class="form-group">
+								<label for="loginPass1">Пароль:</label>
+								<input type="password" class="form-control" id="loginPass1" required="">
+							</div>
+							<div class="form-group">
+								<button class="btn-dots btn-dots_light" data-toggle="modal" data-target="#modal-pass" type="button">Забыли пароль?</button>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-6">
+										<button class="btn btn-default btn-block" type="submit">Войти</button>
+									</div>
+									<div class="col-sm-6">
+										 Все поля обязательны для заполнения
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="soc soc_small">
+									<span>Войти через соцсети: </span>
+									<a class="i-icon-fb" href="#"></a>
+									<a class="i-icon-tw" href="#"></a>
+									<a class="i-icon-vk" href="#"></a>
+								</div>
+							</div>							
+						</form>
+					</div>
+					<div class="col-md-4">
+						<div class="h3 h3_mb">Заказываю впервые</div>
+						<form>
+							<div class="form-group">
+								<label for="regName2">Имя:</label>
+								<input type="text" class="form-control" id="regName2" required="">
+							</div>
+							<div class="form-group">
+								<label for="loginEmail2">Email:</label>
+								<input type="email" class="form-control" id="loginEmail2" required="">
+							</div>
+							<div class="form-group">
+								<label for="loginPass2">Придумайте пароль (не менее 6 символов)::</label>
+								<input type="password" class="form-control" id="loginPass2" required="">
+							</div>
+							<div class="form-group">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> 
+										<span>Я хочу узнавать о скидках и акциях по email</span>
+									</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-6">
+										<button class="btn btn-default btn-block" type="submit">Регистрация</button>
+									</div>
+									<div class="col-sm-6">
+										 Все поля обязательны для заполнения
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="soc soc_small">
+									<span>Регистрация через соцсети: </span>
+									<a class="i-icon-fb" href="#"></a>
+									<a class="i-icon-tw" href="#"></a>
+									<a class="i-icon-vk" href="#"></a>
+								</div>
+							</div>
+							
+						</form>
+					</div>
+					<div class="col-md-4">
+						<div class="h3 h3_mb">Зачем нужна регистрация?</div>
+						<ul class="list">
+							<li>Первыми узнавайте о скидках и акциях.</li>
+							<li>Следите за выполнением заказов.</li>
+							<li>Добавляйте товары в избранное.</li>
+							<li>Оформляйте новые покупки быстрее благодаря автозаполнению данных.</li>
+							<li>Копите гекконы и оплачивайте ими до 100% будущих покупок (1 геккон = 1 рубль).</li>
+						</ul>
+						<div class="banner-img">
+							<img src="img/gift.png" alt="img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	//=include partials/footer.html
+</div>
+<!-- END out-->
+</body>
+</html>
