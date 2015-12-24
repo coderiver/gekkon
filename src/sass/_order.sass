@@ -59,6 +59,7 @@
 .table
 	display: table
 	width: 100%
+	border-bottom: 2px solid $border 
 	&__head
 		background: #F2F2F2
 		display: table-header-group
@@ -85,7 +86,33 @@
 		&__main,
 		&__img
 			vertical-align: middle
+		.item
+			margin-top: 30px
+			+ .item
+				margin-top: -30px
+.table_cart-box
+	.table__cell
+		vertical-align: top
+	.item
+		&__main,
+		&__img
+			vertical-align: top
+			img
+				vertical-align: top
 .action-add
 	margin: 30px 0 
 	.btn
 		margin-top: 20px
+.total
+	&__head
+		padding: 20px 
+		background: #f2f2f2 
+		text-align: right
+	&__list
+		display: block
+		text-align: left
+		margin: 0
+		li
+			+clr
+		div
+			float: right
