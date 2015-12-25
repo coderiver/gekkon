@@ -110,31 +110,33 @@
 		max-width: 100%
 		height: auto
 		margin: 60px 0 35px
-	table
-		width: 60% 
-		margin: 30px 0 
-		min-width: 500px 
-		thead
-			tr
-				background: $primary
-				height: 38px 
-			th
-				+light
-				color: #fff
-		th,td
-			vertical-align: middle
-			text-align: center
-			&:first-child
-				padding-left: 15px
-				text-align: left
-				
-		tbody
-			tr
-				height: 40px
-				border-bottom: 1px dashed #ddd 
-				&:last-child
-					border-bottom: 1px solid $primary
 
+.table-simple
+	width: 60% 
+	margin: 30px 0 
+	min-width: 500px 
+	&_width
+		width: 100%
+	thead
+		tr
+			background: $primary
+			height: 38px 
+		th
+			+light
+			color: #fff
+	th,td
+		vertical-align: middle
+		text-align: center
+		&:first-child
+			padding-left: 15px
+			text-align: left
+			
+	tbody
+		tr
+			height: 40px
+			border-bottom: 1px dashed #ddd 
+			&:last-child
+				border-bottom: 1px solid $primary
 .sidebar
 	h2
 		margin-bottom: 30px 
@@ -289,6 +291,12 @@
 					border-color: $primary
 					&:before
 						display: block 
+		&:disabled
+			+ .radio__text
+				cursor: not-allowed
+				i
+					background: #eee 
+					border-color: #b6b6b6
 						
 .testing + .testing-result
 	margin-top: 100px  
@@ -317,4 +325,132 @@
 		margin: 40px 0 30px 
 		.soc
 			margin-top: 15px 
-		
+	
+// tech
+
+.content
+	p
+		img
+			&[align="left"]
+				float: left
+				margin: 0 15px 15px 0  
+			&[align="right"]
+				float: right
+				margin: 0 0 15px 15px
+	.inline-wrap
+		> div
+			display: inline-block
+			vertical-align: middle
+			margin-left: 15px 
+			&:first-child
+				margin-left: 0		
+.alert
+	text-shadow: none
+	box-shadow: none
+	margin: 10px 0 15px 
+.alert-success,
+.alert-danger
+	background: none 
+.alert-success
+	color: #8dc63f
+.alert-danger
+	color: #e22b27
+.form-control	
+	&::-webkit-input-placeholder
+		color: #636363
+		font-size: 15px
+	&:-moz-placeholder
+		color: #636363
+		font-size: 15px
+	&::-moz-placeholder
+		color: #636363
+		font-size: 15px
+	&:-ms-input-placeholder
+		color: #636363
+		font-size: 15px
+.form-group
+	&.is-required
+		& > label
+			&:after
+				content: '*'
+				color: #e22b27
+				
+.required-info
+	margin-bottom: 15px
+	& > span
+		color: #e22b27
+			
+.input-file
+	position: relative
+	max-width: 160px
+	&__inner
+		display: block
+	&__label
+		+reg
+		color: #333
+		font-size: 1.4rem
+		line-height: 1.8
+		display: inline-block
+		position: relative
+		margin-bottom: 7px
+	&__btn
+		position: absolute
+		top: 9px
+		right: 10px
+		cursor: pointer
+		overflow: hidden
+		font-size: 0
+		.icon-attachment
+			font-size: 1.4rem
+		input
+			position: absolute
+			top: 0
+			left: 0
+			visibility: hidden
+			opacity: 0
+			
+.checkbox
+	input
+		&:disabled
+			+ span
+				cursor: not-allowed
+				&:before
+					border-color: #b6b6b6
+					background: #eee 
+					
+.captcha
+	& > 
+		img
+			margin-bottom: 15px
+		input
+			max-width: 180px 
+			
+.badge-line
+	color: #428bca
+	display: block
+	&:hover
+		color: #428bca
+
+.badge_mod
+	border-radius: 10px
+	background: #999
+	position: static
+	padding: 3px 6px 2px
+	font-size: 13px 
+	vertical-align: baseline
+	
+.icons-list
+	margin: 7px 0 10px 
+	li
+		display: inline-block
+		vertical-align: top
+		margin-left: 8px
+		font-size: 0
+		&:first-child
+			margin-left: 0 
+			
+.btn-del
+	&.is-green
+		color: $primary
+	&:hover
+		color: $hot

@@ -1,7 +1,12 @@
 $icons: (0:0)
-$icons: map-merge($icons,(codedby: (X: -53px, Y:-147px, W: 47px, H: 5px, TW: 180px, TH: 152px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(coderiver: (X: 0px, Y:-147px, W: 49px, H: 5px, TW: 180px, TH: 152px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(gift-box: (X: 0px, Y:0px, W: 180px, H: 143px, TW: 180px, TH: 152px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(codedby: (X: 0px, Y:-79px, W: 47px, H: 5px, TW: 86px, TH: 84px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(coderiver: (X: 0px, Y:-70px, W: 49px, H: 5px, TW: 86px, TH: 84px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc1: (X: -60px, Y:-35px, W: 26px, H: 30px, TW: 86px, TH: 84px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc2: (X: 0px, Y:0px, W: 26px, H: 31px, TW: 86px, TH: 84px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc3: (X: -30px, Y:0px, W: 26px, H: 31px, TW: 86px, TH: 84px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc4: (X: -60px, Y:0px, W: 26px, H: 31px, TW: 86px, TH: 84px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc5: (X: 0px, Y:-35px, W: 26px, H: 31px, TW: 86px, TH: 84px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(doc6: (X: -30px, Y:-35px, W: 26px, H: 31px, TW: 86px, TH: 84px, IMG: '../img/icons.png')))
 
 
 // Gets an attribute from the sass map
@@ -37,22 +42,46 @@ $icons: map-merge($icons,(gift-box: (X: 0px, Y:0px, W: 180px, H: 143px, TW: 180p
 @mixin sr($i)
 	+sprite-retina($i)	
 
-//
-//.icon-codedby
-//	width: 47px
-//	height: 5px
-//	background-image: url('../img/icons.png')
-//	background-position: -53px -147px
-//
-//.icon-coderiver
-//	width: 49px
-//	height: 5px
-//	background-image: url('../img/icons.png')
-//	background-position: 0px -147px
-//
-//.icon-gift-box
-//	width: 180px
-//	height: 143px
-//	background-image: url('../img/icons.png')
-//	background-position: 0px 0px
-//
+.icon, [class^="icon-"], [class*=" icon-"]
+	display: inline-block
+
+.icon-codedby
+	width: 47px
+	height: 5px
+	background-image: url('../img/icons.png')
+	background-position: 0px -79px
+.icon-coderiver
+	width: 49px
+	height: 5px
+	background-image: url('../img/icons.png')
+	background-position: 0px -70px
+.icon-doc1
+	width: 26px
+	height: 30px
+	background-image: url('../img/icons.png')
+	background-position: -60px -35px
+.icon-doc2
+	width: 26px
+	height: 31px
+	background-image: url('../img/icons.png')
+	background-position: 0px 0px
+.icon-doc3
+	width: 26px
+	height: 31px
+	background-image: url('../img/icons.png')
+	background-position: -30px 0px
+.icon-doc4
+	width: 26px
+	height: 31px
+	background-image: url('../img/icons.png')
+	background-position: -60px 0px
+.icon-doc5
+	width: 26px
+	height: 31px
+	background-image: url('../img/icons.png')
+	background-position: 0px -35px
+.icon-doc6
+	width: 26px
+	height: 31px
+	background-image: url('../img/icons.png')
+	background-position: -30px -35px
