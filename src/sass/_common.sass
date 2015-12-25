@@ -181,13 +181,16 @@ body
 		margin-top: 23px
 	&:focus
 		outline: none
+		box-shadow: none
 	&:hover
 		&:focus
 			outline: none
 	&:active
+		box-shadow: none
+		outline: none
 		&:focus
 			outline: none
-			background: $btn 
+			box-shadow: none
 .btn-danger
 	border: 0
 	padding-left: 25px
@@ -216,7 +219,6 @@ body
 		background: darken($primary, 10%)
 		border-color: darken($primary, 10%)
 		color: #fff
-		box-shadow: none 
 		outline: none
 		&:focus
 			background: darken($primary, 10%)
@@ -239,6 +241,60 @@ body
 		&:hover
 			background: darken($primary, 10%)
 			box-shadow: none
+		&:focus
+			background: $btn 
+.btn-back
+	position: relative
+	border: 1px solid
+	padding: 0 10px 
+	height: 40px
+	line-height: 40px
+	font-size: 18px
+	color: $text
+	transition: color, border, background, .3s
+	&:hover
+		border-color: $text
+		color: #fff
+		background: $text   
+		&:after
+			+arr(10,38,$text,l)
+	&:before	
+		content: ""
+		position: absolute
+		left: -11px
+		top: -1px
+		+arr(10,40,$text,l) 
+	&:after
+		content: ""
+		position: absolute
+		left: -10px
+		top: 0
+		+arr(10,38,#fff,l)
+		transition: border .3s
+.btn-next
+	position: relative
+	border: 0
+	padding: 0 10px 
+	height: 40px
+	line-height: 40px
+	font-size: 18px
+	color: #fff
+	background: $btn 
+	transition: background .3s
+	&:hover
+		border-color: $text
+		color: #fff
+		background: darken($btn, 5%) 
+		&:after
+			+arr(10,40,darken($btn, 5%),r)  
+	&:after
+		content: "" 
+		position: absolute
+		top: 0
+		right: -10px	
+		+arr(10,40,$btn,r)
+		transition: border .3s 
+	&:active
 .btn-small
 	font-size: 13px
 	padding: 7px 10px 
@@ -286,13 +342,16 @@ body
 	label
 		+reg
 .tel
-	text-align: right
 	font-size: 20px
 	line-height: 1
 	.btn-dots
 		font-size: 13px
 	span
 		display: block
+	sub
+		vertical-align: baseline
+		font-size: 15px
+		bottom: 0
 .payments
 	margin-bottom: 15px
 	font-size: 13px
