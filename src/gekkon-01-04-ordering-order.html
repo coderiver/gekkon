@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head>
+	//=include partials/head.html
+	<title>order</title>
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	//=include partials/header.html
+	<div class="inner inner_main">
+		<div class="container">
+			<ol class="breadcrumb">
+				<li><a href="#">Главная</a></li>
+				<li class="active">Заказ товара</li>
+			</ol>
+			<h1 class="h1">Заказ товара</h1>
+			<div class="main">	
+				<ul class="steps">
+					<li class="is-last"><span><i class="i-icon-check2"></i>Корзина</span></li>
+					<li class="is-last"><span><i class="i-icon-check2"></i>Авторизация</span></li>
+					<li class="is-active"><span><i class="i-icon-check2"></i>Заказ товара</span></li>
+					<li><span><i class="i-icon-check2"></i>Подтверждение заказа</span></li>
+				</ul>
+				<div class="order-row">
+					<div class="h3 h3_bold"><i class="icon-digit-1"></i>Заполните личные данные</div>
+					<div class="form-group">
+						<label for="orderTel">Телефон:<sup class="required-text">*</sup></label>
+						<div class="row">
+							<div class="col-md-4">
+								<input type="tel" class="form-control" id="orderTel" placeholder="+7 (___) ___-__-__" required="">
+							</div>
+							<div class="col-md-5">
+								<div class="note-text">Мы позвоним вам, чтобы подтвердить заказ и согласовать удобное время доставки.</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="orderEmail">Email для уведомлений:<sup class="required-text">*</sup></label>
+						<div class="row">
+							<div class="col-md-4">
+								<input type="email" class="form-control" id="orderEmail" required="">
+							</div>
+							<div class="col-md-5">
+								<div class="note-text">На этот адрес будут приходить оповещения о статусах заказов.</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="orderName">Фамилия Имя:<sup class="required-text">*</sup></label>
+						<div class="row">
+							<div class="col-md-4">
+								<input type="text" class="form-control" id="orderName" required="">
+							</div>
+							<div class="col-md-5">
+								<div class="note-text">Укажите реальные имя и фамилию. Они могут понадобиться при доставке.</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-row__img">
+						<img src="img/order-1.png" alt="img">
+					</div>
+				</div>
+				<div class="order-row">
+					<div class="h3 h3_bold"><i class="icon-digit-2"></i>Выберите способ доставки</div>
+					<div class="form-group">
+						<label>Общий вес заказа: 4,5 кг</label>
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="radio radio_big">
+									<label>
+										<input type="radio" name="orderDelivery" checked>
+										<span class="radio__text">
+											<i></i>
+											<span>Курьером</span>
+										</span>
+										<span class="radio__info">
+											<strong>Cтоимость доставки: </strong>
+											0 <span class="rub">у</span>
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="note-text">Способ доступен для Москвы и Московской области. Доставка в течение 1–2 дней после заказа в будни с 10:00 до 21:00.</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="radio radio_big">
+									<label>
+										<input type="radio" name="orderDelivery">
+										<span class="radio__text">
+											<i></i>
+											<span>Почтой России</span>
+										</span>
+										<span class="radio__info">
+											<strong>Cтоимость доставки: </strong>
+											542.60 <span class="rub">у</span>
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="note-text">Способ недоступен, если в вашем заказе есть хотя бы один товар с небольшим сроком хранения. <br>Сроки доставки полностью зависят от работы почтовых служб.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="order-row">
+					<div class="h3 h3_bold"><i class="icon-digit-3"></i>Укажите удобный способ оплаты</div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="radio radio_big">
+									<label>
+										<input type="radio" name="orderPay" checked>
+										<span class="radio__text">
+											<i></i>
+											<span>Курьеру наличными или картой</span>
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="note-text">Оплатить заказ можно при получении наличными или картой. </div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="radio radio_big">
+									<label>
+										<input type="radio" name="orderPay">
+										<span class="radio__text">
+											<i></i>
+											<span>Банковской картой или с помощью платежных систем</span>
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="note-text">Заказ нужно оплатить сразу же после оформления. Платежи осуществляются через авторизационный сервер Robokassa с соблюдением всех требований защиты данных.</div>
+								<div>
+									<img src="img/payment.png" alt="img">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="radio radio_big">
+									<label>
+										<input type="radio" name="orderPay">
+										<span class="radio__text">
+											<i></i>
+											<span>Банковским переводом</span>
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="note-text">Оплатите покупку в любом банке, принимающем платежи от частных лиц. Не забудьте уточнить размер комиссии перед оплатой.</div>
+							</div>
+						</div>
+					</div>
+					<div class="order-row__img">
+						<img src="img/order-2.png" alt="img">
+					</div>
+				</div>
+				<div class="order-row">
+					<div class="h3 h3_bold"><i class="icon-digit-4"></i>Дополните заказ комментариями</div>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-md-4">
+								<textarea class="form-control" rows="7" placeholder="Здесь вы можете оставить информацию для курьера, например, номер домофона или контакты получателя, если он не совпадает с лицом, оформившим заказ"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="order-row__img is-left">
+						<img src="img/order-3.png" alt="img">
+					</div>
+				</div>
+				<div class="h3 h3_bold">Товары в заказе</div>
+				<div class="table table_cart table_order">
+					<div class="table__head">
+						<div class="table__row">
+							<div class="table__cell">
+								Выбранные товары
+							</div>
+							<div class="table__cell">
+								Цена
+							</div>
+							<div class="table__cell">
+								Количество
+							</div>
+							<div class="table__cell">
+								Сумма
+							</div>
+						</div>
+					</div>
+					<div class="table__body">
+						<div class="table__row">
+							<div class="table__cell">
+								<div class="item item_list">
+									<a class="item__img" href="#">
+										<img src="img/item3.jpg" alt="img">
+										<div class="badge badge_hot">-25%</div>
+									</a>
+									<div class="item__main">
+										<div class="item__name">
+											<a href="#" class="item__link">	
+												<img src="img/flags/IT.png" width="24" alt="Италия" title="Италия"> 
+												<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="table__cell">
+								<div class="price price_inline price_small price_light">
+									540 <span class="rub">у</span>
+								</div>
+							</div>
+							<div class="table__cell">
+								2
+							</div>
+							<div class="table__cell">
+								<div class="price price_inline price_small price_light">
+									1180 <span class="rub">у</span>
+								</div>
+							</div>
+						</div>
+						<div class="table__row">
+							<div class="table__cell">
+								<div class="item item_list">
+									<a class="item__img" href="#">
+										<img src="img/item5.jpg" alt="img">
+										<div class="badge badge_hot">-25%</div>
+									</a>
+									<div class="item__main">
+										<div class="item__name">
+											<a href="#" class="item__link">	
+												<img src="img/flags/IT.png" width="24" alt="Италия" title="Италия"> 
+												<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="table__cell">
+								<div class="price price_inline price_small price_light">
+									540 <span class="rub">у</span>
+								</div>
+							</div>
+							<div class="table__cell">
+								2
+							</div>
+							<div class="table__cell">
+								<div class="price price_inline price_small price_light">
+									1180 <span class="rub">у</span>
+								</div>
+							</div>
+						</div>
+						<div class="table__row">
+							<div class="table__cell">
+								<div class="item item_list">
+									<a class="item__img" href="#">
+										<img src="img/item4.jpg" alt="img">
+										<div class="badge badge_hot">-25%</div>
+									</a>
+									<div class="item__main">
+										<div class="item__name">
+											<a href="#" class="item__link">	
+												<img src="img/flags/IT.png" width="24" alt="Италия" title="Италия"> 
+												<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="table__cell">
+								<div class="price price_inline price_small price_light">
+									540 <span class="rub">у</span>
+								</div>
+							</div>
+							<div class="table__cell">
+								2
+							</div>
+							<div class="table__cell">
+								<div class="price price_inline price_small price_light">
+									1180 <span class="rub">у</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="table__body table__more">
+						<div class="table__row">
+							<div class="table__cell">
+								<div class="item item_list">
+									<a class="item__img" href="#">
+										<img src="img/item3.jpg" alt="img">
+										<div class="badge badge_hot">-25%</div>
+									</a>
+									<div class="item__main">
+										<div class="item__name">
+											<a href="#" class="item__link">	
+												<img src="img/flags/IT.png" width="24" alt="Италия" title="Италия"> 
+												<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="table__cell">
+								<div class="price price_inline price_small price_light">
+									540 <span class="rub">у</span>
+								</div>
+							</div>
+							<div class="table__cell">
+								2
+							</div>
+							<div class="table__cell">
+								<div class="price price_inline price_small price_light">
+									1180 <span class="rub">у</span>
+								</div>
+							</div>
+						</div>
+						<div class="table__row">
+							<div class="table__cell">
+								<div class="item item_list">
+									<a class="item__img" href="#">
+										<img src="img/item5.jpg" alt="img">
+										<div class="badge badge_hot">-25%</div>
+									</a>
+									<div class="item__main">
+										<div class="item__name">
+											<a href="#" class="item__link">	
+												<img src="img/flags/IT.png" width="24" alt="Италия" title="Италия"> 
+												<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="table__cell">
+								<div class="price price_inline price_small price_light">
+									540 <span class="rub">у</span>
+								</div>
+							</div>
+							<div class="table__cell">
+								2
+							</div>
+							<div class="table__cell">
+								<div class="price price_inline price_small price_light">
+									1180 <span class="rub">у</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="total">
+					<div class="total__footer">
+						<div class="row">
+							<div class="col-md-9 col-sm-8 col-sm-6">
+								<div class="row">
+									<div class="col-md-10 col-md-offset-1">
+										<img src="img/order-4.png" alt="img">
+									</div>
+								</div>
+								
+								<a href="#" class="link"><span class="icon-arrowheads3"></span>Вернуться к покупкам</a>
+							</div>
+							<div class="col-md-3 col-sm-4 col-sm-6">
+								<ul class="total__list">
+									<li>
+										Сумма заказа: <div>3 200 <span class="rub">Р</span></div>
+									</li>
+									<li>
+										Ваша скидка (3%): <div>96 <span class="rub">Р</span></div>
+									</li>
+									<li>
+										<strong>Сумма со скидкой:</strong> 
+										<div><strong>3 104 <span class="rub">Р</span></strong></div> 
+									</li>
+								</ul>
+								<div class="note-text">
+									Еще раз проверьте всю информацию на этой странице. Нажав кнопку «Заказать», вы уже не сможете внести изменения в заказ.
+								</div>
+								<a href="#" class="btn btn-default btn-block">Заказать</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	//=include partials/footer.html
+</div>
+<!-- END out-->
+</body>
+</html>

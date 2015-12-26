@@ -112,10 +112,16 @@ body
 		color: $btn
 	&_primary
 		color: $btn 
+.h3_bold
+	font-weight: 700 
 .h1_mb,
 .h2_mb,
 .h3_mb
 	margin-bottom: 20px
+	
+.link
+	span
+		margin-right: 10px
 .number
 	position: relative
 	display: inline-block
@@ -598,6 +604,8 @@ body
 		color: $text 
 .price_small
 	font-size: 15px
+.price_light
+	+light
 .badge
 	position: absolute
 	right: 15px
@@ -709,13 +717,15 @@ select
 			border-radius: 50%  
 			background: $btn 
 .list-ol
-	+counter(1, ".")
 	line-height: 1.7
+	counter-reset: list
 	li
 		position: relative
 		margin-bottom: 15px
 		padding-left: 25px 
 		&:before
+			content: counter(list)"."
+			counter-increment: list
 			position: absolute
 			top: -2px
 			left: 0
@@ -723,6 +733,43 @@ select
 			font-size: 20px
 			+bold 
 			line-height: 1
+		ol
+			counter-reset: sublist
+			margin-top: 10px
+			li
+				position: relative
+				margin-bottom: 15px
+				padding-left: 50px 
+				&:before
+					content: counter(list)"."counter(sublist)"."
+					counter-increment: sublist
+			ol
+				counter-reset: sublist2
+				li
+					position: relative
+					margin-bottom: 15px
+					padding-left: 50px 
+					&:before
+						content: counter(list)"."counter(sublist)"."counter(sublist2)
+						counter-increment: sublist2
+	&_simple
+		li
+			padding-left: 0
+			&:before
+				color: $text 
+				position: static
+				display: inline-block
+				margin-right: 5px
+				+light
+				font-size: 15px
+			ol
+				padding-left: 20px
+				li
+					padding-left: 0
+				ol
+					padding-left: 20px
+					li
+						padding-left: 0
 .text-offset
 	padding-left: 25px
 	a
