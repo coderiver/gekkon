@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+	//=include partials/head.html
+	<title>Recipes</title>
+</head>
+<body>
+<!-- BEGIN  out-->
+<div class="out">
+	//=include partials/header.html  
+	<div class="inner inner_main">
+		<div class="container">
+			<ol class="breadcrumb">
+			  <li><a href="#">Главная</a></li>
+			  <li class="active">Личный кабинет
+			  </li>
+			</ol>
+			<h1 class="h1">Личный кабинет</h1>
+			<!-- begin  img-nav -->
+			<div class="img-nav img-nav_small">
+				<div class="row">
+					<div class="col-md-1 col-sm-2 col-xs-6">
+						
+							<a href="#" class="img-nav__link is-active">
+								<div class="img-nav__main">
+									<i class="i-icon-history"></i>
+								</div>
+								<div class="img-nav__text">
+									История заказов
+								</div>
+							</a>
+						
+					</div>
+					<div class="col-md-1 col-sm-2 col-xs-6">
+						
+							<a href="#" class="img-nav__link">
+								<div class="img-nav__main">
+									<i class="i-icon-favorite"></i>
+								</div>
+								<div class="img-nav__text">
+									Избранное
+								</div>
+							</a>
+						
+					</div>
+					<div class="col-md-1 col-sm-2 col-xs-6">
+						
+							<a href="#" class="img-nav__link">
+								<div class="img-nav__main">
+									<i class="i-icon-gift"></i>
+								</div>
+								<div class="img-nav__text">
+									Бонусы
+								</div>
+							</a>
+						
+					</div>
+					<div class="col-md-1 col-sm-2 col-xs-6">
+						
+							<a href="#" class="img-nav__link">
+								<div class="img-nav__main">
+									<i class="i-icon-user"></i>
+								</div>
+								<div class="img-nav__text">
+									Профиль
+								</div>
+							</a>
+						
+					</div>
+					<div class="col-md-1 col-sm-2 col-xs-6">
+						
+							<a href="#" class="img-nav__link">
+								<div class="img-nav__main">
+									<i class="i-icon-map"></i>
+								</div>
+								<div class="img-nav__text">
+									Адреса доставки
+								</div>
+							</a>
+						
+					</div>
+				</div>
+			</div>
+			<!-- end  img-nav -->
+			<h2 class="h2 h2_mb">История заказов</h2>
+			<p>Сделайте <strong>ещё 3 заказа</strong> в декабре и получите <strong>скидку 5%</strong> на все будущие покупки</p>
+			<div class="form-horizontal form-sort">
+				<div class="row">
+					<div class="col-lg-5 col-md-6">
+						<div class="date">
+							<div class="form-group">
+								<label class="control-label col-xs-3" for="orderDate">Дата заказа:</label>
+								<div class="col-xs-4">
+									<div class="date__input">
+										<input type="text" class="form-control" id="from">
+										<span class="i-icon-calendar"></span>
+									</div>
+								</div>
+								<div class="col-xs-1">
+									<span class="date__sep">-</span>
+								</div>
+								<div class="col-xs-4">
+									<div class="date__input">
+										<input type="text" class="form-control" id="to">
+										<span class="i-icon-calendar"></span>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="form-group is-high-select">
+							<label class="col-sm-4 control-label">Статус заказа:</label>
+							<div class="col-sm-8">
+								<select class="form-control">
+									<option value="Все">Все</option>
+									<option value="Принят">Принят</option>
+									<option value="Подтвержден">Подтвержден</option>
+									<option value="Отправлен">Отправлен</option>
+									<option value="Выполнен">Выполнен</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="table-wrap">
+				<div class="table-simple table-simple_spacing table-simple_width">
+					<table>
+						<thead>
+							<tr>
+								<th>
+									Номер
+									<button class="table-simple__sort">&uarr;</button>
+									<button class="table-simple__sort">&darr;</button>
+								</th>
+								<th>Сумма заказа</th>
+								<th>Товаров</th>
+								<th>Статус</th>
+								<th>Способ доставки</th>
+								<th>Способ оплаты</th>
+								<th>Оплачен</th>
+								<th>Действия</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<a href="#">	
+										Заказ №944975 от 18.05.2015
+									</a>
+								</td>
+								<td>5 800 <span class="rub">у</span></td>
+								<td>5</td>
+								<td>Принят</td>
+								<td>Курьер</td>
+								<td>Банковским переводом</td>
+								<td>Нет</td>
+								<td>
+									<a href="#">скачать счет</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">	
+										Заказ №944975 от 18.05.2015
+									</a>
+								</td>
+								<td>5 800 <span class="rub">у</span></td>
+								<td>5</td>
+								<td>Принят</td>
+								<td>Курьер</td>
+								<td>Банковским переводом</td>
+								<td>Нет</td>
+								<td>
+									<a href="#" class="link-cancel">отменить</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">	
+										Заказ №944975 от 18.05.2015
+									</a>
+								</td>
+								<td>5 800 <span class="rub">у</span></td>
+								<td>5</td>
+								<td>Принят</td>
+								<td>Курьер</td>
+								<td>Банковским переводом</td>
+								<td>Нет</td>
+								<td>
+									<a href="#" class="link-cancel">отменить</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">	
+										Заказ №944975 от 18.05.2015
+									</a>
+								</td>
+								<td>5 800 <span class="rub">у</span></td>
+								<td>5</td>
+								<td>Принят</td>
+								<td>Курьер</td>
+								<td>Банковской картой или с помощью платежных систем</td>
+								<td>Нет</td>
+								<td>
+									<a href="#" class="link-cancel">отменить</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">	
+										Заказ №944975 от 18.05.2015
+									</a>
+								</td>
+								<td>5 800 <span class="rub">у</span></td>
+								<td>5</td>
+								<td>Принят</td>
+								<td>Курьер</td>
+								<td>Банковским переводом</td>
+								<td>Нет</td>
+								<td>
+									<a href="#" class="link-cancel">отменить</a>
+								</td>
+							</tr>
+						</tbody>	
+					</table>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	//=include partials/footer.html  
+</div>
+<!-- END out-->
+</body>
+</html>

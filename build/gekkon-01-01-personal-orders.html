@@ -584,7 +584,7 @@
 				<div class="row">
 					<div class="col-md-1 col-sm-2 col-xs-6">
 						
-							<a href="#" class="img-nav__link">
+							<a href="#" class="img-nav__link is-active">
 								<div class="img-nav__main">
 									<i class="i-icon-history"></i>
 								</div>
@@ -632,7 +632,7 @@
 					</div>
 					<div class="col-md-1 col-sm-2 col-xs-6">
 						
-							<a href="#" class="img-nav__link is-active">
+							<a href="#" class="img-nav__link">
 								<div class="img-nav__main">
 									<i class="i-icon-map"></i>
 								</div>
@@ -645,43 +645,146 @@
 				</div>
 			</div>
 			<!-- end  img-nav -->
-			<h2 class="h2">Адреса доставки</h2>
+			<h2 class="h2 h2_mb">История заказов</h2>
+			<p>Сделайте <strong>ещё 3 заказа</strong> в декабре и получите <strong>скидку 5%</strong> на все будущие покупки</p>
+			<div class="form-horizontal form-sort">
+				<div class="row">
+					<div class="col-lg-5 col-md-6">
+						<div class="date">
+							<div class="form-group">
+								<label class="control-label col-xs-3" for="orderDate">Дата заказа:</label>
+								<div class="col-xs-4">
+									<div class="date__input">
+										<input type="text" class="form-control" id="from">
+										<span class="i-icon-calendar"></span>
+									</div>
+								</div>
+								<div class="col-xs-1">
+									<span class="date__sep">-</span>
+								</div>
+								<div class="col-xs-4">
+									<div class="date__input">
+										<input type="text" class="form-control" id="to">
+										<span class="i-icon-calendar"></span>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="form-group is-high-select">
+							<label class="col-sm-4 control-label">Статус заказа:</label>
+							<div class="col-sm-8">
+								<select class="form-control">
+									<option value="Все">Все</option>
+									<option value="Принят">Принят</option>
+									<option value="Подтвержден">Подтвержден</option>
+									<option value="Отправлен">Отправлен</option>
+									<option value="Выполнен">Выполнен</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="table-wrap">
 				<div class="table-simple table-simple_spacing table-simple_width">
 					<table>
+						<thead>
+							<tr>
+								<th>
+									Номер
+									<button class="table-simple__sort">&uarr;</button>
+									<button class="table-simple__sort">&darr;</button>
+								</th>
+								<th>Сумма заказа</th>
+								<th>Товаров</th>
+								<th>Статус</th>
+								<th>Способ доставки</th>
+								<th>Способ оплаты</th>
+								<th>Оплачен</th>
+								<th>Действия</th>
+							</tr>
+						</thead>
 						<tbody>
 							<tr>
 								<td>
-									Москва, 2-й Кожевнический переулок, д. 12 стр. 2, кв. 157
-								</td>
-								<td>
-									<a href="#" class="link link_icon">
-										<i class="i-icon-edit"></i>
-										<span>Редактировать</span>
+									<a href="#">	
+										Заказ №944975 от 18.05.2015
 									</a>
 								</td>
+								<td>5 800 <span class="rub">у</span></td>
+								<td>5</td>
+								<td>Принят</td>
+								<td>Курьер</td>
+								<td>Банковским переводом</td>
+								<td>Нет</td>
 								<td>
-									<a href="#" class="link link_icon is-cancel">
-										<i class="icon-close47"></i>
-										<span>Удалить</span>
-									</a>
+									<a href="#">скачать счет</a>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									Москва, 2-й Кожевнический переулок, д. 12 стр. 2, кв. 157
-								</td>
-								<td>
-									<a href="#" class="link link_icon">
-										<i class="i-icon-edit"></i>
-										<span>Редактировать</span>
+									<a href="#">	
+										Заказ №944975 от 18.05.2015
 									</a>
 								</td>
+								<td>5 800 <span class="rub">у</span></td>
+								<td>5</td>
+								<td>Принят</td>
+								<td>Курьер</td>
+								<td>Банковским переводом</td>
+								<td>Нет</td>
 								<td>
-									<a href="#" class="link link_icon is-cancel">
-										<i class="icon-close47"></i>
-										<span>Удалить</span>
+									<a href="#" class="link-cancel">отменить</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">	
+										Заказ №944975 от 18.05.2015
 									</a>
+								</td>
+								<td>5 800 <span class="rub">у</span></td>
+								<td>5</td>
+								<td>Принят</td>
+								<td>Курьер</td>
+								<td>Банковским переводом</td>
+								<td>Нет</td>
+								<td>
+									<a href="#" class="link-cancel">отменить</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">	
+										Заказ №944975 от 18.05.2015
+									</a>
+								</td>
+								<td>5 800 <span class="rub">у</span></td>
+								<td>5</td>
+								<td>Принят</td>
+								<td>Курьер</td>
+								<td>Банковской картой или с помощью платежных систем</td>
+								<td>Нет</td>
+								<td>
+									<a href="#" class="link-cancel">отменить</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<a href="#">	
+										Заказ №944975 от 18.05.2015
+									</a>
+								</td>
+								<td>5 800 <span class="rub">у</span></td>
+								<td>5</td>
+								<td>Принят</td>
+								<td>Курьер</td>
+								<td>Банковским переводом</td>
+								<td>Нет</td>
+								<td>
+									<a href="#" class="link-cancel">отменить</a>
 								</td>
 							</tr>
 						</tbody>	
@@ -689,53 +792,6 @@
 					
 				</div>
 			</div>
-			<h3 class="h3 h3_mb">Добавить новый адрес</h3>
-			<div class="row">
-				<div class="col-md-4 col-sm-6">
-					<form action="#">
-						<div class="form-group">
-							<label class="control-label">Внимательно укажите полный адрес</label>
-						</div>
-						<div class="form-group">
-							<label class="control-label" for="addressIndex">Индекс:</label>
-							<input type="text" class="form-control" id="addressIndex">
-						</div>
-						<div class="form-group">
-							<label class="control-label" for="addressCity">Населенный пункт:<sup class="required-text">*</sup></label>
-							<input type="text" class="form-control" id="addressCity" required>
-						</div>
-						<div class="form-group">
-							<label class="control-label" for="addressStreet">Улица:<sup class="required-text">*</sup></label>
-							<input type="text" class="form-control" id="addressStreet" required>
-						</div>
-						<div class="row">
-							<div class="col-xs-6">
-								<div class="form-group">
-									<label class="control-label" for="addressStreet">Дом:<sup class="required-text">*</sup></label>
-									<input type="text" class="form-control" id="addressHouse" required>
-								</div>
-							</div>
-							<div class="col-xs-6">
-								<div class="form-group">
-									<label class="control-label" for="addressStreet">Квартира, офис:</label>
-									<input type="text" class="form-control" id="addressFlatOffice">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="row">
-								<div class="col-sm-6">
-									<button class="btn btn-default btn-block" type="submit">Регистриация</button>
-								</div>
-								<div class="col-sm-6">
-									 <sup class="required-text">*</sup> Обязательные для заполнения поля
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-			
 		</div>
 	</div>
 	<footer class="footer">

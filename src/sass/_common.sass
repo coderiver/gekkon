@@ -122,6 +122,20 @@ body
 .link
 	span
 		margin-right: 10px
+	&_icon
+		i
+			margin-right: 10px
+		span
+			border-bottom: 1px solid transparent 
+		&:hover
+			text-decoration: none
+			span
+				border-color: $primary
+	&.is-cancel
+		color: $hot 
+		&:hover
+			span
+				border-color: $hot
 .number
 	position: relative
 	display: inline-block
@@ -693,6 +707,12 @@ body
 	label
 		font-size: 15px
 		+light
+	&.is-high-select
+		.control-label
+			padding-top: 4px
+		select
+			&.form-control	
+				height: 34px
 .form-control
 	font-size: 13px
 	+roboto
@@ -701,6 +721,8 @@ select
 	&.form-control
 		margin-top: -2px
 		height: 24px
+	&.is-big
+		height: 34px
 
 .list
 	li
@@ -822,3 +844,47 @@ select
 		opacity: 1
 		&:hover
 			color: $hot 
+.date
+	.form-group
+		.control-label
+			padding-top: 4px
+			text-align: left
+	&__sep
+		display: block
+		margin-top: 6px
+	&__input
+		position: relative
+		span
+			position: absolute
+			right: 7px
+			top: 7px
+			font-size: 20px
+			pointer-events: none
+.form-sort
+	margin: 40px 0 
+.ui-datepicker
+	padding: 10px 
+	background: #fff
+	border: 1px solid #9a9a9a
+.ui-datepicker-calendar
+	td
+		border: 1px solid $border
+		&:hover
+			color: $btn 
+			a
+				color: $btn 
+		&.ui-datepicker-today
+			background: $btn
+			color: #fff
+			a
+				color: #fff
+		&.ui-state-disabled
+			pointer-events: none
+			opacity: 0.5
+		&.ui-datepicker-current-day
+			background: $primary
+			color: #fff
+			a
+				color: #fff 
+	a
+		color: $text

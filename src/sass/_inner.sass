@@ -39,8 +39,7 @@
 		color: #333
 		
 .img-nav
-	margin-top: 15px 
-	margin-bottom: 35px 
+	margin: 35px 0 
 	&__link
 		display: block
 		margin: 0 auto
@@ -57,6 +56,11 @@
 	&__main
 		& > i
 			font-size: 48px 
+.img-nav_small
+	font-size: 13px
+	.img-nav__main
+		& > i
+			font-size: 35px
 .blog
 	margin-bottom: -20px 			
 .blog-item
@@ -137,6 +141,19 @@
 			border-bottom: 1px dashed #ddd 
 			&:last-child
 				border-bottom: 1px solid $primary
+	&__sort
+		background: none
+		width: 20px
+		color: #fff
+		&:hover
+			background: $btn 
+.table-simple_spacing	
+	td, th
+		padding: 10px 20px
+		text-align: left
+	th
+		white-space: nowrap
+	 
 .sidebar
 	h2
 		margin-bottom: 30px 

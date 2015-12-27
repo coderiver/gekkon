@@ -111,7 +111,7 @@ $(document).ready(function() {
 	$('.js-raty-readonly').raty({
 		readOnly: true,
 		score: function() {
-		    return $(this).attr('data-score');
+			return $(this).attr('data-score');
 		},
 		hints: ['1', '2', '3', '4', '5'],
 		starType: "i",
@@ -212,6 +212,22 @@ $(document).ready(function() {
 	}
 	checkTarget.init();
 
-			
+	$( "#from" ).datepicker({
+		changeMonth: true,
+		numberOfMonths: 1,
+		firstDay: 1,
+		onClose: function( selectedDate ) {
+			$( "#to" ).datepicker( "option", "minDate", selectedDate );
+			$( "#to" ).datepicker( "show" );
+		}
+	});
+	$( "#to" ).datepicker({
+		changeMonth: true,
+		numberOfMonths: 1,
+		firstDay: 1,
+		onClose: function( selectedDate ) {
+			$( "#from" ).datepicker( "option", "maxDate", selectedDate );
+		}
+	});
 
 });
