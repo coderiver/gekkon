@@ -64,7 +64,7 @@
 				<div class="container">
 					<div class="header__menu">
 						<div class="row">
-							<div class="col-sm-2 col-xs-3">
+							<div class="col-sm-2 col-xs-4">
 								<a href="#" class="logo">
 									<img src="img/logo.png" height="78" alt="Gekkon">
 									<strong>Натуральные <span>продукты и экотовары</span></strong>
@@ -553,7 +553,7 @@
 									
 								</div>
 							</div>
-							<div class="col-md-2 col-sm-10 col-xs-9">
+							<div class="col-md-2 col-sm-10 col-xs-8">
 								<div class="cart">
 									<span class="i-icon-cart"></span>
 									<span>В корзине</span>
@@ -1258,7 +1258,7 @@
 		<div class="inner">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-3">
+					<div class="col-md-3 col-sm-4">
 						<div class="form-action">
 							<form action="#">
 								<label for="subscribe-email">
@@ -1281,12 +1281,39 @@
 							<a class="i-icon-vk" href="#"></a>
 							<a class="i-icon-yt" href="#"></a>
 						</div>
-						<div class="footer__meta">
+						<div class="visible-xs">
+							<div class="payments">
+								Принимаем  к оплате:
+								<div class="payments__list">
+									<img src="img/visa-logo.png" height="27" alt="visa">
+									<img src="img/mc-logo.png" height="27" alt="mastercard">
+									<img src="img/wm-logo.png" height="27" alt="webmoney">
+									<img src="img/sberbank-logo.png" height="27" alt="сбербанк">
+								</div>
+							</div>
+							<button class="btn-dots" data-toggle="modal" data-target="#modal-city" type="button">Доставляем по всей России</button>
+						</div>
+						
+						<div class="hidden-lg hidden-md">
+							<div class="tel">
+								<span>8 800 555 65 56</span>
+								<button class="btn-dots" data-toggle="modal" data-target="#modal-call"  type="button">Перезвоните мне</button>
+							</div>
+							<ul class="visit-card">
+								<li><a href="#">info@gekkonmarket.ru</a></li>
+								<li>
+									<strong>Юридический адрес:</strong>
+									<div class="visit-card__city">127273, Москва,</div>
+									<div class="visit-card__street">ул. Отрадная, д. 2Б стр. 6</div>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__meta visible-lg visible-md">
 							<p>© 2015 Gekkon. Натуальные продукты и экотовары</p>
 							<p>Создание сайта — <a href="#">Individ</a></p>
 						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-md-3 col-sm-4">
 						<div class="title title_h3">Каталог товаров</div>
 						<ul class="footer__nav">
 							<li><a href="#">Продукты со всего мира</a></li>
@@ -1294,32 +1321,51 @@
 							<li><a href="#">Товары для дома</a></li>
 							<li><a href="#">Товары для животных</a></li>
 						</ul>
-						<div class="payments">
-							Принимаем  к оплате:
-							<div class="payments__list">
-								<img src="img/visa-logo.png" height="27" alt="visa">
-								<img src="img/mc-logo.png" height="27" alt="mastercard">
-								<img src="img/wm-logo.png" height="27" alt="webmoney">
-								<img src="img/sberbank-logo.png" height="27" alt="сбербанк">
+						<div class="hidden-xs">
+							<div class="payments">
+								Принимаем  к оплате:
+								<div class="payments__list">
+									<img src="img/visa-logo.png" height="27" alt="visa">
+									<img src="img/mc-logo.png" height="27" alt="mastercard">
+									<img src="img/wm-logo.png" height="27" alt="webmoney">
+									<img src="img/sberbank-logo.png" height="27" alt="сбербанк">
+								</div>
 							</div>
+							<button class="btn-dots" data-toggle="modal" data-target="#modal-city" type="button">Доставляем по всей России</button>
 						</div>
-						<button class="btn-dots" data-toggle="modal" data-target="#modal-city" type="button">Доставляем по всей России</button>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-md-3 col-sm-4">
 						<div class="title title_h3">Покупателям</div>
 						<ul class="footer__nav">
 							<li><a href="#">Оплата</a></li>
 							<li><a href="#">Доставка</a></li>
 							<li><a href="#">Система скидок</a></li>
+						</ul>
+						<ul class="footer__nav">
 							<li><a href="#">О компании</a></li>
 							<li><a href="#">Блог</a></li>
 							<li><a href="#">Подарочная упаковка</a></li>
 						</ul>
+						<div class="visible-sm visible-xs">
+							<div class="form-action">
+								<form action="#">
+									<div class="form-action__table">
+										<div class="form-action__cell">
+											<input class="form-action__input" type="text" placeholder="Поиск...">
+										</div>
+										<div class="form-action__cell">
+											<button class="form-action__btn" type="submit">Найти</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<a href="#" class="link-small">Карта сайта</a>
+						</div>
 					</div>
-					<div class="col-lg-3">
+					<div class="col-md-3 visible-lg visible-md">
 						<div class="tel">
 							<span>8 800 555 65 56</span>
-							<button class="btn-dots" data-toggle="modal" data-target="#modal-call"  type="button">Перезвоните мне</button>
+							<button class="btn-dots" data-toggle="modal" data-target="#modal-call-success"  type="button">Перезвоните мне</button>
 						</div>
 						<ul class="visit-card">
 							<li><a href="#">info@gekkonmarket.ru</a></li>
@@ -1327,7 +1373,6 @@
 								<strong>Юридический адрес:</strong>
 								<div class="visit-card__city">127273, Москва,</div>
 								<div class="visit-card__street">ул. Отрадная, д. 2Б стр. 6</div>
-								
 							</li>
 						</ul>
 						<div class="form-action">
@@ -1343,6 +1388,18 @@
 							</form>
 						</div>
 						<a href="#" class="link-small">Карта сайта</a>
+					</div>
+					<div class="col-md-12 col-sm-12 col-xs-12 hidden-lg hidden-md">
+						<div class="footer__meta">
+							<div class="row">
+								<div class="col-sm-8">
+									<p>© 2015 Gekkon. Натуальные продукты и экотовары</p>
+								</div>
+								<div class="col-sm-4 text-right">
+									<p>Создание сайта — <a href="#">Individ</a></p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1440,6 +1497,45 @@
 							</div>
 						</div>					
 					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modal-call" role="dialog">
+		<div class="modal-dialog" >
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="icon-close47"></span>
+					</button>
+					<div class="h3">Перезвоните мне</div>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="form-group">
+							<label for="callName">Имя:<sup class="required-text">*</sup></label>
+							<input type="text" class="form-control" id="callName" required="">
+						</div>
+						<div class="form-group">
+							<label for="callTel">Телефон:<sup class="required-text">*</sup></label>
+							<input type="tel" class="form-control" id="callTel" required="">
+						</div>
+						<div class="form-group">
+							<label for="callText">Что вы хотите обсудить:</label>
+							<textarea class="form-control" id="callText" rows="5"></textarea>
+						</div>
+						<div class="form-group">
+							<div class="row">
+								<div class="col-sm-6">
+									<button class="btn btn-default btn-block" type="submit">Отправить</button>
+								</div>
+								<div class="col-sm-6">
+									  <sup class="required-text">*</sup> Обязательные для заполнения поля
+								</div>
+							</div>
+						</div>				
+					</form>
+					<div class="text-center"><span class="icon-exclamation11"></span>Спасибо, мы перезвоним вам.</div>
 				</div>
 			</div>
 		</div>
