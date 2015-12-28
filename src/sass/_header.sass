@@ -39,6 +39,8 @@
 	position: relative
 	z-index: 9
 	border-bottom: 1px solid $border
+	+r(1023)
+		padding-bottom: 15px
 	.row
 		> div
 			position: static
@@ -47,6 +49,7 @@
 	display: inline-block
 	margin-top: 13px
 	color: $text 
+	
 	&:hover
 		color: $text 
 	strong
@@ -56,8 +59,18 @@
 		font-size: 13px
 		+light
 		font-style: italic
+		+r(1023)
+			bottom: -5px
+			left: 38px
+			font-size: 10px
+			line-height: 1
 	span
 		white-space: nowrap
+	img
+		display: block
+		+r(1024)
+			max-width: 100%
+			height: auto
 .menu
 	&__item
 		&:hover
@@ -145,6 +158,9 @@
 	margin-top: 45px
 	font-size: 13px
 	+bold
+	+r(1023)
+		text-align: right
+		margin-top: 40px
 	.i-icon-cart
 		margin-right: 3px
 	&__info
