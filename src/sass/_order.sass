@@ -8,24 +8,43 @@
 	line-height: 46px
 	color: $text
 	font-size: 18px 
+	+r(480)
+		border: 0
+		height: auto
+		line-height: 1
 	li
 		position: relative
 		float: left
 		width: 25%
 		padding: 0 13px 0 40px
 		background: #f0f0f0 
+		+r(1023)
+			text-align: center
+			font-size: 13px
+			padding: 0 5px
+		+r(768)
+			width: auto
+			padding: 0 20px 
+			background: none 
+		+r(480)
+			display: inline-block
+			float: none 
 		&:before
 			content: ""
 			position: absolute
 			right: -20px
 			top: -2px
 			+arr(20,50,$primary,r) 
+			+r(768)
+				display: none
 		&:after
 			content: ""
 			position: absolute
 			right: -17px
 			top: 0
 			+arr(17,46,#f0f0f0,r) 
+			+r(768)
+				display: none
 		&:first-child
 			z-index: 4
 			padding-left: 13px
@@ -56,31 +75,18 @@
 				font-size: 17px
 				vertical-align: middle
 				margin: -3px 5px 0 0
-.table
-	display: table
+			+r(480)
+				display: block
+				padding: 10px 0 
+.table-simple_cart
+	margin: 40px 0 
 	width: 100%
 	border-bottom: 1px solid $primary 
-	&__head
-		background: $primary
-		display: table-header-group
-		color: #fff
-		font-weight: 700  
-	&__body
-		display: table-row-group 
-	&__more
-		.table__row
-			&:first-child
-				.table__cell
-					border-top: 1px dotted $border 
-	&__row
-		display: table-row
-	&__cell
-		display: table-cell
-		padding: 10px 13px
-		vertical-align: middle
-.table_cart
-	margin: 40px 0 
-	.table__cell
+	table
+		width: 100%
+	th
+		padding-right: 15px
+	td
 		&:first-child
 			width: 45%
 		&:last-child
@@ -95,10 +101,8 @@
 			vertical-align: middle
 		.item
 			margin-top: 30px
-			+ .item
-				margin-top: -30px
-.table_cart-box
-	.table__cell
+.table-simple_cart-box
+	td
 		vertical-align: top
 	.item
 		&__main,
@@ -106,6 +110,7 @@
 			vertical-align: top
 			img
 				vertical-align: top
+
 .action-add
 	margin: 30px 0 
 	.btn

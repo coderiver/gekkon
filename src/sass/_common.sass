@@ -133,15 +133,17 @@ body
 .h2_mb,
 .h3_mb
 	margin-bottom: 20px
-	
+	s
 .link
 	span
 		margin-right: 10px
 	&_icon
+		white-space: nowrap
 		i
 			margin-right: 10px
 		span
 			border-bottom: 1px solid transparent 
+			white-space: normal
 		&:hover
 			text-decoration: none
 			span
@@ -882,6 +884,7 @@ select
 	&__sep
 		display: block
 		margin-top: 6px
+		text-align: center
 	&__input
 		position: relative
 		span
@@ -892,6 +895,8 @@ select
 			pointer-events: none
 .form-sort
 	margin: 40px 0 
+	+r(767)
+		margin: 10px 0 
 .ui-datepicker
 	padding: 10px 
 	background: #fff

@@ -42,10 +42,13 @@
 	margin: 35px 0 
 	&__link
 		display: block
-		margin: 0 auto
+		margin: 0 auto 20px
+		
 		color: #c2c2c2
 		text-align: center
 		transition: color 250ms
+		+r(767)
+			height: 80px
 		&.is-active
 			color: $primary
 			.img-nav__text
