@@ -80,11 +80,20 @@ body
 	line-height: 1.2
 	&_h1
 		margin: 27px 0
-		font-size: 40px	
+		font-size: 40px
+		+r(767)
+			font-size: 30px
+		
 	&_h2
 		font-size: 30px
+		+r(767)	
+			font-size: 20px	
+		
 	&_h3
 		font-size: 20px
+		+r(767)	
+			font-size: 18px	
+		
 	a
 		font-size: 15px
 		display: inline-block
@@ -98,12 +107,16 @@ body
 	line-height: 1.2
 	span
 		color: $btn	
+	+r(767)
+		font-size: 35px
 .h2
 	font-size: 30px
 	+light
 	line-height: 1.2
 	span
 		color: $btn
+	+r(767)
+		font-size: 25px
 .h3
 	font-size: 20px
 	+light
@@ -112,6 +125,8 @@ body
 		color: $btn
 	&_primary
 		color: $btn 
+	+r(767)
+		font-size: 18px
 .h3_bold
 	font-weight: 700 
 .h1_mb,
@@ -197,6 +212,8 @@ body
 	line-height: 1
 	transition: background .3s
 	text-shadow: none
+	+r(767)	
+		font-size: 15px
 	+ .btn
 		margin-top: 23px
 	&:focus
@@ -272,6 +289,8 @@ body
 	font-size: 18px
 	color: $text
 	transition: color, border, background, .3s
+	+r(767)
+		font-size: 15px
 	&:hover
 		border-color: $text
 		color: #fff
@@ -301,6 +320,8 @@ body
 	color: #fff
 	background: $btn 
 	transition: background .3s
+	+r(767)
+		font-size: 15px
 	&:hover
 		border-color: $text
 		color: #fff
@@ -489,11 +510,18 @@ body
 		margin-bottom: 17px
 		a
 			font-size: 20px
+			+r(767)
+				font-size: 18px
 	.title
 		margin-bottom: 20px
 .post_box
 	border: 1px solid $btn
 	padding: 15px 15px 33px
+	.btn
+		+r(767)
+			display: block
+			width: 100%
+			text-align: center
 .meta
 	font-size: 13px
 	+light
@@ -536,6 +564,8 @@ body
 				border-bottom: 1px solid 
 		img
 			margin-right: 5px
+		+r(767)
+			font-size: 18px
 	&__action
 		+clr
 		.price

@@ -3,6 +3,8 @@
 	position: relative
 	padding: 25px 
 	overflow: hidden
+	+r(767)
+		padding: 15px 
 	span
 		color: $promo 
 	&__img
@@ -24,6 +26,10 @@
 		line-height: .8
 		strong
 			text-transform: uppercase
+		+r(1023)
+			font-size: 35px
+			line-height: 1
+			text-shadow: 0 0 2px #fff
 	&__text
 		margin-bottom: 10px
 		font-size: 25px
@@ -31,7 +37,13 @@
 		span
 			font-size: 35px
 			+bold
+		+r(767)
+			font-size: 25px
+		+r(480)
+			font-size: 20px
 .slider-info
+	+r(767)
+		margin-bottom: 60px
 	&__title
 		display: table
 		width: 100%
@@ -45,15 +57,23 @@
 			&:before
 				display: block
 				margin: 0
+			+r(767)
+				font-size: 40px
+				width: 50px
 		strong
 			padding-top: 10px
 			display: table-cell
 			vertical-align: top
 			font-size: 25px
+			+r(767)
+				font-size: 16px
 	&__text
 		margin: 20px 0 30px 
 		font-size: 15px
 		+light
+	.slick-slide
+		+r(767)
+			padding-right: 20px
 .map-nav
 	margin-bottom: 15px
 .section-items
@@ -66,10 +86,14 @@
 	> span
 		font-size: 94px
 		color: $btn
+		+r(767)	
+			font-size: 55px
 	&__title
 		margin-bottom: 5px
 		font-size: 20px
 		+bold 
+		+r(767)
+			font-size: 20px
 .banner-img
 	display: block
 	img

@@ -59,7 +59,21 @@ $(document).ready(function() {
 		autoplay: true,
 		autoplaySpeed: 5000,
 		pauseOnHover: true,
-		pauseOnDotsHover: true
+		pauseOnDotsHover: true,
+		responsive: [
+			{
+			  breakpoint: 768,
+			  settings: {
+				slidesToShow: 2
+			  }
+			},
+			{
+			  breakpoint: 480,
+			  settings: {
+				slidesToShow: 1
+			  }
+			}
+		]
 
 	});
 
