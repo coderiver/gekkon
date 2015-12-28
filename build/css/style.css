@@ -2665,6 +2665,22 @@ select.is-big { height: 34px; }
 .block__img { margin-bottom: 10px; }
 .block__img > a { font-size: 0; }
 .block__img img { max-width: 100%; }
+.block__meta { color: #777; font-style: italic; font-size: 13px; margin-bottom: 15px; }
+.block__meta i { color: #a7c66d; margin-right: 3px; }
+
+.promo-img_right { text-align: right; }
+.promo-img_mod { padding-top: 100px; }
+
+.inline-icon { margin-bottom: 20px; }
+.inline-icon__main { display: inline-block; vertical-align: middle; width: 150px; }
+.inline-icon__main i { color: #799a2a; }
+.inline-icon__text { display: inline-block; vertical-align: middle; }
+.inline-icon_big .inline-icon__main i { font-size: 70px; }
+.inline-icon_sm .inline-icon__main i { font-size: 30px; }
+
+.item-about__header { margin-bottom: 25px; }
+.item-about__header i, .item-about__header span { display: inline-block; vertical-align: middle; }
+.item-about__header i { color: #799a2a; font-size: 32px; }
 
 .sidebar { position: relative; }
 .sidebar__group { margin-bottom: 45px; position: relative; }
