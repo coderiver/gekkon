@@ -7,8 +7,58 @@
 			margin: 20px 0
 		.note-text
 			margin: 20px 0 
+	&__overlay
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		left: 0
+	&__in
+		+r(1023)
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			z-index: 2
+			padding: 80px 40px 15px 
+			width: 355px
+			background: $btn 
+			overflow-y: auto
+			color: #fff 
+			+r(767)
+				width: 100%
 	.cols-counter
 		margin-bottom: 20px
+	+r(1023)
+		position: fixed
+		z-index: 10
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0 
+		transition: transform .3s
+		transform: translateX(-150%)
+		&.is-active
+			transform: translateX(0)
+		.checkbox
+			color: #fff
+			label 
+				> span
+					&:before 
+						border-color: #fff
+					&:after
+						color: #fff
+		.list-nav
+			a
+				color: #fff
+				&:hover
+					span
+						color: #fff 
+				span
+					color: #fff 
+		.btn-dots
+			color: #fff 
 .sort-result
 	display: none
 	position: absolute
@@ -55,3 +105,10 @@
 		&:hover
 			span
 				color: $btn 
+.btn-sidebar
+	position: absolute
+	right: 20px
+	top: 80px
+	color: #fff
+	font-size: 20px 
+	background: none 

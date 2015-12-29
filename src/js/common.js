@@ -246,16 +246,21 @@ $(document).ready(function() {
 	var toggler = {
 		init: function(option) {
 			this._$el = $(".js-toggler");
+			this._$root = $("body, html");
 			this._bindEvent();
 		},
 		_bindEvent: function() {
-			this._$el.on("click", this._selectTarget);
+			this._$el.on("click", this._selectTarget.bind(this));
 		},
 		_selectTarget: function(event) {
 			var el = $(event.currentTarget);
 			var target = $("."+el.data("toggle"));
+			var rootClass = el.data("root");
 			target.toggleClass("is-active");
 			el.toggleClass("is-active");
+			if (rootClass) {
+				this._$root.toggleClass(rootClass);
+			}
 			event.stopPropagation();
 		}
 	}

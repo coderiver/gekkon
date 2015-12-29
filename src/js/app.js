@@ -4,6 +4,6 @@
 //=include lib/bootstrap.min.js
 //=include lib/jquery.masonry.min.js
 //=include lib/jquery.raty.js
-//=include lib/slick.js
+//=include lib/slick.min.js
 //=include additional.js
 //=include common.js

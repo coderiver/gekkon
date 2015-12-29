@@ -43,6 +43,9 @@
 	font-weight: 400 
 =bold
 	font-weight: 700 
+html
+	&.no-scroll
+		overflow: hidden
 body
 	min-width: 320px
 	+roboto
@@ -51,6 +54,9 @@ body
 	line-height: 1.4
 	color: $text 
 	background: #fbf8da url(../img/body-bg.png) 0 0 repeat
+	&.no-scroll
+		overflow: hidden
+
 // common blocks
 .wrap
 	+clr
@@ -607,20 +613,35 @@ body
 	margin-bottom: 20px
 	padding: 10px 0 
 	width: 100%
+	+r(767)
+		display: block
 	.item__img,
 	.item__main,
 	.item__action
 		display: table-cell
 		vertical-align: bottom
 		padding: 0 15px 
+		+r(767)
+			display: block
+		.number
+			+r(1023)
+				float: left
+			+r(767)
+				margin-left: 20px
 	.item__img
 		height: auto
 		padding: 15px 
 		width: 20%
+		+r(767)
+			width: 100%
 	.item__main
 		width: 50%
+		+r(767)
+			width: 100%
 	.item__action
 		width: 30%
+		+r(767)
+			width: 100%
 	.item__name
 		height: 60px
 		margin-bottom: 5px
@@ -631,6 +652,8 @@ body
 	font-size: 25px
 	+bold
 	line-height: 1
+	+r(1023)
+		font-size: 20px
 	&__old
 		display: inline-block
 		font-size: 15px
@@ -755,6 +778,8 @@ body
 	font-size: 13px
 	+roboto
 	+light
+	+r(1024)
+		font-size: 16px
 select
 	&.form-control
 		margin-top: -2px
