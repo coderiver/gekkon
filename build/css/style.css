@@ -3003,6 +3003,7 @@ select.is-big { height: 34px; }
  .footer .row > div:last-child{ -webkit-box-ordinal-group: 5; -webkit-order: 4; -ms-flex-order: 4; order: 4; }
  .footer__meta .text-right{ text-align: left; }
  .footer__meta p{ margin-bottom: 0; }
+ .recipes-item{ text-align: center; }
  .product-info .text-right{ text-align: left; }
  .total__footer .link{ margin: 20px 0; }
  .menu-fixed__in{ width: 100%; } }
