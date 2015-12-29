@@ -1,4 +1,8 @@
 // 01-06-blog
+.vcenter
+	display: inline-block
+	vertical-align: middle
+	float: none
 .row
 	&_ib
 		font-size: 0
@@ -511,28 +515,25 @@
 .promo-img
 	&_right
 		text-align: right
+		+r(1023)
+			text-align: center
 	&_mod
 		padding-top: 100px 
+		+r(1023)
+			padding-top: 20px 
+			margin-bottom: 30px 
+	img
+		max-width: 100% 
 		
-.inline-icon
+.additional
 	margin-bottom: 20px 
-	&__main
-		display: inline-block
-		vertical-align: middle
-		width: 150px 
+	&__icon
+		// display: inline-block
+		// vertical-align: middle
+		// width: 150px 
 		i
 			color: $btn
-	&__text
-		display: inline-block
-		vertical-align: middle
-	&_big
-		.inline-icon__main
-			i
-				font-size: 70px 
-	&_sm
-		.inline-icon__main
-			i
-				font-size: 30px 
+			font-size: 70px
 .item-about-wrap
 	margin: 70px 0 
 .item-about

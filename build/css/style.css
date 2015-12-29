@@ -2488,6 +2488,8 @@ select.is-big { height: 34px; }
 .footer__meta a, .footer__nav a, .footer .visit-card a { color: #fff; }
 .footer .title_h3 { margin-bottom: 20px; }
 
+.vcenter { display: inline-block; vertical-align: middle; float: none; }
+
 .row_ib { font-size: 0; }
 .row_ib > div { display: inline-block; vertical-align: top; font-size: 15px; float: none; }
 
@@ -2677,13 +2679,10 @@ select.is-big { height: 34px; }
 
 .promo-img_right { text-align: right; }
 .promo-img_mod { padding-top: 100px; }
+.promo-img img { max-width: 100%; }
 
-.inline-icon { margin-bottom: 20px; }
-.inline-icon__main { display: inline-block; vertical-align: middle; width: 150px; }
-.inline-icon__main i { color: #799a2a; }
-.inline-icon__text { display: inline-block; vertical-align: middle; }
-.inline-icon_big .inline-icon__main i { font-size: 70px; }
-.inline-icon_sm .inline-icon__main i { font-size: 30px; }
+.additional { margin-bottom: 20px; }
+.additional__icon i { color: #799a2a; font-size: 70px; }
 
 .item-about-wrap { margin: 70px 0; }
 
@@ -3107,6 +3106,8 @@ select.is-big { height: 34px; }
  .header__menu{ padding-bottom: 15px; }
  .logo strong{ bottom: -5px; left: 38px; font-size: 10px; line-height: 1; }
  .cart{ text-align: right; margin-top: 40px; }
+ .promo-img_right{ text-align: center; }
+ .promo-img_mod{ padding-top: 20px; margin-bottom: 30px; }
  .sidebar__in{ position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 2; padding: 80px 40px 15px; width: 355px; background: #799a2a; overflow-y: auto; color: #fff; }
  .sidebar{ position: fixed; z-index: 10; top: 0; bottom: 0; left: 0; right: 0; -webkit-transition: -webkit-transform 0.3s; transition: transform 0.3s; -webkit-transform: translateX(-150%); -ms-transform: translateX(-150%); transform: translateX(-150%); }
  .sidebar.is-active{ -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
