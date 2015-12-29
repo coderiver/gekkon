@@ -2413,7 +2413,7 @@ select.is-big { height: 34px; }
 
 .location-box { margin-bottom: 33px; }
 
-#chartdiv { width: 100%; height: 387px; }
+#chartdiv, #chartdiv2 { width: 100%; height: 387px; }
 
 .header { position: relative; font-weight: 400; }
 
