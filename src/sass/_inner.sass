@@ -564,3 +564,21 @@
 	> p
 		line-height: 1.7 
 		
+.country-list
+	margin: 40px 0
+	&__item
+		padding-left: 30px
+		position: relative
+		margin-bottom: 15px
+		.meta
+			margin-bottom: 10px 
+	&__header
+		img
+			position: absolute
+			left: 0
+		&[aria-expanded="true"]
+			color: #000
+			+bold
+	&__info
+		a
+			font-size: 13px
