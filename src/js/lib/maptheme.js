@@ -4,6 +4,10 @@ AmCharts.themes.light = {
         color: "#000000",
         backgroundColor: "#a9c5d0"
     },
+    AmMap:{
+      backgroundAlpha: 1,
+      backgroundColor: '#a9c5d0'
+    },
     AmCoordinateChart: {
         colors: ["#67b7dc", "#fdd400", "#84b761", "#cc4748", "#cd82ad", "#2f4074", "#448e4d", "#b7b83f", "#b9783f", "#b93e3d", "#913167"]
     },
