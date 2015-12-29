@@ -6,6 +6,6 @@ $(document).ready(function() {
 		dots: true,
 		infinite: false,
 		prevArrow: '.js-tesing-prev',
-		nextArrow: '.js-tesing-next',
+		nextArrow: '.js-tesing-next'
 	})
 });	

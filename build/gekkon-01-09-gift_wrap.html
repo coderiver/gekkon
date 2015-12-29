@@ -64,7 +64,7 @@
 				<div class="container">
 					<div class="header__menu">
 						<div class="row">
-							<div class="col-sm-2 col-xs-4">
+							<div class="col-sm-2 col-xs-2">
 								<a href="#" class="logo">
 									<img src="img/logo.png" height="78" alt="Gekkon">
 									<strong>Натуральные <span>продукты и экотовары</span></strong>
@@ -553,7 +553,10 @@
 									
 								</div>
 							</div>
-							<div class="col-md-2 col-sm-10 col-xs-8">
+							<div class="col-md-2 col-sm-10 col-xs-10">
+								<button class="btn-menu visible-sm visible-xs js-toggler" data-toggle="js-menu" type="button">
+									<span class="icon-menu48"></span>
+								</button>
 								<div class="cart">
 									<span class="i-icon-cart"></span>
 									<span>В корзине</span>
@@ -569,6 +572,7 @@
 			</div>
 		</div>
 	</header>
+	
 	<div class="inner inner_main">
 		<div class="container">
 			<ol class="breadcrumb">
@@ -1036,6 +1040,78 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="menu-fixed hidden-lg hidden-md js-menu">
+		<div class="menu-fixed__overlay js-toggler" data-toggle="js-menu"></div>
+		<div class="menu-fixed__in">
+			<button class="btn-menu js-toggler" data-toggle="js-menu" type="button">
+				<span class="icon-menu48"></span>
+			</button>
+			<div class="menu">
+				<a class="menu__link" href="#">
+					<div class="menu__img">
+						<span class="icon-pear"></span>
+					</div>
+					<div class="menu__main">
+						<strong class="menu__title">Продукты питания</strong>
+						<span class="menu__info">со всего мира</span>
+					</div>
+				</a>
+				<a class="menu__link" href="#">
+					<div class="menu__img">
+						<span class="icon-sun"></span>
+					</div>
+					<div class="menu__main">
+						<strong class="menu__title">Продукты питания</strong>
+						<span class="menu__info">со всего мира</span>
+					</div>
+				</a>
+				<a class="menu__link" href="#">
+					<div class="menu__img">
+						<span class="icon-creams4"></span>
+					</div>
+					<div class="menu__main">
+						<strong class="menu__title">Продукты питания</strong>
+						<span class="menu__info">со всего мира</span>
+					</div>
+				</a>
+				<a class="menu__link" href="#">
+					<div class="menu__img">
+						<span class="icon-dog75"></span>
+					</div>
+					<div class="menu__main">
+						<strong class="menu__title">Продукты питания</strong>
+						<span class="menu__info">со всего мира</span>
+					</div>
+				</a>
+			</div>
+			<ul class="nav">
+				<li><a href="#"><span>Доставка</span></a></li>
+				<li><a href="#"><span>Оплата</span></a></li>
+				<li><a href="#"><span>О компании</span></a></li>
+				<li><a href="#"><span>Блог</span></a></li>
+				<li><a href="#"><span>Подарочная упаковка</span></a></li>
+				<li><a href="#"><span>Акции</span></a></li>
+				<li><a href="#"><span>Рецепты</span></a></li>
+			</ul>
+			<div class="row">
+				<div class="col-md-8 col-sm-8 col-xs-12">
+					<div class="form-action">
+						<form action="#">
+							<div class="form-action__table">
+								<div class="form-action__cell">
+									<input class="form-action__input" type="text" placeholder="Поиск...">
+								</div>
+								<div class="form-action__cell">
+									<button class="form-action__btn" type="submit">Найти</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 	</div>
 	<script src="js/app.js"></script>
 </div>

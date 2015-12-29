@@ -51,7 +51,7 @@ $(document).ready(function() {
 		$(this).tab('show');
 	});
 
-	$(".js-slider-info").slick({
+	$(".js-slider-small").slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: true,
@@ -62,19 +62,18 @@ $(document).ready(function() {
 		pauseOnDotsHover: true,
 		responsive: [
 			{
-			  breakpoint: 768,
-			  settings: {
-				slidesToShow: 2
-			  }
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2
+				}
 			},
 			{
-			  breakpoint: 480,
-			  settings: {
-				slidesToShow: 1
-			  }
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+				}
 			}
 		]
-
 	});
 
 	$('.js-slider-for').slick({
@@ -243,5 +242,23 @@ $(document).ready(function() {
 			$( "#from" ).datepicker( "option", "maxDate", selectedDate );
 		}
 	});
+
+	var toggler = {
+		init: function(option) {
+			this._$el = $(".js-toggler");
+			this._bindEvent();
+		},
+		_bindEvent: function() {
+			this._$el.on("click", this._selectTarget);
+		},
+		_selectTarget: function(event) {
+			var el = $(event.currentTarget);
+			var target = $("."+el.data("toggle"));
+			target.toggleClass("is-active");
+			el.toggleClass("is-active");
+			event.stopPropagation();
+		}
+	}
+	toggler.init();
 
 });

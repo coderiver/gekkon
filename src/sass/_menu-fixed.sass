@@ -1,0 +1,67 @@
+.menu-fixed
+	position: fixed
+	z-index: 10
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	transition: transform .3s
+	transform: translateX(100%)
+	&.is-active
+		transform: translateX(0)
+	&__in
+		position: absolute
+		z-index: 2
+		top: 0
+		bottom: 0
+		right: 0
+		padding: 65px 10px 30px 10px 
+		width: 355px
+		background: $btn 
+		overflow-y: auto
+	&__overlay
+		position: absolute
+		z-index: 1
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+	.btn-menu
+		top: 75px
+		right: 20px
+		color: #fff 
+	.nav
+		padding: 0 30px 
+		+reg
+		a
+			color: #fff
+			padding: 5px 10px 
+			&:hover
+				background: darken($btn, 5%)
+				 
+	.form-action
+		margin: 20px 0 0 40px
+		&__btn
+			background: $primary
+			color: #fff
+			&:hover
+				background: darken($primary, 10%)
+	.menu
+		margin: 20px 0 20px -10px
+		&__link
+			color: #fff
+			padding: 7px 0
+			clear: both
+		&__img
+			float: left
+			width: 50px
+			text-align: center
+			span
+				font-size: 27px
+				color: #fff 
+				&:before
+					margin: 0
+		&__main
+			overflow: hidden
+			text-align: left
+	 

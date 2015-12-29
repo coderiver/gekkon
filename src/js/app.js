@@ -2,8 +2,8 @@
 //=include lib/jquery-ui.min.js
 //=include lib/datepicker-ru.js
 //=include lib/bootstrap.min.js
-//=include lib/slick.min.js
 //=include lib/jquery.masonry.min.js
 //=include lib/jquery.raty.js
+//=include lib/slick.js
 //=include additional.js
 //=include common.js
