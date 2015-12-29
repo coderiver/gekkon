@@ -7,7 +7,7 @@
 <body>
 <!-- BEGIN  out-->
 <div class="out">
-	//=include partials/header.html  
+	//=include partials/header.html
 	<div class="inner inner_main">
 		<div class="container">
 			<div class="banner">
@@ -27,7 +27,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="location-box">	
+			<div class="location-box">
 				<div class="map-nav">
 					<div class="row">
 						<div class="col-lg-6">
@@ -61,16 +61,27 @@
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane fade in active" id="tab1">
 						<div class="map">
-							<img src="img/map-holder.jpg" alt="">
+
+							<!-- BEGIN OF THE MAP CODE  -->
+							<div class="mybubble">
+								blabla
+							</div>
+							<div id="chartdiv"></div>
+							<script src="js/map.js"></script>
+							<!-- END OF THE MAP CODE -->
+
 						</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="tab2">
 						<div class="map">
-							<img src="img/map-holder.jpg" alt="">
+							<!-- <img src="img/map-holder.jpg" alt=""> -->
+
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
+
+
 			<div class="row">
 				<div class="col-lg-3 col-md-4 col-sm-6">
 					<div class="item item_marked">
@@ -159,8 +170,8 @@
 							</a>
 							<div class="item__main">
 								<div class="item__name">
-									<a href="#" class="item__link">	
-										<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+									<a href="#" class="item__link">
+										<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания">
 										<span>Сыр из козьего молока «Бургос», 500 гр.</span>
 									</a>
 								</div>
@@ -299,7 +310,7 @@
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-12">
-					<div class="post post_box">	
+					<div class="post post_box">
 						<div class="row">
 							<div class="col-md-12 col-sm-6 col-xs-12">
 								<div class="title title_h2">Тест: какая страна вам подходит?</div>
@@ -350,9 +361,9 @@
 			</div>
 		</div>
 	</div>
-	
-	
-	//=include partials/footer.html  
+
+
+	//=include partials/footer.html
 </div>
 <!-- END out-->
 </body>
