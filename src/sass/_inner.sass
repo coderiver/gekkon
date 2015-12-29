@@ -1,4 +1,8 @@
 // 01-06-blog
+.vcenter
+	display: inline-block
+	vertical-align: middle
+	float: none
 .row
 	&_ib
 		font-size: 0
@@ -43,12 +47,11 @@
 	&__link
 		display: block
 		margin: 0 auto 20px
-		
 		color: #c2c2c2
 		text-align: center
 		transition: color 250ms
 		+r(767)
-			height: 80px
+			// height: 80px
 		&.is-active
 			color: $primary
 			.img-nav__text
@@ -86,9 +89,14 @@
 .img-wrap
 	& > i
 		display: inline-block
+	img
+		max-width: 100% 
+
 .recipes-item
 	display: block
 	margin-bottom: 25px
+	+r(767)
+		text-align: center
 	&__img
 		margin-bottom: 20px 
 		font-size: 0
@@ -216,6 +224,13 @@
 			&.slick-active
 				button
 					background: #fff 
+		+r(1023)
+			bottom: 25px 
+			left: 33px
+			right: 33px
+			text-align: center 
+			+r(767)
+				bottom: 50px  
 	&__prevBtn,
 	&__nextBtn
 		background: transparent
@@ -230,16 +245,27 @@
 		&.slick-disabled
 			opacity: .6
 			cursor: default
+		+r(1023)
+			bottom: 25px
+			+r(767)
+				bottom: 15px  
 	&__prevBtn
 		left: 33px 
 	&__nextBtn
 		right: 55% 
 		right: calc(50% + 55px) 
+		+r(1023)
+			right: 33px 
 		
 	
 .testing-slide
 	height: 430px 
 	padding: 15px 20px 
+	+r(1279)
+		height: auto
+		+r(1023)
+			padding-bottom: 80px 
+	
 	&__text
 		text-align: center
 		color: #fff
@@ -247,7 +273,9 @@
 		padding: 0 12% 0 6% 
 		.h1
 			line-height: 1.2
-			margin-top: 40px 
+			margin-top: 40px
+			+r(1023)
+				margin-top: 20px  
 	&__main
 		position: relative
 	&__box
@@ -259,6 +287,14 @@
 		background: url('../img/bd_test.png') top left no-repeat
 		background-size: cover 
 		padding: 28px 36px 28px 102px
+		+r(1279)
+			position: static
+			background: #fff
+			padding: 20px
+			width: auto 
+			height: auto
+			border-radius: 20px
+			border: 3px dashed $primary
 
 .test-form
 	&__field
@@ -342,6 +378,20 @@
 		top: 0
 		left: 0
 		z-index: -1
+.testing-result
+	+r(1023)
+		.border-image		
+			& > img
+				display: none
+			&__main
+				position: static
+				border: 3px dashed $primary
+				border-radius: 20px
+				overflow: hidden
+				
+				img
+					max-width: 100%
+				
 		
 .block
 	&__header
@@ -512,28 +562,25 @@
 .promo-img
 	&_right
 		text-align: right
+		+r(1023)
+			text-align: center
 	&_mod
 		padding-top: 100px 
+		+r(1023)
+			padding-top: 20px 
+			margin-bottom: 30px 
+	img
+		max-width: 100% 
 		
-.inline-icon
+.additional
 	margin-bottom: 20px 
-	&__main
-		display: inline-block
-		vertical-align: middle
-		width: 150px 
+	&__icon
+		// display: inline-block
+		// vertical-align: middle
+		// width: 150px 
 		i
 			color: $btn
-	&__text
-		display: inline-block
-		vertical-align: middle
-	&_big
-		.inline-icon__main
-			i
-				font-size: 70px 
-	&_sm
-		.inline-icon__main
-			i
-				font-size: 30px 
+			font-size: 70px
 .item-about-wrap
 	margin: 70px 0 
 .item-about
@@ -564,3 +611,21 @@
 	> p
 		line-height: 1.7 
 		
+.country-list
+	margin: 40px 0
+	&__item
+		padding-left: 30px
+		position: relative
+		margin-bottom: 15px
+		.meta
+			margin-bottom: 10px 
+	&__header
+		img
+			position: absolute
+			left: 0
+		&[aria-expanded="true"]
+			color: #000
+			+bold
+	&__info
+		a
+			font-size: 13px
