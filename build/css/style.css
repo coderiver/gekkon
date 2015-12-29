@@ -2410,7 +2410,7 @@ select.is-big { height: 34px; }
 
 .header { position: relative; font-weight: 400; }
 
-.header__nav { position: relative; z-index: 11; background: #a7c66d; font-size: 13px; color: #fff; height: 65px; line-height: 65px; }
+.header__nav { position: fixed; left: 0; top: 0; right: 0; z-index: 11; background: #a7c66d; font-size: 13px; color: #fff; height: 65px; line-height: 65px; }
 .header__nav a { color: #fff; }
 .header__nav a:hover { text-decoration: none; }
 .header__nav .inner { background: #a7c66d; -webkit-box-shadow: -10px 0 38px -10px rgba(0, 0, 0, 0.2), 10px 0 38px -10px rgba(0, 0, 0, 0.2); box-shadow: -10px 0 38px -10px rgba(0, 0, 0, 0.2), 10px 0 38px -10px rgba(0, 0, 0, 0.2); }
@@ -2421,6 +2421,7 @@ select.is-big { height: 34px; }
 .nav a { display: inline-block; vertical-align: middle; padding: 0 9px; -webkit-transition: background 0.3s; transition: background 0.3s; font-size: 13px; }
 .nav a:hover { background: #799a2a; }
 
+.header__main { margin-top: 65px; }
 .header__main .inner { background: #fff; }
 .header__main .inner:before { background: #fff; }
 
@@ -2887,7 +2888,7 @@ select.is-big { height: 34px; }
 .menu-fixed .form-action { margin: 20px 0 0 40px; }
 .menu-fixed .form-action__btn { background: #a7c66d; color: #fff; }
 .menu-fixed .form-action__btn:hover { background: #91b848; }
-.menu-fixed .menu { margin: 20px 0 20px -10px; }
+.menu-fixed .menu { margin: 20px 40px 20px -10px; }
 .menu-fixed .menu__link { color: #fff; padding: 7px 0; clear: both; }
 .menu-fixed .menu__img { float: left; width: 50px; text-align: center; }
 .menu-fixed .menu__img span { font-size: 27px; color: #fff; }
@@ -2972,7 +2973,8 @@ select.is-big { height: 34px; }
  .footer__copy .text-right{ text-align: left; }
  .footer__copy p{ margin-bottom: 0; }
  .img-nav__link{ height: 80px; }
- .total__footer .link{ margin: 20px 0; } }
+ .total__footer .link{ margin: 20px 0; }
+ .menu-fixed__in{ width: 100%; } }
 @media screen and (max-width: 767px){
  .table-responsive{ width: 100%; margin-bottom: 15.75px; overflow-y: hidden; -ms-overflow-style: -ms-autohiding-scrollbar; border: 1px solid #799a2a; }
  .table-responsive > .table{ margin-bottom: 0; }

@@ -2,7 +2,10 @@
 	position: relative
 	+reg
 .header__nav
-	position: relative
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
 	z-index: 11
 	background: $primary 
 	font-size: 13px
@@ -37,6 +40,7 @@
 		+r(1279)
 			padding: 0 5px
 .header__main 
+	margin-top: 65px
 	.inner
 		background: #fff
 		&:before
