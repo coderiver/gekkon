@@ -43,7 +43,7 @@
 		color: #333
 		
 .img-nav
-	margin: 35px 0 
+	margin: 10px 0 35px 
 	&__link
 		display: block
 		margin: 0 auto 20px
@@ -75,11 +75,16 @@
 		margin-bottom: 20px
 		font-size: 0
 		display: block
+		overflow: hidden
 		img
 			max-width: 100%
+			transform: scale(1) 
+			transition: transform 350ms ease-out
+		&:hover
+			img
+				transform: scale(1.1) 
 	&__text
 		& > a
-			color: #353130
 			transition: color 250ms
 			&:hover
 				text-decoration: none
@@ -104,12 +109,7 @@
 			max-width: 100%
 	& > h3
 		font-size: 20px
-		color: #353130
 		transition: color 250ms
-	&:hover
-		text-decoration: none
-		& > h3
-			color: $btn
 	.soc
 		margin-top: 20px
 .table-wrap
@@ -168,8 +168,6 @@
 .sidebar
 	h2
 		margin-bottom: 30px 
-		&:first-child
-			margin-top: 0
 
 .gift-box
 	&__header
@@ -207,6 +205,9 @@
 .testing
 	position: relative
 	background: $primary 
+	.slick-arrow
+		&:hover
+			text-decoration: underline
 	.slick-dots
 		position: absolute
 		left: 33px
@@ -295,7 +296,9 @@
 			height: auto
 			border-radius: 20px
 			border: 3px dashed $primary
-
+		.radio
+			&__text
+				+light
 .test-form
 	&__field
 		cursor: pointer

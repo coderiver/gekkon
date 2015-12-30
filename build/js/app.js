@@ -858,6 +858,7 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		dots: true,
 		infinite: false,
+		fade: true,
 		prevArrow: '.js-tesing-prev',
 		nextArrow: '.js-tesing-next'
 	})
