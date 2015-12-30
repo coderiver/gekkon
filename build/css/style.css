@@ -2219,7 +2219,7 @@ body.no-scroll { overflow: hidden; }
 .tabs-link a { display: inline-block; border-bottom: 1px dotted; -webkit-transition: border 0.3s; transition: border 0.3s; }
 .tabs-link a:hover { text-decoration: none; border-color: transparent; }
 
-.tabs-view { margin: 0; padding: 0 20px; line-height: 1.2; font-size: 15px; font-weight: 300; }
+.tabs-view { margin: -35px 0 0; padding: 0 20px; line-height: 1.2; font-size: 15px; font-weight: 300; }
 .tabs-view li { display: inline-block; margin-left: 25px; vertical-align: middle; }
 .tabs-view li.active span { border-color: transparent; color: #353130; font-weight: 700; }
 .tabs-view a { display: inline-block; }
@@ -2385,6 +2385,11 @@ select.is-big { height: 34px; }
 .ui-datepicker-calendar td.ui-datepicker-current-day { background: #a7c66d; color: #fff; }
 .ui-datepicker-calendar td.ui-datepicker-current-day a { color: #fff; }
 .ui-datepicker-calendar a { color: #353130; }
+
+.btn-close { position: absolute; z-index: 2; right: 10px; top: 10px; font-size: 11px; color: #353130; -webkit-transition: color 0.3s; transition: color 0.3s; background: none; }
+.btn-close:hover { color: #ea4924; }
+
+.tab-content .tab-content { padding-top: 30px; }
 
 .banner { margin-bottom: 55px; position: relative; padding: 25px; overflow: hidden; }
 .banner span { color: #7a0026; }
@@ -2915,6 +2920,18 @@ select.is-big { height: 34px; }
 .menu-fixed .menu__img span { font-size: 27px; color: #fff; }
 .menu-fixed .menu__img span:before { margin: 0; }
 .menu-fixed .menu__main { overflow: hidden; text-align: left; }
+
+.map { position: relative; }
+
+.mybubble { display: none; position: absolute; z-index: 2; -webkit-transform: translateY(-100%); -ms-transform: translateY(-100%); transform: translateY(-100%); -webkit-transform: translateY(-webkit-calc(-100% - 30px)); -ms-transform: translateY(calc(-100% - 30px)); transform: translateY(calc(-100% - 30px)); border: 2px solid #799a2a; padding: 10px 5px; background: #fff; }
+.mybubble.is-active { display: block; }
+.mybubble:before { content: ""; position: absolute; left: -2px; bottom: -17px; width: 0px; height: 0px; border-style: solid; border-width: 17px 12px 0 0; border-color: #799a2a transparent transparent transparent; }
+.mybubble:after { content: ""; position: absolute; z-index: 2; left: 0; bottom: -11px; width: 0px; height: 0px; border-style: solid; border-width: 17px 12px 0 0; border-color: #fff transparent transparent transparent; }
+.mybubble .country-list { margin: 0; max-width: 300px; }
+.mybubble .country-list__item { margin-bottom: 0; }
+.mybubble .country-list__header { font-weight: 700; margin-right: 25px; text-transform: uppercase; font-size: 17px; }
+.mybubble .country-list__body { margin: 0 0 0 -30px; }
+.mybubble .country-list__info { margin-bottom: 0; }
 @media print{
  *, *:before, *:after{ background: transparent !important; color: #000 !important; -webkit-box-shadow: none !important; box-shadow: none !important; text-shadow: none !important; }
  a, a:visited{ text-decoration: underline; }

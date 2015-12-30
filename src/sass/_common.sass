@@ -476,7 +476,7 @@ body
 			text-decoration: none
 			border-color: transparent 
 .tabs-view
-	margin: 0
+	margin: -35px 0 0
 	padding: 0 20px 
 	line-height: 1.2
 	font-size: 15px
@@ -958,3 +958,18 @@ select
 				color: #fff 
 	a
 		color: $text
+
+.btn-close
+	position: absolute
+	z-index: 2
+	right: 10px
+	top: 10px
+	font-size: 11px
+	color: $text
+	transition: color .3s
+	background: none
+	&:hover
+		color: $hot 
+.tab-content
+	.tab-content
+		padding-top: 30px
