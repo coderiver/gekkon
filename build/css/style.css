@@ -53,41 +53,43 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .i-icon-attachment:before { content: ""; }
 
-.i-icon-cart:before { content: ""; }
+.i-icon-cart:before { content: ""; }
 
-.i-icon-check:before { content: ""; }
+.i-icon-check2:before { content: ""; }
 
-.i-icon-check2:before { content: ""; }
+.i-icon-calendar:before { content: ""; }
 
-.i-icon-fb:before { content: ""; }
+.i-icon-check:before { content: ""; }
 
-.i-icon-in:before { content: ""; }
+.i-icon-edit:before { content: ""; }
 
-.i-icon-sepa:before { content: ""; }
+.i-icon-favorite:before { content: ""; }
 
-.i-icon-skrill:before { content: ""; }
+.i-icon-gift:before { content: ""; }
 
-.i-icon-tw:before { content: ""; }
+.i-icon-history:before { content: ""; }
 
-.i-icon-vk:before { content: ""; }
+.i-icon-filter:before { content: ""; }
 
-.i-icon-yt:before { content: ""; }
+.i-icon-in:before { content: ""; }
 
-.i-icon-gift:before { content: ""; }
+.i-icon-map:before { content: ""; }
 
-.i-icon-history:before { content: ""; }
+.i-icon-fb:before { content: ""; }
 
-.i-icon-map:before { content: ""; }
+.i-icon-sepa:before { content: ""; }
 
-.i-icon-user:before { content: ""; }
+.i-icon-select-arr:before { content: ""; }
 
-.i-icon-favorite:before { content: ""; }
+.i-icon-skrill:before { content: ""; }
 
-.i-icon-calendar:before { content: ""; }
+.i-icon-user:before { content: ""; }
 
-.i-icon-edit:before { content: ""; }
+.i-icon-yt:before { content: ""; }
 
-.i-icon-filter:before { content: ""; }
+.i-icon-tw:before { content: ""; }
+
+.i-icon-vk:before { content: ""; }
 
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
@@ -2304,7 +2306,7 @@ body.no-scroll { overflow: hidden; }
 .checkbox input:checked + span:before { border-color: #799a2a; }
 .checkbox label > span { display: block; position: relative; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; color: #6b6867; }
 .checkbox label > span:before { content: ""; position: absolute; left: -20px; top: 2px; border: 1px solid #000; width: 13px; height: 13px; }
-.checkbox label > span:after { content: ""; position: absolute; left: -18px; top: 5px; font-size: 7px; font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #799a2a; display: none; }
+.checkbox label > span:after { content: ""; position: absolute; left: -18px; top: 5px; font-size: 7px; font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #799a2a; display: none; }
 .checkbox .btn-dots { font-size: 15px; }
 
 .checkbox_big label { padding-left: 40px; min-height: 31px; font-size: 20px; }
@@ -2323,6 +2325,9 @@ body.no-scroll { overflow: hidden; }
 
 select.form-control { margin-top: -1px; height: 24px; padding-top: 0; padding-bottom: 0; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; appearance: none !important; }
 select.is-big { height: 34px; }
+
+.select { position: relative; }
+.select i { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); right: 10px; color: #4a4746; font-size: 14px; cursor: pointer; }
 
 .list li { position: relative; padding-left: 13px; }
 .list > li:before { content: ""; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; -webkit-border-radius: 50%; border-radius: 50%; background: #799a2a; }
