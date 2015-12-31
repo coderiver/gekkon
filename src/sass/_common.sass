@@ -140,7 +140,6 @@ body
 .h2_mb,
 .h3_mb
 	margin-bottom: 20px
-	s
 .link
 	span
 		margin-right: 10px
@@ -175,6 +174,7 @@ body
 		font-size: 15px
 		+reg
 		+roboto
+
 	&__plus,
 	&__minus	
 		vertical-align: top 
@@ -469,6 +469,8 @@ body
 				border-color: transparent
 				color: $text
 				+bold  
+	h3
+		margin: 0
 	a
 		display: inline-block
 		border-bottom: 1px dotted 
@@ -695,7 +697,11 @@ body
 		color: $text
 	&_hot
 		background: $hot
-		color: #fff  
+		color: #fff 
+	&_big
+		font-size: 28px
+		padding: 6px 8px 5px
+		+bold 
 
 .checkbox
 	margin: 0 0 5px 
@@ -779,6 +785,7 @@ body
 		select
 			&.form-control	
 				height: 34px
+				padding: 6px 12px 
 .form-control
 	font-size: 13px
 	+roboto
@@ -789,6 +796,7 @@ select
 	&.form-control
 		margin-top: -2px
 		height: 24px
+		padding: 0 12px
 	&.is-big
 		height: 34px
 
@@ -817,7 +825,7 @@ select
 			content: counter(list)"."
 			counter-increment: list
 			position: absolute
-			top: -2px
+			top: 0
 			left: 0
 			color: $btn
 			font-size: 20px
