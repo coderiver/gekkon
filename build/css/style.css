@@ -2082,7 +2082,7 @@ body.no-scroll { overflow: hidden; }
 .inner:before, .inner:after { content: ""; position: absolute; top: 0; bottom: 0; width: 1px; z-index: -1; -webkit-box-shadow: 0 0 40px black; box-shadow: 0 0 40px black; }
 .inner:before { left: 0; }
 .inner:after { right: 0; }
-.inner_main { padding: 27px 0 40px; background: #fff; }
+.inner_main { padding: 27px 0 70px; background: #fff; }
 
 .title { font-weight: 300; line-height: 1.2; }
 .title_h1 { margin: 27px 0; font-size: 40px; }
@@ -2192,7 +2192,7 @@ body.no-scroll { overflow: hidden; }
 .visit-card li { margin-bottom: 15px; }
 
 .soc { font-size: 28px; }
-.soc a { display: inline-block; background: #fff; -webkit-transition: color 0.3s; transition: color 0.3s; }
+.soc a { display: inline-block; background: #fff; -webkit-transition: color 0.3s; transition: color 0.3s; line-height: 1; }
 .soc a:hover { text-decoration: none; }
 .soc_small { font-size: 20px; }
 .soc_small span { font-size: 15px; }
@@ -2279,7 +2279,7 @@ body.no-scroll { overflow: hidden; }
 
 .price { font-size: 25px; font-weight: 700; line-height: 1; }
 .price__old { display: inline-block; font-size: 15px; text-decoration: line-through; }
-.price__new { color: #7a0026; }
+.price__new { color: #b2002e; }
 .price .price__weight { font-size: 13px; font-weight: 300; color: #353130; }
 
 .price_inline { display: inline-block; vertical-align: baseline; }
@@ -2292,7 +2292,7 @@ body.no-scroll { overflow: hidden; }
 
 .price_light { font-weight: 300; }
 
-.badge { position: absolute; right: 15px; top: 15px; padding: 3px 5px 2px; -webkit-border-radius: 0; border-radius: 0; font-size: 15px; font-weight: 300; }
+.badge { position: absolute; right: 20px; top: 15px; padding: 3px 5px 2px; -webkit-border-radius: 0; border-radius: 0; font-size: 15px; font-weight: 300; }
 .badge_new { background: #ffde00; color: #353130; }
 .badge_hot { background: #ea4924; color: #fff; }
 
@@ -2458,7 +2458,7 @@ select.is-big { height: 34px; }
 .menu__img span { font-size: 43px; display: inline-block; }
 .menu__img .icon-sun { margin-top: -8px; }
 .menu__title { display: block; font-weight: 700; font-size: 15px; }
-.menu__drop { position: absolute; left: 0; right: 0; top: 100%; opacity: 0; visibility: hidden; border: 1px solid #eee; padding: 30px 15px 5px; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; background: #fff; font-size: 13px; font-weight: 300; }
+.menu__drop { position: absolute; left: 0; right: 0; top: 100%; opacity: 0; visibility: hidden; border: 1px solid #eee; padding: 30px 15px 5px; -webkit-transition: opacity 0.6s, visibility 0.6s; transition: opacity 0.6s, visibility 0.6s; background: #fff; font-size: 13px; font-weight: 300; }
 .menu .promo { margin-bottom: 25px; }
 .menu__list { margin: 10px 0 20px; }
 .menu__list li { margin-bottom: 5px; }
