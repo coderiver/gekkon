@@ -2315,13 +2315,13 @@ body.no-scroll { overflow: hidden; }
 .cols-counter[data-cols="2"] .checkbox { padding-right: 5px; }
 .cols-counter[data-cols="3"] { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; -webkit-column-gap: 30px; -moz-column-gap: 30px; column-gap: 30px; line-height: 1.7; font-size: 15px; }
 
-.form-group label { font-size: 15px; position: relative; top: -1px; font-weight: 300; }
+.form-group label { font-size: 15px; font-weight: 300; }
 .form-group.is-high-select .control-label { padding-top: 4px; }
 .form-group.is-high-select select.form-control { height: 34px; }
 
 .form-control { font-size: 13px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; }
 
-select.form-control { margin-top: -2px; height: 24px; padding-top: 0; padding-bottom: 0; }
+select.form-control { margin-top: -1px; height: 24px; padding-top: 0; padding-bottom: 0; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; appearance: none !important; }
 select.is-big { height: 34px; }
 
 .list li { position: relative; padding-left: 13px; }
@@ -2728,7 +2728,7 @@ select.is-big { height: 34px; }
 .sort-result:before { content: ""; position: absolute; left: -12px; top: -2px; width: 0px; height: 0px; border-style: solid; border-width: 16px 12px 16px 0; border-color: transparent #799a2a transparent transparent; }
 .sort-result:after { content: ""; position: absolute; left: -10px; top: 0; width: 0px; height: 0px; border-style: solid; border-width: 14px 10px 14px 0; border-color: transparent #fff transparent transparent; }
 
-.title-cat { margin-bottom: 17px; font-size: 20px; font-weight: 700; }
+.title-cat { margin-bottom: 17px; font-size: 20px; margin-top: 1px; font-weight: 700; }
 
 .list-nav { font-size: 15px; font-weight: 300; }
 .list-nav li { margin-bottom: 6px; }
@@ -2743,12 +2743,12 @@ select.is-big { height: 34px; }
 .sort { margin-bottom: 30px; }
 .sort__title { font-size: 20px; font-weight: 300; }
 .sort__title .btn-dots { margin-left: 20px; font-size: 15px; }
-.sort .form-group { padding-top: 7px; }
-.sort .view { padding-top: 7px; }
+.sort .form-group { padding-top: 5px; }
+.sort .view { padding-top: 5px; }
 
 .view { text-align: right; }
 .view span, .view a { display: inline-block; color: #353130; }
-.view span { margin-right: 10px; }
+.view span { margin-right: 10px; margin-top: -2px; }
 .view a.is-active { color: #a7c66d; }
 
 .catalog { margin-bottom: 40px; font-size: 15px; }

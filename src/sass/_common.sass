@@ -770,8 +770,8 @@ body
 .form-group
 	label
 		font-size: 15px
-		position: relative
-		top: -1px
+		// position: relative
+		// top: -1px
 		+light
 	&.is-high-select
 		.control-label
@@ -787,10 +787,14 @@ body
 		font-size: 16px
 select
 	&.form-control
-		margin-top: -2px
+		margin-top: -1px
 		height: 24px
 		padding-top: 0
 		padding-bottom: 0
+		-webkit-appearance: none
+		-moz-appearance: none
+		-ms-appearance: none
+		appearance: none !important
 	&.is-big
 		height: 34px
 
