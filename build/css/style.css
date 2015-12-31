@@ -2321,7 +2321,7 @@ body.no-scroll { overflow: hidden; }
 
 .form-control { font-size: 13px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; }
 
-select.form-control { margin-top: -2px; height: 24px; }
+select.form-control { margin-top: -2px; height: 24px; padding-top: 0; padding-bottom: 0; }
 select.is-big { height: 34px; }
 
 .list li { position: relative; padding-left: 13px; }
