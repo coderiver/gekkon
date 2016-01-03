@@ -2330,7 +2330,7 @@ select.is-big { height: 34px; }
 .select { position: relative; }
 .select i { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); right: 10px; color: #4a4746; font-size: 16px; cursor: pointer; }
 
-.list li { position: relative; padding-left: 13px; }
+.list li { position: relative; padding-left: 13px; margin-top: 10px; }
 .list > li:before { content: ""; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; -webkit-border-radius: 50%; border-radius: 50%; background: #799a2a; }
 
 .list-ol { line-height: 1.7; counter-reset: list; }
