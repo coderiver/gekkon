@@ -2116,9 +2116,9 @@ body.no-scroll { overflow: hidden; }
 .link.is-cancel { color: #ea4924; }
 .link.is-cancel:hover span { border-color: #ea4924; }
 
-.number { position: relative; display: inline-block; height: 25px; white-space: nowrap; border: 1px solid #ddd; }
+.number { position: relative; display: inline-block; height: 25px; white-space: nowrap; border: 1px solid #ddd; font-size: 0; }
 .number__input { display: inline-block; vertical-align: top; height: 23px; width: 30px; text-align: center; font-size: 15px; font-weight: 400; font-family: "Roboto", Arial, sans-serif; }
-.number__plus, .number__minus { vertical-align: top; width: 23px; height: 23px; color: #353130; background: #f3f2f2; }
+.number__plus, .number__minus { vertical-align: top; width: 23px; height: 23px; color: #353130; background: #f3f2f2; font-size: 15px; }
 .number__plus:hover, .number__minus:hover { background: #e7e5e5; }
 .number__plus:active, .number__minus:active { background: #dbd7d7; }
 .number__plus { border-left: 1px solid #ddd; }
@@ -2793,6 +2793,7 @@ select.is-big { height: 34px; }
 .info-text { font-size: 15px; font-weight: 300; }
 .info-text_denger { color: #ea4924; }
 .info-text_success { color: #799a2a; }
+.info-text [class^='icon-'] { margin-right: 6px; vertical-align: middle; }
 
 .box { border: 3px solid #799a2a; padding: 20px 15px; }
 .box__head { margin-bottom: 20px; }
