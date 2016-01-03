@@ -53,43 +53,43 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .i-icon-attachment:before { content: ""; }
 
-.i-icon-cart:before { content: ""; }
-
-.i-icon-check2:before { content: ""; }
-
 .i-icon-calendar:before { content: ""; }
 
+.i-icon-cart:before { content: ""; }
+
 .i-icon-check:before { content: ""; }
+
+.i-icon-check2:before { content: ""; }
 
 .i-icon-edit:before { content: ""; }
 
 .i-icon-favorite:before { content: ""; }
 
+.i-icon-fb:before { content: ""; }
+
+.i-icon-filter:before { content: ""; }
+
 .i-icon-gift:before { content: ""; }
 
 .i-icon-history:before { content: ""; }
-
-.i-icon-filter:before { content: ""; }
 
 .i-icon-in:before { content: ""; }
 
 .i-icon-map:before { content: ""; }
 
-.i-icon-fb:before { content: ""; }
+.i-icon-select-arr:before { content: ""; }
 
 .i-icon-sepa:before { content: ""; }
 
-.i-icon-select-arr:before { content: ""; }
-
 .i-icon-skrill:before { content: ""; }
-
-.i-icon-user:before { content: ""; }
-
-.i-icon-yt:before { content: ""; }
 
 .i-icon-tw:before { content: ""; }
 
+.i-icon-user:before { content: ""; }
+
 .i-icon-vk:before { content: ""; }
+
+.i-icon-yt:before { content: ""; }
 
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
@@ -2296,7 +2296,8 @@ body.no-scroll { overflow: hidden; }
 
 .badge { position: absolute; right: 15px; top: 15px; padding: 3px 5px 2px; -webkit-border-radius: 0; border-radius: 0; font-size: 15px; font-weight: 300; }
 .badge_new { background: #ffde00; color: #353130; }
-.badge_hot { background: #ea4924; color: #fff; }
+.badge_hot { background: #ea4924; color: #fff; font-weight: 700; }
+.badge_big { font-size: 29px; padding: 6px 6px 4px 10px; }
 
 .checkbox { margin: 0 0 5px; position: static; font-weight: 300; color: #353130; }
 .checkbox + .checkbox { margin: 0 0 5px; }
@@ -2327,7 +2328,7 @@ select.form-control { margin-top: -1px; height: 24px; padding-top: 0; padding-bo
 select.is-big { height: 34px; }
 
 .select { position: relative; }
-.select i { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); right: 10px; color: #4a4746; font-size: 14px; cursor: pointer; }
+.select i { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); right: 10px; color: #4a4746; font-size: 16px; cursor: pointer; }
 
 .list li { position: relative; padding-left: 13px; }
 .list > li:before { content: ""; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; -webkit-border-radius: 50%; border-radius: 50%; background: #799a2a; }
