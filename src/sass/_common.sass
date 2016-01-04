@@ -658,6 +658,10 @@ body
 		display: inline-block
 		font-size: 15px
 		text-decoration: line-through
+		position: relative
+		top: -7px
+		+r(1023)
+			top: 0
 	&__new
 		color: $promo
 	.price__weight
@@ -692,6 +696,10 @@ body
 	&_new
 		background: $marked
 		color: $text
+	&_new-green
+		background-color: #b1dc4a
+		+bold
+		line-height: 1
 	&_hot
 		background: $hot
 		color: #fff

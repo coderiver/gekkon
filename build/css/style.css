@@ -2284,7 +2284,7 @@ body.no-scroll { overflow: hidden; }
 .item_list .btn { margin: 20px 0; }
 
 .price { font-size: 25px; font-weight: 700; line-height: 1; }
-.price__old { display: inline-block; font-size: 15px; text-decoration: line-through; }
+.price__old { display: inline-block; font-size: 15px; text-decoration: line-through; position: relative; top: -7px; }
 .price__new { color: #7a0026; }
 .price .price__weight { font-size: 13px; font-weight: 300; color: #353130; }
 
@@ -2300,6 +2300,7 @@ body.no-scroll { overflow: hidden; }
 
 .badge { position: absolute; right: 15px; top: 15px; padding: 3px 5px 2px; -webkit-border-radius: 0; border-radius: 0; font-size: 15px; font-weight: 300; }
 .badge_new { background: #ffde00; color: #353130; }
+.badge_new-green { background-color: #b1dc4a; font-weight: 700; line-height: 1; }
 .badge_hot { background: #ea4924; color: #fff; font-weight: 700; }
 .badge_big { font-size: 29px; padding: 5px 6px 5px 10px; }
 
@@ -3138,6 +3139,7 @@ select.is-big { height: 34px; }
  .payments__list img{ margin-right: 1px; }
  .item_list .item__img .number, .item_list .item__main .number, .item_list .item__action .number{ float: left; }
  .price{ font-size: 20px; }
+ .price__old{ top: 0; }
  .cols-counter[data-cols="3"]{ -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; }
  .cols-counter .col{ width: 100%; padding-right: 0; }
  .banner__title{ font-size: 35px; line-height: 1; text-shadow: 0 0 2px #fff; }
