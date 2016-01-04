@@ -2865,8 +2865,8 @@ select::-ms-expand { display: none; }
 
 .table-simple_cart { margin: 40px 0; width: 100%; border-bottom: 1px solid #a7c66d; min-width: 900px; }
 .table-simple_cart table { width: 100%; }
-.table-simple_cart th { padding: 15px; }
-.table-simple_cart td { padding: 15px; }
+.table-simple_cart th { padding: 0 15px; text-align: left; }
+.table-simple_cart td { padding: 15px; text-align: left; }
 .table-simple_cart td:first-child { width: 45%; }
 .table-simple_cart td:last-child { width: 5%; text-align: center; }
 .table-simple_cart .item { margin: 0; }
