@@ -2547,9 +2547,9 @@ select.is-big { height: 34px; }
 .img-wrap img { max-width: 100%; }
 
 .recipes-item { display: block; margin-bottom: 25px; }
-.recipes-item__img { margin-bottom: 20px; font-size: 0; }
+.recipes-item__img { font-size: 0; }
 .recipes-item__img img { max-width: 100%; }
-.recipes-item > h3 { font-size: 20px; -webkit-transition: color 250ms; transition: color 250ms; }
+.recipes-item > h3 { font-size: 20px; -webkit-transition: color 250ms; transition: color 250ms; margin-top: 10px; }
 .recipes-item .soc { margin-top: 20px; }
 
 .table-wrap { overflow: auto; }
