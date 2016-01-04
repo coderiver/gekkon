@@ -202,6 +202,8 @@ body
 	&:hover
 		border-color: transparent
 		text-decoration: none
+	&.btn-dots_s
+		border-bottom-style: solid
 	&_light
 		+light
 	&_icon
@@ -791,6 +793,7 @@ body
 			width: 100%
 			padding-right: 0
 .form-group
+	position: relative
 	label
 		font-size: 15px
 		// position: relative
@@ -802,6 +805,11 @@ body
 		select
 			&.form-control
 				height: 34px
+	.i-icon-lock
+		font-size: 17px
+		position: absolute
+		right: 14px
+		top: 59%
 .form-control
 	font-size: 13px
 	+roboto

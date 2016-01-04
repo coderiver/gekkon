@@ -61,39 +61,41 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .i-icon-cart:before { content: ""; }
 
+.i-icon-check:before { content: ""; }
+
 .i-icon-check2:before { content: ""; }
 
 .i-icon-edit:before { content: ""; }
 
-.i-icon-favorite:before { content: ""; }
-
-.i-icon-fb:before { content: ""; }
-
 .i-icon-gift:before { content: ""; }
-
-.i-icon-check:before { content: ""; }
 
 .i-icon-history:before { content: ""; }
 
 .i-icon-in:before { content: ""; }
 
+.i-icon-lock:before { content: ""; }
+
+.i-icon-map:before { content: ""; }
+
+.i-icon-select-arr:before { content: ""; }
+
+.i-icon-sepa:before { content: ""; }
+
+.i-icon-favorite:before { content: ""; }
+
+.i-icon-skrill:before { content: ""; }
+
+.i-icon-fb:before { content: ""; }
+
+.i-icon-user:before { content: ""; }
+
+.i-icon-yt:before { content: ""; }
+
+.i-icon-tw:before { content: ""; }
+
+.i-icon-vk:before { content: ""; }
+
 .i-icon-filter:before { content: ""; }
-
-.i-icon-select-arr:before { content: ""; }
-
-.i-icon-sepa:before { content: ""; }
-
-.i-icon-map:before { content: ""; }
-
-.i-icon-user:before { content: ""; }
-
-.i-icon-yt:before { content: ""; }
-
-.i-icon-tw:before { content: ""; }
-
-.i-icon-skrill:before { content: ""; }
-
-.i-icon-vk:before { content: ""; }
 
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
@@ -2130,6 +2132,7 @@ body.no-scroll { overflow: hidden; }
 
 .btn-dots { display: inline-block; line-height: 1.3; background: none; border-bottom: 1px dotted; font-family: "Roboto", Arial, sans-serif; font-weight: 400; color: #799a2a; }
 .btn-dots:hover { border-color: transparent; text-decoration: none; }
+.btn-dots.btn-dots_s { border-bottom-style: solid; }
 .btn-dots_light { font-weight: 300; }
 .btn-dots_icon { border: 0; }
 .btn-dots_icon span { display: inline-block; border-bottom: 1px dotted; }
@@ -2325,9 +2328,11 @@ body.no-scroll { overflow: hidden; }
 .cols-counter[data-cols="3"] { -webkit-column-count: 3; -moz-column-count: 3; column-count: 3; -webkit-column-gap: 30px; -moz-column-gap: 30px; column-gap: 30px; line-height: 1.7; font-size: 15px; }
 .cols-counter .col { display: inline-block; vertical-align: top; width: 33%; padding-right: 12px; }
 
+.form-group { position: relative; }
 .form-group label { font-size: 15px; font-weight: 300; }
 .form-group.is-high-select .control-label { padding-top: 4px; }
 .form-group.is-high-select select.form-control { height: 34px; }
+.form-group .i-icon-lock { font-size: 17px; position: absolute; right: 14px; top: 59%; }
 
 .form-control { font-size: 13px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; }
 
