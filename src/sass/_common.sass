@@ -380,7 +380,7 @@ body
 		+reg
 		color: $text 
 		+placeholder
-			color: #959595 
+			color: #959595
 	&__btn
 		display: inline-block
 		vertical-align: middle
@@ -390,7 +390,10 @@ body
 		+reg
 		font-size: 13px
 		background: $btn
-		line-height: 1  
+		line-height: 1 
+		+tr(background .3s)
+		&:hover
+			background: lighten($btn, 10%) 
 	label
 		+reg
 .tel
@@ -694,7 +697,8 @@ body
 	+light
 	&_new
 		background: $marked
-		color: $text
+		color: #fff
+		+bold
 	&_hot
 		background: $hot
 		color: #fff 
@@ -982,3 +986,8 @@ select
 .tab-content
 	.tab-content
 		padding-top: 30px
+		
+.login-box
+	a
+		&:hover
+			border-bottom: 1px solid #fff
