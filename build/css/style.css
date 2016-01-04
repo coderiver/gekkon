@@ -2366,7 +2366,7 @@ select.is-big { height: 34px; }
 .form-inline_raty .raty { display: inline-block; vertical-align: middle; margin: 0 0 5px 15px; }
 
 .modal-header { border: 0; }
-.modal-header .h3 { margin: 0; }
+.modal-header .h3, .modal-header .h2 { margin: 0; }
 .modal-header .close { font-size: 15px; color: #353130; opacity: 1; }
 .modal-header .close:hover { color: #ea4924; }
 
