@@ -20,6 +20,8 @@
 			line-height: 1 
 			padding-left: 10px 
 			padding-right: 10px 
+		& > a:hover
+			text-decoration: underline
 		&.active > span
 			background: transparent
 			border: 0
@@ -103,13 +105,14 @@
 	+r(767)
 		text-align: center
 	&__img
-		margin-bottom: 20px 
+		// margin-bottom: 20px 
 		font-size: 0
 		img
 			max-width: 100%
 	& > h3
 		font-size: 20px
 		transition: color 250ms
+		margin-top: 10px
 	.soc
 		margin-top: 20px
 .table-wrap

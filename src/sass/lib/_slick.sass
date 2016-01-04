@@ -83,19 +83,26 @@
 		color: #fff
 		background: $btn
 	&:before
-		display: inline-block
-		vertical-align: middle
-		+icon
+		@extend %i-icon
+		font-size: 26px
+		position: absolute
 .slick-prev
 	right: 29px
 	&:before
-		content: "\e832"
-		font-size: 15px
+		content: $i-icon-arrow-left
+		top: 50%
+		transform: translate(50%,-50%)
+		right: 50%
+		
 .slick-next
 	right: 0
 	&:before
-		content: "\e834"
-		font-size: 20px
+		content: $i-icon-arrow-right
+		top: 50%
+		transform: translate(-50%, -50%)
+		left: 50%
+
+		
 .slick-dots
 	text-align: left
 	position: absolute

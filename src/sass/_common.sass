@@ -587,6 +587,9 @@ body
 		.number
 			float: right
 			margin-top: 4px
+		.price__old
+			position: relative
+			top: -7px
 	.btn
 		margin-top: 13px
 	.checkbox_big
@@ -658,6 +661,8 @@ body
 		display: inline-block
 		font-size: 15px
 		text-decoration: line-through
+		+r(1023)
+			top: 0
 	&__new
 		color: $promo
 	.price__weight
@@ -692,13 +697,17 @@ body
 	&_new
 		background: $marked
 		color: $text
+	&_new-green
+		background-color: #b1dc4a
+		+bold
+		line-height: 1
 	&_hot
 		background: $hot
 		color: #fff
 		+bold
 	&_big
 		font-size: 29px
-		padding: 6px 6px 4px 10px
+		padding: 5px 6px 5px 10px
 
 .checkbox
 	margin: 0 0 5px
@@ -773,6 +782,14 @@ body
 		font-size: 15px
 		+r(1023)
 			column-count: 1
+	.col
+		display: inline-block
+		vertical-align: top
+		width: 33%
+		padding-right: 12px
+		+r(1023)
+			width: 100%
+			padding-right: 0
 .form-group
 	label
 		font-size: 15px
@@ -790,7 +807,7 @@ body
 	+roboto
 	+light
 	+r(1024)
-		font-size: 16px
+		font-size: 14px
 select
 	&.form-control
 		margin-top: -1px
@@ -801,8 +818,17 @@ select
 		-moz-appearance: none
 		-ms-appearance: none
 		appearance: none !important
+		&.form-control_numb
+			padding-left: 6px
+			+r(1280)
+				padding-left: 0
+				padding-right: 20px
+		+r(1280)
+			padding-left: 3px
 	&.is-big
 		height: 34px
+	&::-ms-expand
+		display: none
 
 .select
 	position: relative
@@ -810,10 +836,15 @@ select
 		position: absolute
 		top: 50%
 		transform: translateY(-50%)
-		right: 10px
+		right: 8px
 		color: #4a4746
-		font-size: 16px
+		font-size: 21px
 		cursor: pointer
+		pointer-events: none
+		+r(1280)
+			right: 0
+		+r(1024)
+			right: 8px
 .list
 	li
 		position: relative
