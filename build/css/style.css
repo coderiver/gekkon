@@ -2301,7 +2301,7 @@ body.no-scroll { overflow: hidden; }
 .badge { position: absolute; right: 15px; top: 15px; padding: 3px 5px 2px; -webkit-border-radius: 0; border-radius: 0; font-size: 15px; font-weight: 300; }
 .badge_new { background: #ffde00; color: #353130; }
 .badge_hot { background: #ea4924; color: #fff; font-weight: 700; }
-.badge_big { font-size: 29px; padding: 6px 6px 4px 10px; }
+.badge_big { font-size: 29px; padding: 5px 6px 5px 10px; }
 
 .checkbox { margin: 0 0 5px; position: static; font-weight: 300; color: #353130; }
 .checkbox + .checkbox { margin: 0 0 5px; }
@@ -2799,7 +2799,7 @@ select.is-big { height: 34px; }
 .info-text { font-size: 15px; font-weight: 300; }
 .info-text_denger { color: #ea4924; }
 .info-text_success { color: #799a2a; }
-.info-text [class^='icon-'] { margin-right: 6px; vertical-align: middle; }
+.info-text [class^='icon-'] { margin-right: 6px; vertical-align: middle; margin-top: -1px; }
 
 .box { border: 3px solid #799a2a; padding: 20px 15px; }
 .box__head { margin-bottom: 20px; }
