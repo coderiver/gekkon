@@ -2873,6 +2873,8 @@ select::-ms-expand { display: none; }
 .table-simple_cart .item:hover { -webkit-box-shadow: none; box-shadow: none; }
 .table-simple_cart .item__main, .table-simple_cart .item__img { vertical-align: middle; }
 .table-simple_cart .item__name { height: auto; }
+.table-simple_cart .item__link { font-size: 15px; }
+.table-simple_cart .item__link > span { vertical-align: middle; }
 .table-simple_cart .item .item_list { clear: both; margin-top: 30px; }
 .table-simple_cart .item .item_list .item__img { width: 50%; margin: 0 auto; }
 .table-simple_cart .price { text-align: left; }
