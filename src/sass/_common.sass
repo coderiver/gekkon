@@ -379,6 +379,7 @@ body
 		+roboto
 		+reg
 		color: $text 
+		line-height: 21px 
 		+placeholder
 			color: #959595
 	&__btn
@@ -426,11 +427,22 @@ body
 	font-size: 28px
 	a
 		display: inline-block
-		background: #fff 
 		+tr(color .3s)
 		line-height: 1
+		position: relative
+		z-index: 2
 		&:hover
 			text-decoration: none
+		&:after
+			content: ''
+			position: absolute
+			top: 1px
+			bottom: 1px
+			left: 1px
+			right: 1px
+			background: #fff 
+			z-index: -1 
+			
 	&_small
 		font-size: 20px
 		span
@@ -790,12 +802,31 @@ body
 			&.form-control	
 				height: 34px
 				padding: 6px 12px 
+.field-password
+	position: relative
+	input
+		padding-right: 27px 
+	.input-eye
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		padding: 0 7px 
+		background: transparent
+		color: #333
+		cursor: pointer 
+		+vertical
+		i
+			font-size: 14px
+			vertical-align: middle 
+
 .form-control
 	font-size: 13px
 	+roboto
 	+light
 	+r(1024)
 		font-size: 16px
+
 select
 	&.form-control
 		margin-top: -2px
@@ -922,6 +953,8 @@ select
 		font-size: 15px
 		color: $text
 		opacity: 1
+		margin-top: 0px
+		margin-right: -3px
 		&:hover
 			color: $hot 
 .date
@@ -991,3 +1024,18 @@ select
 	a
 		&:hover
 			border-bottom: 1px solid #fff
+			
+.link-solid
+	border-bottom: 1px solid
+
+.checkbox-list
+	+clr
+	.checkbox-col
+		width: 50%
+		float: left 
+		.checkbox
+			padding-left: 5px 
+		+r(767)
+			width: 100%
+			float: none 
+		
