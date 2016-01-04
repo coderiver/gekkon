@@ -2333,9 +2333,10 @@ body.no-scroll { overflow: hidden; }
 select.form-control { margin-top: -1px; height: 24px; padding-top: 0; padding-bottom: 0; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; appearance: none !important; }
 select.form-control.form-control_numb { padding-left: 6px; }
 select.is-big { height: 34px; }
+select::-ms-expand { display: none; }
 
 .select { position: relative; }
-.select i { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); right: 8px; color: #4a4746; font-size: 21px; cursor: pointer; }
+.select i { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); right: 8px; color: #4a4746; font-size: 21px; cursor: pointer; pointer-events: none; }
 
 .list li { position: relative; padding-left: 13px; margin-top: 10px; }
 .list > li:before { content: ""; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; -webkit-border-radius: 50%; border-radius: 50%; background: #799a2a; }
@@ -2515,6 +2516,7 @@ select.is-big { height: 34px; }
 
 .pagination > li { display: inline-block; vertical-align: middle; }
 .pagination > li > a, .pagination > li > span { border: 0; line-height: 1; padding-left: 10px; padding-right: 10px; }
+.pagination > li > a:hover { text-decoration: underline; }
 .pagination > li.active > span { background: transparent; border: 0; font-weight: 700; }
 .pagination > li.active > span:hover, .pagination > li.active > span:focus, .pagination > li.active > span:active { background: transparent; }
 .pagination > li:first-child, .pagination > li:last-child { font-size: 24px; line-height: 1; position: relative; top: -1px; }
@@ -3228,7 +3230,8 @@ select.is-big { height: 34px; }
  .col-md-offset-0{ margin-left: 0; }
  .modal-lg{ width: 415px; } }
 @media only screen and (max-width: 1024px){
- .form-control{ font-size: 16px; } }
+ .form-control{ font-size: 14px; }
+ .select i{ right: 8px; } }
 @media only screen and (max-width: 1279px){
  .nav a{ padding: 0 5px; }
  .testing-slide{ height: auto; }
@@ -3295,6 +3298,10 @@ select.is-big { height: 34px; }
  .visible-lg-inline{ display: inline !important; }
  .visible-lg-inline-block{ display: inline-block !important; }
  .hidden-lg{ display: none !important; } }
+@media only screen and (max-width: 1280px){
+ select.form-control.form-control_numb{ padding-left: 0; padding-right: 20px; }
+ select.form-control{ padding-left: 3px; }
+ .select i{ right: 0; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1023px) and (max-width: 767px){

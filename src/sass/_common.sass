@@ -806,7 +806,7 @@ body
 	+roboto
 	+light
 	+r(1024)
-		font-size: 16px
+		font-size: 14px
 select
 	&.form-control
 		margin-top: -1px
@@ -819,8 +819,15 @@ select
 		appearance: none !important
 		&.form-control_numb
 			padding-left: 6px
+			+r(1280)
+				padding-left: 0
+				padding-right: 20px
+		+r(1280)
+			padding-left: 3px
 	&.is-big
 		height: 34px
+	&::-ms-expand 
+		display: none
 
 .select
 	position: relative
@@ -832,6 +839,11 @@ select
 		color: #4a4746
 		font-size: 21px
 		cursor: pointer
+		pointer-events: none
+		+r(1280)
+			right: 0
+		+r(1024)
+			right: 8px
 .list
 	li
 		position: relative
