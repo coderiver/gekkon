@@ -291,4 +291,13 @@ $(document).ready(function() {
 	}
 	toggler.init();
 
+	$('input[data-required="digits"]').on('keyup', function(){
+		var value = $(this).val();
+		var re = /[^0-9,]/;
+		if (re.test(value)) {
+			value = value.replace(re, '');
+			$(this).val(value);
+		}
+	});
+
 });

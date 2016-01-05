@@ -147,6 +147,7 @@ body
 		white-space: nowrap
 		i
 			margin-right: 10px
+			font-size: 10px
 		span
 			border-bottom: 1px solid transparent
 			white-space: normal
@@ -159,6 +160,8 @@ body
 		&:hover
 			span
 				border-color: $hot
+	&_big
+		font-size: 20px
 .number
 	position: relative
 	display: inline-block
@@ -201,8 +204,8 @@ body
 	+reg
 	color: $btn
 	&:hover
-		border-color: transparent
-		text-decoration: none
+		color: #000 
+		
 	&.btn-dots_s
 		border-bottom-style: solid
 	&_light
@@ -495,8 +498,7 @@ body
 		border-bottom: 1px dotted
 		+tr(border .3s)
 		&:hover
-			text-decoration: none
-			border-color: transparent
+			color: #000 
 .tabs-view
 	margin: -35px 0 0
 	padding: 0 20px
@@ -834,7 +836,12 @@ body
 		select
 			&.form-control
 				height: 34px
-				padding: 6px 12px 
+				padding: 6px 12px
+	.note-text
+		font-size: 15px
+		color: #777 
+		&_mt
+			margin-top: 16px
 .field-password
 	position: relative
 	input
@@ -862,6 +869,14 @@ body
 	font-size: 13px
 	+roboto
 	+light
+	+r(1024)
+		font-size: 16px
+textarea
+	font-size: 15px
+	+placeholder
+		font-style: italic
+		+light
+		color: #777 
 	+r(1024)
 		font-size: 16px
 select
@@ -1041,7 +1056,7 @@ select
 			font-size: 20px
 			pointer-events: none
 .form-sort
-	margin: 40px 0
+	margin: 40px 0 0
 	+r(767)
 		margin: 10px 0
 .ui-datepicker
