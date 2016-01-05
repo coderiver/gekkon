@@ -65,13 +65,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .i-icon-check2:before { content: ""; }
 
-<<<<<<< HEAD
-.i-icon-check:before { content: ""; }
-
-.i-icon-check2:before { content: ""; }
-=======
 .i-icon-edit:before { content: ""; }
->>>>>>> 8a2e346228ff250ad25d8ec313cf5f025046fb17
 
 .i-icon-arr-b:before { content: ""; }
 
@@ -87,37 +81,23 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .i-icon-in:before { content: ""; }
 
-<<<<<<< HEAD
-.i-icon-map:before { content: ""; }
-=======
 .i-icon-lock:before { content: ""; }
->>>>>>> 8a2e346228ff250ad25d8ec313cf5f025046fb17
 
 .i-icon-select-arr:before { content: ""; }
 
 .i-icon-user:before { content: ""; }
 
-<<<<<<< HEAD
-.i-icon-skrill:before { content: ""; }
-=======
 .i-icon-tw:before { content: ""; }
 
 .i-icon-arrow-right:before { content: ""; }
 
 .i-icon-eye:before { content: ""; }
->>>>>>> 8a2e346228ff250ad25d8ec313cf5f025046fb17
 
 .i-icon-map:before { content: ""; }
 
-<<<<<<< HEAD
-.i-icon-user:before { content: ""; }
-=======
 .i-icon-vk:before { content: ""; }
->>>>>>> 8a2e346228ff250ad25d8ec313cf5f025046fb17
 
 .i-icon-yt:before { content: ""; }
-
-.i-icon-yt:before { content: ""; }
 
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
@@ -2389,22 +2369,24 @@ select::-ms-expand { display: none; }
 .select i { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); right: 8px; color: #4a4746; font-size: 21px; cursor: pointer; pointer-events: none; }
 
 .list li { position: relative; padding-left: 13px; margin-top: 10px; }
-.list > li:before { content: ""; position: absolute; left: 0; top: 8px; width: 4px; height: 4px; -webkit-border-radius: 50%; border-radius: 50%; background: #799a2a; }
+.list li li { padding-left: 29px; margin-top: 4px; }
+.list li li li { padding-left: 40px; }
+.list > li:before { content: ""; position: absolute; left: 0; top: 5px; width: 8px; height: 8px; -webkit-border-radius: 50%; border-radius: 50%; background: #799a2a; }
 
 .list-ol { line-height: 1.7; counter-reset: list; }
 .list-ol li { position: relative; margin-bottom: 15px; padding-left: 25px; }
 .list-ol li:before { content: counter(list) "."; counter-increment: list; position: absolute; top: 0; left: 0; color: #799a2a; font-size: 20px; font-weight: 700; line-height: 1; }
 .list-ol li ol { counter-reset: sublist; margin-top: 10px; }
 .list-ol li ol li { position: relative; margin-bottom: 15px; padding-left: 50px; }
-.list-ol li ol li:before { content: counter(list) "." counter(sublist) "."; counter-increment: sublist; }
+.list-ol li ol li:before { content: counter(list) "." counter(sublist) "."; counter-increment: sublist; display: none; }
 .list-ol li ol ol { counter-reset: sublist2; }
 .list-ol li ol ol li { position: relative; margin-bottom: 15px; padding-left: 50px; }
 .list-ol li ol ol li:before { content: counter(list) "." counter(sublist) "." counter(sublist2); counter-increment: sublist2; }
 .list-ol_simple li { padding-left: 0; }
 .list-ol_simple li:before { color: #353130; position: static; display: inline-block; margin-right: 5px; font-weight: 300; font-size: 15px; }
-.list-ol_simple li ol { padding-left: 20px; }
+.list-ol_simple li ol { padding-left: 42px; }
 .list-ol_simple li ol li { padding-left: 0; }
-.list-ol_simple li ol ol { padding-left: 20px; }
+.list-ol_simple li ol ol { padding-left: 39px; }
 .list-ol_simple li ol ol li { padding-left: 0; }
 
 .text-offset { padding-left: 25px; }

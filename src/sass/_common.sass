@@ -928,14 +928,19 @@ select
 		position: relative
 		padding-left: 13px
 		margin-top: 10px
+		li
+			padding-left: 29px
+			margin-top: 4px
+			li 
+				padding-left: 40px
 	& > li
 		&:before
 			content: ""
 			position: absolute
 			left: 0
-			top: 8px
-			width: 4px
-			height: 4px
+			top: 5px
+			width: 8px
+			height: 8px
 			border-radius: 50%
 			background: $btn
 .list-ol
@@ -965,6 +970,7 @@ select
 				&:before
 					content: counter(list)"."counter(sublist)"."
 					counter-increment: sublist
+					display: none
 			ol
 				counter-reset: sublist2
 				li
@@ -985,11 +991,11 @@ select
 				+light
 				font-size: 15px
 			ol
-				padding-left: 20px
+				padding-left: 42px
 				li
 					padding-left: 0
 				ol
-					padding-left: 20px
+					padding-left: 39px
 					li
 						padding-left: 0
 .text-offset
