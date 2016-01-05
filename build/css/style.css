@@ -2376,7 +2376,7 @@ select::-ms-expand { display: none; }
 .list li { position: relative; padding-left: 13px; margin-top: 10px; }
 .list li li { padding-left: 29px; margin-top: 4px; }
 .list li li li { padding-left: 40px; }
-.list > li:before { content: ""; position: absolute; left: 0; top: 5px; width: 8px; height: 8px; -webkit-border-radius: 50%; border-radius: 50%; background: #799a2a; }
+.list > li:before { content: ""; position: absolute; left: 0; top: 6px; width: 8px; height: 8px; -webkit-border-radius: 50%; border-radius: 50%; background: #799a2a; }
 
 .list-ol { line-height: 1.7; counter-reset: list; }
 .list-ol li { position: relative; margin-bottom: 15px; padding-left: 25px; }
