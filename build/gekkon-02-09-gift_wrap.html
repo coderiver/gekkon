@@ -6,6 +6,7 @@
 	<meta name="format-detection" content="telephone=no"/>
 	<meta name="theme-color" content="#a7c66d"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700&subset=latin,cyrillic-ext" rel="stylesheet"/>
+	<link rel="stylesheet" media="all" href="css/jquery.fancybox.css"/>
 	<link rel="stylesheet" media="all" href="css/style.css"/>
 	<title>Gift Wrap2</title>
 </head>
@@ -676,7 +677,10 @@
 								</a>
 							</div>
 							<div class="item__action">
-								<div class="price">1200 <span class="rub">в</span></div>
+								<div class="price">
+									1200 <span class="rub">в</span>
+									<span class="price__weight">/ 200гр</span>
+								</div>
 								<div class="number js-number" data-max-number="100">
 									<button class="number__minus js-minus-number" type="button">-</button>
 									<input type="text" class="number__input" value="1">
@@ -700,9 +704,20 @@
 								</a>
 							</div>
 							<div class="item__action">
-								<div class="price">
-									<span class="price__old">540 <span class="rub">в</span></span>
+								<div class="price price_select">
+									<span class="price__old price__old_mod">540 <span class="rub">в</span></span>
 									<span class="price__new">320 <span class="rub">в</span></span>
+									<div class="price__select js-select">
+										<div class="js-select">
+											/ <span class="price__weight js-select-text">100гр</span>
+											<select>
+												<option value="100гр">100гр</option>
+												<option value="200гр">200гр</option>
+												<option value="300гр">300гр</option>
+												<option value="400гр">400гр</option>
+											</select>
+										</div>
+									</div>
 								</div>
 								<div class="number js-number" data-max-number="100">
 									<button class="number__minus js-minus-number" type="button">-</button>
@@ -727,7 +742,20 @@
 								</a>
 							</div>
 							<div class="item__action">
-								<div class="price">320 <span class="rub">в</span></div>
+								<div class="price price_select js-weight-select">
+									320 <span class="rub">в</span>
+									<div class="price__select js-select">
+										<div class="js-select">
+											/ <span class="price__weight js-select-text">100гр</span>
+											<select>
+												<option value="100гр">100гр</option>
+												<option value="200гр">200гр</option>
+												<option value="300гр">300гр</option>
+												<option value="400гр">400гр</option>
+											</select>
+										</div>
+									</div>
+								</div>
 								<div class="number js-number" data-max-number="100">
 									<button class="number__minus js-minus-number" type="button">-</button>
 									<input type="text" class="number__input" value="1">
