@@ -2589,7 +2589,7 @@ select::-ms-expand { display: none; }
 
 .recipes-item { display: block; margin-bottom: 25px; }
 .recipes-item__img { font-size: 0; }
-.recipes-item__img img { max-width: 100%; }
+.recipes-item__img img, .recipes-item__img video, .recipes-item__img iframe { max-width: 100%; }
 .recipes-item > h3 { font-size: 20px; -webkit-transition: color 250ms; transition: color 250ms; margin-top: 10px; }
 .recipes-item .soc { margin-top: 20px; }
 

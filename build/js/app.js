@@ -3017,29 +3017,31 @@ $(document).ready(function() {
 		pauseOnDotsHover: true
 
 	});
-
-	$(".js-slider-items").slick({
-		slidesToShow: 4,
-		slidesToScroll: 4,
-		infinite: false,
-		appendArrows: ".slider-items",
-		responsive: [
-			{
-				breakpoint: 1023,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2
+	$(".js-slider-items").each(function () {
+		var _ = $(this);
+		_.slick({
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			infinite: false,
+			appendArrows: _.parents(".slider-items"),
+			responsive: [
+				{
+					breakpoint: 1023,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
 				}
-			},
-			{
-				breakpoint: 767,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-		]
-	});
+			]
+		});
+	})
 
 	$(".js-raty").raty({
 		score: function() {
