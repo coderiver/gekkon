@@ -586,10 +586,19 @@
 		
 .additional
 	margin-bottom: 20px 
+	display: table
+	+r(767)
+		display: block
+	&__icon, &__text
+		display: table-cell
+		vertical-align: middle
+		+r(767)
+			display: block
+			width: 100%
+			text-align: center
+
 	&__icon
-		// display: inline-block
-		// vertical-align: middle
-		// width: 150px 
+		width: 140px
 		i
 			color: $btn
 			font-size: 70px

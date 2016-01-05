@@ -49,7 +49,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .icon-gift { width: 180px; height: 143px; background-image: url("../img/icons.png"); background-position: 0px 0px; }
 
 @font-face { font-family: "svgfont"; src: url("fonts/svgfont.eot"); src: url("fonts/svgfont.eot?#iefix") format("eot"), url("fonts/svgfont.woff") format("woff"), url("fonts/svgfont.woff2") format("woff2"), url("fonts/svgfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-.i-icon, [class^="i-icon-"], [class*=" i-icon-"], .slick-prev:before, .slick-next:before { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.i-icon, [class^="i-icon-"], [class*=" i-icon-"], .slick-prev:before, .slick-next:before, .price__select:after { font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 .i-icon, [class^="i-icon-"], [class*=" i-icon-"] { display: inline-block; }
 
@@ -2115,6 +2115,8 @@ body.no-scroll { overflow: hidden; }
 
 .h1_mb, .h2_mb, .h3_mb { margin-bottom: 20px; }
 
+.h1_reg, .h2_reg, .h3_reg, .h4_reg { font-weight: 400; }
+
 .link span { margin-right: 10px; }
 .link_icon { white-space: nowrap; }
 .link_icon i { margin-right: 10px; font-size: 10px; }
@@ -2274,6 +2276,7 @@ body.no-scroll { overflow: hidden; }
 .item__action .price { float: left; }
 .item__action .number { float: right; margin-top: 4px; }
 .item__action .price__old { position: relative; top: -7px; }
+.item__action .price__old_mod { position: absolute; bottom: 100%; top: auto; }
 .item .btn { margin-top: 13px; }
 .item .checkbox_big { position: absolute; top: 20px; left: 20px; z-index: 2; }
 
@@ -2296,13 +2299,17 @@ body.no-scroll { overflow: hidden; }
 .price { font-size: 25px; font-weight: 700; line-height: 1; }
 .price__old { display: inline-block; font-size: 15px; text-decoration: line-through; }
 .price__new { color: #b2002e; }
-.price .price__weight { font-size: 13px; font-weight: 300; color: #353130; margin-left: 10px; }
+.price .price__weight { font-size: 13px; font-weight: 300; color: #353130; }
+.price_select { border-bottom: 1px dotted #333; position: relative; }
+.price__select { position: relative; display: inline-block; padding-right: 15px; }
+.price__select:after { content: ""; position: absolute; right: 0; top: 50%; font-size: 16px; color: #353130; pointer-events: none; margin-top: -3px; }
+.price__select select { opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 2; font-size: 14px; cursor: pointer; }
 
 .price_inline { display: inline-block; vertical-align: baseline; }
 .price_inline__old { vertical-align: baseline; }
 
 .price_promo { color: #799a2a; font-size: 40px; font-weight: 700; }
-.price_promo .price__weight { font-size: 20px; font-weight: 300; color: #353130; }
+.price_promo .price__weight { font-size: 20px; font-weight: 300; color: #353130; margin-left: 10px; }
 
 .price_small { font-size: 15px; }
 
@@ -2468,6 +2475,7 @@ select::-ms-expand { display: none; }
 .banner-img img { display: block; width: 100%; height: auto; }
 
 .location-box { margin-bottom: 33px; }
+.location-box_mt { margin-top: 20px; }
 
 #chartdiv, #chartdiv2 { width: 100%; height: 387px; }
 
@@ -2748,7 +2756,9 @@ select::-ms-expand { display: none; }
 .promo-img_mod { padding-top: 100px; }
 .promo-img img { max-width: 100%; }
 
-.additional { margin-bottom: 20px; }
+.additional { margin-bottom: 20px; display: table; }
+.additional__icon, .additional__text { display: table-cell; vertical-align: middle; }
+.additional__icon { width: 140px; }
 .additional__icon i { color: #799a2a; font-size: 70px; }
 
 .item-about-wrap { margin: 70px 0; }
@@ -3107,6 +3117,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .footer__meta .text-right{ text-align: left; }
  .footer__meta p{ margin-bottom: 0; }
  .recipes-item{ text-align: center; }
+ .additional{ display: block; }
+ .additional__icon, .additional__text{ display: block; width: 100%; text-align: center; }
  .product-info .text-right{ text-align: left; }
  .box__head .meta{ display: block; margin-left: 0px; }
  .total__footer .link{ margin: 20px 0; }
