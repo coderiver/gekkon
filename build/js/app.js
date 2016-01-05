@@ -2955,9 +2955,12 @@ $(document).ready(function() {
 	number();
 
 	// masonry
-	$('.js-masonry').masonry({
-		 itemSelector: '.js-masonry > div'
-	})
+	setTimeout(function () {
+		$('.js-masonry').masonry({
+			itemSelector: '.js-masonry > div'
+		});
+	}, 300)
+	
 
 	$('.js-tabs a').on("click", function(event) {
 		event.preventDefault();
