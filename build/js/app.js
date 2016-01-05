@@ -934,6 +934,28 @@ $(document).ready(function() {
 		$(this).tab('show');
 	});
 
+	var goToTab = {
+		init: function(option) {
+			this._$el = $(".js-btn-tab");
+			this._$root = $("html, body");
+			this._bindEvent();
+		},
+		_bindEvent: function() {
+			this._$el.on("click", this._switchTab.bind(this));
+		},
+		_switchTab: function(event) {
+			var el = $(event.target);
+			this._tab = $(event.target).data("tab");
+			var top = $(this._tab).offset().top;
+			$(this._tab).tab('show');
+			this._$root.animate({
+				scrollTop: top
+			}, 500);
+			return false;
+		}
+	}
+	goToTab.init();
+
 	$(".js-slider-small").slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -1173,5 +1195,30 @@ $(document).ready(function() {
 			$(this).val(value);
 		}
 	});
+
+	var btnCart = {
+		init: function(option) {
+			this._$el = $(".js-btn");
+			this._bindEvent();
+		},
+		_bindEvent: function() {
+			this._$el.on("click", this._cartEvent.bind(this));
+		},
+		_cartEvent: function(event) {
+			var el = $(event.currentTarget);
+			var elText = el.data("text");
+			el.text(elText);
+			event.stopPropagation();
+		}
+	}
+	btnCart.init();
+
+	$(".js-subscribe button").on("click", function() {
+		// send ajax request here
+		// show message
+		$(this).parents(".js-subscribe").addClass("is-success");
+		return false;
+	});
+
 
 });
