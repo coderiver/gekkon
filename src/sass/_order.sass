@@ -190,12 +190,16 @@
 .order-row
 	position: relative
 	margin-bottom: 60px
+	&_mb
+		margin-bottom: 20px
 	.h3
 		margin-bottom: 20px
 	&__img
 		position: absolute
 		right: 35px
 		top: 0
+		+r(1180)
+			display: none
 		img
 			display: block
 			max-width: 100%
@@ -203,6 +207,12 @@
 			right: auto
 			left: -45px
 			top: 20px
+		&.is-first
+			right: 50px
+		&.is-second
+			right: 10px
+	.radio_big
+		margin-bottom: 10px
 .link-cancel
 	color: $hot
 	&:hover
