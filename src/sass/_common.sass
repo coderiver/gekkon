@@ -212,6 +212,8 @@ body
 		color: #000 
 	&.btn-dots_s
 		border-bottom-style: solid
+		&:hover
+			text-decoration: none
 	&_light
 		+light
 	&_icon
@@ -245,6 +247,8 @@ body
 		&:focus
 			outline: none
 			box-shadow: none
+.btn-wrp
+	padding-right: 10px
 .btn-danger
 	border: 0
 	padding-left: 25px
@@ -361,10 +365,13 @@ body
 	background: none
 	width: 40px
 	height: 40px
-	font-size: 13px
+	font-size: 11px
 	color: $text
+	line-height: 1
 	span
 		vertical-align: middle
+	&.btn_green-d
+		color: $green-d
 	&:hover
 		color: $hot
 .form-action
@@ -867,7 +874,6 @@ body
 			width: 100%
 			padding-right: 0
 .form-group
-	position: relative
 	label
 		font-size: 15px
 		// position: relative
@@ -885,6 +891,13 @@ body
 		color: #777 
 		&_mt
 			margin-top: 16px
+	&__pass
+		position: relative
+		i
+			position: absolute
+			top: 50%
+			right: 10px
+			transform: translate(0, -50%)
 .field-password
 	position: relative
 	input
@@ -963,14 +976,19 @@ select
 		position: relative
 		padding-left: 13px
 		margin-top: 10px
+		li
+			padding-left: 29px
+			margin-top: 4px
+			li 
+				padding-left: 40px
 	& > li
 		&:before
 			content: ""
 			position: absolute
 			left: 0
-			top: 8px
-			width: 4px
-			height: 4px
+			top: 6px
+			width: 8px
+			height: 8px
 			border-radius: 50%
 			background: $btn
 .list-ol
@@ -1000,6 +1018,7 @@ select
 				&:before
 					content: counter(list)"."counter(sublist)"."
 					counter-increment: sublist
+					display: none
 			ol
 				counter-reset: sublist2
 				li
@@ -1020,11 +1039,11 @@ select
 				+light
 				font-size: 15px
 			ol
-				padding-left: 20px
+				padding-left: 42px
 				li
 					padding-left: 0
 				ol
-					padding-left: 20px
+					padding-left: 39px
 					li
 						padding-left: 0
 .text-offset
@@ -1057,7 +1076,7 @@ select
 				border-color: transparent
 				background: none
 				> span
-					border-color: transparent
+					// border-color: transparent
 			> span
 				border-bottom: 1px dotted
 .required-text

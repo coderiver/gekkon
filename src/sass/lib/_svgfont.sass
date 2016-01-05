@@ -5,30 +5,31 @@
 	font-weight: normal
 	font-style: normal
 
-$i-icon-arrow-left: "\EA01"
-$i-icon-attachment: "\EA02"
-$i-icon-calendar: "\EA03"
-$i-icon-cart: "\EA04"
-$i-icon-check: "\EA05"
-$i-icon-check2: "\EA06"
-$i-icon-edit: "\EA07"
-$i-icon-arr-b: "\EA08"
-$i-icon-favorite: "\EA09"
-$i-icon-fb: "\EA0A"
-$i-icon-filter: "\EA0B"
-$i-icon-gift: "\EA0C"
-$i-icon-history: "\EA0D"
-$i-icon-in: "\EA0E"
-$i-icon-lock: "\EA0F"
-$i-icon-quality: "\EA10"
-$i-icon-select-arr: "\EA11"
-$i-icon-user: "\EA13"
-$i-icon-tw: "\EA14"
-$i-icon-arrow-right: "\EA16"
-$i-icon-eye: "\EA17"
-$i-icon-map: "\EA18"
-$i-icon-vk: "\EA19"
-$i-icon-yt: "\EA1A"
+$i-icon-arr-b: "\EA01"
+$i-icon-arrow-left: "\EA02"
+$i-icon-arrow-right: "\EA03"
+$i-icon-attachment: "\EA04"
+$i-icon-calendar: "\EA05"
+$i-icon-cart: "\EA06"
+$i-icon-check: "\EA07"
+$i-icon-check2: "\EA08"
+$i-icon-close49: "\EA09"
+$i-icon-edit: "\EA0A"
+$i-icon-eye: "\EA0B"
+$i-icon-favorite: "\EA0C"
+$i-icon-fb: "\EA0D"
+$i-icon-filter: "\EA0E"
+$i-icon-gift: "\EA0F"
+$i-icon-history: "\EA10"
+$i-icon-in: "\EA11"
+$i-icon-lock: "\EA12"
+$i-icon-map: "\EA13"
+$i-icon-select-arr: "\EA14"
+$i-icon-tw: "\EA15"
+$i-icon-user: "\EA16"
+$i-icon-vk: "\EA17"
+$i-icon-yt: "\EA18"
+$i-icon-quality: "\EA19"
 
 
 %i-icon
@@ -45,8 +46,12 @@ $i-icon-yt: "\EA1A"
 	@extend %i-icon
 	display: inline-block
 
+.i-icon-arr-b:before
+	content: $i-icon-arr-b
 .i-icon-arrow-left:before
 	content: $i-icon-arrow-left
+.i-icon-arrow-right:before
+	content: $i-icon-arrow-right
 .i-icon-attachment:before
 	content: $i-icon-attachment
 .i-icon-calendar:before
@@ -57,10 +62,12 @@ $i-icon-yt: "\EA1A"
 	content: $i-icon-check
 .i-icon-check2:before
 	content: $i-icon-check2
+.i-icon-close49:before
+	content: $i-icon-close49
 .i-icon-edit:before
 	content: $i-icon-edit
-.i-icon-arr-b:before
-	content: $i-icon-arr-b
+.i-icon-eye:before
+	content: $i-icon-eye
 .i-icon-favorite:before
 	content: $i-icon-favorite
 .i-icon-fb:before
@@ -75,21 +82,17 @@ $i-icon-yt: "\EA1A"
 	content: $i-icon-in
 .i-icon-lock:before
 	content: $i-icon-lock
-.i-icon-quality:before
-	content: $i-icon-quality
-.i-icon-select-arr:before
-	content: $i-icon-select-arr
-.i-icon-user:before
-	content: $i-icon-user
-.i-icon-tw:before
-	content: $i-icon-tw
-.i-icon-arrow-right:before
-	content: $i-icon-arrow-right
-.i-icon-eye:before
-	content: $i-icon-eye
 .i-icon-map:before
 	content: $i-icon-map
+.i-icon-select-arr:before
+	content: $i-icon-select-arr
+.i-icon-tw:before
+	content: $i-icon-tw
+.i-icon-user:before
+	content: $i-icon-user
 .i-icon-vk:before
 	content: $i-icon-vk
 .i-icon-yt:before
 	content: $i-icon-yt
+.i-icon-quality:before
+	content: $i-icon-quality
