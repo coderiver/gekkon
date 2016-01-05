@@ -61,6 +61,8 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .i-icon-cart:before { content: ""; }
 
+.i-icon-check:before { content: ""; }
+
 .i-icon-check2:before { content: ""; }
 
 .i-icon-edit:before { content: ""; }
@@ -69,31 +71,29 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .i-icon-fb:before { content: ""; }
 
-.i-icon-gift:before { content: ""; }
+.i-icon-filter:before { content: ""; }
 
-.i-icon-check:before { content: ""; }
+.i-icon-gift:before { content: ""; }
 
 .i-icon-history:before { content: ""; }
 
 .i-icon-in:before { content: ""; }
 
-.i-icon-filter:before { content: ""; }
+.i-icon-map:before { content: ""; }
 
 .i-icon-select-arr:before { content: ""; }
 
 .i-icon-sepa:before { content: ""; }
 
-.i-icon-map:before { content: ""; }
-
-.i-icon-user:before { content: ""; }
-
-.i-icon-yt:before { content: ""; }
+.i-icon-skrill:before { content: ""; }
 
 .i-icon-tw:before { content: ""; }
 
-.i-icon-skrill:before { content: ""; }
+.i-icon-user:before { content: ""; }
 
 .i-icon-vk:before { content: ""; }
+
+.i-icon-yt:before { content: ""; }
 
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
