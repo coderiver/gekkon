@@ -5,5 +5,6 @@
 //=include lib/jquery.masonry.min.js
 //=include lib/jquery.raty.js
 //=include lib/slick.min.js
+//=include lib/jquery.fancybox.js
 //=include additional.js
 //=include common.js

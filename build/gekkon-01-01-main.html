@@ -6,6 +6,7 @@
 	<meta name="format-detection" content="telephone=no"/>
 	<meta name="theme-color" content="#a7c66d"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700&subset=latin,cyrillic-ext" rel="stylesheet"/>
+	<link rel="stylesheet" media="all" href="css/jquery.fancybox.css"/>
 	<link rel="stylesheet" media="all" href="css/style.css"/>
 	<title>index</title>
 </head>
@@ -1652,7 +1653,7 @@
 									<button class="number__plus js-plus-number" type="button">+</button>
 								</div>
 							</div>
-							<button class="btn btn-default btn-block" type="button">В корзину</button>
+							<button class="btn btn-default btn-block js-btn" data-text="В корзине" type="button">В корзину</button>
 						</div>
 					</div>
 				</div>
@@ -1731,7 +1732,7 @@
 										<button class="number__plus js-plus-number" type="button">+</button>
 									</div>
 								</div>
-								<button class="btn btn-default btn-block" type="button">В корзину</button>
+								<button class="btn btn-default btn-block js-btn" data-text="В корзине" type="button">В корзину</button>
 							</div>
 						</div>
 					</div>
@@ -1758,7 +1759,7 @@
 										<button class="number__plus js-plus-number" type="button">+</button>
 									</div>
 								</div>
-								<button class="btn btn-default btn-block" type="button">В корзину</button>
+								<button class="btn btn-default btn-block js-btn" data-text="В корзине" type="button">В корзину</button>
 							</div>
 						</div>
 					</div>
@@ -1782,7 +1783,7 @@
 										<button class="number__plus js-plus-number" type="button">+</button>
 									</div>
 								</div>
-								<button class="btn btn-default btn-block" type="button">В корзину</button>
+								<button class="btn btn-default btn-block js-btn" data-text="В корзине" type="button">В корзину</button>
 							</div>
 						</div>
 					</div>
@@ -1806,7 +1807,7 @@
 										<button class="number__plus js-plus-number" type="button">+</button>
 									</div>
 								</div>
-								<button class="btn btn-default btn-block" type="button">В корзину</button>
+								<button class="btn btn-default btn-block js-btn" data-text="В корзине" type="button">В корзину</button>
 							</div>
 						</div>
 					</div>
@@ -1814,7 +1815,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-4 col-sm-6">
-					<div class="title title_h2">Подарочные наборы и упаковка</div>
+					<div class="title title_h2">Подарочные наборы и&nbsp;упаковка</div>
 					<div class="post">
 						<div class="post__img">
 							<div class="row">
@@ -1880,7 +1881,7 @@
 			<div class="row">
 				<div class="col-md-3 col-sm-6">
 					<div class="benefit">
-						<span class="icon-decoration34"></span>
+						<span class="i-icon-quality"></span>
 						<div class="benefit__title">Качество</div>
 						<div class="benefit__text">Мы работаем только с лучшими поставщиками по всему миру и точно знаем, как каждый товар появился на свет.</div>
 					</div>
@@ -1926,7 +1927,7 @@
 					<div class="col-md-3 col-sm-4">
 
 
-						<div class="form-action">
+						<div class="form-action js-subscribe">
 
 
 							<form action="#">
@@ -1960,6 +1961,15 @@
 
 
 									</div>
+
+
+								</div>
+
+
+								<div class="form-action__message">
+
+
+									<p>Спасибо! Вы подписаны.</p>
 
 
 								</div>
@@ -2655,7 +2665,7 @@
 	</div>
 
 
-	<div class="modal fade" id="modal-call" role="dialog">
+	<div class="modal fade" id="modal-gift" role="dialog">
 
 
 		<div class="modal-dialog" >
@@ -2676,7 +2686,88 @@
 					</button>
 
 
-					<div class="h3">Перезвоните мне</div>
+					<div class="h3">Подарок при покупке</div>
+
+
+				</div>
+
+
+				<div class="modal-body">
+
+
+					<div class="item item_small">
+
+
+						<a class="item__img" href="#">
+
+
+							<img src="img/item2.jpg" alt="img">
+
+
+						</a>
+
+
+						<div class="item__main">
+
+
+							<div class="item__name">
+
+
+								<a href="#" class="item__link">	
+
+
+									<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+
+
+									<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+
+
+								</a>
+
+
+							</div>
+
+
+						</div>
+
+
+					</div>
+
+
+				</div>
+
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+
+
+	<div class="modal fade" id="modal-want-gift" role="dialog">
+
+
+		<div class="modal-dialog" >
+
+
+			<div class="modal-content">
+
+
+				<div class="modal-header">
+
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+
+
+						<span class="icon-close47"></span>
+
+
+					</button>
+
+
+					<div class="h2">Хочу в подарок</div>
 
 
 				</div>
@@ -2691,22 +2782,10 @@
 						<div class="form-group">
 
 
-							<label for="callName">Имя:<sup class="required-text">*</sup></label>
+							<label for="giftEmail">Email друга:</label>
 
 
-							<input type="text" class="form-control" id="callName" required="">
-
-
-						</div>
-
-
-						<div class="form-group">
-
-
-							<label for="callTel">Телефон:<sup class="required-text">*</sup></label>
-
-
-							<input type="tel" class="form-control" id="callTel" required="">
+							<input type="email" class="form-control" id="giftEmail" required="">
 
 
 						</div>
@@ -2715,10 +2794,10 @@
 						<div class="form-group">
 
 
-							<label for="callText">Что вы хотите обсудить:</label>
+							<label for="giftComment">Комментарий:</label>
 
 
-							<textarea class="form-control" id="callText" rows="5"></textarea>
+							<textarea class="form-control" id="giftComment" rows="5"></textarea>
 
 
 						</div>
@@ -2727,37 +2806,13 @@
 						<div class="form-group">
 
 
-							<div class="row">
+							<button class="btn btn-default btn-block" type="submit">Отправить</button>
 
 
-								<div class="col-sm-6">
-
-
-									<button class="btn btn-default btn-block" type="submit">Отправить</button>
-
-
-								</div>
-
-
-								<div class="col-sm-6">
-
-
-									  <sup class="required-text">*</sup> Обязательные для заполнения поля
-
-
-								</div>
-
-
-							</div>
-
-
-						</div>				
+						</div>
 
 
 					</form>
-
-
-					<div class="text-center"><span class="icon-exclamation11"></span>Спасибо, мы перезвоним вам.</div>
 
 
 				</div>

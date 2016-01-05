@@ -84,11 +84,11 @@
 									<div class="raty">
 										<span class="raty__icons js-raty-readonly" data-score="4"></span>
 										<span>(4)</span>
-										<button class="btn-dots btn-dots_light" type="button">7 отзывов</button>
+										<button class="btn-dots btn-dots_light js-btn-tab" data-tab="#reviews" type="button">7 отзывов</button>
 									</div>
 								</div>
 								<div class="col-sm-6 col-xs-12">
-									<a class="btn-dots btn-dots_light" href="#tab-reviews" aria-controls="tab-reviews" role="tab" data-toggle="tab">Написать отзыв</a>
+									<a class="btn-dots btn-dots_light" href="#">Написать отзыв</a>
 								</div>
 							</div>
 							<div class="row">
@@ -101,13 +101,11 @@
 						<div class="box">
 							<div class="box__head">
 								<div class="row">
-									<div class="col-sm-4 box__price-line">
+									<div class="col-xs-12 box__price-line">
 										<span>Старая цена:</span>
 										<div class="price price_inline price_small">
 											<span class="price__old">2000 <span class="rub">д</span></span>
 										</div>
-									</div>
-									<div class="col-sm-8">
 										<span class="meta meta_big">скидка действительна до 28.12.2015</span>
 									</div>
 								</div>
@@ -146,13 +144,13 @@
 									</div>
 									<div class="col-sm-6">
 										<div class="box__item">
-											<button class="btn-dots btn-dots_light btn-dots_icon btn-dots_big" type="button">
+											<button class="btn-dots btn-dots_light btn-dots_icon btn-dots_big" data-toggle="modal" data-target="#modal-gift" type="button">
 												<i class="icon-christmas252"></i>
 												<span>Подарок при покупке</span>
 											</button>
 										</div>
 										<div class="box__item">
-											<button class="btn-dots btn-dots_light btn-dots_icon btn-dots_big" type="button">
+											<button class="btn-dots btn-dots_light btn-dots_icon btn-dots_big" data-toggle="modal" data-target="#modal-want-gift" type="button">
 												<i class="icon-favorite22"></i>
 												<span>Хочу в подарок!</span>
 											</button>
@@ -185,6 +183,107 @@
 						</div>
 					</div>
 				</div>
+				<h2 class="h2">Купить в наборе со скидкой</h2>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="">
+							<div class="row row_set">
+								<div class="col-md-3 col-sm-6">
+									<div class="item">
+										<a class="item__img" href="#">
+											<img src="img/item2.jpg" alt="img">
+										</a>
+										<div class="item__main">
+											<div class="item__name">
+												<a href="#" class="item__link">
+													<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания">
+													<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+												</a>
+											</div>
+											<div class="item__action">
+												<div class="price">1200 <span class="rub">в</span></div>
+												<div class="number js-number" data-max-number="100">
+													<button class="number__minus js-minus-number" type="button">-</button>
+													<input type="text" class="number__input" value="1">
+													<button class="number__plus js-plus-number" type="button">+</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="set__item item js-check">
+										<div class="checkbox checkbox_big">
+											<label>
+												<input type="checkbox" class="js-checkbox" data-target-name="js-test-2">
+												<span></span>
+											</label>
+										</div>
+										<a class="item__img" href="#">
+											<img src="img/item3.jpg" alt="img">
+										</a>
+										<div class="item__main">
+											<div class="item__name">
+												<a href="#" class="item__link">
+													<img src="img/flags/PL.png" width="24" alt="Польша" title="Польша">
+													<span>Масло сливочное «Крестьянское», 170 гр</span>
+												</a>
+											</div>
+											<div class="item__action">
+												<div class="price">
+													<span class="price__old">540 <span class="rub">в</span></span>
+													<span class="price__new">320 <span class="rub">в</span></span>
+												</div>
+												<div class="number js-number" data-max-number="100">
+													<button class="number__minus js-minus-number" type="button">-</button>
+													<input type="text" class="number__input" value="1">
+													<button class="number__plus js-plus-number" type="button">+</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="set__item item js-check">
+										<div class="checkbox checkbox_big">
+											<label>
+												<input type="checkbox" class="js-checkbox">
+												<span></span>
+											</label>
+										</div>
+										<a class="item__img" href="#">
+											<img src="img/item4.jpg" alt="img">
+										</a>
+										<div class="item__main">
+											<div class="item__name">
+												<a href="#" class="item__link">
+													<img src="img/flags/NO.png" width="24" alt="Новегия" title="Новегия">
+													<span>Биомороженое в рожке сливочное, 90 гр.</span>
+												</a>
+											</div>
+											<div class="item__action">
+												<div class="price">320 <span class="rub">в</span></div>
+												<div class="number js-number" data-max-number="100">
+													<button class="number__minus js-minus-number" type="button">-</button>
+													<input type="text" class="number__input" value="1">
+													<button class="number__plus js-plus-number" type="button">+</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<div class="set-result">
+										<p>Цена за набор </p>
+										<h4><strong>2 260 <span class="rub">в</span></strong></h4>
+										<p>Вы экономите: 240 <span class="rub">у</span></p>
+										<button class="btn btn-default">В корзину</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<ul class="nav nav-tabs" role="tablist">
 					<li role="presentation" class="active">
 						<a href="#about" aria-controls="about" role="tab" data-toggle="tab">
@@ -209,22 +308,22 @@
 								<p><strong>Условия хранения (°C):</strong> сух. (+18)</p>
 								<p><strong>Срок хранения (мес.):</strong> 24</p>
 								<p><strong>Страна-производитель:</strong> Италия</p>
+								<p><strong>Сертификаты:</strong></p>
+								<a href="img/license1-big.jpg" class="fancybox-button js-fancybox" rel="gallery1">
+									<img src="img/license1-small.jpg" alt="img">
+								</a>
+								<a href="img/license1-big.jpg" class="fancybox-button js-fancybox" rel="gallery1">
+									<img src="img/license1-small.jpg" alt="img">
+								</a>
+								<a href="img/license1-big.jpg" class="fancybox-button js-fancybox" rel="gallery1">
+									<img src="img/license1-small.jpg" alt="img">
+								</a>
 							</div>
 							<div class="col">
-								<p><strong>Сертификаты:</strong></p>
-								<a href="img/license1-big.jpg" rel="group1">
-									<img src="img/license1-small.jpg" alt="img">
-								</a>
-								<a href="img/license1-big.jpg" rel="group1">
-									<img src="img/license1-small.jpg" alt="img">
-								</a>
-								<a href="img/license1-big.jpg" rel="group1">
-									<img src="img/license1-small.jpg" alt="img">
-								</a>
+								<p><strong>Совет:</strong></p>
+								<p>Чтобы распознать хорошее масло холодного отжима, рекомендуем пробовать его на кусочке слегка поджаренного хлеба или на теплом отварном картофеле. Тепло подчеркивает ценные качества (с фруктовым послевкусием со вкусом миндаля, артишока или кошеной травы) или дефекты (например, прогорклый вкус, вкус плесени, земли).</p>
 							</div>
 						</div>
-
-
 					</div>
 					<div role="tabpanel" class="tab-pane" id="reviews">
 						<div class="row">
@@ -309,7 +408,7 @@
 					</div>
 				</div>
 				<div class="plan-box">
-					<h2 class="h2">Рецепт с продуктом: <span>Салат с курицей и авокадо</span></h2>
+					<h2 class="h2">Приготовить: <span>Салат с курицей и авокадо</span></h2>
 					<div class="row">
 						<div class="col-lg-3 col-md-6 col-sm-12">
 							<div class="recipes-item">

@@ -6,6 +6,7 @@
 	<meta name="format-detection" content="telephone=no"/>
 	<meta name="theme-color" content="#a7c66d"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,700&subset=latin,cyrillic-ext" rel="stylesheet"/>
+	<link rel="stylesheet" media="all" href="css/jquery.fancybox.css"/>
 	<link rel="stylesheet" media="all" href="css/style.css"/>
 	<title>Elements</title>
 </head>
@@ -582,29 +583,19 @@
 			</ol>
 			<h1 class="h1">Доставка</h1>
 			<div class="additional">
-				<div class="row">
-					<div class="col-md-2 col-sm-3 col-xs-12 vcenter">
-						<div class="additional__icon">
-							<i class="icon-noun_148595_cc"></i>
-						</div>
-					</div>
-					<div class="col-md-10 col-sm-9 col-xs-12 vcenter">
-						<div class="additional__text">
-							<h2>Курьером по Москве и Московской области</h2>
-						</div>
-					</div>
+				<div class="additional__icon">
+					<i class="icon-noun_148595_cc"></i>
 				</div>
-				<div class="row">
-					<div class="col-md-2 col-sm-3 col-xs-12 vcenter">
-						<div class="additional__icon">
-							<img src="img/post.png">
-						</div>
-					</div>
-					<div class="col-md-10 col-sm-9 col-xs-12 vcenter">
-						<div class="additional__text">
-							<h2>Почтой России в регионы</h2>
-						</div>
-					</div>
+				<div class="additional__text">
+					<h2>Курьером по Москве и Московской области</h2>
+				</div>
+			</div>
+			<div class="additional">
+				<div class="additional__icon">
+					<img src="img/post.png">
+				</div>
+				<div class="additional__text">
+					<h2>Почтой России в регионы</h2>
 				</div>
 			</div>
 			<div class="item-about-wrap">
@@ -693,7 +684,7 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div class="block">
-						<h4>Недели Испании в нашем магазине</h4>
+						<h4 class="h4 h4_reg">Недели Испании в нашем магазине</h4>
 						<div class="block__meta"><p><i class="icon-clock169"></i>Действует до 17 ноября</p></div>
 						<div class="block__img">
 							<a href="#"><img src="img/promo_big.png"></a>
@@ -707,7 +698,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="location-box">
+			<div class="location-box location-box_mt">
 				<div class="map-nav">
 					<ul class="tabs-link js-tabs" role="tablist">
 						<li>Натуральные товары</li>
@@ -1758,7 +1749,10 @@
 								</a>
 							</div>
 							<div class="item__action">
-								<div class="price">1200 <span class="rub">в</span></div>
+								<div class="price">
+									1200 <span class="rub">в</span>
+									<span class="price__weight">/ 200гр</span>
+								</div>
 								<div class="number js-number" data-max-number="100">
 									<button class="number__minus js-minus-number" type="button">-</button>
 									<input type="text" class="number__input" value="1">
@@ -1782,9 +1776,20 @@
 								</a>
 							</div>
 							<div class="item__action">
-								<div class="price">
-									<span class="price__old">540 <span class="rub">в</span></span>
+								<div class="price price_select">
+									<span class="price__old price__old_mod">540 <span class="rub">в</span></span>
 									<span class="price__new">320 <span class="rub">в</span></span>
+									<div class="price__select js-select">
+										<div class="js-select">
+											/ <span class="price__weight js-select-text">100гр</span>
+											<select>
+												<option value="100гр">100гр</option>
+												<option value="200гр">200гр</option>
+												<option value="300гр">300гр</option>
+												<option value="400гр">400гр</option>
+											</select>
+										</div>
+									</div>
 								</div>
 								<div class="number js-number" data-max-number="100">
 									<button class="number__minus js-minus-number" type="button">-</button>
@@ -1809,7 +1814,20 @@
 								</a>
 							</div>
 							<div class="item__action">
-								<div class="price">320 <span class="rub">в</span></div>
+								<div class="price price_select js-weight-select">
+									320 <span class="rub">в</span>
+									<div class="price__select js-select">
+										<div class="js-select">
+											/ <span class="price__weight js-select-text">100гр</span>
+											<select>
+												<option value="100гр">100гр</option>
+												<option value="200гр">200гр</option>
+												<option value="300гр">300гр</option>
+												<option value="400гр">400гр</option>
+											</select>
+										</div>
+									</div>
+								</div>
 								<div class="number js-number" data-max-number="100">
 									<button class="number__minus js-minus-number" type="button">-</button>
 									<input type="text" class="number__input" value="1">
@@ -1852,7 +1870,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 col-sm-4">
-						<div class="form-action">
+						<div class="form-action js-subscribe">
 							<form action="#">
 								<label for="subscribe-email">
 									Подписаться на новости и акции:
@@ -1864,6 +1882,9 @@
 									<div class="form-action__cell">
 										<button class="form-action__btn" type="submit">Подписаться</button>
 									</div>
+								</div>
+								<div class="form-action__message">
+									<p>Спасибо! Вы подписаны.</p>
 								</div>
 							</form>
 						</div>
@@ -2095,41 +2116,56 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal fade" id="modal-call" role="dialog">
+	<div class="modal fade" id="modal-gift" role="dialog">
 		<div class="modal-dialog" >
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="icon-close47"></span>
 					</button>
-					<div class="h3">Перезвоните мне</div>
+					<div class="h3">Подарок при покупке</div>
+				</div>
+				<div class="modal-body">
+					<div class="item item_small">
+						<a class="item__img" href="#">
+							<img src="img/item2.jpg" alt="img">
+						</a>
+						<div class="item__main">
+							<div class="item__name">
+								<a href="#" class="item__link">	
+									<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+									<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modal-want-gift" role="dialog">
+		<div class="modal-dialog" >
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="icon-close47"></span>
+					</button>
+					<div class="h2">Хочу в подарок</div>
 				</div>
 				<div class="modal-body">
 					<form>
 						<div class="form-group">
-							<label for="callName">Имя:<sup class="required-text">*</sup></label>
-							<input type="text" class="form-control" id="callName" required="">
+							<label for="giftEmail">Email друга:</label>
+							<input type="email" class="form-control" id="giftEmail" required="">
 						</div>
 						<div class="form-group">
-							<label for="callTel">Телефон:<sup class="required-text">*</sup></label>
-							<input type="tel" class="form-control" id="callTel" required="">
+							<label for="giftComment">Комментарий:</label>
+							<textarea class="form-control" id="giftComment" rows="5"></textarea>
 						</div>
 						<div class="form-group">
-							<label for="callText">Что вы хотите обсудить:</label>
-							<textarea class="form-control" id="callText" rows="5"></textarea>
+							<button class="btn btn-default btn-block" type="submit">Отправить</button>
 						</div>
-						<div class="form-group">
-							<div class="row">
-								<div class="col-sm-6">
-									<button class="btn btn-default btn-block" type="submit">Отправить</button>
-								</div>
-								<div class="col-sm-6">
-									  <sup class="required-text">*</sup> Обязательные для заполнения поля
-								</div>
-							</div>
-						</div>				
 					</form>
-					<div class="text-center"><span class="icon-exclamation11"></span>Спасибо, мы перезвоним вам.</div>
 				</div>
 			</div>
 		</div>

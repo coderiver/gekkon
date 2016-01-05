@@ -107,7 +107,7 @@
 	&__img
 		// margin-bottom: 20px 
 		font-size: 0
-		img
+		img,video, iframe
 			max-width: 100%
 	& > h3
 		font-size: 20px
@@ -594,10 +594,19 @@
 		
 .additional
 	margin-bottom: 20px 
+	display: table
+	+r(767)
+		display: block
+	&__icon, &__text
+		display: table-cell
+		vertical-align: middle
+		+r(767)
+			display: block
+			width: 100%
+			text-align: center
+
 	&__icon
-		// display: inline-block
-		// vertical-align: middle
-		// width: 150px 
+		width: 140px
 		i
 			color: $btn
 			font-size: 70px
@@ -656,3 +665,44 @@ input[type=number]
 		-webkit-appearance: none 
 		margin: 0
 	-moz-appearance: textfield
+
+.row_set
+	display: table
+	& > div
+		display: table-cell
+		vertical-align: middle
+		float: none
+		+r(1023)
+			display: block
+			float: left
+			text-align: center
+			width: 100% 
+		&:before
+			content: '+'
+			font-size: 20px
+			+bold
+			position: absolute
+			left: -5px
+			top: 50%
+			margin-top: -10px 
+			+r(1023)
+				top: -25px
+				left: 50%
+				margin-left: -10px   
+		&:first-child
+			&:before
+				display: none
+		&:last-child
+			&:before
+				content: '='
+	.set-result
+		padding-top: 15px 
+		padding-left: 15px 
+	+r(1023)
+		display: block	
+.set-result
+	p, h4
+		margin: 0
+	.btn
+		margin-top: 12px 
+	 

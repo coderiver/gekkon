@@ -51,14 +51,39 @@ $(document).ready(function() {
 	number();
 
 	// masonry
-	$('.js-masonry').masonry({
-		 itemSelector: '.js-masonry > div'
-	})
+	setTimeout(function () {
+		$('.js-masonry').masonry({
+			itemSelector: '.js-masonry > div'
+		});
+	}, 300)
+	
 
 	$('.js-tabs a').on("click", function(event) {
 		event.preventDefault();
 		$(this).tab('show');
 	});
+
+	var goToTab = {
+		init: function(option) {
+			this._$el = $(".js-btn-tab");
+			this._$root = $("html, body");
+			this._bindEvent();
+		},
+		_bindEvent: function() {
+			this._$el.on("click", this._switchTab.bind(this));
+		},
+		_switchTab: function(event) {
+			var el = $(event.target);
+			this._tab = $(event.target).data("tab");
+			var top = $(this._tab).offset().top;
+			$(this._tab).tab('show');
+			this._$root.animate({
+				scrollTop: top
+			}, 500);
+			return false;
+		}
+	}
+	goToTab.init();
 
 	$(".js-slider-small").slick({
 		slidesToShow: 1,
@@ -113,29 +138,31 @@ $(document).ready(function() {
 		pauseOnDotsHover: true
 
 	});
-
-	$(".js-slider-items").slick({
-		slidesToShow: 4,
-		slidesToScroll: 4,
-		infinite: false,
-		appendArrows: ".slider-items",
-		responsive: [
-			{
-				breakpoint: 1023,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2
+	$(".js-slider-items").each(function () {
+		var _ = $(this);
+		_.slick({
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			infinite: false,
+			appendArrows: _.parents(".slider-items"),
+			responsive: [
+				{
+					breakpoint: 1023,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
 				}
-			},
-			{
-				breakpoint: 767,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-		]
-	});
+			]
+		});
+	})
 
 	$(".js-raty").raty({
 		score: function() {
@@ -299,5 +326,30 @@ $(document).ready(function() {
 			$(this).val(value);
 		}
 	});
+
+	var btnCart = {
+		init: function(option) {
+			this._$el = $(".js-btn");
+			this._bindEvent();
+		},
+		_bindEvent: function() {
+			this._$el.on("click", this._cartEvent.bind(this));
+		},
+		_cartEvent: function(event) {
+			var el = $(event.currentTarget);
+			var elText = el.data("text");
+			el.text(elText);
+			event.stopPropagation();
+		}
+	}
+	btnCart.init();
+
+	$(".js-subscribe button").on("click", function() {
+		// send ajax request here
+		// show message
+		$(this).parents(".js-subscribe").addClass("is-success");
+		return false;
+	});
+
 
 });
