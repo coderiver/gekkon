@@ -788,7 +788,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 col-sm-4">
-						<div class="form-action">
+						<div class="form-action js-subscribe">
 							<form action="#">
 								<label for="subscribe-email">
 									Подписаться на новости и акции:
@@ -800,6 +800,9 @@
 									<div class="form-action__cell">
 										<button class="form-action__btn" type="submit">Подписаться</button>
 									</div>
+								</div>
+								<div class="form-action__message">
+									<p>Спасибо! Вы подписаны.</p>
 								</div>
 							</form>
 						</div>
@@ -1031,41 +1034,56 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal fade" id="modal-call" role="dialog">
+	<div class="modal fade" id="modal-gift" role="dialog">
 		<div class="modal-dialog" >
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="icon-close47"></span>
 					</button>
-					<div class="h3">Перезвоните мне</div>
+					<div class="h3">Подарок при покупке</div>
+				</div>
+				<div class="modal-body">
+					<div class="item item_small">
+						<a class="item__img" href="#">
+							<img src="img/item2.jpg" alt="img">
+						</a>
+						<div class="item__main">
+							<div class="item__name">
+								<a href="#" class="item__link">	
+									<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+									<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modal-want-gift" role="dialog">
+		<div class="modal-dialog" >
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="icon-close47"></span>
+					</button>
+					<div class="h2">Хочу в подарок</div>
 				</div>
 				<div class="modal-body">
 					<form>
 						<div class="form-group">
-							<label for="callName">Имя:<sup class="required-text">*</sup></label>
-							<input type="text" class="form-control" id="callName" required="">
+							<label for="giftEmail">Email друга:</label>
+							<input type="email" class="form-control" id="giftEmail" required="">
 						</div>
 						<div class="form-group">
-							<label for="callTel">Телефон:<sup class="required-text">*</sup></label>
-							<input type="tel" class="form-control" id="callTel" required="">
+							<label for="giftComment">Комментарий:</label>
+							<textarea class="form-control" id="giftComment" rows="5"></textarea>
 						</div>
 						<div class="form-group">
-							<label for="callText">Что вы хотите обсудить:</label>
-							<textarea class="form-control" id="callText" rows="5"></textarea>
+							<button class="btn btn-default btn-block" type="submit">Отправить</button>
 						</div>
-						<div class="form-group">
-							<div class="row">
-								<div class="col-sm-6">
-									<button class="btn btn-default btn-block" type="submit">Отправить</button>
-								</div>
-								<div class="col-sm-6">
-									  <sup class="required-text">*</sup> Обязательные для заполнения поля
-								</div>
-							</div>
-						</div>				
 					</form>
-					<div class="text-center"><span class="icon-exclamation11"></span>Спасибо, мы перезвоним вам.</div>
 				</div>
 			</div>
 		</div>

@@ -210,8 +210,6 @@ body
 	color: $btn
 	&:hover
 		color: #000 
-		text-decoration: none
-		border-bottom: 0
 	&.btn-dots_s
 		border-bottom-style: solid
 	&_light
@@ -221,9 +219,6 @@ body
 		span
 			display: inline-block
 			border-bottom: 1px dotted
-		&:hover
-			span
-				border-color: transparent
 	&_big
 		font-size: 20px
 .btn
@@ -374,6 +369,13 @@ body
 		color: $hot
 .form-action
 	position: relative
+	&.is-success
+		.form-action__table,
+		label
+			display: none
+		
+		.form-action__message
+			display: block
 	&__table
 		display: table
 		width: 100%
@@ -409,6 +411,8 @@ body
 			background: lighten($btn, 10%) 
 	label
 		+reg
+	&__message
+		display: none
 .tel
 	font-size: 20px
 	line-height: 1

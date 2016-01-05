@@ -84,11 +84,11 @@
 									<div class="raty">
 										<span class="raty__icons js-raty-readonly" data-score="4"></span>
 										<span>(4)</span>
-										<button class="btn-dots btn-dots_light" type="button">7 отзывов</button>
+										<button class="btn-dots btn-dots_light js-btn-tab" data-tab="#reviews" type="button">7 отзывов</button>
 									</div>
 								</div>
 								<div class="col-sm-6 col-xs-12">
-									<a class="btn-dots btn-dots_light" href="#tab-reviews" aria-controls="tab-reviews" role="tab" data-toggle="tab">Написать отзыв</a>
+									<a class="btn-dots btn-dots_light" href="#">Написать отзыв</a>
 								</div>
 							</div>
 							<div class="row">
@@ -144,13 +144,13 @@
 									</div>
 									<div class="col-sm-6">
 										<div class="box__item">
-											<button class="btn-dots btn-dots_light btn-dots_icon btn-dots_big" type="button">
+											<button class="btn-dots btn-dots_light btn-dots_icon btn-dots_big" data-toggle="modal" data-target="#modal-gift" type="button">
 												<i class="icon-christmas252"></i>
 												<span>Подарок при покупке</span>
 											</button>
 										</div>
 										<div class="box__item">
-											<button class="btn-dots btn-dots_light btn-dots_icon btn-dots_big" type="button">
+											<button class="btn-dots btn-dots_light btn-dots_icon btn-dots_big" data-toggle="modal" data-target="#modal-want-gift" type="button">
 												<i class="icon-favorite22"></i>
 												<span>Хочу в подарок!</span>
 											</button>
@@ -324,8 +324,6 @@
 								<p>Чтобы распознать хорошее масло холодного отжима, рекомендуем пробовать его на кусочке слегка поджаренного хлеба или на теплом отварном картофеле. Тепло подчеркивает ценные качества (с фруктовым послевкусием со вкусом миндаля, артишока или кошеной травы) или дефекты (например, прогорклый вкус, вкус плесени, земли).</p>
 							</div>
 						</div>
-
-
 					</div>
 					<div role="tabpanel" class="tab-pane" id="reviews">
 						<div class="row">
