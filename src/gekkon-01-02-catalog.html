@@ -7,7 +7,7 @@
 <body>
 <!-- BEGIN  out-->
 <div class="out">
-	//=include partials/header.html  
+	//=include partials/header.html
 	<div class="inner inner_main">
 		<div class="container">
 			<ol class="breadcrumb">
@@ -39,12 +39,15 @@
 												<div class="form-group">
 													<label for="selectSort" class="col-md-5 col-sm-3 control-label">Упорядочить:</label>
 													<div class="col-md-7 col-sm-9">
-														<select class="form-control">
-															<option>по умолчанию</option>
-															<option>по популярные</option>
-															<option>сначала дешевые</option>
-															<option>сначала дорогие</option>
-														</select>
+														<div class="select">
+															<select class="form-control">
+																<option>по умолчанию</option>
+																<option>по популярные</option>
+																<option>сначала дешевые</option>
+																<option>сначала дорогие</option>
+															</select>
+															<i class="i-icon-select-arr"></i>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -52,12 +55,15 @@
 												<div class="form-group">
 													<label for="selectSort" class="col-md-7 col-sm-3 control-label">Показывать по:</label>
 													<div class="col-md-4 col-sm-9">
-														<select class="form-control">
-															<option>15</option>
-															<option>30</option>
-															<option>60</option>
-															<option>90</option>
-														</select>
+														<div class="select">
+															<select class="form-control form-control_numb">
+																<option>15</option>
+																<option>30</option>
+																<option>60</option>
+																<option>90</option>
+															</select>
+															<i class="i-icon-select-arr"></i>
+														</div>
 													</div>
 												</div>
 											</div>
@@ -78,11 +84,12 @@
 								<div class="item">
 									<a class="item__img" href="#">
 										<img src="img/item2.jpg" alt="img">
+										<div class="badge badge_new">New!</div>
 									</a>
 									<div class="item__main">
 										<div class="item__name">
-											<a href="#" class="item__link">	
-												<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+											<a href="#" class="item__link">
+												<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания">
 												<span>Сыр из козьего молока «Бургос», 500 гр.</span>
 											</a>
 										</div>
@@ -102,6 +109,7 @@
 								<div class="item">
 									<a class="item__img" href="#">
 										<img src="img/item3.jpg" alt="img">
+										<div class="badge badge_hot">-25%</div>
 									</a>
 									<div class="item__main">
 										<div class="item__name">
@@ -177,11 +185,12 @@
 								<div class="item">
 									<a class="item__img" href="#">
 										<img src="img/item2.jpg" alt="img">
+										<div class="badge badge_new">New!</div>
 									</a>
 									<div class="item__main">
 										<div class="item__name">
-											<a href="#" class="item__link">	
-												<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+											<a href="#" class="item__link">
+												<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания">
 												<span>Сыр из козьего молока «Бургос», 500 гр.</span>
 											</a>
 										</div>
@@ -201,6 +210,7 @@
 								<div class="item">
 									<a class="item__img" href="#">
 										<img src="img/item3.jpg" alt="img">
+										<div class="badge badge_hot">-25%</div>
 									</a>
 									<div class="item__main">
 										<div class="item__name">
@@ -276,11 +286,12 @@
 								<div class="item">
 									<a class="item__img" href="#">
 										<img src="img/item2.jpg" alt="img">
+										<div class="badge badge_new">New!</div>
 									</a>
 									<div class="item__main">
 										<div class="item__name">
-											<a href="#" class="item__link">	
-												<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+											<a href="#" class="item__link">
+												<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания">
 												<span>Сыр из козьего молока «Бургос», 500 гр.</span>
 											</a>
 										</div>
@@ -300,6 +311,7 @@
 								<div class="item">
 									<a class="item__img" href="#">
 										<img src="img/item3.jpg" alt="img">
+										<div class="badge badge_hot">-25%</div>
 									</a>
 									<div class="item__main">
 										<div class="item__name">
@@ -400,7 +412,7 @@
 			</div>
 		</div>
 	</div>
-	//=include partials/footer.html  
+	//=include partials/footer.html
 </div>
 <!-- END out-->
 </body>
