@@ -208,6 +208,8 @@ body
 		
 	&.btn-dots_s
 		border-bottom-style: solid
+		&:hover
+			text-decoration: none
 	&_light
 		+light
 	&_icon
@@ -824,7 +826,6 @@ body
 			width: 100%
 			padding-right: 0
 .form-group
-	position: relative
 	label
 		font-size: 15px
 		// position: relative
@@ -842,6 +843,13 @@ body
 		color: #777 
 		&_mt
 			margin-top: 16px
+	&__pass
+		position: relative
+		i
+			position: absolute
+			top: 50%
+			right: 10px
+			transform: translate(0, -50%)
 .field-password
 	position: relative
 	input
