@@ -53,51 +53,53 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .i-icon, [class^="i-icon-"], [class*=" i-icon-"] { display: inline-block; }
 
-.i-icon-arrow-left:before { content: ""; }
+.i-icon-arr-b:before { content: ""; }
 
-.i-icon-attachment:before { content: ""; }
+.i-icon-arrow-left:before { content: ""; }
 
-.i-icon-calendar:before { content: ""; }
+.i-icon-arrow-right:before { content: ""; }
 
-.i-icon-cart:before { content: ""; }
+.i-icon-attachment:before { content: ""; }
 
-.i-icon-check:before { content: ""; }
+.i-icon-calendar:before { content: ""; }
 
-.i-icon-check2:before { content: ""; }
+.i-icon-cart:before { content: ""; }
 
-.i-icon-edit:before { content: ""; }
+.i-icon-check:before { content: ""; }
 
-.i-icon-arr-b:before { content: ""; }
+.i-icon-close49:before { content: ""; }
 
-.i-icon-favorite:before { content: ""; }
+.i-icon-eye:before { content: ""; }
 
-.i-icon-fb:before { content: ""; }
+.i-icon-edit:before { content: ""; }
 
-.i-icon-filter:before { content: ""; }
+.i-icon-favorite:before { content: ""; }
 
-.i-icon-gift:before { content: ""; }
+.i-icon-fb:before { content: ""; }
 
-.i-icon-history:before { content: ""; }
+.i-icon-filter:before { content: ""; }
 
-.i-icon-in:before { content: ""; }
+.i-icon-gift:before { content: ""; }
 
-.i-icon-lock:before { content: ""; }
+.i-icon-history:before { content: ""; }
 
-.i-icon-select-arr:before { content: ""; }
+.i-icon-check2:before { content: ""; }
 
-.i-icon-user:before { content: ""; }
+.i-icon-lock:before { content: ""; }
 
-.i-icon-tw:before { content: ""; }
+.i-icon-in:before { content: ""; }
 
-.i-icon-arrow-right:before { content: ""; }
+.i-icon-map:before { content: ""; }
 
-.i-icon-eye:before { content: ""; }
+.i-icon-tw:before { content: ""; }
 
-.i-icon-map:before { content: ""; }
+.i-icon-vk:before { content: ""; }
 
-.i-icon-vk:before { content: ""; }
+.i-icon-select-arr:before { content: ""; }
 
-.i-icon-yt:before { content: ""; }
+.i-icon-user:before { content: ""; }
+
+.i-icon-yt:before { content: ""; }
 
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
@@ -2063,10 +2065,10 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .slick-prev:before, .slick-next:before { font-size: 26px; position: absolute; }
 
 .slick-prev { right: 29px; }
-.slick-prev:before { content: ""; top: 50%; -webkit-transform: translate(50%, -50%); -ms-transform: translate(50%, -50%); transform: translate(50%, -50%); right: 50%; }
+.slick-prev:before { content: ""; top: 50%; -webkit-transform: translate(50%, -50%); -ms-transform: translate(50%, -50%); transform: translate(50%, -50%); right: 50%; }
 
 .slick-next { right: 0; }
-.slick-next:before { content: ""; top: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); left: 50%; }
+.slick-next:before { content: ""; top: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); left: 50%; }
 
 .slick-dots { text-align: left; position: absolute; margin: 0; bottom: -35px; left: -3px; right: 0; }
 .slick-dots li { position: relative; display: inline-block; padding: 0 3px; }
@@ -2178,8 +2180,9 @@ body.no-scroll { overflow: hidden; }
 
 .btn-small { height: 34px; line-height: 34px; font-size: 15px; padding: 0 10px; }
 
-.btn-del { background: none; width: 40px; height: 40px; font-size: 13px; color: #353130; }
+.btn-del { background: none; width: 40px; height: 40px; font-size: 11px; color: #353130; line-height: 1; }
 .btn-del span { vertical-align: middle; }
+.btn-del.btn_green-d { color: #799a2a; }
 .btn-del:hover { color: #ea4924; }
 
 .form-action { position: relative; }
@@ -2325,7 +2328,7 @@ body.no-scroll { overflow: hidden; }
 .checkbox input:checked + span:before { border-color: #799a2a; }
 .checkbox label > span { display: block; position: relative; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; color: #6b6867; }
 .checkbox label > span:before { content: ""; position: absolute; left: -20px; top: 2px; border: 1px solid #000; width: 13px; height: 13px; }
-.checkbox label > span:after { content: ""; position: absolute; left: -18px; top: 5px; font-size: 7px; font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #799a2a; display: none; }
+.checkbox label > span:after { content: ""; position: absolute; left: -18px; top: 5px; font-size: 7px; font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #799a2a; display: none; }
 .checkbox .btn-dots { font-size: 15px; }
 
 .checkbox_big label { padding-left: 40px; min-height: 31px; font-size: 20px; }
