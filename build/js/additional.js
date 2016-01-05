@@ -18,4 +18,14 @@ $(document).ready(function() {
 		var input = $(this).siblings('.js-password-input');
 		input.attr("type", "password");
 	});
+	$('.js-fancybox').fancybox({
+		// prevEffect		: 'none',
+		// nextEffect		: 'none',
+		helpers: {
+		    overlay: {
+		      locked: false
+		    }
+		  }
+		});
+
 });	
