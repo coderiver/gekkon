@@ -53,8 +53,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .i-icon, [class^="i-icon-"], [class*=" i-icon-"] { display: inline-block; }
 
-<<<<<<< HEAD
-.i-icon-arr-b:before { content: ""; }
+.i-icon-arrow-left:before { content: ""; }
 
 .i-icon-attachment:before { content: ""; }
 
@@ -68,78 +67,37 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .i-icon-edit:before { content: ""; }
 
-.i-icon-eye:before { content: ""; }
+.i-icon-arr-b:before { content: ""; }
 
 .i-icon-favorite:before { content: ""; }
 
 .i-icon-fb:before { content: ""; }
 
 .i-icon-filter:before { content: ""; }
-=======
-.i-icon-arrow-left:before { content: ""; }
-
-.i-icon-arrow-right:before { content: ""; }
-
-.i-icon-attachment:before { content: ""; }
-
-.i-icon-calendar:before { content: ""; }
-
-.i-icon-cart:before { content: ""; }
-
-.i-icon-check:before { content: ""; }
-
-.i-icon-check2:before { content: ""; }
-
-.i-icon-edit:before { content: ""; }
 
 .i-icon-gift:before { content: ""; }
 
 .i-icon-history:before { content: ""; }
 
 .i-icon-in:before { content: ""; }
->>>>>>> master
 
 .i-icon-lock:before { content: ""; }
 
-.i-icon-map:before { content: ""; }
-
 .i-icon-select-arr:before { content: ""; }
-
-<<<<<<< HEAD
-.i-icon-in:before { content: ""; }
-
-.i-icon-map:before { content: ""; }
-
-.i-icon-sepa:before { content: ""; }
-
-.i-icon-skrill:before { content: ""; }
-
-.i-icon-tw:before { content: ""; }
 
 .i-icon-user:before { content: ""; }
 
-.i-icon-vk:before { content: ""; }
-
-.i-icon-yt:before { content: ""; }
-=======
-.i-icon-sepa:before { content: ""; }
-
-.i-icon-favorite:before { content: ""; }
-
-.i-icon-skrill:before { content: ""; }
-
-.i-icon-fb:before { content: ""; }
-
-.i-icon-user:before { content: ""; }
-
-.i-icon-yt:before { content: ""; }
-
 .i-icon-tw:before { content: ""; }
 
-.i-icon-vk:before { content: ""; }
+.i-icon-arrow-right:before { content: ""; }
 
-.i-icon-filter:before { content: ""; }
->>>>>>> master
+.i-icon-eye:before { content: ""; }
+
+.i-icon-map:before { content: ""; }
+
+.i-icon-vk:before { content: ""; }
+
+.i-icon-yt:before { content: ""; }
 
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
@@ -1921,163 +1879,163 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .icon-pear:before { content: '\e800'; }
 
-/* 'юаА' */
+/* '' */
 .icon-pasta7:before { content: '\e801'; }
 
-/* 'юаБ' */
+/* '' */
 .icon-pointer17:before { content: '\e802'; }
 
-/* 'юаВ' */
+/* '' */
 .icon-receive:before { content: '\e803'; }
 
-/* 'юаГ' */
+/* '' */
 .icon-right39:before { content: '\e804'; }
 
-/* 'юаД' */
+/* '' */
 .icon-list-1:before { content: '\e805'; }
 
-/* 'юаЕ' */
+/* '' */
 .icon-marker20:before { content: '\e806'; }
 
-/* 'юаЖ' */
+/* '' */
 .icon-menu48:before { content: '\e807'; }
 
-/* 'юаЗ' */
+/* '' */
 .icon-money425:before { content: '\e808'; }
 
-/* 'юаИ' */
+/* '' */
 .icon-transport449:before { content: '\e809'; }
 
-/* 'юаЙ' */
+/* '' */
 .icon-supermarket86:before { content: '\e80a'; }
 
-/* 'юаК' */
+/* '' */
 .icon-user7:before { content: '\e80b'; }
 
-/* 'юаЛ' */
+/* '' */
 .icon-tree1:before { content: '\e80c'; }
 
-/* 'юаМ' */
+/* '' */
 .icon-add186:before { content: '\e80d'; }
 
-/* 'юаН' */
+/* '' */
 .icon-animal276:before { content: '\e80e'; }
 
-/* 'юаО' */
+/* '' */
 .icon-alcohol93:before { content: '\e80f'; }
 
-/* 'юаП' */
+/* '' */
 .icon-apple16:before { content: '\e810'; }
 
-/* 'юаР' */
+/* '' */
 .icon-arrowheads3:before { content: '\e811'; }
 
-/* 'юаС' */
+/* '' */
 .icon-bank62:before { content: '\e812'; }
 
-/* 'юаТ' */
+/* '' */
 .icon-breakfast39:before { content: '\e813'; }
 
-/* 'юаУ' */
+/* '' */
 .icon-checkbox2:before { content: '\e814'; }
 
-/* 'юаФ' */
+/* '' */
 .icon-carrot:before { content: '\e815'; }
 
-/* 'юаХ' */
+/* '' */
 .icon-clock169:before { content: '\e816'; }
 
-/* 'юаЦ' */
+/* '' */
 .icon-christmas252:before { content: '\e817'; }
 
-/* 'юаЧ' */
+/* '' */
 .icon-decoration34:before { content: '\e818'; }
 
-/* 'юаШ' */
+/* '' */
 .icon-creams4:before { content: '\e819'; }
 
-/* 'юаЩ' */
+/* '' */
 .icon-down-arrow25:before { content: '\e81a'; }
 
-/* 'юаЪ' */
+/* '' */
 .icon-dog75:before { content: '\e81b'; }
 
-/* 'юаЫ' */
+/* '' */
 .icon-exclamation11:before { content: '\e81c'; }
 
-/* 'юаЬ' */
+/* '' */
 .icon-drop44:before { content: '\e81d'; }
 
-/* 'юаЭ' */
+/* '' */
 .icon-favorite22:before { content: '\e81e'; }
 
-/* 'юаЮ' */
+/* '' */
 .icon-favourite24:before { content: '\e81f'; }
 
-/* 'юаЯ' */
+/* '' */
 .icon-giftbox55:before { content: '\e820'; }
 
-/* 'юаа' */
+/* '' */
 .icon-giftbox13:before { content: '\e821'; }
 
-/* 'юаб' */
+/* '' */
 .icon-horizontal39:before { content: '\e822'; }
 
-/* 'юав' */
+/* '' */
 .icon-hearts64:before { content: '\e823'; }
 
-/* 'юаг' */
+/* '' */
 .icon-house20:before { content: '\e824'; }
 
-/* 'юад' */
+/* '' */
 .icon-juice7:before { content: '\e825'; }
 
-/* 'юае' */
+/* '' */
 .icon-setup7:before { content: '\e826'; }
 
-/* 'юаж' */
+/* '' */
 .icon-setup8:before { content: '\e827'; }
 
-/* 'юаз' */
+/* '' */
 .icon-stick-man120:before { content: '\e828'; }
 
-/* 'юаи' */
+/* '' */
 .icon-soup20:before { content: '\e829'; }
 
-/* 'юай' */
+/* '' */
 .icon-summer50:before { content: '\e82a'; }
 
-/* 'юак' */
+/* '' */
 .icon-sun24:before { content: '\e82b'; }
 
-/* 'юал' */
+/* '' */
 .icon-supermarket67:before { content: '\e82c'; }
 
-/* 'юам' */
+/* '' */
 .icon-noun_148595_cc:before { content: '\e82d'; }
 
-/* 'юан' */
+/* '' */
 .icon-sun:before { content: '\e82e'; }
 
-/* 'юао' */
+/* '' */
 .icon-yandex:before { content: '\e82f'; }
 
-/* 'юап' */
+/* '' */
 .icon-oil23:before { content: '\e830'; }
 
-/* 'юа░' */
+/* '' */
 .icon-mark1:before { content: '\e831'; }
 
-/* 'юа▒' */
+/* '' */
 .icon-left-arrow23:before { content: '\e832'; }
 
-/* 'юа▓' */
+/* '' */
 .icon-close47:before { content: '\e833'; }
 
-/* 'юа│' */
+/* '' */
 .icon-arrow158:before { content: '\e834'; }
 
-/* 'юа┤' */
+/* '' */
 .slick-slider { position: relative; display: block; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
@@ -2108,7 +2066,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .slick-prev:before { content: ""; top: 50%; -webkit-transform: translate(50%, -50%); -ms-transform: translate(50%, -50%); transform: translate(50%, -50%); right: 50%; }
 
 .slick-next { right: 0; }
-.slick-next:before { content: ""; top: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); left: 50%; }
+.slick-next:before { content: ""; top: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); left: 50%; }
 
 .slick-dots { text-align: left; position: absolute; margin: 0; bottom: -35px; left: -3px; right: 0; }
 .slick-dots li { position: relative; display: inline-block; padding: 0 3px; }
@@ -2246,7 +2204,7 @@ body.no-scroll { overflow: hidden; }
 .visit-card li { margin-bottom: 15px; }
 
 .soc { font-size: 28px; }
-.soc a { display: inline-block; -webkit-transition: color 0.3s; transition: color 0.3s; line-height: 1; position: relative; z-index: 2; }
+.soc a { display: inline-block; background: #fff; -webkit-transition: color 0.3s; transition: color 0.3s; line-height: 1; position: relative; z-index: 2; }
 .soc a:hover { text-decoration: none; }
 .soc a:after { content: ""; position: absolute; top: 1px; bottom: 1px; left: 1px; right: 1px; background: #fff; z-index: -1; }
 .soc_small { font-size: 20px; }
@@ -2349,18 +2307,13 @@ body.no-scroll { overflow: hidden; }
 
 .price_light { font-weight: 300; }
 
-<<<<<<< HEAD
 .badge { position: absolute; right: 20px; top: 15px; padding: 3px 5px 2px; -webkit-border-radius: 0; border-radius: 0; font-size: 15px; font-weight: 300; }
 .badge_new { background: #b1dc4a; color: #fff; font-weight: 700; }
 .badge_hot { background: #ea4924; color: #fff; }
-.badge_big { font-size: 28px; padding: 6px 8px 5px; font-weight: 700; }
-=======
-.badge { position: absolute; right: 15px; top: 15px; padding: 3px 5px 2px; -webkit-border-radius: 0; border-radius: 0; font-size: 15px; font-weight: 300; }
-.badge_new { background: #ffde00; color: #353130; }
+.badge_big { font-size: 28px; padding: 6px 8px 5px; font-weight: 700; color: #353130; }
 .badge_new-green { background-color: #b1dc4a; font-weight: 700; line-height: 1; }
 .badge_hot { background: #ea4924; color: #fff; font-weight: 700; }
 .badge_big { font-size: 29px; padding: 5px 6px 5px 10px; }
->>>>>>> master
 
 .checkbox { margin: 0 0 5px; position: static; font-weight: 300; color: #353130; }
 .checkbox + .checkbox { margin: 0 0 5px; }
@@ -2370,11 +2323,7 @@ body.no-scroll { overflow: hidden; }
 .checkbox input:checked + span:before { border-color: #799a2a; }
 .checkbox label > span { display: block; position: relative; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; color: #6b6867; }
 .checkbox label > span:before { content: ""; position: absolute; left: -20px; top: 2px; border: 1px solid #000; width: 13px; height: 13px; }
-<<<<<<< HEAD
 .checkbox label > span:after { content: ""; position: absolute; left: -18px; top: 5px; font-size: 7px; font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #799a2a; display: none; }
-=======
-.checkbox label > span:after { content: ""; position: absolute; left: -18px; top: 5px; font-size: 7px; font-family: "svgfont"; font-style: normal; font-weight: normal; text-rendering: auto; speak: none; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; color: #799a2a; display: none; }
->>>>>>> master
 .checkbox .btn-dots { font-size: 15px; }
 
 .checkbox_big label { padding-left: 40px; min-height: 31px; font-size: 20px; }
@@ -2389,7 +2338,6 @@ body.no-scroll { overflow: hidden; }
 .form-group { position: relative; }
 .form-group label { font-size: 15px; font-weight: 300; }
 .form-group.is-high-select .control-label { padding-top: 4px; }
-<<<<<<< HEAD
 .form-group.is-high-select select.form-control { height: 34px; padding: 6px 12px; }
 
 .field-password { position: relative; }
@@ -2397,19 +2345,12 @@ body.no-scroll { overflow: hidden; }
 .field-password .input-eye { position: absolute; top: 0; bottom: 0; right: 0; padding: 0 7px; background: transparent; color: #333; cursor: pointer; text-align: center; font-size: 0; }
 .field-password .input-eye:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .field-password .input-eye i { font-size: 14px; vertical-align: middle; }
+.field-password .i-icon-lock { font-size: 17px; position: absolute; right: 14px; top: 59%; }
 
 .form-control { font-size: 13px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; }
 
-select.form-control { margin-top: -2px; height: 24px; padding: 0 12px; }
-=======
-.form-group.is-high-select select.form-control { height: 34px; }
-.form-group .i-icon-lock { font-size: 17px; position: absolute; right: 14px; top: 59%; }
-
-.form-control { font-size: 13px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; }
-
-select.form-control { margin-top: -1px; height: 24px; padding-top: 0; padding-bottom: 0; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; appearance: none !important; }
+select.form-control { margin-top: -1px; height: 24px; padding: 0 12px; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; appearance: none !important; }
 select.form-control.form-control_numb { padding-left: 6px; }
->>>>>>> master
 select.is-big { height: 34px; }
 select::-ms-expand { display: none; }
 
@@ -3328,7 +3269,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .col-md-offset-0{ margin-left: 0; }
  .modal-lg{ width: 415px; } }
 @media only screen and (max-width: 1024px){
- .form-control{ font-size: 14px; }
+ .form-control{ font-size: 16px; }
  .select i{ right: 8px; } }
 @media only screen and (max-width: 1279px){
  .nav a{ padding: 0 5px; }
