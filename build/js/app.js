@@ -862,6 +862,15 @@ $(document).ready(function() {
 		prevArrow: '.js-tesing-prev',
 		nextArrow: '.js-tesing-next'
 	})
+	$('.js-show-password').on('mousedown', function () {
+		var input = $(this).siblings('.js-password-input');
+		input.attr("type", "text");
+		return false;
+	})
+	$('.js-show-password').on('mouseup', function () {
+		var input = $(this).siblings('.js-password-input');
+		input.attr("type", "password");
+	});
 });	
 "use strict";
 $(document).ready(function() {
@@ -873,6 +882,7 @@ $(document).ready(function() {
 			var input = $(this).find("input");
 			var plus = $(this).find(".js-plus-number");
 			var minus = $(this).find(".js-minus-number");
+			var reg = /^[0-9]*$/gm;
 			plus.on("click", function(){
 				var val = +(input.val());
 				if (val >= max_number) {
@@ -900,6 +910,14 @@ $(document).ready(function() {
 				if (val == '') {
 					val = 1;
 					$(this).val(val);
+				}
+			});
+			input.on("keyup", function(){
+				var val = +$(this).val();
+				if(!val) {
+					$(this).val(function(index,value){
+									return value.substr(0,value.length-1);
+								})
 				}
 			});
 		});

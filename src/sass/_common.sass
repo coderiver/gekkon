@@ -80,8 +80,8 @@ body
 	&:after
 		right: 0
 	&_main
-		padding: 27px 0 40px
-		background: #fff
+		padding: 27px 0 70px
+		background: #fff 
 .title
 	+light
 	line-height: 1.2
@@ -175,6 +175,7 @@ body
 		font-size: 15px
 		+reg
 		+roboto
+
 	&__plus,
 	&__minus
 		vertical-align: top
@@ -380,7 +381,8 @@ body
 		font-size: 13px
 		+roboto
 		+reg
-		color: $text
+		color: $text 
+		line-height: 21px 
 		+placeholder
 			color: #959595
 	&__btn
@@ -392,7 +394,10 @@ body
 		+reg
 		font-size: 13px
 		background: $btn
-		line-height: 1
+		line-height: 1 
+		+tr(background .3s)
+		&:hover
+			background: lighten($btn, 10%) 
 	label
 		+reg
 .tel
@@ -427,8 +432,21 @@ body
 		display: inline-block
 		background: #fff
 		+tr(color .3s)
+		line-height: 1
+		position: relative
+		z-index: 2
 		&:hover
 			text-decoration: none
+		&:after
+			content: ''
+			position: absolute
+			top: 1px
+			bottom: 1px
+			left: 1px
+			right: 1px
+			background: #fff 
+			z-index: -1 
+			
 	&_small
 		font-size: 20px
 		span
@@ -469,7 +487,9 @@ body
 			a
 				border-color: transparent
 				color: $text
-				+bold
+				+bold  
+	h3
+		margin: 0
 	a
 		display: inline-block
 		border-bottom: 1px dotted
@@ -666,7 +686,7 @@ body
 		+r(1023)
 			top: 0
 	&__new
-		color: $promo
+		color: #b2002e
 	.price__weight
 		font-size: 13px
 		+light
@@ -690,7 +710,7 @@ body
 	+light
 .badge
 	position: absolute
-	right: 15px
+	right: 20px
 	top: 15px
 	padding: 3px 5px 2px
 	border-radius: 0
@@ -698,6 +718,15 @@ body
 	+light
 	&_new
 		background: $marked
+		color: #fff
+		+bold
+	&_hot
+		background: $hot
+		color: #fff 
+	&_big
+		font-size: 28px
+		padding: 6px 8px 5px
+		+bold 
 		color: $text
 	&_new-green
 		background-color: #b1dc4a
@@ -805,6 +834,25 @@ body
 		select
 			&.form-control
 				height: 34px
+				padding: 6px 12px 
+.field-password
+	position: relative
+	input
+		padding-right: 27px 
+	.input-eye
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		padding: 0 7px 
+		background: transparent
+		color: #333
+		cursor: pointer 
+		+vertical
+		i
+			font-size: 14px
+			vertical-align: middle 
+
 	.i-icon-lock
 		font-size: 17px
 		position: absolute
@@ -815,13 +863,12 @@ body
 	+roboto
 	+light
 	+r(1024)
-		font-size: 14px
+		font-size: 16px
 select
 	&.form-control
 		margin-top: -1px
 		height: 24px
-		padding-top: 0
-		padding-bottom: 0
+		padding: 0 12px
 		-webkit-appearance: none
 		-moz-appearance: none
 		-ms-appearance: none
@@ -879,7 +926,7 @@ select
 			content: counter(list)"."
 			counter-increment: list
 			position: absolute
-			top: -2px
+			top: 0
 			left: 0
 			color: $btn
 			font-size: 20px
@@ -966,12 +1013,14 @@ select
 
 .modal-header
 	border: 0
-	.h3
+	.h3, .h2
 		margin: 0
 	.close
 		font-size: 15px
 		color: $text
 		opacity: 1
+		margin-top: 0px
+		margin-right: -3px
 		&:hover
 			color: $hot
 .date
@@ -1036,3 +1085,23 @@ select
 .tab-content
 	.tab-content
 		padding-top: 30px
+
+.login-box
+	a
+		&:hover
+			border-bottom: 1px solid #fff
+			
+.link-solid
+	border-bottom: 1px solid
+
+.checkbox-list
+	+clr
+	.checkbox-col
+		width: 50%
+		float: left 
+		.checkbox
+			padding-left: 5px 
+		+r(767)
+			width: 100%
+			float: none 
+		
