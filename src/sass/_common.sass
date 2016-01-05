@@ -1,7 +1,7 @@
 // # SHORT HOWTO
 // ## Sprites
 //     .whatever
-// 			+s(codedby) 
+// 			+s(codedby)
 // ## gradient example
 //     	+g(#232323, #5c5c5c);
 //	   horizontal
@@ -40,9 +40,9 @@
 =light
 	font-weight: 300
 =reg
-	font-weight: 400 
+	font-weight: 400
 =bold
-	font-weight: 700 
+	font-weight: 700
 html
 	&.no-scroll
 		overflow: hidden
@@ -52,7 +52,7 @@ body
 	+light
 	font-size: 1.5rem
 	line-height: 1.4
-	color: $text 
+	color: $text
 	background: #fbf8da url(../img/body-bg.png) 0 0 repeat
 	&.no-scroll
 		overflow: hidden
@@ -74,7 +74,7 @@ body
 		bottom: 0
 		width: 1px
 		z-index: -1
-		box-shadow: 0 0 40px rgba(#000, 1) 
+		box-shadow: 0 0 40px rgba(#000, 1)
 	&:before
 		left: 0
 	&:after
@@ -90,30 +90,30 @@ body
 		font-size: 40px
 		+r(767)
 			font-size: 30px
-		
+
 	&_h2
 		font-size: 30px
-		+r(767)	
-			font-size: 20px	
-		
+		+r(767)
+			font-size: 20px
+
 	&_h3
 		font-size: 20px
-		+r(767)	
-			font-size: 18px	
-		
+		+r(767)
+			font-size: 18px
+
 	a
 		font-size: 15px
 		display: inline-block
 		margin-left: 5px
 	span
-		color: $btn 
+		color: $btn
 
 .h1
 	font-size: 40px
 	+light
 	line-height: 1.2
 	span
-		color: $btn	
+		color: $btn
 	+r(767)
 		font-size: 35px
 .h2
@@ -131,11 +131,11 @@ body
 	span
 		color: $btn
 	&_primary
-		color: $btn 
+		color: $btn
 	+r(767)
 		font-size: 18px
 .h3_bold
-	font-weight: 700 
+	font-weight: 700
 .h1_mb,
 .h2_mb,
 .h3_mb
@@ -148,14 +148,14 @@ body
 		i
 			margin-right: 10px
 		span
-			border-bottom: 1px solid transparent 
+			border-bottom: 1px solid transparent
 			white-space: normal
 		&:hover
 			text-decoration: none
 			span
 				border-color: $primary
 	&.is-cancel
-		color: $hot 
+		color: $hot
 		&:hover
 			span
 				border-color: $hot
@@ -165,6 +165,7 @@ body
 	height: 25px
 	white-space: nowrap
 	border: 1px solid #ddd
+	font-size: 0
 	&__input
 		display: inline-block
 		vertical-align: top
@@ -176,31 +177,34 @@ body
 		+roboto
 
 	&__plus,
-	&__minus	
-		vertical-align: top 
+	&__minus
+		vertical-align: top
 		width: 23px
 		height: 23px
 		color: $text
 		background: #f3f2f2
+		font-size: 15px
 		&:hover
 			background: darken(#f3f2f2, 5%)
 		&:active
 			background: darken(#f3f2f2, 10%)
 	&__plus
-		border-left: 1px solid #ddd 
+		border-left: 1px solid #ddd
 	&__minus
-		border-right: 1px solid #ddd 
+		border-right: 1px solid #ddd
 .btn-dots
 	display: inline-block
 	line-height: 1.3
-	background: none 
+	background: none
 	border-bottom: 1px dotted
 	+roboto
 	+reg
-	color: $btn 
-	&:hover	
+	color: $btn
+	&:hover
 		border-color: transparent
 		text-decoration: none
+	&.btn-dots_s
+		border-bottom-style: solid
 	&_light
 		+light
 	&_icon
@@ -221,7 +225,7 @@ body
 	line-height: 1
 	transition: background .3s
 	text-shadow: none
-	+r(767)	
+	+r(767)
 		font-size: 15px
 	+ .btn
 		margin-top: 23px
@@ -244,7 +248,7 @@ body
 	background: $promo
 	+tr(background .3s)
 	&:hover
-		background: lighten($promo, 5%) 
+		background: lighten($promo, 5%)
 	&:focus,
 	&:active
 		background: lighten($promo, 10%)
@@ -258,7 +262,7 @@ body
 	transition: color, background, border, .3s
 	&:hover
 		background: $primary
-		color: #fff  
+		color: #fff
 		border-color: $primary
 	&:active,
 	&:focus
@@ -270,17 +274,17 @@ body
 			background: darken($primary, 10%)
 			border-color: darken($primary, 10%)
 			color: #fff
-			box-shadow: none 
+			box-shadow: none
 			outline: none
 .btn-default
 	padding-left: 33px
-	padding-right: 33px 
+	padding-right: 33px
 	background: $btn
 	border: 0
 	box-shadow: none
 	&:hover
 		background: $primary
-		
+
 	&:active, &:focus
 		background: darken($primary, 10%)
 		box-shadow: none
@@ -288,11 +292,11 @@ body
 			background: darken($primary, 10%)
 			box-shadow: none
 		&:focus
-			background: $btn 
+			background: $btn
 .btn-back
 	position: relative
 	border: 1px solid
-	padding: 0 10px 
+	padding: 0 10px
 	height: 40px
 	line-height: 40px
 	font-size: 18px
@@ -303,15 +307,15 @@ body
 	&:hover
 		border-color: $text
 		color: #fff
-		background: $text   
+		background: $text
 		&:after
 			+arr(10,38,$text,l)
-	&:before	
+	&:before
 		content: ""
 		position: absolute
 		left: -11px
 		top: -1px
-		+arr(10,40,$text,l) 
+		+arr(10,40,$text,l)
 	&:after
 		content: ""
 		position: absolute
@@ -322,44 +326,43 @@ body
 .btn-next
 	position: relative
 	border: 0
-	padding: 0 10px 
+	padding: 0 10px
 	height: 40px
 	line-height: 40px
 	font-size: 18px
 	color: #fff
-	background: $btn 
+	background: $btn
 	transition: background .3s
 	+r(767)
 		font-size: 15px
 	&:hover
 		border-color: $text
 		color: #fff
-		background: darken($btn, 5%) 
+		background: darken($btn, 5%)
 		&:after
-			+arr(10,40,darken($btn, 5%),r)  
+			+arr(10,40,darken($btn, 5%),r)
 	&:after
-		content: "" 
+		content: ""
 		position: absolute
 		top: 0
-		right: -10px	
+		right: -10px
 		+arr(10,40,$btn,r)
-		transition: border .3s 
-	&:active
+		transition: border .3s
 .btn-small
 	height: 34px
 	line-height: 34px
 	font-size: 15px
-	padding: 0 10px 
+	padding: 0 10px
 .btn-del
 	background: none
 	width: 40px
 	height: 40px
 	font-size: 13px
-	color: $text 
+	color: $text
 	span
 		vertical-align: middle
 	&:hover
-		color: $hot 
+		color: $hot
 .form-action
 	position: relative
 	&__table
@@ -371,7 +374,7 @@ body
 	&__input
 		display: inline-block
 		vertical-align: middle
-		padding: 0 12px 
+		padding: 0 12px
 		width: 100%
 		height: 21px
 		background: #fff
@@ -412,21 +415,22 @@ body
 	margin-bottom: 15px
 	font-size: 13px
 	&__list
-		padding-top: 10px 
+		padding-top: 10px
 		font-size: 0
 		img
 			display: inline-block
 			margin: 0 4px 4px 0
-			vertical-align: top 
+			vertical-align: top
 			+r(1023)
 				margin-right: 1px
 .visit-card
 	li
-		margin-bottom: 15px 
+		margin-bottom: 15px
 .soc
 	font-size: 28px
 	a
 		display: inline-block
+		background: #fff
 		+tr(color .3s)
 		line-height: 1
 		position: relative
@@ -488,14 +492,14 @@ body
 		margin: 0
 	a
 		display: inline-block
-		border-bottom: 1px dotted 
+		border-bottom: 1px dotted
 		+tr(border .3s)
 		&:hover
 			text-decoration: none
-			border-color: transparent 
+			border-color: transparent
 .tabs-view
 	margin: -35px 0 0
-	padding: 0 20px 
+	padding: 0 20px
 	line-height: 1.2
 	font-size: 15px
 	+light
@@ -507,7 +511,7 @@ body
 			span
 				border-color: transparent
 				color: $text
-				+bold  
+				+bold
 	a
 		display: inline-block
 		&:hover
@@ -515,11 +519,11 @@ body
 	span
 		&:last-child
 			display: inline-block
-			border-bottom: 1px dotted 
+			border-bottom: 1px dotted
 			+tr(border .3s)
 			&:hover
 				text-decoration: none
-				border-color: transparent 
+				border-color: transparent
 .title
 	+ .post
 		margin-top: 15px
@@ -556,21 +560,21 @@ body
 .meta
 	font-size: 13px
 	+light
-	color: $meta 
+	color: $meta
 	&_big
 		font-size: 15px
 
 .item
 	position: relative
 	margin-bottom: 43px
-	padding: 0 20px 
+	padding: 0 20px
 	transition: box-shadow .2s
 	&:hover,
 	&.is-active
 		box-shadow: 0 0 0 3px $btn
 	&__img
 		position: relative
-		padding: 15px 0 
+		padding: 15px 0
 		height: 158px
 		+vertical
 		display: block
@@ -594,10 +598,10 @@ body
 		&:hover
 			text-decoration: none
 			span
-				border-bottom: 1px solid 
+				border-bottom: 1px solid
 		img
 			margin-right: 5px
-		
+
 	&__action
 		+clr
 		.price
@@ -605,6 +609,9 @@ body
 		.number
 			float: right
 			margin-top: 4px
+		.price__old
+			position: relative
+			top: -7px
 	.btn
 		margin-top: 13px
 	.checkbox_big
@@ -612,7 +619,7 @@ body
 		top: 20px
 		left: 20px
 		z-index: 2
-		
+
 .item_marked
 	box-shadow: 0 0 0 3px $marked
 	&:hover
@@ -629,7 +636,7 @@ body
 .item_list
 	display: table
 	margin-bottom: 20px
-	padding: 10px 0 
+	padding: 10px 0
 	width: 100%
 	+r(767)
 		display: block
@@ -638,7 +645,7 @@ body
 	.item__action
 		display: table-cell
 		vertical-align: bottom
-		padding: 0 15px 
+		padding: 0 15px
 		+r(767)
 			display: block
 		.number
@@ -648,7 +655,7 @@ body
 				margin-left: 20px
 	.item__img
 		height: auto
-		padding: 15px 
+		padding: 15px
 		width: 20%
 		+r(767)
 			width: 100%
@@ -665,7 +672,7 @@ body
 		margin-bottom: 5px
 	.btn
 		margin: 20px 0
-		 
+
 .price
 	font-size: 25px
 	+bold
@@ -676,6 +683,8 @@ body
 		display: inline-block
 		font-size: 15px
 		text-decoration: line-through
+		+r(1023)
+			top: 0
 	&__new
 		color: #b2002e
 	.price__weight
@@ -684,7 +693,7 @@ body
 		color: $text
 .price_inline
 	display: inline-block
-	vertical-align: baseline 
+	vertical-align: baseline
 	&__old
 		vertical-align: baseline
 .price_promo
@@ -694,7 +703,7 @@ body
 	.price__weight
 		font-size: 20px
 		+light
-		color: $text 
+		color: $text
 .price_small
 	font-size: 15px
 .price_light
@@ -703,7 +712,7 @@ body
 	position: absolute
 	right: 20px
 	top: 15px
-	padding: 3px 5px 2px 
+	padding: 3px 5px 2px
 	border-radius: 0
 	font-size: 15px
 	+light
@@ -718,14 +727,26 @@ body
 		font-size: 28px
 		padding: 6px 8px 5px
 		+bold 
+		color: $text
+	&_new-green
+		background-color: #b1dc4a
+		+bold
+		line-height: 1
+	&_hot
+		background: $hot
+		color: #fff
+		+bold
+	&_big
+		font-size: 29px
+		padding: 5px 6px 5px 10px
 
 .checkbox
-	margin: 0 0 5px 
+	margin: 0 0 5px
 	position: static
 	+light
-	color: $text 
+	color: $text
 	+ .checkbox
-		margin: 0 0 5px 
+		margin: 0 0 5px
 	label
 		display: inline-block
 		position: relative
@@ -738,12 +759,13 @@ body
 				&:after
 					display: block
 				&:before
-					border-color: $btn 
+					border-color: $btn
 	label
 		> span
 			display: block
 			position: relative
 			+nosel
+			color: #6b6867
 			&:before
 				content: ""
 				position: absolute
@@ -754,12 +776,12 @@ body
 				height: 13px
 			&:after
 				content: $i-icon-check
-				position: absolute 
+				position: absolute
 				left: -18px
 				top: 5px
 				font-size: 7px
 				+i-icon
-				color: $btn 
+				color: $btn
 				display: none
 	.btn-dots
 		font-size: 15px
@@ -783,7 +805,7 @@ body
 		.checkbox
 			padding-right: 5px
 		+r(767)
-			column-count: 1 
+			column-count: 1
 	&[data-cols="3"]
 		column-count: 3
 		column-gap: 30px
@@ -791,15 +813,26 @@ body
 		font-size: 15px
 		+r(1023)
 			column-count: 1
+	.col
+		display: inline-block
+		vertical-align: top
+		width: 33%
+		padding-right: 12px
+		+r(1023)
+			width: 100%
+			padding-right: 0
 .form-group
+	position: relative
 	label
 		font-size: 15px
+		// position: relative
+		// top: -1px
 		+light
 	&.is-high-select
 		.control-label
 			padding-top: 4px
 		select
-			&.form-control	
+			&.form-control
 				height: 34px
 				padding: 6px 12px 
 .field-password
@@ -820,25 +853,58 @@ body
 			font-size: 14px
 			vertical-align: middle 
 
+	.i-icon-lock
+		font-size: 17px
+		position: absolute
+		right: 14px
+		top: 59%
 .form-control
 	font-size: 13px
 	+roboto
 	+light
 	+r(1024)
 		font-size: 16px
-
 select
 	&.form-control
-		margin-top: -2px
+		margin-top: -1px
 		height: 24px
 		padding: 0 12px
+		-webkit-appearance: none
+		-moz-appearance: none
+		-ms-appearance: none
+		appearance: none !important
+		&.form-control_numb
+			padding-left: 6px
+			+r(1280)
+				padding-left: 0
+				padding-right: 20px
+		+r(1280)
+			padding-left: 3px
 	&.is-big
 		height: 34px
+	&::-ms-expand
+		display: none
 
+.select
+	position: relative
+	i
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		right: 8px
+		color: #4a4746
+		font-size: 21px
+		cursor: pointer
+		pointer-events: none
+		+r(1280)
+			right: 0
+		+r(1024)
+			right: 8px
 .list
 	li
 		position: relative
 		padding-left: 13px
+		margin-top: 10px
 	& > li
 		&:before
 			content: ""
@@ -847,15 +913,15 @@ select
 			top: 8px
 			width: 4px
 			height: 4px
-			border-radius: 50%  
-			background: $btn 
+			border-radius: 50%
+			background: $btn
 .list-ol
 	line-height: 1.7
 	counter-reset: list
 	li
 		position: relative
 		margin-bottom: 15px
-		padding-left: 25px 
+		padding-left: 25px
 		&:before
 			content: counter(list)"."
 			counter-increment: list
@@ -864,7 +930,7 @@ select
 			left: 0
 			color: $btn
 			font-size: 20px
-			+bold 
+			+bold
 			line-height: 1
 		ol
 			counter-reset: sublist
@@ -872,7 +938,7 @@ select
 			li
 				position: relative
 				margin-bottom: 15px
-				padding-left: 50px 
+				padding-left: 50px
 				&:before
 					content: counter(list)"."counter(sublist)"."
 					counter-increment: sublist
@@ -881,7 +947,7 @@ select
 				li
 					position: relative
 					margin-bottom: 15px
-					padding-left: 50px 
+					padding-left: 50px
 					&:before
 						content: counter(list)"."counter(sublist)"."counter(sublist2)
 						counter-increment: sublist2
@@ -889,7 +955,7 @@ select
 		li
 			padding-left: 0
 			&:before
-				color: $text 
+				color: $text
 				position: static
 				display: inline-block
 				margin-right: 5px
@@ -911,31 +977,31 @@ select
 	font-size: 13px
 	+light
 	font-style: italic
-	
+
 .nav-tabs
-	margin: 40px 0 
+	margin: 40px 0
 	li
 		&.active
 			> a
 				background: #fff
 				font-weight: bold
-				color: $text  
+				color: $text
 				&:hover,
 				&:focus
 					background: #fff
-					color: $text  
+					color: $text
 				> span
 					border: 0
 		> a
 			margin: 0
-			padding: 15px 50px 
+			padding: 15px 50px
 			&:hover
-				border-color: transparent 
-				background: none 
+				border-color: transparent
+				background: none
 				> span
-					border-color: transparent 
+					border-color: transparent
 			> span
-				border-bottom: 1px dotted 
+				border-bottom: 1px dotted
 .required-text
 	color: $hot
 .form-inline_raty
@@ -943,7 +1009,7 @@ select
 	.raty
 		display: inline-block
 		vertical-align: middle
-		margin: 0 0 5px 15px 
+		margin: 0 0 5px 15px
 
 .modal-header
 	border: 0
@@ -956,7 +1022,7 @@ select
 		margin-top: 0px
 		margin-right: -3px
 		&:hover
-			color: $hot 
+			color: $hot
 .date
 	.form-group
 		.control-label
@@ -975,20 +1041,20 @@ select
 			font-size: 20px
 			pointer-events: none
 .form-sort
-	margin: 40px 0 
+	margin: 40px 0
 	+r(767)
-		margin: 10px 0 
+		margin: 10px 0
 .ui-datepicker
-	padding: 10px 
+	padding: 10px
 	background: #fff
 	border: 1px solid #9a9a9a
 .ui-datepicker-calendar
 	td
 		border: 1px solid $border
 		&:hover
-			color: $btn 
+			color: $btn
 			a
-				color: $btn 
+				color: $btn
 		&.ui-datepicker-today
 			background: $btn
 			color: #fff
@@ -1001,7 +1067,7 @@ select
 			background: $primary
 			color: #fff
 			a
-				color: #fff 
+				color: #fff
 	a
 		color: $text
 
@@ -1015,11 +1081,11 @@ select
 	transition: color .3s
 	background: none
 	&:hover
-		color: $hot 
+		color: $hot
 .tab-content
 	.tab-content
 		padding-top: 30px
-		
+
 .login-box
 	a
 		&:hover
