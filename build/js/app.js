@@ -3110,23 +3110,15 @@ $(document).ready(function() {
 		_dom: function() {
 			this._$el = $(".js-connector");
 			this._$target = $(".js-connect");
-			this._root = ".js-connector-root";
 		},
 		_bindEvent: function() {
 			this._$el.on("click", this._changePos.bind(this));
 		},
 		_changePos: function(event) {
 			var $el = $(event.currentTarget);
-			var top = $el.position({
-				of: this._root
-			}).top;
-			var left = $el.position({
-				of: this._root
-			}).left;
+			var top = $el.position().top;
+			var left = $el.position().left;
 			var width = $(event.currentTarget).outerWidth();
-			console.log(top);
-			console.log(left);
-			console.log(event.currentTarget);
 			this._$target.css({
 				left: +left+width,
 				top: top,
@@ -3197,24 +3189,6 @@ $(document).ready(function() {
 	}
 	checkTarget.init();
 
-	$( "#from" ).datepicker({
-		changeMonth: true,
-		numberOfMonths: 1,
-		firstDay: 1,
-		onClose: function( selectedDate ) {
-			$( "#to" ).datepicker( "option", "minDate", selectedDate );
-			$( "#to" ).datepicker( "show" );
-		}
-	});
-	$( "#to" ).datepicker({
-		changeMonth: true,
-		numberOfMonths: 1,
-		firstDay: 1,
-		onClose: function( selectedDate ) {
-			$( "#from" ).datepicker( "option", "maxDate", selectedDate );
-		}
-	});
-
 	var toggler = {
 		init: function(option) {
 			this._$el = $(".js-toggler");
@@ -3271,5 +3245,22 @@ $(document).ready(function() {
 		return false;
 	});
 
+	$( "#from" ).datepicker({
+		changeMonth: true,
+		numberOfMonths: 1,
+		firstDay: 1,
+		onClose: function( selectedDate ) {
+			$( "#to" ).datepicker( "option", "minDate", selectedDate );
+			$( "#to" ).datepicker( "show" );
+		}
+	});
+	$( "#to" ).datepicker({
+		changeMonth: true,
+		numberOfMonths: 1,
+		firstDay: 1,
+		onClose: function( selectedDate ) {
+			$( "#from" ).datepicker( "option", "maxDate", selectedDate );
+		}
+	});
 
 });

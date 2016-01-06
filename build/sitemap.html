@@ -1005,48 +1005,41 @@
 			</div>
 		</div>
 	</div>
-	<div class="modal fade" id="modal-reg" role="dialog">
+	<div class="modal fade" id="modal-call" role="dialog">
 		<div class="modal-dialog" >
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="icon-close47"></span>
 					</button>
-					<div class="h2">Регистриация</div>
+					<div class="h3">Перезвоните мне</div>
 				</div>
 				<div class="modal-body">
 					<form>
 						<div class="form-group">
-							<label for="regEmail">Имя:</label>
-							<input type="text" class="form-control" id="regName" required="">
+							<label for="callName">Имя:<sup class="required-text">*</sup></label>
+							<input type="text" class="form-control" id="callName" required="">
 						</div>
 						<div class="form-group">
-							<label for="regEmail">Email:</label>
-							<input type="email" class="form-control" id="regEmail" required="">
+							<label for="callTel">Телефон:<sup class="required-text">*</sup></label>
+							<input type="tel" class="form-control" id="callTel" required="">
 						</div>
 						<div class="form-group">
-							<label for="regPass">Пароль:</label>
-							<input type="password" class="form-control" id="regPass" required="">
+							<label for="callText">Что вы хотите обсудить:</label>
+							<textarea class="form-control" id="callText" rows="5"></textarea>
 						</div>
 						<div class="form-group">
 							<div class="row">
 								<div class="col-sm-6">
-									<button class="btn btn-default btn-block" type="submit">Регистриация</button>
+									<button class="btn btn-default btn-block" type="submit">Отправить</button>
 								</div>
 								<div class="col-sm-6">
-									 Все поля обязательны для заполнения
+									  <sup class="required-text">*</sup> Обязательные для заполнения поля
 								</div>
 							</div>
-						</div>
-						<div class="form-group">
-							<div class="soc soc_small">
-								<span>Регистриация через соцсети: </span>
-								<a class="i-icon-fb" href="#"></a>
-								<a class="i-icon-tw" href="#"></a>
-								<a class="i-icon-vk" href="#"></a>
-							</div>
-						</div>					
+						</div>				
 					</form>
+					<div class="text-center"><span class="icon-exclamation11"></span>Спасибо, мы перезвоним вам.</div>
 				</div>
 			</div>
 		</div>
@@ -1105,6 +1098,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<div class="menu-fixed hidden-lg hidden-md js-menu">
 		<div class="menu-fixed__overlay js-toggler" data-toggle="js-menu" data-root="no-scroll"></div>
 		<div class="menu-fixed__in">
