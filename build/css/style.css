@@ -2460,6 +2460,14 @@ select::-ms-expand { display: none; }
 .checkbox-list .checkbox-col { width: 50%; float: left; }
 .checkbox-list .checkbox-col .checkbox { padding-left: 5px; }
 
+.basket { display: none; position: fixed; top: 65px; right: 0; z-index: 10; background: #fff; border: 1px solid; padding: 15px; font-size: 14px; width: 320px; }
+.basket.is-active { display: block; }
+.basket .h3 { margin: 0 0 20px; font-size: 23px; }
+.basket__img img { display: block; margin: 0 auto; max-width: 100%; }
+.basket__main a { font-size: 14px; }
+.basket__info { font-size: 12px; margin: 5px 0; }
+.basket .btn { margin: 20px 0; }
+
 .banner { margin-bottom: 55px; position: relative; padding: 25px; overflow: hidden; }
 .banner span { color: #7a0026; }
 .banner__img { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }

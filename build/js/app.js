@@ -3223,7 +3223,8 @@ $(document).ready(function() {
 
 	var btnCart = {
 		init: function(option) {
-			this._$el = $(".js-btn");
+			this._$el = $(".js-btn-cart");
+			this._$modal = $(".js-modal-cart");
 			this._bindEvent();
 		},
 		_bindEvent: function() {
@@ -3233,7 +3234,21 @@ $(document).ready(function() {
 			var el = $(event.currentTarget);
 			var elText = el.data("text");
 			el.text(elText);
+			this._showModal();
+			this._hideModal();
 			event.stopPropagation();
+		},
+		_showModal: function() {
+			this._$modal.addClass("is-active");
+		},
+		_hideModal: function() {
+			var modal = this._$modal;
+			if(modal.hasClass("is-active")) {
+				setTimeout(function() {
+					modal.removeClass("is-active");
+				}, 5000);
+			}
+			
 		}
 	}
 	btnCart.init();
