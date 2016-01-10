@@ -2995,15 +2995,22 @@ $(document).ready(function() {
 		_switchTab: function(event) {
 			var el = $(event.target);
 			this._tab = $(event.target).data("tab");
-			var top = $(this._tab).offset().top;
-			$(this._tab).tab('show');
-			this._$root.animate({
-				scrollTop: top
-			}, 500);
+			var top = $('a[href="'+this._tab+'"]').offset().top;
+			$('a[href="'+this._tab+'"').tab('show');
+			console.log(top);
+			$('html, body').animate({
+	            scrollTop: top
+	        }, 500);
 			return false;
 		}
 	}
 	goToTab.init();
+
+	// $(".js-btn-tab").on("click", function() {
+	// 	var tab = $(this).data("tab");
+	// 	console.log(tab);
+	// 	$(tab).tab("show");
+	// });
 
 	$(".js-slider-small").slick({
 		slidesToShow: 1,
