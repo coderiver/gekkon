@@ -2548,8 +2548,8 @@ select::-ms-expand { display: none; }
 .menu__more a { color: #353130; }
 .menu__more a:hover { color: #a7c66d; }
 
-.cart { margin-top: 45px; font-size: 13px; font-weight: 700; }
-.cart .i-icon-cart { margin-right: 3px; }
+.cart { margin-top: 45px; font-size: 13px; font-weight: 700; text-align: right; }
+.cart .i-icon-cart { position: relative; top: 2px; margin-right: 3px; }
 .cart__info { margin-top: 5px; font-weight: 300; }
 
 .promo { *zoom: 1; font-size: 15px; font-weight: 300; }
@@ -3256,7 +3256,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .banner__title{ font-size: 35px; line-height: 1; text-shadow: 0 0 2px #fff; }
  .header__menu{ padding-bottom: 15px; }
  .logo strong{ bottom: -5px; left: 38px; font-size: 10px; line-height: 1; }
- .cart{ text-align: right; margin-top: 40px; }
+ .cart{ margin-top: 40px; }
  .testing .slick-dots{ bottom: 25px; left: 33px; right: 33px; text-align: center; }
  .testing__prevBtn, .testing__nextBtn{ bottom: 25px; }
  .testing__nextBtn{ right: 33px; }
