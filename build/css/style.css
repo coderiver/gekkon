@@ -2244,13 +2244,13 @@ body.no-scroll { overflow: hidden; }
 .tabs-link li.active a { border-color: transparent; color: #353130; font-weight: 700; }
 .tabs-link h3 { margin: 0; }
 .tabs-link a { display: inline-block; border-bottom: 1px dotted; -webkit-transition: border 0.3s; transition: border 0.3s; }
-.tabs-link a:hover { color: #000; }
+.tabs-link a:hover { color: #000; text-decoration: none; }
 
 .tabs-view { margin: -35px 0 0; padding: 0 20px; line-height: 1.2; font-size: 15px; font-weight: 300; }
 .tabs-view li { display: inline-block; margin-left: 25px; vertical-align: middle; }
 .tabs-view li.active span { border-color: transparent; color: #353130; font-weight: 700; }
 .tabs-view a { display: inline-block; }
-.tabs-view a:hover { text-decoration: none; }
+.tabs-view a:hover { text-decoration: none; color: #000; }
 .tabs-view span:last-child { display: inline-block; border-bottom: 1px dotted; -webkit-transition: border 0.3s; transition: border 0.3s; }
 .tabs-view span:last-child:hover { text-decoration: none; border-color: transparent; }
 
@@ -2508,7 +2508,7 @@ select::-ms-expand { display: none; }
 .header__nav .btn-dots { color: #fff; }
 .header__nav .btn-dots:hover { color: #000; }
 .header__nav .nav a { text-decoration: none; }
-.header__nav .nav a:hover { text-decoration: underline; color: #fff; background: none; }
+.header__nav .nav a:hover { text-decoration: underline; color: #000; background: none; }
 
 .nav { font-size: 0; white-space: nowrap; }
 .nav a { display: inline-block; vertical-align: middle; padding: 0 9px; -webkit-transition: background 0.3s; transition: background 0.3s; font-size: 13px; }
@@ -2569,11 +2569,14 @@ select::-ms-expand { display: none; }
 .footer .inner:before, .footer .inner:after { display: none; }
 .footer .btn-dots { color: #fff; }
 .footer .tel { text-align: left; margin-bottom: 20px; }
+.footer .tel button:hover { color: #000; }
 .footer .link-small { color: #fff; }
+.footer .link-small:hover { color: #000; }
 .footer .form-action__btn, .footer .form-action__input { height: 25px; }
 .footer .form-action + .link-small { margin-top: 10px; display: inline-block; }
 .footer .soc { margin: 30px 0 25px; }
 .footer__meta a, .footer__nav a, .footer .visit-card a { color: #fff; }
+.footer__meta a:hover, .footer__nav a:hover, .footer .visit-card a:hover { text-decoration: underline; color: #000; }
 .footer .title_h3 { margin-bottom: 20px; }
 
 .vcenter { display: inline-block; vertical-align: middle; float: none; }
