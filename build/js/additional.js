@@ -43,6 +43,7 @@ $(document).ready(function() {
 			var val = $(this).find('option:selected').val();
 			$(this).siblings(".js-select-text").text(val);
 		});
+	
 	$('.js-fotorama').fotorama({
 		width: '100%',
 		height: 530,
@@ -56,37 +57,4 @@ $(document).ready(function() {
 		thumbfit: 'contain',
 		thumbborderwidth: 3
 	});
-	// $(window).resize(function() {
- //        if($(window).width() < 768) {
- //        	$('.js-fotorama').fotorama({
- //        		width: '100%',
- //        		height: 250,
- //        		ratio: 4/3,
- //        		fit: 'scaledown',
- //        		swipe: true,
- //        		nav: 'thumbs',
- //        		thumbwidth: 85,
- //        		thumbheight: 85,
- //        		thumbfit: 'contain',
- //        		thumbborderwidth: 3
- //        	});
- //        }
- //        adaptiveFotorama
- //    });
- //    	$(window).load(function() {
- //            if($(window).width() < 768) {
- //            	$('.js-fotorama').fotorama({
- //            		width: '100%',
- //            		height: 250,
- //            		ratio: 4/3,
- //            		fit: 'scaledown',
- //            		swipe: true,
- //            		nav: 'thumbs',
- //            		thumbwidth: 85,
- //            		thumbheight: 85,
- //            		thumbfit: 'contain',
- //            		thumbborderwidth: 3
- //            	});
- //            }
- //        });
 });	
