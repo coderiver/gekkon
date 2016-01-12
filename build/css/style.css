@@ -2579,6 +2579,9 @@ select::-ms-expand { display: none; }
 .footer__meta a:hover, .footer__nav a:hover, .footer .visit-card a:hover { text-decoration: underline; color: #000; }
 .footer .title_h3 { margin-bottom: 20px; }
 
+.fotorama__thumb { background: #fff; }
+.fotorama__thumb-border { border-color: #799a2a; }
+
 .vcenter { display: inline-block; vertical-align: middle; float: none; }
 
 .row_ib { font-size: 0; }
@@ -2872,7 +2875,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .carousel .slick-slide { text-align: center; font-size: 0; }
 .carousel .slick-slide:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .carousel .slick-slide img { display: inline-block; vertical-align: middle; max-height: 100%; }
-.carousel__main { height: 530px; }
 .carousel__nav { height: 86px; }
 .carousel__nav .slick-slide { padding: 5px; height: 86px; cursor: pointer; }
 .carousel__nav .slick-current:after { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; margin-left: -43px; width: 86px; border: 3px solid #799a2a; }
@@ -3282,7 +3284,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .sidebar .btn-dots{ color: #fff; }
  .sort__title{ margin-bottom: 20px; }
  .carousel{ margin-bottom: 40px; }
- .carousel__main{ height: 250px; margin-bottom: 20px; }
+ .carousel__main{ margin-bottom: 20px; }
  .carousel__main .slick-slide img{ max-height: 250px; }
  .steps li{ text-align: center; font-size: 13px; padding: 0 5px; }
  .table-simple_cart .item .item_list .item__img, .table-simple_cart .item .item_list .item__main{ display: block; float: none; }

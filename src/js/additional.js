@@ -22,26 +22,71 @@ $(document).ready(function() {
 		// prevEffect		: 'none',
 		// nextEffect		: 'none',
 		helpers: {
-		    overlay: {
-		      locked: false
-		    }
+			overlay: {
+			  locked: false
+			}
 		  }
 		});
 
-    $("body").on("click", ".js-select-text", function(event) {
+	$("body").on("click", ".js-select-text", function(event) {
 
-        var select = $(this).parents(".js-select");
-        if (select.hasClass("is-active")) {
-            $(".js-select").removeClass("is-active");
-        } else {
-            $(".js-select").removeClass("is-active");
-            select.toggleClass("is-active")
-        }
+		var select = $(this).parents(".js-select");
+		if (select.hasClass("is-active")) {
+			$(".js-select").removeClass("is-active");
+		} else {
+			$(".js-select").removeClass("is-active");
+			select.toggleClass("is-active")
+		}
 
-    });
-    $('select').on('change', function() {
-            var val = $(this).find('option:selected').val();
-            $(this).siblings(".js-select-text").text(val);
-        });
-
+	});
+	$('select').on('change', function() {
+			var val = $(this).find('option:selected').val();
+			$(this).siblings(".js-select-text").text(val);
+		});
+	$('.js-fotorama').fotorama({
+		width: '100%',
+		height: 530,
+		ratio: 800/600,
+		fit: 'scaledown',
+		swipe: true,
+		nav: 'thumbs',
+		shadows: false,
+		thumbwidth: 85,
+		thumbheight: 85,
+		thumbfit: 'contain',
+		thumbborderwidth: 3
+	});
+	// $(window).resize(function() {
+ //        if($(window).width() < 768) {
+ //        	$('.js-fotorama').fotorama({
+ //        		width: '100%',
+ //        		height: 250,
+ //        		ratio: 4/3,
+ //        		fit: 'scaledown',
+ //        		swipe: true,
+ //        		nav: 'thumbs',
+ //        		thumbwidth: 85,
+ //        		thumbheight: 85,
+ //        		thumbfit: 'contain',
+ //        		thumbborderwidth: 3
+ //        	});
+ //        }
+ //        adaptiveFotorama
+ //    });
+ //    	$(window).load(function() {
+ //            if($(window).width() < 768) {
+ //            	$('.js-fotorama').fotorama({
+ //            		width: '100%',
+ //            		height: 250,
+ //            		ratio: 4/3,
+ //            		fit: 'scaledown',
+ //            		swipe: true,
+ //            		nav: 'thumbs',
+ //            		thumbwidth: 85,
+ //            		thumbheight: 85,
+ //            		thumbfit: 'contain',
+ //            		thumbborderwidth: 3
+ //            	});
+ //            }
+ //        });
 });	

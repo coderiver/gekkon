@@ -6,5 +6,6 @@
 //=include lib/jquery.raty.js
 //=include lib/slick.min.js
 //=include lib/jquery.fancybox.js
+//=include lib/fotorama.js
 //=include additional.js
 //=include common.js
