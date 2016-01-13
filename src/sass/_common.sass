@@ -719,8 +719,10 @@ body
 		+light
 		color: $text
 	&_select
-		border-bottom: 1px dotted #333
+		border-bottom: 1px dotted $btn
 		position: relative
+		&:hover
+			border-color: $text 
 	&__select
 		position: relative
 		display: inline-block
@@ -1094,14 +1096,17 @@ select
 
 .modal-header
 	border: 0
+	position: relative
+	padding: 10px 15px 
 	.h3, .h2
 		margin: 0
 	.close
+		position: absolute
+		right: 15px
+		top: 15px
 		font-size: 15px
 		color: $text
 		opacity: 1
-		margin-top: 0px
-		margin-right: -3px
 		&:hover
 			color: $hot
 .date

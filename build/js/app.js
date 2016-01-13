@@ -3347,7 +3347,14 @@ $(document).ready(function() {
 	});
 
 	$('#modal-login').on('show.bs.modal', function (e) {
-	  // do something...
-	})
+		$("body").addClass("no-scroll").css( {
+			marginRight: scrollWidth
+		})
+	});
+	$('#modal-login').on('hide.bs.modal', function (e) {
+		$("body").removeClass("no-scroll").css( {
+			marginRight: 0
+		})
+	});
 
 });
