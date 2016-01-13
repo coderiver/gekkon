@@ -2908,7 +2908,159 @@ $(document).ready(function() {
 	});
 	
 });	
-//=include init.sliders.js
+"use strict";
+$(document).ready(function() {
+
+	$(".js-slider-small").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		pauseOnHover: true,
+		pauseOnDotsHover: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+
+	$('.js-slider-for').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.js-slider-nav'
+	});
+
+	$('.js-slider-nav').slick({
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		arrows: false,
+		asNavFor: '.js-slider-for',
+		dots: false,
+		focusOnSelect: true
+	});
+
+	$(".js-slider-info").slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		pauseOnHover: true,
+		pauseOnDotsHover: true
+
+	});
+
+	$(".js-slider-items").each(function () {
+		var _ = $(this);
+		_.slick({
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			infinite: false,
+			appendArrows: _.parents(".slider-items"),
+			responsive: [
+				{
+					breakpoint: 1023,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+	});
+
+	$(".js-raty").raty({
+		score: function() {
+			return $(this).attr('data-score');
+		},
+		starType: "i",
+		hints: ['1', '2', '3', '4', '5']
+		
+	});
+
+	$(".js-raty-readonly").raty({
+		readOnly: true,
+		score: function() {
+			return $(this).attr('data-score');
+		},
+		hints: ['1', '2', '3', '4', '5'],
+		starType: "i",
+	});
+
+	$("#from").datepicker({
+		changeMonth: true,
+		numberOfMonths: 1,
+		firstDay: 1,
+		onClose: function( selectedDate ) {
+			$( "#to" ).datepicker( "option", "minDate", selectedDate );
+			$( "#to" ).datepicker( "show" );
+		}
+	});
+
+	$("#to").datepicker({
+		changeMonth: true,
+		numberOfMonths: 1,
+		firstDay: 1,
+		onClose: function( selectedDate ) {
+			$( "#from" ).datepicker( "option", "maxDate", selectedDate );
+		}
+	});
+
+	$('.js-testing-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: true,
+		infinite: false,
+		fade: true,
+		prevArrow: '.js-tesing-prev',
+		nextArrow: '.js-tesing-next'
+	});
+
+	$('.js-fancybox').fancybox({
+		helpers: {
+			overlay: {
+			  locked: false
+			}
+		}
+	});
+
+	$('.js-fotorama').fotorama({
+		width: '100%',
+		height: 530,
+		ratio: 800/600,
+		fit: 'scaledown',
+		swipe: true,
+		nav: 'thumbs',
+		shadows: false,
+		thumbwidth: 85,
+		thumbheight: 85,
+		thumbfit: 'contain',
+		thumbborderwidth: 3
+	});
+
+});
 "use strict";
 $(document).ready(function() {
 
@@ -2916,50 +3068,6 @@ $(document).ready(function() {
 		connect.hide();
 	});
 
-	// get scroll width;
-	var scrollWidth;
-
-	function getScrollBarWidth() {
-		var inner = document.createElement('p');
-		inner.style.width = "100%";
-		inner.style.height = "200px";
-
-		var outer = document.createElement('div');
-		outer.style.position = "absolute";
-		outer.style.top = "0px";
-		outer.style.left = "0px";
-		outer.style.visibility = "hidden";
-		outer.style.width = "200px";
-		outer.style.height = "150px";
-		outer.style.overflow = "hidden";
-		outer.appendChild(inner);
-
-		document.body.appendChild(outer);
-		var w1 = inner.offsetWidth;
-		outer.style.overflow = 'scroll';
-		var w2 = inner.offsetWidth;
-		if (w1 == w2) w2 = outer.clientWidth;
-
-		document.body.removeChild(outer);
-		if ($("html").hasClass("desktop")) {
-			scrollWidth = w1 - w2;
-		} else {
-			scrollWidth = 0;
-		}
-
-		return scrollWidth;
-
-	}
-	getScrollBarWidth();
-
-	if ($("html").hasClass("desktop")) {
-		if (body.hasClass("no-scroll")) {
-			body.css({
-				marginRight: scrollWidth
-			});
-
-		}
-	}
 
 	function number() { 
 		var number = $(".js-number");
@@ -3227,17 +3335,6 @@ $(document).ready(function() {
 		// show message
 		$(this).parents(".js-subscribe").addClass("is-success");
 		return false;
-	});
-
-	$('#modal-login').on('show.bs.modal', function (e) {
-		$("body").addClass("no-scroll").css( {
-			marginRight: scrollWidth
-		})
-	});
-	$('#modal-login').on('hide.bs.modal', function (e) {
-		$("body").removeClass("no-scroll").css( {
-			marginRight: 0
-		})
 	});
 
 });

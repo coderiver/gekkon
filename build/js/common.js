@@ -5,50 +5,6 @@ $(document).ready(function() {
 		connect.hide();
 	});
 
-	// get scroll width;
-	var scrollWidth;
-
-	function getScrollBarWidth() {
-		var inner = document.createElement('p');
-		inner.style.width = "100%";
-		inner.style.height = "200px";
-
-		var outer = document.createElement('div');
-		outer.style.position = "absolute";
-		outer.style.top = "0px";
-		outer.style.left = "0px";
-		outer.style.visibility = "hidden";
-		outer.style.width = "200px";
-		outer.style.height = "150px";
-		outer.style.overflow = "hidden";
-		outer.appendChild(inner);
-
-		document.body.appendChild(outer);
-		var w1 = inner.offsetWidth;
-		outer.style.overflow = 'scroll';
-		var w2 = inner.offsetWidth;
-		if (w1 == w2) w2 = outer.clientWidth;
-
-		document.body.removeChild(outer);
-		if ($("html").hasClass("desktop")) {
-			scrollWidth = w1 - w2;
-		} else {
-			scrollWidth = 0;
-		}
-
-		return scrollWidth;
-
-	}
-	getScrollBarWidth();
-
-	if ($("html").hasClass("desktop")) {
-		if (body.hasClass("no-scroll")) {
-			body.css({
-				marginRight: scrollWidth
-			});
-
-		}
-	}
 
 	function number() { 
 		var number = $(".js-number");
@@ -316,17 +272,6 @@ $(document).ready(function() {
 		// show message
 		$(this).parents(".js-subscribe").addClass("is-success");
 		return false;
-	});
-
-	$('#modal-login').on('show.bs.modal', function (e) {
-		$("body").addClass("no-scroll").css( {
-			marginRight: scrollWidth
-		})
-	});
-	$('#modal-login').on('hide.bs.modal', function (e) {
-		$("body").removeClass("no-scroll").css( {
-			marginRight: 0
-		})
 	});
 
 });

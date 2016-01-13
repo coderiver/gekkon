@@ -2110,6 +2110,8 @@ body.no-scroll { overflow: hidden; }
 
 .h2 { font-size: 30px; font-weight: 300; line-height: 1.2; }
 .h2 span { color: #799a2a; }
+.h2 a { border-bottom: 1px solid transparent; }
+.h2 a:hover { text-decoration: none; border-bottom: 2px solid #799a2a; }
 
 .h3 { font-size: 20px; font-weight: 300; line-height: 1.2; }
 .h3 span { color: #799a2a; }
@@ -2140,7 +2142,7 @@ body.no-scroll { overflow: hidden; }
 .number__minus { border-right: 1px solid #ddd; }
 
 .btn-dots { display: inline-block; line-height: 1.1; background: none; border-bottom: 1px dotted; font-family: "Roboto", Arial, sans-serif; font-weight: 400; color: #799a2a; }
-.btn-dots:hover { color: #000; }
+.btn-dots:hover { color: #000; text-decoration: none; }
 .btn-dots.btn-dots_s { border-bottom-style: solid; }
 .btn-dots.btn-dots_s:hover { text-decoration: none; }
 .btn-dots_light { font-weight: 300; }
@@ -2240,7 +2242,7 @@ body.no-scroll { overflow: hidden; }
 .i-icon-yt:hover { color: #ad3430; }
 
 .tabs-link { margin: 0; line-height: 1.2; font-size: 15px; font-weight: 300; }
-.tabs-link li { display: inline-block; margin-right: 25px; vertical-align: middle; }
+.tabs-link li { display: inline-block; vertical-align: middle; }
 .tabs-link li.active a { border-color: transparent; color: #353130; font-weight: 700; }
 .tabs-link h3 { margin: 0; }
 .tabs-link a { display: inline-block; border-bottom: 1px dotted; }
@@ -2299,7 +2301,10 @@ body.no-scroll { overflow: hidden; }
 .item_small .price { float: none; }
 
 .item_list { display: table; margin-bottom: 20px; padding: 10px 0; width: 100%; }
+.item_list.item_marked { -webkit-box-shadow: none; box-shadow: none; }
 .item_list .item__img, .item_list .item__main, .item_list .item__action { display: table-cell; vertical-align: bottom; padding: 0 15px; }
+.item_list .item__img .wrap, .item_list .item__main .wrap, .item_list .item__action .wrap { position: relative; }
+.item_list .item__img .number, .item_list .item__main .number, .item_list .item__action .number { position: absolute; right: 0; bottom: 4px; }
 .item_list .item__img { height: auto; padding: 15px; width: 20%; }
 .item_list .item__main { width: 50%; }
 .item_list .item__action { width: 30%; }
@@ -2335,7 +2340,6 @@ body.no-scroll { overflow: hidden; }
 .badge_big { font-size: 29px; padding: 5px 6px 5px 10px; }
 
 .checkbox { margin: 0 0 5px; position: static; font-weight: 300; color: #353130; }
-.checkbox + .checkbox { margin: 0 0 5px; }
 .checkbox label { display: inline-block; position: relative; font-size: 13px; }
 .checkbox input { position: absolute; opacity: 0; }
 .checkbox input:checked + span:after { display: block; }
@@ -2873,7 +2877,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .main { padding: 20px 0; }
 
 .sort { margin-bottom: 30px; }
-.sort__title { font-size: 20px; line-height: 1.68; font-weight: 300; }
+.sort__title { font-size: 20px; line-height: 1.2; font-weight: 300; }
 .sort__title .btn-dots { margin-left: 20px; font-size: 15px; }
 .sort .form-group { padding-top: 5px; }
 .sort .view { padding-top: 5px; }
@@ -3273,7 +3277,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .jumbotron h1, .jumbotron .h1{ font-size: 68px; } }
 @media only screen and (max-width: 1023px){
  .payments__list img{ margin-right: 1px; }
- .item_list .item__img .number, .item_list .item__main .number, .item_list .item__action .number{ float: left; }
+ .item_list .item__img .number, .item_list .item__main .number, .item_list .item__action .number{ float: left; position: static; }
  .price{ font-size: 20px; }
  .price__old{ top: 0; }
  .cols-counter[data-cols="3"]{ -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; }
@@ -3375,8 +3379,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 @media only screen and (max-width: 1279px){
  .nav a{ padding: 0 5px; }
  .testing-slide{ height: auto; }
- .testing-slide__box{ position: static; background: #fff; padding: 20px; width: auto; height: auto; -webkit-border-radius: 20px; border-radius: 20px; border: 3px dashed #a7c66d; }
- .sort__title{ line-height: 1.1; } }
+ .testing-slide__box{ position: static; background: #fff; padding: 20px; width: auto; height: auto; -webkit-border-radius: 20px; border-radius: 20px; border: 3px dashed #a7c66d; } }
 @media only screen and (max-width: 1280px){
  select.form-control.form-control_numb{ padding-left: 0; padding-right: 20px; }
  select.form-control{ padding-left: 3px; }

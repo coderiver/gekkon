@@ -125,6 +125,11 @@ body
 		color: $btn
 	+r(767)
 		font-size: 25px
+	a
+		border-bottom: 1px solid transparent 
+		&:hover
+			text-decoration: none
+			border-bottom: 2px solid $btn
 .h3
 	font-size: 20px
 	+light
@@ -211,6 +216,7 @@ body
 	color: $btn
 	&:hover
 		color: #000 
+		text-decoration: none
 	&.btn-dots_s
 		border-bottom-style: solid
 		&:hover
@@ -503,7 +509,6 @@ body
 	+light
 	li
 		display: inline-block
-		margin-right: 25px
 		vertical-align: middle
 		&.active
 			a
@@ -664,6 +669,8 @@ body
 	width: 100%
 	+r(767)
 		display: block
+	&.item_marked
+		box-shadow: none
 	.item__img,
 	.item__main,
 	.item__action
@@ -672,9 +679,15 @@ body
 		padding: 0 15px
 		+r(767)
 			display: block
+		.wrap
+			position: relative
 		.number
+			position: absolute
+			right: 0
+			bottom: 4px
 			+r(1023)
 				float: left
+				position: static
 			+r(767)
 				margin-left: 20px
 	.item__img
@@ -801,8 +814,6 @@ body
 	position: static
 	+light
 	color: $text
-	+ .checkbox
-		margin: 0 0 5px
 	label
 		display: inline-block
 		position: relative
