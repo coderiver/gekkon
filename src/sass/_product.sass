@@ -8,14 +8,19 @@
 			vertical-align: middle
 			max-height: 100%
 	&__main
-		height: 530px
+		// height: 530px
 		+r(1023)
-			height: 250px
+			// height: 250px
 			margin-bottom: 20px
 		.slick-slide
 			img
 				+r(1023)
 					max-height: 250px
+		&_frama
+			// .fotorama
+			// 	&__nav
+			// 		padding-top: 30px 
+			
 	&__nav
 		height: 86px
 		.slick-slide
@@ -32,6 +37,7 @@
 				margin-left: -43px
 				width: 86px
 				border: 3px solid $btn
+	
 .product-info
 	color: $text
 	font-size: 15px
@@ -101,14 +107,21 @@
 				display: block
 				margin-left: 0px
 	&__item
-		margin-bottom: 27px
+		margin-bottom: 22px
 		&:last-child
 			margin-bottom: 0
 		p
 			margin: 10px 0
+		&_pt
+			padding-top: 20px 
+			&-sm
+				padding-top: 15px
 		.meta
 			margin-left: 15px
 			line-height: 1 
+			&_mod
+				margin-left: 0
+				line-height: 1.2 
 		.number,
 		.meta
 			vertical-align: middle
@@ -123,6 +136,8 @@
 		margin-bottom: 35px
 	.h3
 		margin: 0 0 20px
+	&_mt
+		margin-top: 0
 .cat-list
 	&__group
 		position: relative
