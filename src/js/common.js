@@ -1,5 +1,10 @@
 "use strict";
 $(document).ready(function() {
+
+	$(document).on("click", function() {
+		connect.hide();
+	});
+
 	// get scroll width;
 	var scrollWidth;
 
@@ -44,6 +49,7 @@ $(document).ready(function() {
 
 		}
 	}
+
 	function number() { 
 		var number = $(".js-number");
 		number.each(function(){
@@ -129,113 +135,14 @@ $(document).ready(function() {
 	}
 	goToTab.init();
 
-	// $(".js-btn-tab").on("click", function() {
-	// 	var tab = $(this).data("tab");
-	// 	console.log(tab);
-	// 	$(tab).tab("show");
-	// });
-
-	$(".js-slider-small").slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: true,
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 5000,
-		pauseOnHover: true,
-		pauseOnDotsHover: true,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 2
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1
-				}
-			}
-		]
-	});
-
-	$('.js-slider-for').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		fade: true,
-		asNavFor: '.js-slider-nav'
-	});
-
-	$('.js-slider-nav').slick({
-		slidesToShow: 6,
-		slidesToScroll: 1,
-		arrows: false,
-		asNavFor: '.js-slider-for',
-		dots: false,
-		focusOnSelect: true
-	});
-
-	$(".js-slider-info").slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: true,
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 5000,
-		pauseOnHover: true,
-		pauseOnDotsHover: true
-
-	});
-	$(".js-slider-items").each(function () {
-		var _ = $(this);
-		_.slick({
-			slidesToShow: 4,
-			slidesToScroll: 4,
-			infinite: false,
-			appendArrows: _.parents(".slider-items"),
-			responsive: [
-				{
-					breakpoint: 1023,
-					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 2
-					}
-				},
-				{
-					breakpoint: 767,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1
-					}
-				}
-			]
-		});
-	})
-
-	$(".js-raty").raty({
-		score: function() {
-			return $(this).attr('data-score');
-		},
-		starType: "i",
-		hints: ['1', '2', '3', '4', '5']
-		
-	});
-
-	$('.js-raty-readonly').raty({
-		readOnly: true,
-		score: function() {
-			return $(this).attr('data-score');
-		},
-		hints: ['1', '2', '3', '4', '5'],
-		starType: "i",
-	});
 
 	var connect = {
 		init: function() {
 			this._dom();
 			this._bindEvent();
+		},
+		hide: function() {
+			this._$target.hide();
 		},
 		_dom: function() {
 			this._$el = $(".js-connector");
@@ -243,6 +150,7 @@ $(document).ready(function() {
 		},
 		_bindEvent: function() {
 			this._$el.on("click", this._changePos.bind(this));
+			this._$target.on("click", this._stopPropagation.bind(this));
 		},
 		_changePos: function(event) {
 			var $el = $(event.currentTarget);
@@ -251,12 +159,32 @@ $(document).ready(function() {
 			var width = $(event.currentTarget).outerWidth();
 			this._$target.css({
 				left: +left+width,
-				top: top,
-				display: "block"
-			});
+				top: top
+			}).show();
+			event.stopPropagation();
+		},
+		_stopPropagation: function(event) {
+			event.stopPropagation();
 		}
 	}
 	connect.init();
+
+	var resetForm = {
+		init: function() {
+			this._dom();
+			this._bindEvent();
+		},
+		_dom: function() {
+			this._$el = $(".js-btn-reset");
+		},
+		_bindEvent: function() {
+			this._$el.on("click", this._action);
+		},
+		_action: function() {
+			connect.hide();
+		}
+	}
+	resetForm.init();
 
 	var checkbox = {
 		init: function(option) {
@@ -388,24 +316,6 @@ $(document).ready(function() {
 		// show message
 		$(this).parents(".js-subscribe").addClass("is-success");
 		return false;
-	});
-
-	$( "#from" ).datepicker({
-		changeMonth: true,
-		numberOfMonths: 1,
-		firstDay: 1,
-		onClose: function( selectedDate ) {
-			$( "#to" ).datepicker( "option", "minDate", selectedDate );
-			$( "#to" ).datepicker( "show" );
-		}
-	});
-	$( "#to" ).datepicker({
-		changeMonth: true,
-		numberOfMonths: 1,
-		firstDay: 1,
-		onClose: function( selectedDate ) {
-			$( "#from" ).datepicker( "option", "maxDate", selectedDate );
-		}
 	});
 
 	$('#modal-login').on('show.bs.modal', function (e) {

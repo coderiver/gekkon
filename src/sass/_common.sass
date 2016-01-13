@@ -518,7 +518,6 @@ body
 		&:hover
 			color: #000 
 			text-decoration: none
-			border-bottom: 0
 .tabs-view
 	margin: -35px 0 0
 	padding: 0 20px
@@ -543,10 +542,8 @@ body
 		&:last-child
 			display: inline-block
 			border-bottom: 1px dotted
-			+tr(border .3s)
 			&:hover
 				text-decoration: none
-				border-color: transparent
 .title
 	+ .post
 		margin-top: 15px
@@ -744,6 +741,7 @@ body
 			left: 0
 			width: 100% 
 			height: 100%
+			min-height: 25px
 			z-index: 2  
 			font-size: 14px 
 			cursor: pointer
@@ -964,6 +962,7 @@ select
 
 .select
 	position: relative
+	padding: 0 1px 
 	i
 		position: absolute
 		top: 50%
