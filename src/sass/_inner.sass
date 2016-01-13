@@ -34,7 +34,10 @@
 			line-height: 1
 			position: relative
 			top: -1px 
+	.disabled
+		pointer-events: none
 .breadcrumb
+	margin-bottom: 0
 	font-size: 13px 
 	background: transparent
 	padding-left: 0 
@@ -46,6 +49,7 @@
 		
 .img-nav
 	margin: 10px 0 35px 
+	font-size: 13px
 	&__link
 		display: block
 		margin: 0 auto 20px
@@ -91,8 +95,6 @@
 			&:hover
 				text-decoration: none
 				color: $btn
-			h3
-				+bold
 .img-wrap
 	& > i
 		display: inline-block
@@ -124,22 +126,94 @@
 .table-wrap
 	overflow: auto		
 .article
+	color: #353130
+	font-size: 14px 
+	line-height: 1.4
 	ol
-		list-style-type: decimal
-		margin-left: 20px 
+		line-height: 1.7
+		counter-reset: list
+		li
+			position: relative
+			margin-bottom: 15px
+			padding-left: 0
+			&:before
+				content: counter(list)"."
+				counter-increment: list
+				line-height: 1
+				color: $text
+				display: inline-block
+				margin-right: 5px
+				+light
+				font-size: 15px
+			ol
+				counter-reset: sublist
+				margin-top: 10px
+				padding-left: 42px
+				li
+					margin-bottom: 15px
+					padding-left: 0
+					&:before
+						content: counter(list)"."counter(sublist)"."
+						counter-increment: sublist
+						display: none
+				ol
+					padding-left: 39px
+					counter-reset: sublist2
+					li
+						margin-bottom: 15px
+						padding-left: 0
+						&:before
+							content: counter(list)"."counter(sublist)"."counter(sublist2)
+							counter-increment: sublist2
 	ul
-		list-style-type: disc
-		margin-left: 20px
+		line-height: 1.8
+		li
+			position: relative
+			padding-left: 13px
+			margin-top: 10px
+			li
+				padding-left: 29px
+				margin-top: 4px
+				li 
+					padding-left: 40px
+		& > li
+			&:before
+				content: ""
+				position: absolute
+				left: 0
+				top: 7px
+				width: 7px
+				height: 7px
+				border-radius: 50%
+				background: $btn
+			li
+				&:before
+					display: none
+
 	img
 		max-width: 100%
 		height: auto
 		margin: 25px 0 16px
 	h3
 		+bold
-
+	p
+		img
+			&[align="left"]
+				float: left
+				margin: 0 15px 15px 0  
+			&[align="right"]
+				float: right
+				margin: 0 0 15px 15px
+	.inline-wrap
+		> div
+			display: inline-block
+			vertical-align: middle
+			margin-left: 15px 
+			&:first-child
+				margin-left: 0	
 .table-simple
 	width: 60% 
-	margin: 30px 0 
+	margin: 20px 0 12px
 	min-width: 500px 
 	&_width
 		width: 100%
@@ -269,6 +343,7 @@
 		&.slick-disabled
 			opacity: .6
 			cursor: default
+			pointer-events: none
 		+r(1023)
 			bottom: 25px
 			+r(767)
