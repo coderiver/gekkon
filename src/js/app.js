@@ -8,4 +8,5 @@
 //=include lib/jquery.fancybox.js
 //=include lib/fotorama.js
 //=include additional.js
+//=include init.sliders.js
 //=include common.js
