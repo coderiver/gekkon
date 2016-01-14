@@ -222,6 +222,8 @@
 	min-width: 500px
 	&_width
 		width: 100%
+	&.table-simple_no-marg
+		margin-top: 0
 	thead
 		tr
 			background: $primary
@@ -248,7 +250,7 @@
 				border-bottom: 1px solid $primary
 	&__sort
 		background: none
-		width: 20px
+		width: 14px
 		color: #fff
 		&:hover
 			background: $btn
@@ -264,6 +266,14 @@
 		min-height: 50px
 	th
 		white-space: nowrap
+
+.table-simple_nospacing
+	th
+		height: 38px
+		padding-top: 0
+		padding-bottom: 0
+.table-simple_tmargin
+	margin-top: 12px
 
 .table-simple_orders
 	td

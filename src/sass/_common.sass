@@ -57,6 +57,9 @@ body
 	&.no-scroll
 		overflow: hidden
 
+p.increase
+	font-size: 16px
+
 // common blocks
 .wrap
 	+clr
@@ -113,6 +116,10 @@ body
 	font-size: 40px
 	+light
 	line-height: 1.2
+	&.h1_b-marg
+		margin-bottom: 40px
+		& + .img-nav
+			margin-top: 0
 	span
 		color: $btn
 	+r(767)
@@ -1113,6 +1120,15 @@ select
 				border-bottom: 1px dotted
 .required-text
 	color: $hot
+.required-feild
+	position: relative
+	padding-left: 9px
+	+r(768)
+		margin-top: 10px
+	.required-text
+		position: absolute
+		top: 0.5em
+		left: 1px
 .form-inline_raty
 	margin-bottom: 15px
 	.raty
