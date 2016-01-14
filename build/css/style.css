@@ -2216,6 +2216,8 @@ p.increase { font-size: 16px; }
 
 .tel { font-size: 20px; line-height: 1; }
 .tel .btn-dots { font-size: 13px; }
+.tel.tel_bold span { font-weight: 700; }
+.tel.tel_bold sub { font-weight: normal; }
 .tel span { display: block; }
 .tel sub { vertical-align: baseline; font-size: 15px; bottom: 0; }
 
