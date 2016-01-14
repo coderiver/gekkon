@@ -60,7 +60,7 @@ $(document).ready(function() {
 		_.slick({
 			slidesToShow: 4,
 			slidesToScroll: 4,
-			infinite: false,
+			infinite: true,
 			appendArrows: _.parents(".slider-items"),
 			responsive: [
 				{

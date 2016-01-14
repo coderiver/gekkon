@@ -2961,7 +2961,7 @@ $(document).ready(function() {
 		_.slick({
 			slidesToShow: 4,
 			slidesToScroll: 4,
-			infinite: false,
+			infinite: true,
 			appendArrows: _.parents(".slider-items"),
 			responsive: [
 				{
@@ -3190,39 +3190,28 @@ $(document).ready(function() {
 			this._$checkbox = $(option.checkbox);
 			this._bindEvent();
 		},
-		reset: function(option) {
-			this._parentClass = option.parent;
-			this._$checkbox = $(option.checkbox);
-			this._$reset = $(option.reset);
-			this._resetEvent();
-		},
 		_bindEvent: function() {
 			this._$checkbox.on("change", this._changeStates.bind(this));
 		},
 		_changeStates: function(event) {
 			var checkbox = $(event.currentTarget);
-			console.log(event.currentTarget);
+			var index = checkbox.parents(".slick-slide").data("slick-index");
 			if(checkbox.is(":checked")) {
 				checkbox.parents(this._parentClass).addClass("is-active");
+				goToSlide.init({
+					slider: ".js-slider-items",
+					slideIndex: index
+				});
 			}
 			else {
 				checkbox.parents(this._parentClass).removeClass("is-active");
 			}
-		},
-		_resetEvent: function() {
-			this._$reset.on("click", this._resetStates);
-		},
-		_resetStates: function() {
-			this._$checkbox.attr("checked", false);
 		}
 	}
-	checkbox.init({
-		parent: ".js-check",
-		checkbox: ".js-checkbox"
+	$("strong").on("click", function() {
+		$(".js-slider-items").slick("slickGoTo", 7);
 	});
-
-	checkbox.reset({
-		reset: ".js-clear-checkbox",
+	checkbox.init({
 		parent: ".js-check",
 		checkbox: ".js-checkbox"
 	});
@@ -3258,6 +3247,18 @@ $(document).ready(function() {
 		}
 	}
 	checkTarget.init();
+
+	var goToSlide = {
+		init: function(options) {
+			this._$slider = $(options.slider);
+			this._slideIndex = $(options.slideIndex);
+			this._goTo();
+		},
+		_goTo: function () {
+			this._$slider.slick("slickGoTo", this._slideIndex)
+		}
+	}
+
 
 	var toggler = {
 		init: function(option) {

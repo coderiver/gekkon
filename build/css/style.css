@@ -2078,10 +2078,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .slick-dots li.slick-active button { background: #799a2a; border-color: #799a2a; }
 .slick-dots button { display: block; width: 10px; height: 10px; background: #fff; border: 2px solid #acacac; cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; -webkit-border-radius: 50%; border-radius: 50%; -webkit-transition: border, background, 0.3s; transition: border, background, 0.3s; }
 
-@font-face { font-family: segoeuii; src: url("fonts/segoeuii.eot"); src: url("fonts/segoeuii.eot?#iefix") format("embedded-opentype"), url("fonts/segoeuii.woff2") format("woff2"), url("fonts/segoeuii.woff") format("woff"), url("fonts/segoeuii.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: segoeuil; src: url("fonts/segoeuil.eot"); src: url("fonts/segoeuil.eot?#iefix") format("embedded-opentype"), url("fonts/segoeuil.woff2") format("woff2"), url("fonts/segoeuil.woff") format("woff"), url("fonts/segoeuil.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: PTRoubleSans; src: url("fonts/PTRoubleSans.eot"); src: url("fonts/PTRoubleSans.eot?#iefix") format("embedded-opentype"), url("fonts/PTRoubleSans.woff2") format("woff2"), url("fonts/PTRoubleSans.woff") format("woff"), url("fonts/PTRoubleSans.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: pfdindisplaypro-light; src: url("fonts/pfdindisplaypro-light.eot"); src: url("fonts/pfdindisplaypro-light.eot?#iefix") format("embedded-opentype"), url("fonts/pfdindisplaypro-light.woff2") format("woff2"), url("fonts/pfdindisplaypro-light.woff") format("woff"), url("fonts/pfdindisplaypro-light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 html.no-scroll { overflow: hidden; }
 
 body { min-width: 320px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.5rem; line-height: 1.4; color: #353130; background: #fbf8da url(../img/body-bg.png) 0 0 repeat; }
