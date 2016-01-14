@@ -2669,6 +2669,7 @@ select::-ms-expand { display: none; }
 .table-simple thead tr { background: #a7c66d; height: 38px; }
 .table-simple thead th { font-weight: 300; color: #fff; }
 .table-simple th, .table-simple td { vertical-align: middle; text-align: center; }
+.table-simple th.is-right, .table-simple td.is-right { text-align: right; }
 .table-simple th:first-child, .table-simple td:first-child { padding-left: 15px; text-align: left; }
 .table-simple td.no-lpad, .table-simple th.no-lpad { padding-left: 0; }
 .table-simple tbody tr { height: 40px; border-bottom: 1px dashed #ddd; }
@@ -3384,6 +3385,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 @media only screen and (max-width: 1024px){
  .form-control{ font-size: 16px; }
  textarea{ font-size: 16px; }
+ select.form-control{ height: 26px; }
+ .select.is-mod{ max-width: none; }
  .select i{ right: 8px; } }
 @media only screen and (max-width: 1180px){
  .order-row__img{ display: none; } }
