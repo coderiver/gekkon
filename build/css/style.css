@@ -2109,6 +2109,7 @@ body.no-scroll { overflow: hidden; }
 .h1 span { color: #799a2a; }
 
 .h2 { font-size: 30px; font-weight: 300; line-height: 1.2; }
+.h2.h2_m { margin-bottom: 30px; }
 .h2 span { color: #799a2a; }
 .h2 a { border-bottom: 1px solid transparent; }
 .h2 a:hover { text-decoration: none; border-bottom: 2px solid #799a2a; }
@@ -2387,6 +2388,9 @@ select.is-big { height: 34px; }
 select::-ms-expand { display: none; }
 
 .select { position: relative; padding: 0 1px; }
+.select.is-mod { max-width: 143px; }
+.select.is-mod .form-control { padding: 0 20px 0 5px; }
+.select.is-mod i { right: 4px; }
 .select i { position: absolute; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); right: 8px; color: #4a4746; font-size: 21px; cursor: pointer; pointer-events: none; }
 
 .list li { position: relative; padding-left: 13px; margin-top: 10px; }
@@ -2416,6 +2420,7 @@ select::-ms-expand { display: none; }
 .note-text { font-size: 13px; font-weight: 300; font-style: italic; }
 
 .nav-tabs { margin: 40px 0; }
+.nav-tabs li:before { display: none; }
 .nav-tabs li.active > a { background: #fff; font-weight: bold; color: #353130; }
 .nav-tabs li.active > a:hover, .nav-tabs li.active > a:focus { background: #fff; color: #353130; }
 .nav-tabs li.active > a > span { border: 0; }
@@ -2590,6 +2595,7 @@ select::-ms-expand { display: none; }
 .row_ib > div { display: inline-block; vertical-align: top; font-size: 15px; float: none; }
 
 .pagination > li { display: inline-block; vertical-align: middle; }
+.pagination > li:before { display: none; }
 .pagination > li > a, .pagination > li > span { border: 0; line-height: 1; padding-left: 10px; padding-right: 10px; }
 .pagination > li > a:hover { text-decoration: underline; }
 .pagination > li.active > span { background: transparent; border: 0; font-weight: 700; }
@@ -2790,6 +2796,7 @@ select::-ms-expand { display: none; }
 
 .icons-list { margin: 7px 0 10px; }
 .icons-list li { display: inline-block; vertical-align: top; margin-left: 8px; font-size: 0; }
+.icons-list li:before { display: none; }
 .icons-list li:first-child { margin-left: 0; }
 
 .btn-del.is-green { color: #a7c66d; }
