@@ -295,4 +295,8 @@ $(document).ready(function() {
 		return false;
 	});
 
+	//input file
+	$('#file').on('change', function(e){
+		$(this).siblings("span").text(e.target.files[0].name);
+	});
 });
