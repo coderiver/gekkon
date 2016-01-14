@@ -2126,6 +2126,8 @@ p.increase { font-size: 16px; }
 
 .h1_mb, .h2_mb, .h3_mb { margin-bottom: 20px; }
 
+.h3_mt { margin-top: 0; }
+
 .h1_reg, .h2_reg, .h3_reg, .h4_reg { font-weight: 400; }
 
 .link span { margin-right: 10px; }
@@ -3014,6 +3016,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .steps li.is-active { background: #a7c66d; color: #fff; font-weight: bold; }
 .steps li.is-active:after { width: 0px; height: 0px; border-style: solid; border-width: 23px 0 23px 17px; border-color: transparent transparent transparent #a7c66d; }
 .steps li > span i { display: none; font-size: 17px; vertical-align: middle; margin: -3px 5px 0 0; }
+.steps h3 { margin-top: 0; }
 
 .table-simple_cart { margin: 40px 0; width: 100%; border-bottom: 1px solid #a7c66d; min-width: 900px; }
 .table-simple_cart table { width: 100%; }
