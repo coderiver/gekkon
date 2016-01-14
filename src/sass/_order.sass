@@ -7,7 +7,7 @@
 	height: 50px
 	line-height: 46px
 	color: $text
-	font-size: 18px 
+	font-size: 18px
 	+r(480)
 		border: 0
 		height: auto
@@ -17,24 +17,24 @@
 		float: left
 		width: 25%
 		padding: 0 13px 0 40px
-		background: #f0f0f0 
+		background: #f0f0f0
 		+r(1023)
 			text-align: center
 			font-size: 13px
 			padding: 0 5px
 		+r(768)
 			width: auto
-			padding: 0 20px 
-			background: none 
+			padding: 0 20px
+			background: none
 		+r(480)
 			display: inline-block
-			float: none 
+			float: none
 		&:before
 			content: ""
 			position: absolute
 			right: -20px
 			top: -2px
-			+arr(20,50,$primary,r) 
+			+arr(20,50,$primary,r)
 			+r(768)
 				display: none
 		&:after
@@ -42,7 +42,7 @@
 			position: absolute
 			right: -17px
 			top: 0
-			+arr(17,46,#f0f0f0,r) 
+			+arr(17,46,#f0f0f0,r)
 			+r(768)
 				display: none
 		&:first-child
@@ -51,14 +51,14 @@
 		&:nth-child(2)
 			z-index: 3
 		&:nth-child(3)
-			z-index: 2 
+			z-index: 2
 		&:last-child
 			&:after,
 			&:before
 				display: none
-		&.is-last	
+		&.is-last
 			background: #fff
-			color: $btn  
+			color: $btn
 			&:after
 				+arr(17,46,#fff,r)
 			> span
@@ -66,7 +66,8 @@
 					display: inline-block
 		&.is-active
 			background: $primary
-			color: #fff 
+			color: #fff
+			+bold
 			&:after
 				+arr(17,46,$primary,r)
 		> span
@@ -77,24 +78,23 @@
 				margin: -3px 5px 0 0
 			+r(480)
 				display: block
-				padding: 10px 0 
+				padding: 10px 0
 .table-simple_cart
-	margin: 40px 0 
+	margin: 40px 0
 	width: 100%
-	border-bottom: 1px solid $primary 
+	border-bottom: 1px solid $primary
 	min-width: 900px
 	table
 		width: 100%
 	th
-		padding: 0 15px 
+		padding: 0 15px
 		text-align: left
 	td
-		padding: 15px 
+		padding: 15px
 		text-align: left
 		&:first-child
-			width: 45%
+			width: 72%
 		&:last-child
-			width: 5%
 			text-align: center
 	.item
 		margin: 0
@@ -107,7 +107,7 @@
 			height: auto
 		&__link
 			font-size: 15px
-			> span 
+			> span
 				vertical-align: middle
 		.item_list
 			clear: both
@@ -122,8 +122,8 @@
 					width: 100%
 			.item__img
 				width: 50%
-				margin: 0 auto  
-			
+				margin: 0 auto
+
 	.price
 		text-align: left
 .table-simple_cart-box
@@ -137,16 +137,16 @@
 				vertical-align: top
 
 .action-add
-	margin: 30px 0 
+	margin: 30px 0
 	.btn
 		margin-top: 23px
 .table_order
 	table-layout: fixed
-	.table__cell	
+	.table__cell
 		&:first-child
 			width: 70%
 		&:last-child
-			width: auto 
+			width: auto
 	.item
 		&__img
 			width: 10%
@@ -156,8 +156,8 @@
 			font-size: 15px
 .total
 	&__head
-		padding: 20px 
-		background: #f2f2f2 
+		padding: 20px
+		background: #f2f2f2
 		text-align: right
 	&__list
 		display: block
@@ -175,7 +175,7 @@
 			display: inline-block
 			margin-top: 56px
 			+r(767)
-				margin: 20px 0 
+				margin: 20px 0
 		.note-text
 			margin-bottom: 20px
 		img
@@ -216,4 +216,4 @@
 .link-cancel
 	color: $hot
 	&:hover
-		color: $hot 
+		color: $hot
