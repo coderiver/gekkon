@@ -1,4 +1,4 @@
-//=include lib/jquery.js
+
 //=include lib/jquery-ui.min.js
 //=include lib/datepicker-ru.js
 //=include lib/bootstrap.min.js

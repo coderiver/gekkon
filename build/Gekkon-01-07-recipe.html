@@ -742,7 +742,7 @@
 									<h3><strong>Продукты в рецепте</strong></h3>
 								</li>
 								<li>
-									<a href="#">Выделить все</a>
+									<button class="btn-dots btn-dots_light js-check-target" type="button" data-group-target="js-group">Выделить все</button>
 								</li>
 							</ul>
 						</div>
@@ -754,7 +754,7 @@
 									<div class="item js-check">
 										<div class="checkbox checkbox_big">
 											<label>
-												<input type="checkbox" class="js-checkbox" data-target-name="js-test-1">
+												<input type="checkbox" class="js-checkbox" data-target-name="js-test-1 js-group">
 												<span></span>
 											</label>
 										</div>
@@ -784,7 +784,7 @@
 									<div class="item js-check">
 										<div class="checkbox checkbox_big">
 											<label>
-												<input type="checkbox" class="js-checkbox" data-target-name="js-test-2">
+												<input type="checkbox" class="js-checkbox" data-target-name="js-test-2 js-group">
 												<span></span>
 											</label>
 										</div>
@@ -816,7 +816,7 @@
 									<div class="item js-check">
 										<div class="checkbox checkbox_big">
 											<label>
-												<input type="checkbox" class="js-checkbox">
+												<input type="checkbox" class="js-checkbox" data-target-name="js-test-3 js-group">
 												<span></span>
 											</label>
 										</div>
@@ -845,7 +845,7 @@
 									<div class="item js-check">
 										<div class="checkbox checkbox_big">
 											<label>
-												<input type="checkbox" class="js-checkbox">
+												<input type="checkbox" class="js-checkbox" data-target-name="js-test-4 js-group">
 												<span></span>
 											</label>
 										</div>
@@ -874,7 +874,7 @@
 									<div class="item js-check">
 										<div class="checkbox checkbox_big">
 											<label>
-												<input type="checkbox" class="js-checkbox">
+												<input type="checkbox" class="js-checkbox" data-target-name="js-test-5 js-group">
 												<span></span>
 											</label>
 										</div>
@@ -904,7 +904,7 @@
 									<div class="item js-check">
 										<div class="checkbox checkbox_big">
 											<label>
-												<input type="checkbox" class="js-checkbox">
+												<input type="checkbox" class="js-checkbox" data-target-name="js-test-6 js-group">
 												<span></span>
 											</label>
 										</div>
@@ -936,7 +936,7 @@
 									<div class="item js-check">
 										<div class="checkbox checkbox_big">
 											<label>
-												<input type="checkbox" class="js-checkbox">
+												<input type="checkbox" class="js-checkbox" data-target-name="js-test-7 js-group">
 												<span></span>
 											</label>
 										</div>
@@ -965,7 +965,7 @@
 									<div class="item js-check">
 										<div class="checkbox checkbox_big">
 											<label>
-												<input type="checkbox" class="js-checkbox">
+												<input type="checkbox" class="js-checkbox" data-target-name="js-test-8 js-group">
 												<span></span>
 											</label>
 										</div>
@@ -997,6 +997,7 @@
 						<button class="btn btn-default" type="button">В корзину</button>
 					</div>
 				</div>
+				
 				<div class="slider-items">
 					<div class="row">
 						<div class="col-sm-12">
@@ -1303,7 +1304,7 @@
 							</div>
 							<button class="btn-dots" data-toggle="modal" data-target="#modal-city" type="button">Доставляем по всей России</button>
 						</div>
-						
+	
 						<div class="hidden-lg hidden-md">
 							<div class="tel">
 								<span>8 800 555 65 56</span>
@@ -1647,7 +1648,9 @@
 		</div>
 		
 	</div>
+	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="js/app.js"></script>
+	
 </div>
 <!-- END out-->
 </body>

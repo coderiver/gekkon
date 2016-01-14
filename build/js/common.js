@@ -3,10 +3,11 @@ $(document).ready(function() {
 
 	$(document).on("click", function() {
 		connect.hide();
+		btnCart.hideBtnModal();
 	});
 
 
-	function number() { 
+	function number() {
 		var number = $(".js-number");
 		number.each(function(){
 			var max_number = +($(this).attr("data-max-number"));
@@ -61,7 +62,7 @@ $(document).ready(function() {
 			itemSelector: '.js-masonry > div'
 		});
 	}, 300)
-	
+
 
 	$('.js-tabs a').on("click", function(event) {
 		event.preventDefault();
@@ -155,10 +156,11 @@ $(document).ready(function() {
 			this._resetEvent();
 		},
 		_bindEvent: function() {
-			this._$checkbox.on("change", this._changeStates);
+			this._$checkbox.on("change", this._changeStates.bind(this));
 		},
 		_changeStates: function(event) {
 			var checkbox = $(event.currentTarget);
+			console.log(event.currentTarget);
 			if(checkbox.is(":checked")) {
 				checkbox.parents(this._parentClass).addClass("is-active");
 			}
@@ -190,14 +192,27 @@ $(document).ready(function() {
 			this._bindEvent();
 		},
 		_bindEvent: function() {
-			this._$el.on("click", this._selectTarget);
+			this._$el.on("click", this._selectTarget.bind(this));
 		},
 		_selectTarget: function(event) {
 			var el = $(event.target);
-			var target = $('[data-target-name="'+el.data("target")+'"]');
+			var target = $('[data-target-name*="'+el.data("target")+'"]');
+			var group = $('[data-target-name*="'+el.data("group-target")+'"]');
+			var groupChecked = $('[data-target-name*="'+el.data("group-target")+'"]:checked');
 			if (target.length) {
 				target.trigger("click");
 			}
+			if (group.length) {
+				if (el.hasClass("is-active")) {
+					el.removeClass("is-active");
+					groupChecked.prop('checked', false).parents(".js-check").removeClass("is-active");
+				}
+				else {
+					el.addClass("is-active");
+					group.prop('checked', true).parents(".js-check").addClass("is-active");
+				}
+			}
+			console.log(el.data("group-target"))
 			event.stopPropagation();
 		}
 	}
@@ -239,30 +254,36 @@ $(document).ready(function() {
 		init: function(option) {
 			this._$el = $(".js-btn-cart");
 			this._$modal = $(".js-modal-cart");
+			this._$parent = $(".container");
 			this._bindEvent();
+		},
+		hideBtnModal: function() {
+			this._$modal.removeClass("is-active");
 		},
 		_bindEvent: function() {
 			this._$el.on("click", this._cartEvent.bind(this));
+			this._$modal.on("click", this._stopPropagation.bind(this));
 		},
 		_cartEvent: function(event) {
 			var el = $(event.currentTarget);
 			var elText = el.data("text");
 			el.text(elText);
 			this._showModal();
-			this._hideModal();
 			event.stopPropagation();
 		},
 		_showModal: function() {
 			this._$modal.addClass("is-active");
+            this._modalPosition();
 		},
-		_hideModal: function() {
-			var modal = this._$modal;
-			if(modal.hasClass("is-active")) {
-				setTimeout(function() {
-					modal.removeClass("is-active");
-				}, 5000);
-			}
-			
+        _modalPosition: function () {
+            var windowWidth = $(window).width();
+            var width = +this._$parent.outerWidth();
+            this._$modal.css({
+                right: (windowWidth-width)/2
+            })
+        },
+		_stopPropagation: function(event) {
+			event.stopPropagation();
 		}
 	}
 	btnCart.init();

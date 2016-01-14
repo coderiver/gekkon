@@ -29,7 +29,7 @@ $(document).ready(function() {
 	$('.js-slider-for').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: false,
+		arrows: true,
 		fade: true,
 		asNavFor: '.js-slider-nav'
 	});
@@ -87,7 +87,7 @@ $(document).ready(function() {
 		},
 		starType: "i",
 		hints: ['1', '2', '3', '4', '5']
-		
+
 	});
 
 	$(".js-raty-readonly").raty({
@@ -134,20 +134,6 @@ $(document).ready(function() {
 			  locked: false
 			}
 		}
-	});
-
-	$('.js-fotorama').fotorama({
-		width: '100%',
-		height: 530,
-		ratio: 800/600,
-		fit: 'scaledown',
-		swipe: true,
-		nav: 'thumbs',
-		shadows: false,
-		thumbwidth: 85,
-		thumbheight: 85,
-		thumbfit: 'contain',
-		thumbborderwidth: 3
 	});
 
 });

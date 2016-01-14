@@ -1,9 +1,4 @@
 // 01-06-blog
-.fotorama
-	&__thumb
-		background: #fff
-		&-border
-			border-color: $btn
 .vcenter
 	display: inline-block
 	vertical-align: middle
@@ -14,7 +9,7 @@
 		& > div
 			display: inline-block
 			vertical-align: top
-			font-size: 15px 
+			font-size: 15px
 			float: none
 .pagination
 	& > li
@@ -22,9 +17,9 @@
 		vertical-align: middle
 		& > a, & > span
 			border: 0
-			line-height: 1 
-			padding-left: 10px 
-			padding-right: 10px 
+			line-height: 1
+			padding-left: 10px
+			padding-right: 10px
 		& > a:hover
 			text-decoration: underline
 		&.active > span
@@ -32,28 +27,28 @@
 			border: 0
 			+bold
 			&:hover, &:focus, &:active
-				background: transparent 
+				background: transparent
 		&:first-child,
 		&:last-child,
-			font-size: 24px 
+			font-size: 24px
 			line-height: 1
 			position: relative
-			top: -1px 
+			top: -1px
 	.disabled
 		pointer-events: none
 .breadcrumb
 	margin-bottom: 0
-	font-size: 13px 
+	font-size: 13px
 	background: transparent
-	padding-left: 0 
+	padding-left: 0
 	& > li+ li:before
 		content: '>'
 		color: inherit
 	& > .active
 		color: #333
-		
+
 .img-nav
-	margin: 10px 0 35px 
+	margin: 10px 0 35px
 	font-size: 13px
 	&__link
 		display: block
@@ -72,16 +67,16 @@
 			text-decoration: none
 	&__main
 		& > i
-			font-size: 48px 
+			font-size: 48px
 .img-nav_small
 	font-size: 13px
 	.img-nav__main
 		& > i
 			font-size: 35px
 .blog
-	margin-bottom: -20px 			
+	margin-bottom: -20px
 .blog-item
-	margin-bottom: 40px 
+	margin-bottom: 40px
 	&__img
 		margin-bottom: 20px
 		font-size: 0
@@ -89,11 +84,11 @@
 		overflow: hidden
 		img
 			max-width: 100%
-			transform: scale(1) 
+			transform: scale(1)
 			transition: transform 350ms ease-out
 		&:hover
 			img
-				transform: scale(1.1) 
+				transform: scale(1.1)
 	&__text
 		& > a
 			transition: color 250ms
@@ -104,7 +99,7 @@
 	& > i
 		display: inline-block
 	img
-		max-width: 100% 
+		max-width: 100%
 
 .recipes-item
 	display: block
@@ -128,11 +123,14 @@
 		margin-top: 10px
 	.soc
 		margin-top: 20px
+.recipes-item_extend
+	.recipes-item__img
+		margin: 0 0 27px
 .table-wrap
-	overflow: auto		
+	overflow: auto
 .article
 	color: #353130
-	font-size: 14px 
+	font-size: 14px
 	line-height: 1.4
 	ol
 		line-height: 1.7
@@ -179,7 +177,7 @@
 			li
 				padding-left: 29px
 				margin-top: 4px
-				li 
+				li
 					padding-left: 40px
 		& > li
 			&:before
@@ -205,7 +203,7 @@
 		img
 			&[align="left"]
 				float: left
-				margin: 0 15px 15px 0  
+				margin: 0 15px 15px 0
 			&[align="right"]
 				float: right
 				margin: 0 0 15px 15px
@@ -213,19 +211,19 @@
 		> div
 			display: inline-block
 			vertical-align: middle
-			margin-left: 15px 
+			margin-left: 15px
 			&:first-child
-				margin-left: 0	
+				margin-left: 0
 .table-simple
-	width: 60% 
+	width: 60%
 	margin: 20px 0 12px
-	min-width: 500px 
+	min-width: 500px
 	&_width
 		width: 100%
 	thead
 		tr
 			background: $primary
-			height: 38px 
+			height: 38px
 		th
 			+light
 			color: #fff
@@ -241,7 +239,7 @@
 	tbody
 		tr
 			height: 40px
-			border-bottom: 1px dashed #ddd 
+			border-bottom: 1px dashed #ddd
 			&:last-child
 				border-bottom: 1px solid $primary
 	&__sort
@@ -249,12 +247,12 @@
 		width: 20px
 		color: #fff
 		&:hover
-			background: $btn 
+			background: $btn
 .table-simple_bold-th
 	thead
 		th
 			+bold
-.table-simple_spacing	
+.table-simple_spacing
 	td, th
 		padding: 10px 20px
 		text-align: left
@@ -262,20 +260,20 @@
 		min-height: 50px
 	th
 		white-space: nowrap
-	 
+
 .table-simple_orders
 	td
 		&:last-child
 			white-space: nowrap
 .sidebar
 	h2
-		margin-bottom: 30px 
+		margin-bottom: 30px
 
 .gift-box
 	&__header
-		margin-bottom: 20px 
+		margin-bottom: 20px
 	&__img
-		margin-bottom: 20px 
+		margin-bottom: 20px
 		font-size: 0
 		position: relative
 		&.is-border
@@ -286,27 +284,27 @@
 			.gift-box__imgmain
 				position: absolute
 				top: 0
-				left: 0 
+				left: 0
 				z-index: -1
 				img
-					max-width: none 
+					max-width: none
 		img
 			max-width: 100%
 .gift-promo-img
 	i
 		color: $primary
-		font-size: 120px 
+		font-size: 120px
 .gift-promo
 	h3
 		&:first-child
 			margin-top: 0
 	&__tel
 		color: #000
-		font-size: 30px 
-		
+		font-size: 30px
+
 .testing
 	position: relative
-	background: $primary 
+	background: $primary
 	.slick-arrow
 		&:hover
 			text-decoration: underline
@@ -315,36 +313,36 @@
 		left: 33px
 		right: calc(50% + 55px)
 		text-align: center
-		bottom: 70px 
-		// padding: 0 12% 0 6% 
+		bottom: 70px
+		// padding: 0 12% 0 6%
 		li
 			button
 				width: 13px
 				height: 13px
 				background: transparent
 				border: 0
-				box-shadow: inset 0 0 0 2px #fff  
+				box-shadow: inset 0 0 0 2px #fff
 			&.slick-active
 				button
-					background: #fff 
+					background: #fff
 		+r(1023)
-			bottom: 25px 
+			bottom: 25px
 			left: 33px
 			right: 33px
-			text-align: center 
+			text-align: center
 			+r(767)
-				bottom: 50px  
+				bottom: 50px
 	&__prevBtn,
 	&__nextBtn
 		background: transparent
 		color: #fff
 		position: absolute
 		bottom: 25px
-		line-height: 1 
+		line-height: 1
 		i
-			font-size: .7em 
+			font-size: .7em
 			position: relative
-			top: -1px 
+			top: -1px
 		&.slick-disabled
 			opacity: .6
 			cursor: default
@@ -352,50 +350,50 @@
 		+r(1023)
 			bottom: 25px
 			+r(767)
-				bottom: 15px  
+				bottom: 15px
 	&__prevBtn
-		left: 33px 
+		left: 33px
 	&__nextBtn
-		right: 55% 
-		right: calc(50% + 55px) 
+		right: 55%
+		right: calc(50% + 55px)
 		+r(1023)
-			right: 33px 
-		
-	
+			right: 33px
+
+
 .testing-slide
-	height: 430px 
-	padding: 15px 20px 
+	height: 430px
+	padding: 15px 20px
 	+r(1279)
 		height: auto
 		+r(1023)
-			padding-bottom: 80px 
-	
+			padding-bottom: 80px
+
 	&__text
 		text-align: center
 		color: #fff
 		position: relative
-		padding: 0 12% 0 6% 
+		padding: 0 12% 0 6%
 		.h1
 			line-height: 1.2
 			margin-top: 40px
 			+r(1023)
-				margin-top: 20px  
+				margin-top: 20px
 	&__main
 		position: relative
 	&__box
 		position: absolute
 		top: 0
-		left: -55px 
-		width: 613px  
-		height: 402px 
+		left: -55px
+		width: 613px
+		height: 402px
 		background: url('../img/bd_test.png') top left no-repeat
-		background-size: cover 
+		background-size: cover
 		padding: 28px 36px 28px 102px
 		+r(1279)
 			position: static
 			background: #fff
 			padding: 20px
-			width: auto 
+			width: auto
 			height: auto
 			border-radius: 20px
 			border: 3px dashed $primary
@@ -413,12 +411,12 @@
 		img
 			float: left
 		span
-			overflow: hidden 
+			overflow: hidden
 
 .radio
 	margin-bottom: 25px
 	label
-		padding-left: 25px 
+		padding-left: 25px
 	input
 		opacity: 0
 		&:checked
@@ -426,15 +424,15 @@
 				i
 					border-color: $primary
 					&:before
-						display: block 
+						display: block
 
 		&:disabled
 			+ .radio__text
 				cursor: not-allowed
 				i
-					background: #eee 
+					background: #eee
 					border-color: #b6b6b6
-						
+
 	.radio__text
 		img
 			float: left
@@ -459,7 +457,7 @@
 				left: 50%
 				margin: -4px 0 0 -4px
 				border-radius: 50%
-				background: $primary 
+				background: $primary
 	.radio__info
 		display: block
 		font-size: 15px
@@ -470,8 +468,8 @@
 		i
 			top: 6px
 .testing + .testing-result
-	margin-top: 100px  
-	
+	margin-top: 100px
+
 .border-image
 	display: inline-block
 	position: relative
@@ -479,14 +477,14 @@
 	z-index: 2
 	& > img
 		max-width: 100%
-	&__main 
+	&__main
 		position: absolute
 		top: 0
 		left: 0
 		z-index: -1
 .testing-result
 	+r(1023)
-		.border-image		
+		.border-image
 			& > img
 				display: none
 			&__main
@@ -494,23 +492,23 @@
 				border: 3px dashed $primary
 				border-radius: 20px
 				overflow: hidden
-				
+
 				img
 					max-width: 100%
-				
-		
+
+
 .block
 	&__header
 		margin-top: 10px
-		margin-bottom: 25px  
+		margin-bottom: 25px
 		span
 			display: inline-block
 			vertical-align: middle
 	&__soc
-		margin: 40px 0 30px 
+		margin: 40px 0 30px
 		.soc
-			margin-top: 15px 
-	
+			margin-top: 15px
+
 // tech
 
 .content
@@ -518,7 +516,7 @@
 		img
 			&[align="left"]
 				float: left
-				margin: 0 15px 15px 0  
+				margin: 0 15px 15px 0
 			&[align="right"]
 				float: right
 				margin: 0 0 15px 15px
@@ -526,21 +524,21 @@
 		> div
 			display: inline-block
 			vertical-align: middle
-			margin-left: 15px 
+			margin-left: 15px
 			&:first-child
-				margin-left: 0		
+				margin-left: 0
 .alert
 	text-shadow: none
 	box-shadow: none
-	margin: 10px 0 15px 
+	margin: 10px 0 15px
 .alert-success,
 .alert-danger
-	background: none 
+	background: none
 .alert-success
 	color: #8dc63f
 .alert-danger
 	color: #e22b27
-.form-control	
+.form-control
 	&::-webkit-input-placeholder
 		color: #636363
 		font-size: 15px
@@ -559,12 +557,12 @@
 			&:after
 				content: '*'
 				color: #e22b27
-				
+
 .required-info
 	margin-bottom: 15px
 	& > span
 		color: #e22b27
-			
+
 .input-file
 	position: relative
 	max-width: 160px
@@ -607,15 +605,15 @@
 				cursor: not-allowed
 				&:before
 					border-color: #b6b6b6
-					background: #eee 
-					
+					background: #eee
+
 .captcha
-	& > 
+	& >
 		img
 			margin-bottom: 15px
 		input
-			max-width: 180px 
-			
+			max-width: 180px
+
 .badge-line
 	color: #428bca
 	display: block
@@ -627,19 +625,19 @@
 	background: #999
 	position: static
 	padding: 3px 6px 2px
-	font-size: 13px 
+	font-size: 13px
 	vertical-align: baseline
-	
+
 .icons-list
-	margin: 7px 0 10px 
+	margin: 7px 0 10px
 	li
 		display: inline-block
 		vertical-align: top
 		margin-left: 8px
 		font-size: 0
 		&:first-child
-			margin-left: 0 
-			
+			margin-left: 0
+
 .btn-del
 	&.is-green
 		color: $primary
@@ -668,27 +666,27 @@
 	&__meta
 		color: #777
 		font-style: italic
-		font-size: 13px 
+		font-size: 13px
 		margin-bottom: 15px
 		i
 			color: $primary
 			margin-right: 3px
-	
+
 .promo-img
 	&_right
 		text-align: right
 		+r(1023)
 			text-align: center
 	&_mod
-		padding-top: 100px 
+		padding-top: 100px
 		+r(1023)
-			padding-top: 20px 
-			margin-bottom: 30px 
+			padding-top: 20px
+			margin-bottom: 30px
 	img
-		max-width: 100% 
-		
+		max-width: 100%
+
 .additional
-	margin-bottom: 20px 
+	margin-bottom: 20px
 	display: table
 	+r(767)
 		display: block
@@ -706,21 +704,21 @@
 			color: $btn
 			font-size: 70px
 .item-about-wrap
-	margin: 70px 0 
+	margin: 70px 0
 .item-about
 	&__header
-		margin-bottom: 25px 
+		margin-bottom: 25px
 		i, span
 			display: inline-block
 			vertical-align: middle
 		i
 			color: $btn
-			font-size: 32px 
+			font-size: 32px
 			&.icon-yandex
 				position: relative
-				top: -5px 
+				top: -5px
 .item-info-wrap
-	margin: 30px 0 
+	margin: 30px 0
 .item-info
 	padding-left: 42px
 	position: relative
@@ -733,8 +731,8 @@
 			color: $btn
 			font-size: 25px
 	> p
-		line-height: 1.7 
-		
+		line-height: 1.7
+
 .country-list
 	margin: 40px 0
 	&__item
@@ -742,7 +740,7 @@
 		position: relative
 		margin-bottom: 15px
 		.meta
-			margin-bottom: 10px 
+			margin-bottom: 10px
 	&__header
 		img
 			position: absolute
@@ -753,11 +751,11 @@
 	&__info
 		a
 			font-size: 13px
-			
+
 input[type=number]
-	&::-webkit-inner-spin-button, 
-	&::-webkit-outer-spin-button 
-		-webkit-appearance: none 
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button
+		-webkit-appearance: none
 		margin: 0
 	-moz-appearance: textfield
 
@@ -771,7 +769,7 @@ input[type=number]
 			display: block
 			float: left
 			text-align: center
-			width: 100% 
+			width: 100%
 		&:before
 			content: '+'
 			font-size: 20px
@@ -779,11 +777,11 @@ input[type=number]
 			position: absolute
 			left: -5px
 			top: 50%
-			margin-top: -10px 
+			margin-top: -10px
 			+r(1023)
 				top: -25px
 				left: 50%
-				margin-left: -10px   
+				margin-left: -10px
 		&:first-child
 			&:before
 				display: none
@@ -791,13 +789,12 @@ input[type=number]
 			&:before
 				content: '='
 	.set-result
-		padding-top: 15px 
-		padding-left: 15px 
+		padding-top: 15px
+		padding-left: 15px
 	+r(1023)
-		display: block	
+		display: block
 .set-result
 	p, h4
 		margin: 0
 	.btn
-		margin-top: 12px 
-	 
+		margin-top: 12px

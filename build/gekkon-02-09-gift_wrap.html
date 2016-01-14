@@ -672,8 +672,8 @@
 						</a>
 						<div class="item__main">
 							<div class="item__name">
-								<a href="#" class="item__link">	
-									<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+								<a href="#" class="item__link">
+									<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания">
 									<span>Сыр из козьего молока «Бургос», 500 гр.</span>
 								</a>
 							</div>
@@ -688,7 +688,7 @@
 									<button class="number__plus js-plus-number" type="button">+</button>
 								</div>
 							</div>
-							<button class="btn btn-default btn-block" type="button">В корзину</button>
+							<button class="btn btn-default btn-block js-btn-cart" data-text="В корзине" type="button">В корзину</button>
 						</div>
 					</div>
 				</div>
@@ -726,7 +726,7 @@
 									<button class="number__plus js-plus-number" type="button">+</button>
 								</div>
 							</div>
-							<button class="btn btn-default btn-block" type="button">В корзину</button>
+							<button class="btn btn-default btn-block js-btn-cart" data-text="В корзине" type="button">В корзину</button>
 						</div>
 					</div>
 				</div>
@@ -763,7 +763,7 @@
 									<button class="number__plus js-plus-number" type="button">+</button>
 								</div>
 							</div>
-							<button class="btn btn-default btn-block" type="button">В корзину</button>
+							<button class="btn btn-default btn-block js-btn-cart" data-text="В корзине" type="button">В корзину</button>
 						</div>
 					</div>
 				</div>
@@ -787,11 +787,12 @@
 									<button class="number__plus js-plus-number" type="button">+</button>
 								</div>
 							</div>
-							<button class="btn btn-default btn-block" type="button">В корзину</button>
+							<button class="btn btn-default btn-block js-btn-cart" data-text="В корзине" type="button">В корзину</button>
 						</div>
 					</div>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 	<footer class="footer">
@@ -836,7 +837,7 @@
 							</div>
 							<button class="btn-dots" data-toggle="modal" data-target="#modal-city" type="button">Доставляем по всей России</button>
 						</div>
-						
+	
 						<div class="hidden-lg hidden-md">
 							<div class="tel">
 								<span>8 800 555 65 56</span>
@@ -1180,7 +1181,9 @@
 		</div>
 		
 	</div>
+	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script src="js/app.js"></script>
+	
 </div>
 <!-- END out-->
 </body>

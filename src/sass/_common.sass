@@ -81,7 +81,7 @@ body
 		right: 0
 	&_main
 		padding: 27px 0 70px
-		background: #fff 
+		background: #fff
 .title
 	+light
 	line-height: 1.2
@@ -126,7 +126,7 @@ body
 	+r(767)
 		font-size: 25px
 	a
-		border-bottom: 1px solid transparent 
+		border-bottom: 1px solid transparent
 		&:hover
 			text-decoration: none
 			border-bottom: 2px solid $btn
@@ -215,7 +215,7 @@ body
 	+reg
 	color: $btn
 	&:hover
-		color: #000 
+		color: #000
 		text-decoration: none
 	&.btn-dots_s
 		border-bottom-style: solid
@@ -387,7 +387,7 @@ body
 		.form-action__table,
 		label
 			display: none
-		
+
 		.form-action__message
 			display: block
 	&__table
@@ -406,8 +406,8 @@ body
 		font-size: 13px
 		+roboto
 		+reg
-		color: $text 
-		line-height: 21px 
+		color: $text
+		line-height: 21px
 		+placeholder
 			color: #959595
 	&__btn
@@ -419,10 +419,10 @@ body
 		+reg
 		font-size: 13px
 		background: $btn
-		line-height: 1 
+		line-height: 1
 		+tr(background .3s)
 		&:hover
-			background: lighten($btn, 10%) 
+			background: lighten($btn, 10%)
 	label
 		+reg
 	&__message
@@ -438,7 +438,7 @@ body
 		vertical-align: baseline
 		font-size: 15px
 		bottom: 0
-	
+
 .payments
 	margin-bottom: 15px
 	font-size: 13px
@@ -455,14 +455,16 @@ body
 	li
 		margin-bottom: 15px
 .soc
-	font-size: 28px
+	font-size: 0
 	a
 		display: inline-block
 		background: #fff
+		margin-right: 10px
 		+tr(color .3s)
 		line-height: 1
 		position: relative
 		z-index: 2
+		font-size: 28px
 		&:hover
 			text-decoration: none
 		&:after
@@ -472,9 +474,9 @@ body
 			bottom: 1px
 			left: 1px
 			right: 1px
-			background: #fff 
-			z-index: -1 
-			
+			background: #fff
+			z-index: -1
+
 	&_small
 		font-size: 20px
 		span
@@ -514,14 +516,14 @@ body
 			a
 				border-color: transparent
 				color: $text
-				+bold  
+				+bold
 	h3
 		margin: 0
 	a
 		display: inline-block
 		border-bottom: 1px dotted
 		&:hover
-			color: #000 
+			color: #000
 			text-decoration: none
 .tabs-view
 	margin: -35px 0 0
@@ -542,7 +544,7 @@ body
 		display: inline-block
 		&:hover
 			text-decoration: none
-			color: #000 
+			color: #000
 	span
 		&:last-child
 			display: inline-block
@@ -640,7 +642,7 @@ body
 			&_mod
 				position: absolute
 				bottom: 100%
-				top: auto 
+				top: auto
 	.btn
 		margin-top: 13px
 	.checkbox_big
@@ -732,7 +734,7 @@ body
 		border-bottom: 1px dotted $btn
 		position: relative
 		&:hover
-			border-color: $text 
+			border-color: $text
 	&__select
 		position: relative
 		display: inline-block
@@ -744,19 +746,19 @@ body
 			right: 0
 			top: 50%
 			font-size: 16px
-			color: $text  
+			color: $text
 			pointer-events: none
-			margin-top: -3px 
+			margin-top: -3px
 		select
 			opacity: 0
 			position: absolute
 			top: 0
 			left: 0
-			width: 100% 
+			width: 100%
 			height: 100%
 			min-height: 25px
-			z-index: 2  
-			font-size: 14px 
+			z-index: 2
+			font-size: 14px
 			cursor: pointer
 .price_inline
 	display: inline-block
@@ -771,7 +773,7 @@ body
 		font-size: 20px
 		+light
 		color: $text
-		margin-left: 10px 
+		margin-left: 10px
 
 .price_small
 	font-size: 15px
@@ -791,11 +793,11 @@ body
 		+bold
 	&_hot
 		background: $hot
-		color: #fff 
+		color: #fff
 	&_big
 		font-size: 28px
 		padding: 6px 8px 5px
-		+bold 
+		+bold
 		color: $text
 	&_new-green
 		background-color: #b1dc4a
@@ -903,7 +905,7 @@ body
 				padding: 6px 12px
 	.note-text
 		font-size: 15px
-		color: #777 
+		color: #777
 		&_mt
 			margin-top: 16px
 	&__pass
@@ -916,20 +918,20 @@ body
 .field-password
 	position: relative
 	input
-		padding-right: 27px 
+		padding-right: 27px
 	.input-eye
 		position: absolute
 		top: 0
 		bottom: 0
 		right: 0
-		padding: 0 7px 
+		padding: 0 7px
 		background: transparent
 		color: #333
-		cursor: pointer 
+		cursor: pointer
 		+vertical
 		i
 			font-size: 14px
-			vertical-align: middle 
+			vertical-align: middle
 
 	.i-icon-lock
 		font-size: 17px
@@ -947,7 +949,7 @@ textarea
 	+placeholder
 		font-style: italic
 		+light
-		color: #777 
+		color: #777
 	+r(1024)
 		font-size: 16px
 select
@@ -973,7 +975,7 @@ select
 
 .select
 	position: relative
-	padding: 0 1px 
+	padding: 0 1px
 	i
 		position: absolute
 		top: 50%
@@ -995,7 +997,7 @@ select
 		li
 			padding-left: 29px
 			margin-top: 4px
-			li 
+			li
 				padding-left: 40px
 	& > li
 		&:before
@@ -1107,7 +1109,7 @@ select
 .modal-header
 	border: 0
 	position: relative
-	padding: 10px 15px 
+	padding: 10px 15px
 	.h3, .h2
 		margin: 0
 	.close
@@ -1182,23 +1184,23 @@ select
 	.tab-content
 		padding-top: 30px
 
-			
+
 .link-solid
 	border-bottom: 1px solid
 	&:hover
 		color: #000
-		text-decoration: none 
+		text-decoration: none
 .checkbox-list
 	+clr
 	.checkbox-col
 		width: 50%
-		float: left 
+		float: left
 		.checkbox
-			padding-left: 5px 
+			padding-left: 5px
 		+r(767)
 			width: 100%
-			float: none 
-		
+			float: none
+
 .basket
 	display: none
 	position: fixed
@@ -1206,8 +1208,8 @@ select
 	right: 0
 	z-index: 10
 	background: #fff
-	border: 1px solid 
-	padding: 15px 
+	border: 1px solid $btn
+	padding: 15px
 	font-size: 14px
 	width: 320px
 	&.is-active
@@ -1215,7 +1217,7 @@ select
 	.h3
 		margin: 0 0 20px
 		font-size: 23px
-	&__img	
+	&__img
 		img
 			display: block
 			margin: 0 auto
@@ -1225,6 +1227,6 @@ select
 			font-size: 14px
 	&__info
 		font-size: 12px
-		margin: 5px 0 
+		margin: 5px 0
 	.btn
-		margin: 20px 0 
+		margin: 20px 0

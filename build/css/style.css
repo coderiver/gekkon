@@ -2218,8 +2218,8 @@ body.no-scroll { overflow: hidden; }
 
 .visit-card li { margin-bottom: 15px; }
 
-.soc { font-size: 28px; }
-.soc a { display: inline-block; background: #fff; -webkit-transition: color 0.3s; transition: color 0.3s; line-height: 1; position: relative; z-index: 2; }
+.soc { font-size: 0; }
+.soc a { display: inline-block; background: #fff; margin-right: 10px; -webkit-transition: color 0.3s; transition: color 0.3s; line-height: 1; position: relative; z-index: 2; font-size: 28px; }
 .soc a:hover { text-decoration: none; }
 .soc a:after { content: ""; position: absolute; top: 1px; bottom: 1px; left: 1px; right: 1px; background: #fff; z-index: -1; }
 .soc_small { font-size: 20px; }
@@ -2465,7 +2465,7 @@ select::-ms-expand { display: none; }
 .checkbox-list .checkbox-col { width: 50%; float: left; }
 .checkbox-list .checkbox-col .checkbox { padding-left: 5px; }
 
-.basket { display: none; position: fixed; top: 65px; right: 0; z-index: 10; background: #fff; border: 1px solid; padding: 15px; font-size: 14px; width: 320px; }
+.basket { display: none; position: fixed; top: 65px; right: 0; z-index: 10; background: #fff; border: 1px solid #799a2a; padding: 15px; font-size: 14px; width: 320px; }
 .basket.is-active { display: block; }
 .basket .h3 { margin: 0 0 20px; font-size: 23px; }
 .basket__img img { display: block; margin: 0 auto; max-width: 100%; }
@@ -2584,9 +2584,6 @@ select::-ms-expand { display: none; }
 .footer__meta a:hover, .footer__nav a:hover, .footer .visit-card a:hover { text-decoration: underline; color: #000; }
 .footer .title_h3 { margin-bottom: 20px; }
 
-.fotorama__thumb { background: #fff; }
-.fotorama__thumb-border { border-color: #799a2a; }
-
 .vcenter { display: inline-block; vertical-align: middle; float: none; }
 
 .row_ib { font-size: 0; }
@@ -2633,6 +2630,8 @@ select::-ms-expand { display: none; }
 .recipes-item__img:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
 .recipes-item > h3 { font-size: 20px; -webkit-transition: color 250ms; transition: color 250ms; margin-top: 10px; }
 .recipes-item .soc { margin-top: 20px; }
+
+.recipes-item_extend .recipes-item__img { margin: 0 0 27px; }
 
 .table-wrap { overflow: auto; }
 
@@ -2898,6 +2897,11 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .carousel .slick-slide { text-align: center; font-size: 0; }
 .carousel .slick-slide:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .carousel .slick-slide img { display: inline-block; vertical-align: middle; max-height: 100%; }
+.carousel__main { height: 530px; }
+.carousel__main .slick-prev, .carousel__main .slick-next { position: absolute; top: 0; width: 50%; height: 100%; border: 0; background: none; }
+.carousel__main .slick-prev:before, .carousel__main .slick-next:before { display: none; }
+.carousel__main .slick-prev { left: 0; }
+.carousel__main .slick-next { right: 0; }
 .carousel__nav { height: 86px; }
 .carousel__nav .slick-slide { padding: 5px; height: 86px; cursor: pointer; }
 .carousel__nav .slick-current:after { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; margin-left: -43px; width: 86px; border: 3px solid #799a2a; }
@@ -2962,7 +2966,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .review__body { margin-bottom: 15px; }
 .review .btn-dots { display: none; }
 
-.review-form .h2 { margin-top: 0; }
+.review-form .h2 { margin-top: -2px; }
 
 .slider-items { position: relative; }
 .slider-items + .slider-items { margin-top: 50px; }
@@ -3310,7 +3314,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .sidebar .btn-dots{ color: #fff; }
  .sort__title{ margin-bottom: 20px; }
  .carousel{ margin-bottom: 40px; }
- .carousel__main{ margin-bottom: 20px; }
+ .carousel__main{ height: 250px; margin-bottom: 20px; }
  .carousel__main .slick-slide img{ max-height: 250px; }
  .steps li{ text-align: center; font-size: 13px; padding: 0 5px; }
  .table-simple_cart .item .item_list .item__img, .table-simple_cart .item .item_list .item__main{ display: block; float: none; }
