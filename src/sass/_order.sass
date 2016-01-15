@@ -168,9 +168,20 @@
 		margin: 0
 		&.is-mod
 			li 
-				padding-top: 3px
+				padding-top: 8px
 			div 
 				width: 80px
+			.checkbox
+				width: calc(100% - 80px)
+				margin-bottom: 0
+				span
+					font-size: 15px
+					color: $text
+					+light
+					&:before
+						top: 4px
+					&:after
+						top: 7px
 		li
 			+clr
 			&.res

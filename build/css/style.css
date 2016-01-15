@@ -3067,8 +3067,12 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 .total__head { padding: 20px; background: #f2f2f2; text-align: right; }
 .total__list { display: block; text-align: left; margin: 0; }
-.total__list.is-mod li { padding-top: 3px; }
+.total__list.is-mod li { padding-top: 8px; }
 .total__list.is-mod div { width: 80px; }
+.total__list.is-mod .checkbox { width: -webkit-calc(100% - 80px); width: calc(100% - 80px); margin-bottom: 0; }
+.total__list.is-mod .checkbox span { font-size: 15px; color: #353130; font-weight: 300; }
+.total__list.is-mod .checkbox span:before { top: 4px; }
+.total__list.is-mod .checkbox span:after { top: 7px; }
 .total__list li { *zoom: 1; }
 .total__list li:after { content: " "; display: table; clear: both; }
 .total__list li.res { margin-top: 19px; padding-top: 0; }
