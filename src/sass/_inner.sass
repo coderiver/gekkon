@@ -15,6 +15,8 @@
 	& > li
 		display: inline-block
 		vertical-align: middle
+		&:before
+			display: none
 		& > a, & > span
 			border: 0
 			line-height: 1
@@ -220,6 +222,10 @@
 	min-width: 500px
 	&_width
 		width: 100%
+	&.table-simple_no-marg
+		margin-top: 0
+	&.table-simple_no-bord
+		border-bottom: 0
 	thead
 		tr
 			background: $primary
@@ -230,6 +236,8 @@
 	th,td
 		vertical-align: middle
 		text-align: center
+		&.is-right
+			text-align: right
 		&:first-child
 			padding-left: 15px
 			text-align: left
@@ -244,7 +252,7 @@
 				border-bottom: 1px solid $primary
 	&__sort
 		background: none
-		width: 20px
+		width: 14px
 		color: #fff
 		&:hover
 			background: $btn
@@ -260,6 +268,14 @@
 		min-height: 50px
 	th
 		white-space: nowrap
+
+.table-simple_nospacing
+	th
+		height: 38px
+		padding-top: 0
+		padding-bottom: 0
+.table-simple_tmargin
+	margin-top: 12px
 
 .table-simple_orders
 	td
@@ -570,6 +586,10 @@
 	max-width: 160px
 	&__inner
 		display: block
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+
 	&__label
 		+reg
 		color: #333
@@ -597,7 +617,11 @@
 		display: block
 		font-size: 0
 		width: 100%
-		height: 100%
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
 		opacity: 0
 		cursor: pointer
 .checkbox
@@ -637,6 +661,8 @@
 		vertical-align: top
 		margin-left: 8px
 		font-size: 0
+		&:before
+			display: none
 		&:first-child
 			margin-left: 0
 

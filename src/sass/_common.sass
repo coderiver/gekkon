@@ -48,6 +48,9 @@ body
 	&.no-scroll
 		overflow: hidden
 
+p.increase
+	font-size: 16px
+
 // common blocks
 .wrap
 	+clr
@@ -104,6 +107,10 @@ body
 	font-size: 40px
 	+light
 	line-height: 1.2
+	&.h1_b-marg
+		margin-bottom: 40px
+		& + .img-nav
+			margin-top: 0
 	span
 		color: $btn
 	+r(767)
@@ -112,6 +119,8 @@ body
 	font-size: 30px
 	+light
 	line-height: 1.2
+	&.h2_m
+		margin-bottom: 30px
 	span
 		color: $btn
 	+r(767)
@@ -137,6 +146,8 @@ body
 .h2_mb,
 .h3_mb
 	margin-bottom: 20px
+.h3_mt
+	margin-top: 0
 .h1_reg,
 .h2_reg,
 .h3_reg,
@@ -423,6 +434,11 @@ body
 	line-height: 1
 	.btn-dots
 		font-size: 13px
+	&.tel_bold
+		span
+			font-weight: 700
+		sub
+			font-weight: normal
 	span
 		display: block
 	sub
@@ -952,6 +968,8 @@ select
 		-moz-appearance: none
 		-ms-appearance: none
 		appearance: none !important
+		+r(1024)
+			height: 26px
 		&.form-control_numb
 			padding-left: 6px
 			+r(1280)
@@ -967,6 +985,14 @@ select
 .select
 	position: relative
 	padding: 0 1px
+	&.is-mod
+		max-width: 143px
+		+r(1024)
+			max-width: none
+		.form-control
+			padding: 0 20px 0 5px
+		i
+			right: 4px
 	i
 		position: absolute
 		top: 50%
@@ -1067,6 +1093,8 @@ select
 .nav-tabs
 	margin: 40px 0
 	li
+		&:before
+			display: none
 		&.active
 			> a
 				background: #fff
@@ -1090,6 +1118,15 @@ select
 				border-bottom: 1px dotted
 .required-text
 	color: $hot
+.required-feild
+	position: relative
+	padding-left: 9px
+	+r(768)
+		margin-top: 10px
+	.required-text
+		position: absolute
+		top: 0.5em
+		left: 1px
 .form-inline_raty
 	margin-bottom: 15px
 	.raty
