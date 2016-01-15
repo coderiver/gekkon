@@ -1883,163 +1883,163 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 
 .icon-pear:before { content: '\e800'; }
 
-/* 'юаА' */
+/* '' */
 .icon-pasta7:before { content: '\e801'; }
 
-/* 'юаБ' */
+/* '' */
 .icon-pointer17:before { content: '\e802'; }
 
-/* 'юаВ' */
+/* '' */
 .icon-receive:before { content: '\e803'; }
 
-/* 'юаГ' */
+/* '' */
 .icon-right39:before { content: '\e804'; }
 
-/* 'юаД' */
+/* '' */
 .icon-list-1:before { content: '\e805'; }
 
-/* 'юаЕ' */
+/* '' */
 .icon-marker20:before { content: '\e806'; }
 
-/* 'юаЖ' */
+/* '' */
 .icon-menu48:before { content: '\e807'; }
 
-/* 'юаЗ' */
+/* '' */
 .icon-money425:before { content: '\e808'; }
 
-/* 'юаИ' */
+/* '' */
 .icon-transport449:before { content: '\e809'; }
 
-/* 'юаЙ' */
+/* '' */
 .icon-supermarket86:before { content: '\e80a'; }
 
-/* 'юаК' */
+/* '' */
 .icon-user7:before { content: '\e80b'; }
 
-/* 'юаЛ' */
+/* '' */
 .icon-tree1:before { content: '\e80c'; }
 
-/* 'юаМ' */
+/* '' */
 .icon-add186:before { content: '\e80d'; }
 
-/* 'юаН' */
+/* '' */
 .icon-animal276:before { content: '\e80e'; }
 
-/* 'юаО' */
+/* '' */
 .icon-alcohol93:before { content: '\e80f'; }
 
-/* 'юаП' */
+/* '' */
 .icon-apple16:before { content: '\e810'; }
 
-/* 'юаР' */
+/* '' */
 .icon-arrowheads3:before { content: '\e811'; }
 
-/* 'юаС' */
+/* '' */
 .icon-bank62:before { content: '\e812'; }
 
-/* 'юаТ' */
+/* '' */
 .icon-breakfast39:before { content: '\e813'; }
 
-/* 'юаУ' */
+/* '' */
 .icon-checkbox2:before { content: '\e814'; }
 
-/* 'юаФ' */
+/* '' */
 .icon-carrot:before { content: '\e815'; }
 
-/* 'юаХ' */
+/* '' */
 .icon-clock169:before { content: '\e816'; }
 
-/* 'юаЦ' */
+/* '' */
 .icon-christmas252:before { content: '\e817'; }
 
-/* 'юаЧ' */
+/* '' */
 .icon-decoration34:before { content: '\e818'; }
 
-/* 'юаШ' */
+/* '' */
 .icon-creams4:before { content: '\e819'; }
 
-/* 'юаЩ' */
+/* '' */
 .icon-down-arrow25:before { content: '\e81a'; }
 
-/* 'юаЪ' */
+/* '' */
 .icon-dog75:before { content: '\e81b'; }
 
-/* 'юаЫ' */
+/* '' */
 .icon-exclamation11:before { content: '\e81c'; }
 
-/* 'юаЬ' */
+/* '' */
 .icon-drop44:before { content: '\e81d'; }
 
-/* 'юаЭ' */
+/* '' */
 .icon-favorite22:before { content: '\e81e'; }
 
-/* 'юаЮ' */
+/* '' */
 .icon-favourite24:before { content: '\e81f'; }
 
-/* 'юаЯ' */
+/* '' */
 .icon-giftbox55:before { content: '\e820'; }
 
-/* 'юаа' */
+/* '' */
 .icon-giftbox13:before { content: '\e821'; }
 
-/* 'юаб' */
+/* '' */
 .icon-horizontal39:before { content: '\e822'; }
 
-/* 'юав' */
+/* '' */
 .icon-hearts64:before { content: '\e823'; }
 
-/* 'юаг' */
+/* '' */
 .icon-house20:before { content: '\e824'; }
 
-/* 'юад' */
+/* '' */
 .icon-juice7:before { content: '\e825'; }
 
-/* 'юае' */
+/* '' */
 .icon-setup7:before { content: '\e826'; }
 
-/* 'юаж' */
+/* '' */
 .icon-setup8:before { content: '\e827'; }
 
-/* 'юаз' */
+/* '' */
 .icon-stick-man120:before { content: '\e828'; }
 
-/* 'юаи' */
+/* '' */
 .icon-soup20:before { content: '\e829'; }
 
-/* 'юай' */
+/* '' */
 .icon-summer50:before { content: '\e82a'; }
 
-/* 'юак' */
+/* '' */
 .icon-sun24:before { content: '\e82b'; }
 
-/* 'юал' */
+/* '' */
 .icon-supermarket67:before { content: '\e82c'; }
 
-/* 'юам' */
+/* '' */
 .icon-noun_148595_cc:before { content: '\e82d'; }
 
-/* 'юан' */
+/* '' */
 .icon-sun:before { content: '\e82e'; }
 
-/* 'юао' */
+/* '' */
 .icon-yandex:before { content: '\e82f'; }
 
-/* 'юап' */
+/* '' */
 .icon-oil23:before { content: '\e830'; }
 
-/* 'юа░' */
+/* '' */
 .icon-mark1:before { content: '\e831'; }
 
-/* 'юа▒' */
+/* '' */
 .icon-left-arrow23:before { content: '\e832'; }
 
-/* 'юа▓' */
+/* '' */
 .icon-close47:before { content: '\e833'; }
 
-/* 'юа│' */
+/* '' */
 .icon-arrow158:before { content: '\e834'; }
 
-/* 'юа┤' */
+/* '' */
 .slick-slider { position: relative; display: block; -webkit-box-sizing: border-box; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
 
 .slick-list { position: relative; overflow: hidden; display: block; margin: 0; padding: 0; }
@@ -2078,10 +2078,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .slick-dots li.slick-active button { background: #799a2a; border-color: #799a2a; }
 .slick-dots button { display: block; width: 10px; height: 10px; background: #fff; border: 2px solid #acacac; cursor: pointer; font: 0/0 a; text-shadow: none; color: transparent; -webkit-border-radius: 50%; border-radius: 50%; -webkit-transition: border, background, 0.3s; transition: border, background, 0.3s; }
 
-@font-face { font-family: segoeuii; src: url("fonts/segoeuii.eot"); src: url("fonts/segoeuii.eot?#iefix") format("embedded-opentype"), url("fonts/segoeuii.woff2") format("woff2"), url("fonts/segoeuii.woff") format("woff"), url("fonts/segoeuii.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: segoeuil; src: url("fonts/segoeuil.eot"); src: url("fonts/segoeuil.eot?#iefix") format("embedded-opentype"), url("fonts/segoeuil.woff2") format("woff2"), url("fonts/segoeuil.woff") format("woff"), url("fonts/segoeuil.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: PTRoubleSans; src: url("fonts/PTRoubleSans.eot"); src: url("fonts/PTRoubleSans.eot?#iefix") format("embedded-opentype"), url("fonts/PTRoubleSans.woff2") format("woff2"), url("fonts/PTRoubleSans.woff") format("woff"), url("fonts/PTRoubleSans.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: pfdindisplaypro-light; src: url("fonts/pfdindisplaypro-light.eot"); src: url("fonts/pfdindisplaypro-light.eot?#iefix") format("embedded-opentype"), url("fonts/pfdindisplaypro-light.woff2") format("woff2"), url("fonts/pfdindisplaypro-light.woff") format("woff"), url("fonts/pfdindisplaypro-light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 html.no-scroll { overflow: hidden; }
 
 body { min-width: 320px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.5rem; line-height: 1.4; color: #353130; background: #fbf8da url(../img/body-bg.png) 0 0 repeat; }
@@ -3016,17 +3013,17 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .steps li.is-last { background: #fff; color: #799a2a; }
 .steps li.is-last:after { width: 0px; height: 0px; border-style: solid; border-width: 23px 0 23px 17px; border-color: transparent transparent transparent #fff; }
 .steps li.is-last > span i { display: inline-block; }
-.steps li.is-active { background: #a7c66d; color: #fff; font-weight: bold; }
+.steps li.is-active { background: #a7c66d; color: #fff; font-weight: 700; }
 .steps li.is-active:after { width: 0px; height: 0px; border-style: solid; border-width: 23px 0 23px 17px; border-color: transparent transparent transparent #a7c66d; }
 .steps li > span i { display: none; font-size: 17px; vertical-align: middle; margin: -3px 5px 0 0; }
-.steps h3 { margin-top: 0; }
+.steps h3 { margin-top: 0; padding: 10px 0; }
 
 .table-simple_cart { margin: 40px 0; width: 100%; border-bottom: 1px solid #a7c66d; min-width: 900px; }
 .table-simple_cart table { width: 100%; }
 .table-simple_cart th { padding: 0 15px; text-align: left; }
 .table-simple_cart td { padding: 15px; text-align: left; }
-.table-simple_cart td:first-child { width: 45%; }
-.table-simple_cart td:last-child { width: 5%; text-align: center; }
+.table-simple_cart td:first-child { width: 72%; }
+.table-simple_cart td:last-child { text-align: center; }
 .table-simple_cart .item { margin: 0; }
 .table-simple_cart .item:hover { -webkit-box-shadow: none; box-shadow: none; }
 .table-simple_cart .item__main, .table-simple_cart .item__img { vertical-align: middle; }
