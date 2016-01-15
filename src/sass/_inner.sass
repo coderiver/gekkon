@@ -92,11 +92,13 @@
 			img
 				transform: scale(1.1)
 	&__text
-		& > a
+		a
 			transition: color 250ms
+			border-bottom: 1px solid transparent
 			&:hover
 				text-decoration: none
 				color: $btn
+				border-color: $btn
 .img-wrap
 	& > i
 		display: inline-block
@@ -106,8 +108,6 @@
 .recipes-item
 	display: block
 	margin-bottom: 25px
-	&:hover
-		text-decoration: none
 	+r(767)
 		text-align: center
 	&__img
@@ -119,10 +119,15 @@
 		&:hover
 			img
 				transform: scale(1.1)
-	& > h3
+	h3
 		font-size: 20px
 		transition: color 250ms
 		margin-top: 10px
+		a
+			border-bottom: 1px solid transparent
+			&:hover
+				text-decoration: none
+				border-color: $btn
 	.soc
 		margin-top: 20px
 .recipes-item_extend
@@ -281,7 +286,7 @@
 	td
 		&:last-child
 			white-space: nowrap
-	
+
 
 .sidebar
 	h2
