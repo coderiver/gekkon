@@ -230,8 +230,15 @@ p.increase
 		+light
 	&_icon
 		border: 0
+		position: relative
+		padding-left: 30px
+		text-align: left
+		i
+			position: absolute
+			left: 0
+			top: 0
 		span
-			display: inline-block
+			display: inline
 			border-bottom: 1px dotted
 	&_big
 		font-size: 20px
@@ -563,6 +570,8 @@ p.increase
 	line-height: 1.2
 	font-size: 15px
 	+light
+	+r(767)
+		margin: 0 
 	li
 		display: inline-block
 		margin-left: 25px
@@ -655,6 +664,8 @@ p.increase
 	&__name
 		height: 87px
 		overflow: hidden
+		+r(767)
+			height: 80px
 	&__link
 		display: inline-block
 		font-size: 20px
@@ -1131,6 +1142,7 @@ select
 	li
 		&:before
 			display: none
+		    
 		&.active
 			> a
 				background: #fff
@@ -1142,6 +1154,14 @@ select
 					color: $text
 				> span
 					border: 0
+			&:after
+				content: ""
+				position: absolute
+				height: 3px
+				left: 1px
+				right: 1px
+				bottom: -1px 
+				background: #fff
 		> a
 			margin: 0
 			padding: 15px 50px
@@ -1339,3 +1359,7 @@ select
 			+bold
 		span
 			vertical-align: middle
+.fancybox-button
+	display: inline-block
+	vertical-align: top
+	margin: 0 3px 10px 0 
