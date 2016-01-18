@@ -280,6 +280,8 @@ p.increase
 	box-shadow: none
 	color: $btn
 	transition: color, background, border, .3s
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+		transition: none
 	&:hover
 		background: $primary
 		color: #fff
@@ -290,12 +292,20 @@ p.increase
 		border-color: darken($primary, 10%)
 		color: #fff
 		outline: none
-		&:focus
+	&:focus
+		background: darken($primary, 10%)
+		border-color: darken($primary, 10%)
+		color: #fff
+		box-shadow: none
+		outline: none
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+		&:hover
 			background: darken($primary, 10%)
 			border-color: darken($primary, 10%)
 			color: #fff
 			box-shadow: none
 			outline: none
+		
 .btn-default
 	padding-left: 33px
 	padding-right: 33px
@@ -412,7 +422,9 @@ p.increase
 		+roboto
 		+reg
 		color: $text
-		line-height: 21px
+		line-height: normal
+		appearance: none
+		border-radius: 0 
 		+placeholder
 			color: #959595
 	&__btn
