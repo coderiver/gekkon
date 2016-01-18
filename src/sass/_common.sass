@@ -286,18 +286,26 @@ p.increase
 		background: $primary
 		color: #fff
 		border-color: $primary
+		&:active
+			background: darken($primary, 10%)
+			border-color: darken($primary, 10%)
+			color: #fff
+			outline: none
+			box-shadow: none
 	&:active,
 	&:focus
 		background: darken($primary, 10%)
 		border-color: darken($primary, 10%)
 		color: #fff
 		outline: none
-	&:focus
-		background: darken($primary, 10%)
-		border-color: darken($primary, 10%)
-		color: #fff
 		box-shadow: none
-		outline: none
+	&:active
+		&:focus
+			background: darken($primary, 10%)
+			border-color: darken($primary, 10%)
+			color: #fff
+			outline: none
+			box-shadow: none
 	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
 		&:hover
 			background: darken($primary, 10%)
@@ -651,7 +659,7 @@ p.increase
 		display: inline-block
 		font-size: 20px
 		+light
-		+r(767)
+		+r(1024)
 			font-size: 18px
 		&:hover
 			text-decoration: none
@@ -664,6 +672,8 @@ p.increase
 		+clr
 		.price
 			float: left
+			+r(1024)
+				margin-top: 10px
 		.number
 			float: right
 			margin-top: 4px
@@ -747,14 +757,14 @@ p.increase
 	font-size: 25px
 	+bold
 	line-height: 1
-	+r(1023)
-		font-size: 20px
+	+r(1024)
+		font-size: 15px
 	&__old
 		display: inline-block
 		font-size: 15px
 		text-decoration: line-through
-		+r(1023)
-			top: 0
+		+r(1024)
+			font-size: 12px
 	&__new
 		color: #b2002e
 	.price__weight
@@ -780,6 +790,8 @@ p.increase
 			color: $text
 			pointer-events: none
 			margin-top: -3px
+			+r(1024)
+				margin-top: -7px
 		select
 			opacity: 0
 			position: absolute
