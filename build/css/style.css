@@ -2084,7 +2084,7 @@ html.no-scroll { overflow: hidden; }
 body { min-width: 320px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.5rem; line-height: 1.4; color: #353130; background: #fbf8da url(../img/body-bg.png) 0 0 repeat; }
 body.no-scroll { overflow: hidden; }
 
-p.increase { font-size: 16px; }
+p.increase { font-size: 18px; }
 
 .wrap { *zoom: 1; }
 .wrap:after { content: " "; display: table; clear: both; }
@@ -2105,7 +2105,7 @@ p.increase { font-size: 16px; }
 .title span { color: #799a2a; }
 
 .h1 { margin: 21px 0 16px; font-size: 40px; font-weight: 300; line-height: 1.2; }
-.h1.h1_b-marg { margin-bottom: 40px; }
+.h1.h1_b-marg { margin: 27px 0 40px; }
 .h1.h1_b-marg + .img-nav { margin-top: 0; }
 .h1 span { color: #799a2a; }
 
@@ -2120,6 +2120,8 @@ p.increase { font-size: 16px; }
 .h3_primary { color: #799a2a; }
 
 .h3_bold { font-weight: 700; }
+
+.h3_ptop { padding-top: 13px; }
 
 .h1_mb, .h2_mb, .h3_mb { margin-bottom: 20px; }
 
@@ -2486,6 +2488,21 @@ select::-ms-expand { display: none; }
 .basket__info { font-size: 12px; margin: 5px 0; }
 .basket .btn { margin: 20px 0; }
 
+.table-product { font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 15px; min-width: 900px; }
+.table-product.table_bold th { font-weight: 700; }
+.table-product.table_marg { margin-top: 13px; }
+.table-product tr.b_bot { border-bottom: 2px dotted #dbdada; }
+.table-product tr:last-child { border-bottom: 1px solid #a7c66d; }
+.table-product th { background-color: #a7c66d; color: white; height: 38px; line-height: 38px; vertical-align: middle; }
+.table-product th:nth-child(1) { padding-left: 12px; width: 901px; }
+.table-product th:nth-child(2) { width: 100px; }
+.table-product th:nth-child(3) { width: 100px; }
+.table-product th:nth-child(4) { width: 80px; }
+.table-product td { height: 86px; vertical-align: middle; }
+.table-product td:nth-child(1) { width: 100px; }
+.table-product td.is-bold { font-weight: 700; }
+.table-product td span { vertical-align: middle; }
+
 .banner { margin-bottom: 55px; position: relative; padding: 25px; overflow: hidden; }
 .banner span { color: #7a0026; }
 .banner__img { position: absolute; top: 0; right: 0; bottom: 0; left: 0; }
@@ -2684,7 +2701,8 @@ select::-ms-expand { display: none; }
 .table-simple td.no-lpad, .table-simple th.no-lpad { padding-left: 0; }
 .table-simple tbody tr { height: 40px; border-bottom: 1px dashed #ddd; }
 .table-simple tbody tr:last-child { border-bottom: 1px solid #a7c66d; }
-.table-simple__sort { background: none; width: 14px; color: #fff; }
+.table-simple__sort { background: none; width: 8px; color: #fff; }
+.table-simple__sort.table-simple__sort_space { margin-left: 3px; }
 .table-simple__sort:hover { background: #799a2a; }
 
 .table-simple_bold-th thead th { font-weight: 700; }
@@ -3050,12 +3068,23 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 .total__head { padding: 20px; background: #f2f2f2; text-align: right; }
 .total__list { display: block; text-align: left; margin: 0; }
+.total__list.is-mod li { padding-top: 8px; }
+.total__list.is-mod div { width: 80px; }
+.total__list.is-mod .checkbox { width: -webkit-calc(100% - 80px); width: calc(100% - 80px); margin-bottom: 0; }
+.total__list.is-mod .checkbox span { font-size: 15px; color: #353130; font-weight: 300; }
+.total__list.is-mod .checkbox span:before { top: 4px; }
+.total__list.is-mod .checkbox span:after { top: 7px; }
 .total__list li { *zoom: 1; }
 .total__list li:after { content: " "; display: table; clear: both; }
+.total__list li.res { margin-top: 19px; padding-top: 0; }
 .total__list div { float: right; }
+.total__list div.r-pad { padding-right: 12px; }
 .total__list + .note-text { margin-top: 20px; }
 .total__footer { padding: 20px 0; }
+.total__footer.total__footer_nopb { padding-bottom: 0; }
 .total__footer .link { display: inline-block; margin-top: 56px; }
+.total__footer .link.link_m { margin-top: 9px; }
+.total__footer .link.link_i-small span { font-size: 13px; position: relative; top: -2px; }
 .total__footer .note-text { margin-bottom: 20px; }
 .total__footer img { max-width: 100%; display: block; }
 

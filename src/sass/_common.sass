@@ -49,7 +49,7 @@ body
 		overflow: hidden
 
 p.increase
-	font-size: 16px
+	font-size: 18px
 
 // common blocks
 .wrap
@@ -108,7 +108,7 @@ p.increase
 	+light
 	line-height: 1.2
 	&.h1_b-marg
-		margin-bottom: 40px
+		margin: 27px 0 40px
 		& + .img-nav
 			margin-top: 0
 	span
@@ -142,6 +142,8 @@ p.increase
 		font-size: 18px
 .h3_bold
 	font-weight: 700
+.h3_ptop
+	padding-top: 13px
 .h1_mb,
 .h2_mb,
 .h3_mb
@@ -1258,3 +1260,43 @@ select
 		margin: 5px 0
 	.btn
 		margin: 20px 0
+
+.table-product
+	+roboto
+	+light
+	font-size: 15px
+	min-width: 900px
+	&.table_bold 
+		th
+			+bold
+	&.table_marg
+		margin-top: 13px
+	tr
+		&.b_bot
+			border-bottom: 2px dotted #dbdada
+		&:last-child
+			border-bottom: 1px solid #a7c66d
+	th
+		background-color: #a7c66d
+		color: white
+		height: 38px
+		line-height: 38px
+		vertical-align: middle
+		&:nth-child(1)
+			padding-left: 12px
+			width: 901px
+		&:nth-child(2)
+			width: 100px
+		&:nth-child(3)
+			width: 100px
+		&:nth-child(4)
+			width: 80px
+	td
+		height: 86px
+		vertical-align: middle
+		&:nth-child(1)
+			width: 100px
+		&.is-bold
+			+bold
+		span
+			vertical-align: middle
