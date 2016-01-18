@@ -522,10 +522,12 @@ p.increase
 		display: inline-block
 		vertical-align: middle
 		&.active
+			cursor: default
 			a
 				border-color: transparent
 				color: $text
 				+bold
+				cursor: default
 	h3
 		margin: 0
 	a
@@ -544,7 +546,11 @@ p.increase
 		display: inline-block
 		margin-left: 25px
 		vertical-align: middle
+		
 		&.active
+			cursor: default
+			a
+				cursor: default
 			span
 				border-color: transparent
 				color: $text
@@ -575,14 +581,17 @@ p.increase
 		line-height: 1.66
 		font-size: 15px
 		+light
-		+ .post__img
+		& + .post__img
 			margin-top: 20px
+		
 	&__head
 		margin-bottom: 17px
 		a
 			font-size: 20px
 			+r(767)
 				font-size: 18px
+		& + .post__main
+			margin-top: -7px 
 	.title
 		margin-bottom: 20px
 .post_box
