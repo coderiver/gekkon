@@ -3057,6 +3057,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .table-simple_cart-box .item__main img, .table-simple_cart-box .item__img img { vertical-align: top; }
 
 .action-add { margin: 30px 0; }
+.action-add.action-add_b-marg { margin-bottom: 20px; }
 .action-add .btn { margin-top: 23px; }
 
 .table_order { table-layout: fixed; }
