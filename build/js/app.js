@@ -827,6 +827,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 
 })(jQuery);
 
+//=include lib/jq-mask.js
 /*
      _ _      _       _
  ___| (_) ___| | __  (_)___
