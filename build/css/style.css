@@ -2084,7 +2084,7 @@ html.no-scroll { overflow: hidden; }
 body { min-width: 320px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.5rem; line-height: 1.4; color: #353130; background: #fbf8da url(../img/body-bg.png) 0 0 repeat; }
 body.no-scroll { overflow: hidden; }
 
-p.increase { font-size: 16px; }
+p.increase { font-size: 18px; }
 
 .wrap { *zoom: 1; }
 .wrap:after { content: " "; display: table; clear: both; }
@@ -2105,7 +2105,7 @@ p.increase { font-size: 16px; }
 .title span { color: #799a2a; }
 
 .h1 { margin: 21px 0 16px; font-size: 40px; font-weight: 300; line-height: 1.2; }
-.h1.h1_b-marg { margin-bottom: 40px; }
+.h1.h1_b-marg { margin: 27px 0 40px; }
 .h1.h1_b-marg + .img-nav { margin-top: 0; }
 .h1 span { color: #799a2a; }
 
@@ -2701,7 +2701,8 @@ select::-ms-expand { display: none; }
 .table-simple td.no-lpad, .table-simple th.no-lpad { padding-left: 0; }
 .table-simple tbody tr { height: 40px; border-bottom: 1px dashed #ddd; }
 .table-simple tbody tr:last-child { border-bottom: 1px solid #a7c66d; }
-.table-simple__sort { background: none; width: 14px; color: #fff; }
+.table-simple__sort { background: none; width: 8px; color: #fff; }
+.table-simple__sort.table-simple__sort_space { margin-left: 3px; }
 .table-simple__sort:hover { background: #799a2a; }
 
 .table-simple_bold-th thead th { font-weight: 700; }
