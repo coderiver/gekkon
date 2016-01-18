@@ -2539,7 +2539,7 @@ select::-ms-expand { display: none; }
 .location-box { margin-bottom: 33px; }
 .location-box_mt { margin-top: 20px; }
 
-#chartdiv, #chartdiv2 { width: 100%; height: 387px; }
+#chartdiv, #chartdiv2, #chartdiv3 { width: 100%; height: 387px; }
 
 .header { position: relative; font-weight: 400; }
 
