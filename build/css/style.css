@@ -2084,6 +2084,8 @@ html.no-scroll { overflow: hidden; }
 body { min-width: 320px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.5rem; line-height: 1.4; color: #353130; background: #fbf8da url(../img/body-bg.png) 0 0 repeat; }
 body.no-scroll { overflow: hidden; }
 
+input { -webkit-border-radius: 0; border-radius: 0; }
+
 p.increase { font-size: 18px; }
 
 .wrap { *zoom: 1; }
@@ -3226,6 +3228,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .recipes-item{ text-align: center; }
  .additional{ display: block; }
  .additional__icon, .additional__text{ display: block; width: 100%; text-align: center; }
+ .sort-result span{ display: none; }
  .product-info .text-right{ text-align: left; }
  .box__head .meta{ display: block; margin-left: 0px; }
  .total__footer .link{ margin: 20px 0; }
@@ -3371,6 +3374,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .sidebar{ position: fixed; z-index: 10; top: 0; bottom: 0; left: 0; right: 0; -webkit-transition: -webkit-transform 0.3s; transition: transform 0.3s; -webkit-transform: translateX(-150%); -ms-transform: translateX(-150%); transform: translateX(-150%); }
  .sidebar.is-active{ -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
  .sidebar .checkbox{ color: #fff; }
+ .sidebar .checkbox label{ font-size: 15px; }
+ .sidebar .checkbox label > span{ color: #fff; }
  .sidebar .checkbox label > span:before{ border-color: #fff; }
  .sidebar .checkbox label > span:after{ color: #fff; }
  .sidebar .list-nav a{ color: #fff; }
