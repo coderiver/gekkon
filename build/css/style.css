@@ -2432,7 +2432,7 @@ select::-ms-expand { display: none; }
 .nav-tabs li.active > a:hover, .nav-tabs li.active > a:focus { background: #fff; color: #353130; }
 .nav-tabs li.active > a > span { border: 0; }
 .nav-tabs li > a { margin: 0; padding: 15px 50px; }
-.nav-tabs li > a:hover { border-color: transparent; background: none; }
+.nav-tabs li > a:hover { border-color: transparent; background: none; color: #000; }
 .nav-tabs li > a > span { border-bottom: 1px dotted; }
 
 .required-text { color: #ea4924; }
@@ -2648,18 +2648,19 @@ select::-ms-expand { display: none; }
 .blog-item__img { margin-bottom: 20px; font-size: 0; display: block; overflow: hidden; }
 .blog-item__img img { max-width: 100%; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); -webkit-transition: -webkit-transform 350ms ease-out; transition: transform 350ms ease-out; }
 .blog-item__img:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
-.blog-item__text > a { -webkit-transition: color 250ms; transition: color 250ms; }
-.blog-item__text > a:hover { text-decoration: none; color: #799a2a; }
+.blog-item__text a { -webkit-transition: color 250ms; transition: color 250ms; border-bottom: 1px solid transparent; }
+.blog-item__text a:hover { text-decoration: none; color: #799a2a; border-color: #799a2a; }
 
 .img-wrap > i { display: inline-block; }
 .img-wrap img { max-width: 100%; }
 
 .recipes-item { display: block; margin-bottom: 25px; }
-.recipes-item:hover { text-decoration: none; }
 .recipes-item__img { font-size: 0; overflow: hidden; }
 .recipes-item__img img, .recipes-item__img video, .recipes-item__img iframe { max-width: 100%; -webkit-transition: -webkit-transform 0.35s ease-out; transition: transform 0.35s ease-out; }
 .recipes-item__img:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
-.recipes-item > h3 { font-size: 20px; -webkit-transition: color 250ms; transition: color 250ms; margin-top: 10px; }
+.recipes-item h3 { font-size: 20px; -webkit-transition: color 250ms; transition: color 250ms; margin-top: 10px; }
+.recipes-item h3 a { border-bottom: 1px solid transparent; }
+.recipes-item h3 a:hover { text-decoration: none; border-color: #799a2a; }
 .recipes-item .soc { margin-top: 20px; }
 
 .recipes-item_extend .recipes-item__img { margin: 0 0 27px; }
