@@ -2492,7 +2492,7 @@ select::-ms-expand { display: none; }
 .checkbox-list .checkbox-col .checkbox { padding-left: 5px; }
 .checkbox-list .checkbox-col .checkbox b { display: block; overflow: hidden; text-overflow: ellipsis; font-weight: normal; }
 
-.basket { display: none; position: fixed; top: 65px; right: 0; z-index: 10; background: #fff; border: 1px solid #799a2a; padding: 15px; font-size: 14px; width: 320px; }
+.basket { display: none; position: fixed; top: 65px; right: 0; margin-right: 10px; z-index: 10; background: #fff; border: 1px solid #799a2a; padding: 15px; font-size: 14px; width: 320px; }
 .basket.is-active { display: block; }
 .basket .h3 { margin: 0 0 20px; font-size: 23px; }
 .basket__img img { display: block; margin: 0 auto; max-width: 100%; }
@@ -2538,10 +2538,10 @@ select::-ms-expand { display: none; }
 .banner__text { margin-bottom: 10px; font-size: 25px; font-weight: 300; }
 .banner__text span { font-size: 35px; font-weight: 700; }
 .slider-info__title { display: table; width: 100%; line-height: 1; }
-.slider-info__title span { display: table-cell; vertical-align: middle; width: 110px; font-size: 83px; color: #a7c66d; }
+.slider-info__title span { display: table-cell; vertical-align: middle; width: 106px; font-size: 83px; color: #a7c66d; }
 .slider-info__title span:before { display: block; margin: 0; }
 .slider-info__title strong { display: table-cell; vertical-align: middle; font-size: 25px; }
-.slider-info__text { margin: 20px 0 30px; font-size: 15px; font-weight: 300; }
+.slider-info__text { margin: 15px 0 28px; font-size: 15px; font-weight: 300; }
 
 .map-nav { margin-bottom: 15px; }
 
@@ -2720,6 +2720,7 @@ select::-ms-expand { display: none; }
 .table-simple { width: 60%; margin: 20px 0 12px; min-width: 500px; }
 .table-simple_width { width: 100%; }
 .table-simple.table-simple_no-marg { margin-top: 0; }
+.table-simple.table-simple_no-space { margin-top: 0; margin-bottom: 0; }
 .table-simple.table-simple_no-bord { border-bottom: 0; }
 .table-simple thead tr { background: #a7c66d; height: 38px; }
 .table-simple thead th { font-weight: 300; color: #fff; }

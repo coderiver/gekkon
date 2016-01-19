@@ -350,8 +350,4 @@ $(document).ready(function() {
         }
     }
     radioBox.init();
-<<<<<<< HEAD
-=======
->>>>>>> master
->>>>>>> master
 });
