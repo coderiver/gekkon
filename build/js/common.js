@@ -296,7 +296,7 @@ $(document).ready(function() {
 	$('#file').on('change', function(e){
 		$(this).siblings("span").text(e.target.files[0].name);
 	});
-<<<<<<< HEAD
+
 	//mask
 	$('[type="tel"]').mask("+9 (999) 999 - 99 - 99");
 
@@ -324,8 +324,6 @@ $(document).ready(function() {
 			"padding-right": "",
 		});
 	});
-
-=======
 
 	var radioBox = {
         init: function() {
