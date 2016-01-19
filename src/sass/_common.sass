@@ -218,6 +218,10 @@ p.increase
 	+roboto
 	+reg
 	color: $btn
+	&_m
+		color: #a7c66d
+		font-size: 15px !important
+		margin-top: 6px
 	&:hover
 		color: #000
 		text-decoration: none
@@ -1261,7 +1265,7 @@ select
 	.btn
 		margin: 20px 0
 
-.table-product
+.table-product, .table-packing
 	+roboto
 	+light
 	font-size: 15px
@@ -1300,3 +1304,31 @@ select
 			+bold
 		span
 			vertical-align: middle
+
+.table-product
+	&.table_c-content
+		td, th
+			&:nth-last-child(1),
+			&:nth-last-child(2),
+			&:nth-last-child(3)
+				text-align: center
+
+.table-packing
+	margin-bottom: 50px
+	td 
+		vertical-align: middle
+		.number
+			vertical-align: middle
+	&__pic
+		display: inline-block
+		vertical-align: middle
+		width: 150px
+		text-align: center
+	&__link
+		// max-width: 160px
+		display: inline-block
+		vertical-align: middle
+		&:hover
+			text-decoration: none
+			span
+				text-decoration: underline

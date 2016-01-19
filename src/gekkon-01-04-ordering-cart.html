@@ -205,84 +205,56 @@
 					</div>
 				</div>
 				<div class="table-wrap">
-					<div class="table-simple table-simple_cart table-simple_cart-box table-simple_no-marg table-simple_no-bord">
-						<table>
-							<tbody>
-								<tr>
-									<td>
-										<div class="item item_list">
-											<a class="item__img" href="#">
-												<img src="img/item3.jpg" alt="img">
-												
-											</a>
-											<div class="item__main">
-												<div class="item__name">
-													<a href="#" class="item__link">
-														<img src="img/flags/IT.png" width="24" alt="Италия" title="Италия">
-														<span>Сыр из козьего молока «Бургос», 500 гр.</span>
-													</a>
-												</div>
-												<div class="item item_list">
-													<a class="item__img" href="#">
-														<img src="img/item1.jpg" alt="img">
-														
-													</a>
-													<div class="item__main">
-														<div class="item__name">
-															<a href="#" class="item__link">
-																<img src="img/flags/IT.png" width="24" alt="Италия" title="Италия">
-																<span>Сыр из козьего молока «Бургос», 500 гр.</span>
-															</a>
-														</div>
-													</div>
-												</div>
-												<div class="item item_list">
-													<a class="item__img" href="#">
-														<img src="img/item2.jpg" alt="img">
-														
-													</a>
-													<div class="item__main">
-														<div class="item__name">
-															<a href="#" class="item__link">
-																<img src="img/flags/IT.png" width="24" alt="Италия" title="Италия">
-																<span>Сыр из козьего молока «Бургос», 500 гр.</span>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="price price_inline price_big">
-											<div class="price__old">
-												540 <span class="rub">д</span>
-											</div>
-											<div class="price__new">
-												300 <span class="rub">д</span>
-												<span class="price__weight">/ 500 гр</span>
-											</div>
-										</div>
-									</td>
-									<td>
-										<div class="number js-number" data-max-number="100">
-											<button class="number__minus js-minus-number" type="button">-</button>
-											<input type="text" class="number__input" value="1">
-											<button class="number__plus js-plus-number" type="button">+</button>
-										</div>
-									</td>
-									<td>
-										<div class="price">1200 <span class="rub">в</span></div>
-									</td>
-									<td>
-										<button class="btn-del is-green" type="button">
-											<span class="icon-close47"></span>
-										</button>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
+					<table class="table-packing">
+						<tbody>
+							<tr>
+								<td><img src="/img/unit1.png" alt=""></td>
+								<td>Крафт коробка, поднос, белый</td>
+								<td>300 / 1 шт.</td>
+								<td>
+									<div class="number js-number" data-max-number="100">
+										<button class="number__minus js-minus-number" type="button">-</button>
+										<input type="text" class="number__input" value="1">
+										<button class="number__plus js-plus-number" type="button">+</button>
+									</div>
+								</td>
+								<td>300 Р</td>
+								<td>
+									<button class="btn-del is-green" type="button">
+										<span class="icon-close47"></span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="6">
+									<div class="table-packing__pic">
+										<img src="img/prod-slide-small.jpg" alt="img">
+									</div>
+									<a href="#" class="table-packing__link">
+										<img src="img/flags/IT.png" width="24" alt="Италия" title="Италия">
+										<span>Оливковое масло EXTRA VIRGIN «Marca Oro»</span>
+									</a>
+									<button class="btn-del is-green" type="button">
+										<span class="icon-close47"></span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="6">
+									<div class="table-packing__pic">
+										<img src="img/unit3.png" alt="img">
+									</div>
+									<a href="#" class="table-packing__link">
+										<img src="img/flags/IT.png" width="24" alt="Италия" title="Италия">
+										<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+									</a>
+									<button class="btn-del is-green" type="button">
+										<span class="icon-close47"></span>
+									</button>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 				<div class="total">
 					<div class="total__head">
@@ -306,7 +278,7 @@
 					<div class="total__footer">
 						<div class="row">
 							<div class="col-md-3 col-sm-6 col-sm-6">
-								<a href="#" class="link"><span class="icon-arrowheads3"></span>Вернуться к покупкам</a>
+								<a href="#" class="link link_big link_i-small"><span class="icon-arrowheads3"></span>Вернуться к покупкам</a>
 							</div>
 							<div class="col-md-3 col-md-offset-6 col-sm-6 col-sm-6">
 								<div class="note-text">
@@ -323,19 +295,18 @@
 					<div class="col-md-4">
 						<div class="row">
 							<div class="col-md-10">
-								<div class="h3 h3_primary h3_mb">Служба поддержки</div>
+								<div class="h3 h3_mb">Служба поддержки</div>
 								<div class="tel tel_bold">
 									<span>8 800 555 65 56 <sub>(с 9:00 до  18:00)</sub></span>
-									<button class="btn-dots" data-toggle="modal" data-target="#modal-call" type="button">Перезвоните мне</button>
+									<button class="btn-dots btn-dots_m" data-toggle="modal" data-target="#modal-call" type="button">Перезвоните мне</button>
 								</div>
 							</div>
 						</div>
-
 					</div>
 					<div class="col-md-4">
 						<div class="row">
 							<div class="col-md-10">
-								<div class="h3 h3_primary h3_mb">Доступные способы оплаты</div>
+								<div class="h3 h3_mb">Доступные способы оплаты</div>
 								<ul class="list">
 									<li>Курьеру при получении: наличными или картой</li>
 									<li>Онлайн на сайте: картой или с помощью платежных систем</li>
@@ -347,7 +318,7 @@
 					<div class="col-md-4">
 						<div class="row">
 							<div class="col-md-10">
-								<div class="h3 h3_primary h3_mb">Доставка</div>
+								<div class="h3 h3_mb">Доставка</div>
 								<ul class="list">
 									<li>Курьером по Москве и МО</li>
 									<li>При заказе от 3 000 Р в пределах МКАД — бесплатно</li>
