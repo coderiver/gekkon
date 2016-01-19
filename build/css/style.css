@@ -2446,7 +2446,7 @@ select::-ms-expand { display: none; }
 
 .modal-header { border: 0; position: relative; padding: 10px 15px; }
 .modal-header .h3, .modal-header .h2 { margin: 0; }
-.modal-header .close { position: absolute; right: 15px; top: 15px; font-size: 15px; color: #353130; opacity: 1; }
+.modal-header .close { position: absolute; right: 13px; top: 17px; font-size: 15px; color: #353130; opacity: 1; }
 .modal-header .close:hover { color: #ea4924; }
 
 .date .form-group .control-label { padding-top: 4px; text-align: left; }
