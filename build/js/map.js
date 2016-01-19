@@ -386,13 +386,20 @@ AmCharts.themes.light = {
 	var map = AmCharts.makeChart("chartdiv3", {
 		"type": "map",
 	  	"theme": "light",
+<<<<<<< HEAD
 	  	"language": "ru",
+=======
+>>>>>>> master
 		dataProvider: dataProvider,
 		areasSettings: {
 			autoZoom: false,
 			selectable: true,
 			color: "#a7c580"
+<<<<<<< HEAD
 		},
+=======
+		}
+>>>>>>> master
 	});
 	
 	// setTimeout(function(){

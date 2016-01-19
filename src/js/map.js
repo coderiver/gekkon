@@ -177,7 +177,7 @@
 			autoZoom: false,
 			selectable: true,
 			color: "#a7c580"
-		},
+		}
 	});
 	
 	// setTimeout(function(){
