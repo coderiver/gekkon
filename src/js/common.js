@@ -1,6 +1,5 @@
-"use strict";
 $(document).ready(function() {
-
+	"use strict";
 	$(document).on("click", function() {
 		connect.hide();
 		btnCart.hideBtnModal();
@@ -297,4 +296,29 @@ $(document).ready(function() {
 	$('#file').on('change', function(e){
 		$(this).siblings("span").text(e.target.files[0].name);
 	});
+
+	var radioBox = {
+        init: function() {
+        	this.$el = $(".js-radio");
+            this._bindEvent();
+        },
+        _bindEvent: function() {
+            this.$el.on("change", this._checkState.bind(this))
+        },
+        _checkState: function(event) {
+            var $el = $(event.target);
+            var $targetToShow = $("."+$el.data("show"));
+            var $targetToHide = $("."+$el.data("hide"));
+            console.log("change")
+            //if ($(event.target).is(":checked")) {
+                $targetToShow.removeClass("is-hidden");
+                $targetToHide.addClass("is-hidden");
+            //}
+            // else {
+            //     $targetToShow.addClass("is-disabled");
+            //     $targetToHide.addClass("is-disabled");
+            // }
+        }
+    }
+    radioBox.init();
 });
