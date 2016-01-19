@@ -221,6 +221,7 @@ AmCharts.themes.light = {
 // europe
 (function(){
 	var europe = "#a7c66d";
+
 	var dataProvider = {
 		map: "worldLow",
 		zoomLevel: 3.5,
@@ -393,13 +394,13 @@ AmCharts.themes.light = {
 		}
 	});
 	
-	setTimeout(function(){
-		areas = map.areasProcessor.allObjects; // undefined
-		// console.log(map.areasProcessor.allObjects);
-		// for (var i = 0; i < areas.length - 10; i++) {
-		// 	map.rollOverMapObject(areas[i]);
-		// }
-	},1000)
+	// setTimeout(function(){
+	// 	areas = map.areasProcessor.allObjects; // undefined
+	// 	console.log(map.areasProcessor.allObjects);
+	// 	for (var i = 0; i < areas.length - 10; i++) {
+	// 		map.rollOverMapObject(areas[i]);
+	// 	}
+	// },1000)
 	map.zoomControl.zoomControlEnabled = true;
 	map.addListener("clickMapObject", function (event) {
 		// html we would insert into bubble
