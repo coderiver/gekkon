@@ -3347,6 +3347,7 @@ $(document).ready(function() {
 	$('#file').on('change', function(e){
 		$(this).siblings("span").text(e.target.files[0].name);
 	});
+	//mask
 	$('[type="tel"]').mask("+9 (999) 999 - 99 - 99");
 });
 
