@@ -71,7 +71,7 @@
 							<div class="col-md-4">
 								<div class="radio radio_big">
 									<label>
-										<input type="radio" name="orderDelivery" checked>
+										<input class="js-radio" type="radio" name="orderDelivery" data-show="js-delivery1" data-hide="js-delivery2">
 										<span class="radio__text">
 											<i></i>
 											<span>Курьером</span>
@@ -93,7 +93,7 @@
 							<div class="col-md-4">
 								<div class="radio radio_big">
 									<label>
-										<input type="radio" name="orderDelivery">
+										<input class="js-radio" type="radio" name="orderDelivery" data-show="js-delivery2" data-hide="js-delivery1">
 										<span class="radio__text">
 											<i></i>
 											<span>Почтой России</span>
@@ -110,12 +110,75 @@
 							</div>
 						</div>
 					</div>
+					<div class="js-delivery1 is-hidden">
+						<div class="form-section">
+							<div class="row">
+								<div class="col-md-4 col-xs-12">
+									<form action="#">
+										<div class="form-group">
+											<div class="control-label">Внимательно укажите полный адрес</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="addressIndex">Адрес доставки:</label>
+											<div class="select">
+												<select id="addressCity" class="form-control is-big">
+													<option value="Ильинка, 4">Ильинка, 4</option>
+													<option value="Ильинка, 5">Ильинка, 5</option>
+													<option value="Ильинка, 6">Ильинка, 6</option>
+												</select>
+												<i class="i-icon-select-arr"></i>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="addressCity">Населенный пункт:<sup class="required-text">*</sup></label>
+											<input type="text" class="form-control" id="addressCity" required>
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="addressStreet">Улица:<sup class="required-text">*</sup></label>
+											<input type="text" class="form-control" id="addressStreet" required>
+										</div>
+										<div class="row">
+											<div class="col-xs-6">
+												<div class="form-group">
+													<label class="control-label" for="addressStreet">Дом:<sup class="required-text">*</sup></label>
+													<input type="text" class="form-control" id="addressHouse" required>
+												</div>
+											</div>
+											<div class="col-xs-6">
+												<div class="form-group">
+													<label class="control-label" for="addressStreet">Квартира, офис:</label>
+													<input type="text" class="form-control" id="addressFlatOffice">
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="js-delivery2 is-hidden">
+						<div class="form-section">
+							<div class="row">
+								<div class="col-md-4 col-xs-12">
+									<form action="#">
+										<div class="form-group">
+											<div class="control-label">нимательно заполните все поля: это может повлиять на скорость доставки. Когда заказ поступит в отделение связи, вы получите извещение.</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label" for="addressCity">Населенный пункт или индекс:<sup class="required-text">*</sup></label>
+											<input type="text" class="form-control" id="addressCity" required>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="order-row order-row_mb">
 					<div class="h3 h3_bold"><i class="icon-digit-3"></i>Укажите удобный способ оплаты</div>
 					<div class="form-group">
 						<div class="row">
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-12">
 								<div class="radio radio_big">
 									<label>
 										<input type="radio" name="orderPay" checked>
@@ -126,14 +189,14 @@
 									</label>
 								</div>
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-5 col-xs-12">
 								<div class="note-text note-text_mt">Оплатить заказ можно при получении наличными или картой. </div>
 							</div>
 						</div>
 					</div>
 					<div class="form-group">
 						<div class="row">
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-12">
 								<div class="radio radio_big">
 									<label>
 										<input type="radio" name="orderPay">
@@ -144,7 +207,7 @@
 									</label>
 								</div>
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-5 col-xs-12">
 								<div class="note-text note-text_mt">Заказ нужно оплатить сразу же после оформления. Платежи осуществляются через авторизационный сервер Robokassa с соблюдением всех требований защиты данных.</div>
 								<div>
 									<img src="img/payment.png" alt="img">
@@ -154,7 +217,7 @@
 					</div>
 					<div class="form-group">
 						<div class="row">
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-12">
 								<div class="radio radio_big">
 									<label>
 										<input type="radio" name="orderPay">
@@ -165,7 +228,7 @@
 									</label>
 								</div>
 							</div>
-							<div class="col-md-5">
+							<div class="col-md-5 col-xs-12">
 								<div class="note-text note-text_mt">Оплатите покупку в любом банке, принимающем платежи от частных лиц. Не забудьте уточнить размер комиссии перед оплатой.</div>
 							</div>
 						</div>
@@ -178,7 +241,7 @@
 					<div class="h3 h3_bold"><i class="icon-digit-4"></i>Дополните заказ комментариями</div>
 					<div class="form-group">
 						<div class="row">
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-12">
 								<textarea class="form-control" rows="7" placeholder="Здесь вы можете оставить информацию для курьера, например, номер домофона или контакты получателя, если он не совпадает с лицом, оформившим заказ"></textarea>
 							</div>
 						</div>
@@ -269,13 +332,116 @@
 							</tr>
 						</tbody>
 					</table>
+					<div class="table-simple table-simple_mod table-simple_cart table-simple_bold-th">
+						<table>
+							<thead>
+								<tr>
+									<th>
+										Выбранные товары
+									</th>
+									<th>
+										Цена
+									</th>
+									<th>
+										Количество
+									</th>
+									<th>
+										Сумма
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="no-lpad">
+										<div class="item item_list">
+											<a class="item__img" href="#">
+												<img src="img/item3.jpg" alt="img">
+												<div class="badge badge_hot">-25%</div>
+											</a>
+											<div class="item__main">
+												<div class="item__name">
+													<a href="gekkon-01-03-product-page.html" class="item__link">	
+														<img src="img/flags/IT.png" width="24" alt="Италия" title="Италия">
+														<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="price price_small price_light">1200 <span class="rub">у</span></div>
+									</td>
+									<td>
+										2
+									</td>
+									<td>
+										<div class="price price_small">1200 <span class="rub">у</span></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="no-lpad">
+										<div class="item item_list">
+											<a class="item__img" href="#">
+												<img src="img/item3.jpg" alt="img">
+												<div class="badge badge_hot">-25%</div>
+											</a>
+											<div class="item__main">
+												<div class="item__name">
+													<a href="gekkon-01-03-product-page.html" class="item__link">	
+														<img src="img/flags/IT.png" width="24" alt="Италия" title="Италия">
+														<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="price price_small price_light">1200 <span class="rub">у</span></div>
+									</td>
+									<td>
+										2
+									</td>
+									<td>
+										<div class="price price_small">1200 <span class="rub">у</span></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="no-lpad">
+										<div class="item item_list">
+											<a class="item__img" href="#">
+												<img src="img/item3.jpg" alt="img">
+												<div class="badge badge_hot">-25%</div>
+											</a>
+											<div class="item__main">
+												<div class="item__name">
+													<a href="gekkon-01-03-product-page.html" class="item__link">	
+														<img src="img/flags/IT.png" width="24" alt="Италия" title="Италия">
+														<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</td>
+									<td>
+										<div class="price price_small price_light">1200 <span class="rub">у</span></div>
+									</td>
+									<td>
+										2
+									</td>
+									<td>
+										<div class="price price_small">1200 <span class="rub">у</span></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 				<div class="total">
 					<div class="total__footer total__footer_nopb">
 						<div class="row">
-							<div class="col-md-9 col-sm-8 col-sm-6">
+							<div class="col-md-9 col-sm-8 col-sm-6 col-xs-12">
 								<div class="row">
-									<div class="col-md-10 col-md-offset-1">
+									<div class="col-md-10 col-md-offset-1 col-xs-12">
 										<img src="img/order-4.png" alt="img">
 									</div>
 								</div>
