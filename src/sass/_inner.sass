@@ -43,6 +43,7 @@
 	font-size: 13px
 	background: transparent
 	padding-left: 0
+	margin-top: -18px 
 	& > li+ li:before
 		content: '>'
 		color: inherit
@@ -92,11 +93,13 @@
 			img
 				transform: scale(1.1)
 	&__text
-		& > a
+		a
 			transition: color 250ms
+			border-bottom: 1px solid transparent
 			&:hover
 				text-decoration: none
 				color: $btn
+				border-color: $btn
 .img-wrap
 	& > i
 		display: inline-block
@@ -106,10 +109,6 @@
 .recipes-item
 	display: block
 	margin-bottom: 25px
-	&:hover
-		text-decoration: none
-	+r(767)
-		text-align: center
 	&__img
 		font-size: 0
 		overflow: hidden
@@ -119,10 +118,15 @@
 		&:hover
 			img
 				transform: scale(1.1)
-	& > h3
+	h3
 		font-size: 20px
 		transition: color 250ms
 		margin-top: 10px
+		a
+			border-bottom: 1px solid transparent
+			&:hover
+				text-decoration: none
+				border-color: $btn
 	.soc
 		margin-top: 20px
 .recipes-item_extend
@@ -287,7 +291,7 @@
 	td
 		&:last-child
 			white-space: nowrap
-	
+
 
 .sidebar
 	h2
@@ -356,13 +360,16 @@
 			text-align: center
 			+r(767)
 				bottom: 50px
-	&__prevBtn,
-	&__nextBtn
+	&__prev,
+	&__next
 		background: transparent
 		color: #fff
 		position: absolute
 		bottom: 25px
 		line-height: 1
+		&:hover
+			text-decoration: underline
+			color: #fff 
 		i
 			font-size: .7em
 			position: relative
@@ -375,9 +382,9 @@
 			bottom: 25px
 			+r(767)
 				bottom: 15px
-	&__prevBtn
+	&__prev
 		left: 33px
-	&__nextBtn
+	&__next
 		right: 55%
 		right: calc(50% + 55px)
 		+r(1023)
@@ -493,6 +500,7 @@
 			top: 6px
 .testing + .testing-result
 	margin-top: 100px
+	margin-bottom: 12px 
 
 .border-image
 	display: inline-block
@@ -751,6 +759,13 @@
 			&.icon-yandex
 				position: relative
 				top: -5px
+		+rm(768)
+			i
+				float: left
+			span
+				overflow: hidden
+				display: block
+				padding-top: 7px 
 .item-info-wrap
 	margin: 30px 0
 .item-info
@@ -776,9 +791,19 @@
 		.meta
 			margin-bottom: 10px
 	&__header
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			top: 3px 
+			width: 20px   
+			height: 14px 
+			box-shadow: 0 0 1px rgba(#000,.3)
+			display: inline-block
 		img
 			position: absolute
 			left: 0
+			
 		&[aria-expanded="true"]
 			color: #000
 			+bold
@@ -795,15 +820,21 @@ input[type=number]
 
 .row_set
 	display: table
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1023px)
+		display: block
 	& > div
 		display: table-cell
 		vertical-align: middle
 		float: none
-		+r(1023)
+		@media only screen and (min-device-width : 768px) and (max-device-width : 1023px)
 			display: block
 			float: left
 			text-align: center
+			width: 50%
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+			display: block
 			width: 100%
+			float: none
 		&:before
 			content: '+'
 			font-size: 20px
@@ -825,6 +856,8 @@ input[type=number]
 	.set-result
 		padding-top: 15px
 		padding-left: 15px
+		+r(1023)
+			text-align: center
 	+r(1023)
 		display: block
 .set-result

@@ -221,6 +221,7 @@ AmCharts.themes.light = {
 // europe
 (function(){
 	var europe = "#a7c66d";
+
 	var dataProvider = {
 		map: "worldLow",
 		zoomLevel: 3.5,
@@ -315,7 +316,7 @@ AmCharts.themes.light = {
 			  id: "RU",
 			  color: CIS
 			}, {
-			  title: "Казахстана",
+			  title: "Казахстан",
 			  id: "KZ",
 			  color: CIS
 			}, {
@@ -366,4 +367,71 @@ AmCharts.themes.light = {
 			return false;
 		});
 	});
-})()
+})();
+
+
+
+// Russia
+(function(){
+	var CIS = "#a7c66d";
+	var dataProvider = {
+		// map: "worldLow",
+		zoomLevel: 1.2,
+		zoomLongitude: 85,
+		zoomLatitude: 66,
+		mapURL : "/img/russia.svg",
+        getAreasFromMap : true
+	};
+
+	var map = AmCharts.makeChart("chartdiv3", {
+		"type": "map",
+	  	"theme": "light",
+	  	"language": "ru",
+		dataProvider: dataProvider,
+		areasSettings: {
+			autoZoom: false,
+			selectable: true,
+			color: "#a7c580"
+		},
+	});
+	
+	// setTimeout(function(){
+	// 	areas = map.areasProcessor.allObjects; // undefined
+	// 	console.log(map.areasProcessor.allObjects);
+	// 	for (var i = 0; i < areas.length - 10; i++) {
+	// 		map.rollOverMapObject(areas[i]);
+	// 	}
+	// },1000)
+	map.zoomControl.zoomControlEnabled = true;
+	map.addListener("clickMapObject", function (event) {
+		// html we would insert into bubble
+		html  = event.mapObject.customData+'===';
+		html += event.mapObject.title+'===';
+		//click position
+		html += event.event.clientX+'===';
+		html += event.event.clientY;
+		var left = event.chart.mouseX;
+		var top = event.chart.mouseY;
+		var id = event.mapObject.id;
+		//var fieldCoords = event.currentTarget.getBoundingClientRect();
+		$('.js-mybubble').removeClass("is-active");
+		$('#'+id).css({
+			left: left,
+			top: top,
+		}).addClass("is-active");
+		$(".js-close-mybubble").on("click", function() {
+			$(".js-mybubble").removeClass("is-active");
+			return false;
+		});
+	});
+})();
+
+
+
+
+
+
+
+
+
+
