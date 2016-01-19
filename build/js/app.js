@@ -186,6 +186,38 @@ $(document).ready(function() {
 			]
 		});
 	});
+	$(".js-slider-mobile").each(function () {
+		var self = $(this);
+		self.slick({
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			infinite: true,
+			appendArrows: self.parents(".slider-items"),
+			responsive: [{
+					breakpoint: 10000,
+					settings: "unslick"
+				},
+				{
+					breakpoint: 1023,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+			]
+		});
+	});
+	$(window).resize(function(){
+		console.log("resize");
+		$('.js-slider-mobile').slick('reinit');
+	});
 
 	$(".js-raty").raty({
 		score: function() {

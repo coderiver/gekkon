@@ -10,17 +10,20 @@
 	//=include partials/header.html
 	<div class="inner inner_main">
 		<div class="container">
-			<ol class="breadcrumb">
+			<ol class="breadcrumb hidden-xs">
 				<li><a href="#">Главная</a></li>
 				<li><a href="#">Каталог</a></li>
 				<li><a href="#">Продукты питания</a></li>
 				<li><a href="#">Бакалейные товары</a></li>
 				<li class="active"><a href="#">Масла</a></li>
 			</ol>
+			<ol class="breadcrumb visible-xs">
+				<li><a href="#">← Назад</a></li>
+			</ol>
 			<h1 class="h1">Оливковое масло EXTRA VIRGIN Marca Oro</h1>
 			<div class="main">
 				<div class="row">
-					<div class="col-md-6 col-sm-12">
+					<div class="col-md-6 col-xs-12">
 						<div class="carousel">
 							<div class="carousel__main js-slider-for">
 								<div>
@@ -77,7 +80,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6 col-sm-12">
+					<div class="col-md-6 col-xs-12">
 						<div class="product-info">
 							<div class="row">
 								<div class="col-sm-6 col-xs-12">
@@ -124,7 +127,7 @@
 							</div>
 							<div class="box__body">
 								<div class="row">
-									<div class="col-sm-6">
+									<div class="col-sm-6 col-xs-12">
 										<div class="box__item">
 											<div class="price price_inline price_promo">
 												1200 <span class="rub">д</span>
@@ -145,7 +148,7 @@
 											<p>Вы можете выбрать <a href="#" class="link-solid">подарочную упаковку</a> для этого продукта в корзине</p>
 										</div>
 									</div>
-									<div class="col-sm-6">
+									<div class="col-sm-6 col-xs-12">
 										<div class="box__item box__item_pt">
 											<button class="btn-dots btn-dots_light btn-dots_icon btn-dots_big" data-toggle="modal" data-target="#modal-gift" type="button">
 												<i class="icon-christmas252"></i>
@@ -168,7 +171,7 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-6">
+							<div class="col-sm-6 col-xs-12">
 								<div class="h3 h3_primary h3_mb">Доступные способы оплаты</div>
 								<ul class="list">
 									<li>Наличными курьеру</li>
@@ -176,7 +179,7 @@
 									<li>Пластиковой картой</li>
 								</ul>
 							</div>
-							<div class="col-sm-6">
+							<div class="col-sm-6 col-xs-12">
 								<div class="h3 h3_primary h3_mb">Доставка в г. Ярославль</div>
 								<ul class="list">
 									<li>Почта России: 300 р., 10 дней</li>
@@ -191,7 +194,7 @@
 					<div class="col-xs-12">
 						<div class="">
 							<div class="row row_set">
-								<div class="col-md-3 col-sm-6">
+								<div class="col-md-3 col-sm-6 col-xs-12">
 									<div class="item">
 										<a class="item__img" href="#">
 											<img src="img/item2.jpg" alt="img">
@@ -214,7 +217,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3 col-sm-6">
+								<div class="col-md-3 col-sm-6 col-xs-12">
 									<div class="set__item item js-check">
 										<div class="checkbox checkbox_big">
 											<label>
@@ -246,7 +249,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="col-md-3 col-sm-6">
+								<div class="col-md-3 col-sm-6 col-xs-12">
 									<div class="set__item item js-check">
 										<div class="checkbox checkbox_big">
 											<label>
@@ -275,8 +278,7 @@
 										</div>
 									</div>
 								</div>
-
-								<div class="col-md-3 col-sm-6">
+								<div class="col-md-3 col-sm-6 col-xs-12">
 									<div class="set-result">
 										<p>Цена за набор </p>
 										<div class="price">2320 <span class="rub">в</span></div>
@@ -304,115 +306,124 @@
 						</a>
 					</li>
 				</ul>
-				<div class="tab-content">
+				<div class="tab-content" id="accord" aria-multiselectable="true">
 					<div role="tabpanel" class="tab-pane active" id="about">
-						<div class="cols-counter">
-							<div class="col">
-								<p>Оливковое масло холодного отжима Premium Organic Extra Virgin — это лучшее по качеству масло. Оно производится только из зрелых и свежих оливок, выращенных органическим способом в самых лучших районах Пулии. </p>
-								<p>Данный сорт масла считается самым лучшим и самым полезным, поскольку при первом отжиме оливок сохраняются практически все их полезные свойства. Данный сорт масла усваивается на 100%</p>
-							</div>
-							<div class="col">
-								<p><strong>Состав:</strong> оливковое масло первого холодного отжима Extra Virgin.</p>
-								<p><strong>Условия хранения (°C):</strong> сух. (+18)</p>
-								<p><strong>Срок хранения (мес.):</strong> 24</p>
-								<p><strong>Страна-производитель:</strong> Италия</p>
-								<p><strong>Сертификаты:</strong></p>
-								<a href="img/license1-big.jpg" class="fancybox-button js-fancybox" rel="gallery1">
-									<img src="img/license1-small.jpg" alt="img">
-								</a>
-								<a href="img/license1-big.jpg" class="fancybox-button js-fancybox" rel="gallery1">
-									<img src="img/license1-small.jpg" alt="img">
-								</a>
-								<a href="img/license1-big.jpg" class="fancybox-button js-fancybox" rel="gallery1">
-									<img src="img/license1-small.jpg" alt="img">
-								</a>
-							</div>
-							<div class="col">
-								<p><strong>Совет:</strong></p>
-								<p>Чтобы распознать хорошее масло холодного отжима, рекомендуем пробовать его на кусочке слегка поджаренного хлеба или на теплом отварном картофеле. Тепло подчеркивает ценные качества (с фруктовым послевкусием со вкусом миндаля, артишока или кошеной травы) или дефекты (например, прогорклый вкус, вкус плесени, земли).</p>
+						<button class="btn-accord visible-xs" type="button" data-toggle="collapse" data-target="#collapse1" data-parent="#accord">
+							<span>О продуке</span>
+						</button>
+						<div class="tab-pane__collapse" id="collapse1">
+							<div class="cols-counter">
+								<div class="col">
+									<p>Оливковое масло холодного отжима Premium Organic Extra Virgin — это лучшее по качеству масло. Оно производится только из зрелых и свежих оливок, выращенных органическим способом в самых лучших районах Пулии. </p>
+									<p>Данный сорт масла считается самым лучшим и самым полезным, поскольку при первом отжиме оливок сохраняются практически все их полезные свойства. Данный сорт масла усваивается на 100%</p>
+								</div>
+								<div class="col">
+									<p><strong>Состав:</strong> оливковое масло первого холодного отжима Extra Virgin.</p>
+									<p><strong>Условия хранения (°C):</strong> сух. (+18)</p>
+									<p><strong>Срок хранения (мес.):</strong> 24</p>
+									<p><strong>Страна-производитель:</strong> Италия</p>
+									<p><strong>Сертификаты:</strong></p>
+									<a href="img/license1-big.jpg" class="fancybox-button js-fancybox" rel="gallery1">
+										<img src="img/license1-small.jpg" alt="img">
+									</a>
+									<a href="img/license1-big.jpg" class="fancybox-button js-fancybox" rel="gallery1">
+										<img src="img/license1-small.jpg" alt="img">
+									</a>
+									<a href="img/license1-big.jpg" class="fancybox-button js-fancybox" rel="gallery1">
+										<img src="img/license1-small.jpg" alt="img">
+									</a>
+								</div>
+								<div class="col">
+									<p><strong>Совет:</strong></p>
+									<p>Чтобы распознать хорошее масло холодного отжима, рекомендуем пробовать его на кусочке слегка поджаренного хлеба или на теплом отварном картофеле. Тепло подчеркивает ценные качества (с фруктовым послевкусием со вкусом миндаля, артишока или кошеной травы) или дефекты (например, прогорклый вкус, вкус плесени, земли).</p>
+								</div>
 							</div>
 						</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="reviews">
-						<div class="row">
-							<div class="col-md-8">
-								<div class="review js-concat is-concated">
-									<div class="review__head">
-										<div class="row">
-											<div class="col-sm-6">
-												<span class="review__author">Татьяна</span>,
-												<span class="meta">14.09.2015</span>
-											</div>
-											<div class="col-sm-6">
-												<div class="raty raty_small">
-													<span class="raty__icons js-raty-readonly" data-score="4"></span>
+						<button class="btn-accord visible-xs" type="button" data-toggle="collapse" data-target="#collapse2" data-parent="#accord">
+							<span>Отзывы (4)</span>
+						</button>
+						<div class="tab-pane__collapse" id="collapse2">
+							<div class="row">
+								<div class="col-md-8">
+									<div class="review js-concat is-concated">
+										<div class="review__head">
+											<div class="row">
+												<div class="col-sm-6">
+													<span class="review__author">Татьяна</span>,
+													<span class="meta">14.09.2015</span>
+												</div>
+												<div class="col-sm-6">
+													<div class="raty raty_small">
+														<span class="raty__icons js-raty-readonly" data-score="4"></span>
+													</div>
 												</div>
 											</div>
 										</div>
+										<div class="review__body js-concat-text">
+											При всей своей любви к маслам как средству ухода за волосами за три года регулярного применения масляных масок я так и не попробовала самого популярного масла - оливкового. У меня дома всегда стоит бутылка оливкового масла, но идет оно в салаты или для жарки
+										</div>
+										<button class="btn-dots btn-dots_light js-concat-btn" data-text="Скрыть" type="button">Читать полностю</button>
 									</div>
-									<div class="review__body js-concat-text">
-										При всей своей любви к маслам как средству ухода за волосами за три года регулярного применения масляных масок я так и не попробовала самого популярного масла - оливкового. У меня дома всегда стоит бутылка оливкового масла, но идет оно в салаты или для жарки
-									</div>
-									<button class="btn-dots btn-dots_light js-concat-btn" data-text="Скрыть" type="button">Читать полностю</button>
-								</div>
-								<div class="review js-concat">
-									<div class="review__head">
-										<div class="row">
-											<div class="col-sm-6">
-												<span class="review__author">Ирина</span>,
-												<span class="meta">14.09.2015</span>
-											</div>
-											<div class="col-sm-6">
-												<div class="raty raty_small">
-													<span class="raty__icons js-raty-readonly" data-score="4"></span>
+									<div class="review js-concat">
+										<div class="review__head">
+											<div class="row">
+												<div class="col-sm-6">
+													<span class="review__author">Ирина</span>,
+													<span class="meta">14.09.2015</span>
+												</div>
+												<div class="col-sm-6">
+													<div class="raty raty_small">
+														<span class="raty__icons js-raty-readonly" data-score="4"></span>
+													</div>
 												</div>
 											</div>
 										</div>
+										<div class="review__body js-concat-text">
+											Деликатное оливковое масло хорошего качества, выжатое только из мякоти нежных оливок - без косточки.
+										</div>
+										<button class="btn-dots btn-dots_light js-concat-btn" data-text="Скрыть" type="button">Читать полностю</button>
 									</div>
-									<div class="review__body js-concat-text">
-										Деликатное оливковое масло хорошего качества, выжатое только из мякоти нежных оливок - без косточки.
-									</div>
-									<button class="btn-dots btn-dots_light js-concat-btn" data-text="Скрыть" type="button">Читать полностю</button>
 								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="review-form">
-									<form>
-										<div class="h2">Оставить свой отзыв</div>
-										<div class="form-inline form-inline_raty">
+								<div class="col-md-4">
+									<div class="review-form">
+										<form>
+											<div class="h2">Оставить свой отзыв</div>
+											<div class="form-inline form-inline_raty">
+												<div class="form-group">
+													<label for="exampleInputName">Оценка:<sup class="required-text">*</sup></label>
+													<div class="raty">
+														<span class="raty__icons js-raty" data-score="0"></span>
+													</div>
+												</div>
+											</div>
 											<div class="form-group">
-												<label for="exampleInputName">Оценка:<sup class="required-text">*</sup></label>
-												<div class="raty">
-													<span class="raty__icons js-raty" data-score="0"></span>
+												<label for="exampleInputName">Ваше имя:<sup class="required-text">*</sup></label>
+												<input type="text" class="form-control" id="exampleInputName" required>
+											</div>
+											<div class="form-group">
+												<label for="exampleInputEmail">Email:<sup class="required-text">*</sup></label>
+												<input type="email" class="form-control" id="exampleInputEmail" required>
+											</div>
+											<div class="form-group">
+												<label for="exampleInputText">Комментарий:<sup class="required-text">*</sup></label>
+												<textarea class="form-control" rows="4" required></textarea>
+											</div>
+											<div class="row">
+												<div class="col-sm-6">
+													<button class="btn btn-default btn-block" type="submit">Отправить</button>
+												</div>
+												<div class="col-sm-6">
+													 <sup class="required-text">*</sup> Обязательные для заполнения поля
 												</div>
 											</div>
-										</div>
-										<div class="form-group">
-											<label for="exampleInputName">Ваше имя:<sup class="required-text">*</sup></label>
-											<input type="text" class="form-control" id="exampleInputName" required>
-										</div>
-										<div class="form-group">
-											<label for="exampleInputEmail">Email:<sup class="required-text">*</sup></label>
-											<input type="email" class="form-control" id="exampleInputEmail" required>
-										</div>
-										<div class="form-group">
-											<label for="exampleInputText">Комментарий:<sup class="required-text">*</sup></label>
-											<textarea class="form-control" rows="4" required></textarea>
-										</div>
-										<div class="row">
-											<div class="col-sm-6">
-												<button class="btn btn-default btn-block" type="submit">Отправить</button>
-											</div>
-											<div class="col-sm-6">
-												 <sup class="required-text">*</sup> Обязательные для заполнения поля
-											</div>
-										</div>
-									</form>
-								</div>
+										</form>
+									</div>
 
+								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 				<div class="plan-box">
@@ -556,7 +567,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-12 col-sm-12">
+						<div class="col-lg-6 col-xs-12">
 							<ol class="list-ol">
 								<li>Филе промойте, обсушите, посолите и поперчите по вкусу. Обжарьте в сковороде с 1 ст. л. разогретого оливкового масла на медленном огне до готовности (около 20-25 минут). Порежьте небольшими пластинками.</li>
 								<li>Авокадо очистите от косточки и кожуры, порежьте дольками. Помидоры черри порежьте пополам, а сладкий перец – соломкой. Салат промойте, обсушите бумажным полотенцем. Крупные листья порвите.</li>
@@ -572,7 +583,7 @@
 				</div>
 				//=include partials/items-slider-products.html
 				<div class="row">
-					<div class="col-lg-12"><div class="h1 h1_mb">Вы смотрели</div></div>
+					<div class="col-xs-12"><div class="h1 h1_mb">Вы смотрели</div></div>
 					//=include partials/last-items.html
 				</div>
 			</div>

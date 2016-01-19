@@ -179,11 +179,11 @@
 	});
 	
 	setTimeout(function(){
-		areas = map.areasProcessor.allObjects;
+		areas = map.areasProcessor.allObjects; // undefined
 		// console.log(map.areasProcessor.allObjects);
-		for (var i = 0; i < areas.length - 10; i++) {
-			map.rollOverMapObject(areas[i]);
-		}
+		// for (var i = 0; i < areas.length - 10; i++) {
+		// 	map.rollOverMapObject(areas[i]);
+		// }
 	},1000)
 	map.zoomControl.zoomControlEnabled = true;
 	map.addListener("clickMapObject", function (event) {

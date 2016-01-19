@@ -109,8 +109,6 @@
 .recipes-item
 	display: block
 	margin-bottom: 25px
-	+r(767)
-		text-align: center
 	&__img
 		font-size: 0
 		overflow: hidden
@@ -359,13 +357,16 @@
 			text-align: center
 			+r(767)
 				bottom: 50px
-	&__prevBtn,
-	&__nextBtn
+	&__prev,
+	&__next
 		background: transparent
 		color: #fff
 		position: absolute
 		bottom: 25px
 		line-height: 1
+		&:hover
+			text-decoration: underline
+			color: #fff 
 		i
 			font-size: .7em
 			position: relative
@@ -378,9 +379,9 @@
 			bottom: 25px
 			+r(767)
 				bottom: 15px
-	&__prevBtn
+	&__prev
 		left: 33px
-	&__nextBtn
+	&__next
 		right: 55%
 		right: calc(50% + 55px)
 		+r(1023)
@@ -816,15 +817,21 @@ input[type=number]
 
 .row_set
 	display: table
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1023px)
+		display: block
 	& > div
 		display: table-cell
 		vertical-align: middle
 		float: none
-		+r(1023)
+		@media only screen and (min-device-width : 768px) and (max-device-width : 1023px)
 			display: block
 			float: left
 			text-align: center
+			width: 50%
+		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
+			display: block
 			width: 100%
+			float: none
 		&:before
 			content: '+'
 			font-size: 20px
@@ -846,6 +853,8 @@ input[type=number]
 	.set-result
 		padding-top: 15px
 		padding-left: 15px
+		+r(1023)
+			text-align: center
 	+r(1023)
 		display: block
 .set-result
