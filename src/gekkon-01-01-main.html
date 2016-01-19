@@ -7,7 +7,7 @@
 <body>
 <!-- BEGIN  out-->
 <div class="out">
-	//=include partials/header.html
+	//=include partials/header1.html
 	<div class="inner inner_main">
 		<div class="container">
 			<div class="banner">
@@ -15,7 +15,7 @@
 					<img src="img/banner1.jpg" alt="img">
 				</div>
 				<div class="row">
-					<div class="col-lg-5 col-md-7 col-lg-offset-7 col-md-offset-5">
+					<div class="col-lg-5 col-md-7 col-lg-offset-7 col-md-offset-5 col-sm-12 col-xs-12">
 						<div class="banner__title">
 							<strong>Недели <span>Испании</span></strong>
 							в нашем магазине
@@ -32,18 +32,18 @@
 					<ul class="tabs-link js-tabs" role="tablist">
 						<li>Натуральные товары</li>
 						<li class="active">
-							<a href="#tab1">из Европы</a> |
+							<a href="#tab-europe">из Европы</a> |
 						</li>
 						<li>
-							<a href="#tab2">из СНГ, Казахстана</a> |
+							<a href="#tab-cis">из СНГ, Казахстана</a> |
 						</li>
 						<li>
-							<a href="#tab3">из России</a>
+							<a href="#tab-russia">из России</a>
 						</li>
 					</ul>
 				</div>
 				<div class="tab-content">
-					<div class="tab-pane fade in active" id="tab1">
+					<div class="tab-pane fade in active" id="tab-europe">
 						<div class="text-right">
 							<ul class="tabs-view js-tabs">
 								<li class="active">
@@ -400,8 +400,8 @@
 												</div>
 											</div>
 											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMA" aria-expanded="true" aria-controls="collapseOne"><img src="img/flags/MA.png" height="20"> Норвегия</a>
-												<div id="collapseMA" class="country-list__body collapse in">
+												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMA" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MA.png" height="20"> Норвегия</a>
+												<div id="collapseMA" class="country-list__body collapse">
 													<div class="meta">Всего 159 товаров</div>
 													<ul class="country-list__info">
 														<li><a href="#">Продукты питания (56)</a></li>
@@ -598,7 +598,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="tab-pane" id="tab2">
+					<div class="tab-pane" id="tab-cis">
 						<div class="text-right">
 							<ul class="tabs-view js-tabs">
 								<li class="active">
@@ -710,6 +710,7 @@
 										</div>
 									</div>
 									<div id="chartdiv2"></div>
+									
 									<!-- END OF THE MAP CODE -->
 								</div>
 							</div>
@@ -718,52 +719,8 @@
 									<div class="row row_ib">
 										<div class="col-md-2 col-sm-4 col-xs-6">
 											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNO" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/NO.png" height="20"> Норвегия</a>
-												<div id="collapseNO" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFL" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/FI.png" height="20"> Норвегия</a>
-												<div id="collapseFL" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseLT" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/LT.png" height="20"> Норвегия</a>
-												<div id="collapseLT" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsePL" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/PL.png" height="20"> Норвегия</a>
-												<div id="collapsePL" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseDE" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/DE.png" height="20"> Норвегия</a>
-												<div id="collapseDE" class="country-list__body collapse">
+												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNO2" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/BY.png" height="20"> Белоруссия</a>
+												<div id="collapseNO2" class="country-list__body collapse">
 													<div class="meta">Всего 159 товаров</div>
 													<ul class="country-list__info">
 														<li><a href="#">Продукты питания (56)</a></li>
@@ -773,282 +730,44 @@
 												</div>
 											</div>
 										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="tab-russia">
+						<div class="text-right">
+							<ul class="tabs-view js-tabs">
+								<li class="active">
+									<a href="#tab7">
+										<span class="icon-pointer17"></span>
+										<span class="link-dots">Карта</span>
+									</a>
+								</li>
+								<li>
+									<a href="#tab8">
+										<span class="icon-setup7"></span>
+										<span class="link-dots">Список</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div class="tab-pane fade in active" id="tab7">
+								<div class="map">
+									<!-- BEGIN OF THE MAP CODE  -->
+									<div id="chartdiv3"></div>
+									
+									<!-- END OF THE MAP CODE -->
+								</div>
+							</div>
+							<div class="tab-pane" id="tab8">
+								<div class="country-list" id="accordion" role="tablist" aria-multiselectable="true">
+									<div class="row row_ib">
 										<div class="col-md-2 col-sm-4 col-xs-6">
 											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseUA" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/UA.png" height="20"> Норвегия</a>
-												<div id="collapseUA" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseLY" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/LY.png" height="20"> Норвегия</a>
-												<div id="collapseLY" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTM" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/TM.png" height="20"> Норвегия</a>
-												<div id="collapseTM" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseES" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/ES.png" height="20"> Норвегия</a>
-												<div id="collapseES" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseHK" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/HK.png" height="20"> Норвегия</a>
-												<div id="collapseHK" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNZ" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/NZ.png" height="20"> Норвегия</a>
-												<div id="collapseNZ" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMK" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MK.png" height="20"> Норвегия</a>
-												<div id="collapseMK" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseME" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/ME.png" height="20"> Норвегия</a>
-												<div id="collapseME" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMA" aria-expanded="true" aria-controls="collapseOne"><img src="img/flags/MA.png" height="20"> Норвегия</a>
-												<div id="collapseMA" class="country-list__body collapse in">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMD" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MD.png" height="20"> Норвегия</a>
-												<div id="collapseMD" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты <div>питания (56)</div></a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMG" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MG.png" height="20"> Норвегия</a>
-												<div id="collapseMG" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMH" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MH.png" height="20"> Норвегия</a>
-												<div id="collapseMH" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMM" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MM.png" height="20"> Норвегия</a>
-												<div id="collapseMM" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMN" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MN.png" height="20"> Норвегия</a>
-												<div id="collapseMN" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMO" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MO.png" height="20"> Норвегия</a>
-												<div id="collapseMO" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMP" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MP.png" height="20"> Норвегия</a>
-												<div id="collapseMP" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMQ" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MQ.png" height="20"> Норвегия</a>
-												<div id="collapseMQ" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMR" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MR.png" height="20"> Норвегия</a>
-												<div id="collapseMR" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMS" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MS.png" height="20"> Норвегия</a>
-												<div id="collapseMS" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMT" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MT.png" height="20"> Норвегия</a>
-												<div id="collapseMT" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-2 col-sm-4 col-xs-6">
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMU" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MU.png" height="20"> Норвегия</a>
-												<div id="collapseMU" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMV" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MV.png" height="20"> Норвегия</a>
-												<div id="collapseMV" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseMW" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/MW.png" height="20"> Норвегия</a>
-												<div id="collapseMW" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNA" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/NA.png" height="20"> Норвегия</a>
-												<div id="collapseNA" class="country-list__body collapse">
-													<div class="meta">Всего 159 товаров</div>
-													<ul class="country-list__info">
-														<li><a href="#">Продукты питания (56)</a></li>
-														<li><a href="#">Товары для дома (40)</a></li>
-														<li><a href="#">Товары для животных (63)</a></li>
-													</ul>
-												</div>
-											</div>
-											<div class="country-list__item">
-												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNC" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/NC.png" height="20"> Норвегия</a>
-												<div id="collapseNC" class="country-list__body collapse">
+												<a class="country-list__header" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNO3" aria-expanded="false" aria-controls="collapseOne"><img src="img/flags/RU.png" height="20"> Казань</a>
+												<div id="collapseNO3" class="country-list__body collapse">
 													<div class="meta">Всего 159 товаров</div>
 													<ul class="country-list__info">
 														<li><a href="#">Продукты питания (56)</a></li>
@@ -1076,9 +795,9 @@
 						</a>
 						<div class="item__main">
 							<div class="item__name">
-								<a href="#" class="item__link">
+								<a href="gekkon-01-03-product-page.html" class="item__link">
 									<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания">
-									<span>Блокнот с джутовой обложкой Lejoys</span>
+									<span>Блокнот с джутовой обложкой LejoysБлокнот с джутовой обложкой Lejoys Блокнот с джутовой обложкой Lejoys</span>
 								</a>
 							</div>
 							<div class="item__action">
@@ -1139,7 +858,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-4 col-lg-offset-1 col-sm-12">
+				<div class="col-lg-4 col-md-4 col-lg-offset-1 col-sm-6 col-xs-12">
 					<a class="banner-img" href="#">
 						<img src="img/banner2.jpg" alt="img">
 					</a>
@@ -1150,7 +869,7 @@
 				//=include partials/items-row.html
 			</div>
 			<div class="row">
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="title title_h2">Подарочные наборы и&nbsp;упаковка</div>
 					<div class="post">
 						<div class="post__img">
@@ -1170,12 +889,12 @@
 						<a class="btn btn-default btn-block" href="#">Купить подарочный набор</a>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6">
+				<div class="col-md-4 col-sm-6 col-xs-12">
 					<div class="title title_h2">Блог <a href="#">Все статьи</a></div>
 					<div class="post">
 						<div class="post__head">
 							<div class="meta">14.09.2015</div>
-							<a href="#">Польза и вред кофе</a>
+							<a href="gekkon-01-06-blog.html">Польза и вред кофе</a>
 						</div>
 						<div class="post__img">
 							<a href="#"><img src="img/6.png" alt="img"></a>
@@ -1187,25 +906,31 @@
 					<div class="post">
 						<div class="post__head">
 							<div class="meta">14.09.2015</div>
-							<a href="#">Восхитительные растительные масла</a>
+							<a href="gekkon-01-06-blog.html">Восхитительные растительные масла</a>
 						</div>
 						<div class="post__main">
 							<p>Самые именитые марки из Европы: Basso, Pelzmann, Mastr’Olivo. Это династии производящие оливковые масла уже несколько поколений...</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-12">
+				<div class="col-md-4 col-sm-12 col-xs-12">
 					<div class="post post_box">
 						<div class="row">
-							<div class="col-md-12 col-sm-6 col-xs-12">
+							<div class="col-md-12 col-sm-12 col-xs-12">
 								<div class="title title_h2">Тест: какая страна вам подходит?</div>
-								<div class="post__main">
-									<p>Лучшие продукты из страны, которая близка вам по духу. Ответьте на 5 простых вопросов и получите список товаров для вдохновения.</p>
-								</div>
 							</div>
-							<div class="col-md-12 col-sm-6 col-xs-12">
-								<div class="post__img">
-									<a href="#"><img src="img/7.png" alt="img"></a>
+							<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="row">
+									<div class="col-md-12 col-sm-6 col-xs-12">
+										<div class="post__main">
+											<p>Лучшие продукты из страны, которая близка вам по духу. Ответьте на 5 простых вопросов и получите список товаров для вдохновения.</p>
+										</div>
+									</div>
+									<div class="col-md-12 col-sm-6 col-xs-12">
+										<div class="post__img">
+											<a href="#"><img src="img/7.png" alt="img"></a>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1215,28 +940,28 @@
 			</div>
 			<div class="title title_h1">Наши стандарты</div>
 			<div class="row">
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-sm-6 col-xs-12">
 					<div class="benefit">
 						<span class="i-icon-quality"></span>
 						<div class="benefit__title">Качество</div>
 						<div class="benefit__text">Мы работаем только с лучшими поставщиками по всему миру и точно знаем, как каждый товар появился на свет.</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-sm-6 col-xs-12">
 					<div class="benefit">
 						<span class="icon-drop44"></span>
 						<div class="benefit__title">Свежесть</div>
 						<div class="benefit__text">Все доставленные в Россию продукты хранятся в автоматизированном  мультитемпературном складском комплексе.</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-sm-6 col-xs-12">
 					<div class="benefit">
 						<span class="icon-sun24"></span>
 						<div class="benefit__title">Экологичность</div>
 						<div class="benefit__text">Мы следуем стандартам экологической сертификации. Все товары производятся без вреда здоровью человека и окружающей среде.</div>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-3 col-sm-6 col-xs-12">
 					<div class="benefit">
 						<span class="icon-money425"></span>
 						<div class="benefit__title">Ответственность</div>
