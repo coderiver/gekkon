@@ -40,7 +40,27 @@ $(document).ready(function() {
 		arrows: false,
 		asNavFor: '.js-slider-for',
 		dots: false,
-		focusOnSelect: true
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 2
+				}
+			}
+		]
 	});
 
 	$(".js-slider-info").slick({

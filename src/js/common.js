@@ -157,19 +157,17 @@ $(document).ready(function() {
 			var index = checkbox.parents(".slick-slide").data("slick-index");
 			if(checkbox.is(":checked")) {
 				checkbox.parents(this._parentClass).addClass("is-active");
-				goToSlide.init({
-					slider: ".js-slider-items",
-					slideIndex: index
-				});
+				console.log(event.target);
+				// goToSlide.init({
+				// 	slider: ".js-slider-items",
+				// 	slideIndex: index
+				// });
 			}
 			else {
 				checkbox.parents(this._parentClass).removeClass("is-active");
 			}
 		}
 	}
-	$("strong").on("click", function() {
-		$(".js-slider-items").slick("slickGoTo", 7);
-	});
 	checkbox.init({
 		parent: ".js-check",
 		checkbox: ".js-checkbox"
@@ -201,7 +199,6 @@ $(document).ready(function() {
 					group.prop('checked', true).parents(".js-check").addClass("is-active");
 				}
 			}
-			console.log(el.data("group-target"))
 			event.stopPropagation();
 		}
 	}

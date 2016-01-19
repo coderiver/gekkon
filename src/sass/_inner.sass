@@ -43,6 +43,7 @@
 	font-size: 13px
 	background: transparent
 	padding-left: 0
+	margin-top: -18px 
 	& > li+ li:before
 		content: '>'
 		color: inherit
@@ -92,11 +93,13 @@
 			img
 				transform: scale(1.1)
 	&__text
-		& > a
+		a
 			transition: color 250ms
+			border-bottom: 1px solid transparent
 			&:hover
 				text-decoration: none
 				color: $btn
+				border-color: $btn
 .img-wrap
 	& > i
 		display: inline-block
@@ -106,8 +109,6 @@
 .recipes-item
 	display: block
 	margin-bottom: 25px
-	&:hover
-		text-decoration: none
 	+r(767)
 		text-align: center
 	&__img
@@ -119,10 +120,15 @@
 		&:hover
 			img
 				transform: scale(1.1)
-	& > h3
+	h3
 		font-size: 20px
 		transition: color 250ms
 		margin-top: 10px
+		a
+			border-bottom: 1px solid transparent
+			&:hover
+				text-decoration: none
+				border-color: $btn
 	.soc
 		margin-top: 20px
 .recipes-item_extend
@@ -284,7 +290,7 @@
 	td
 		&:last-child
 			white-space: nowrap
-	
+
 
 .sidebar
 	h2
@@ -490,6 +496,7 @@
 			top: 6px
 .testing + .testing-result
 	margin-top: 100px
+	margin-bottom: 12px 
 
 .border-image
 	display: inline-block
@@ -748,6 +755,13 @@
 			&.icon-yandex
 				position: relative
 				top: -5px
+		+rm(768)
+			i
+				float: left
+			span
+				overflow: hidden
+				display: block
+				padding-top: 7px 
 .item-info-wrap
 	margin: 30px 0
 .item-info
@@ -773,9 +787,19 @@
 		.meta
 			margin-bottom: 10px
 	&__header
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			top: 3px 
+			width: 20px   
+			height: 14px 
+			box-shadow: 0 0 1px rgba(#000,.3)
+			display: inline-block
 		img
 			position: absolute
 			left: 0
+			
 		&[aria-expanded="true"]
 			color: #000
 			+bold
