@@ -555,6 +555,10 @@ $(document).ready(function() {
 		},
 		_showModal: function() {
 			this._$modal.addClass("is-active");
+<<<<<<< HEAD
+			setTimeout(this.hideBtnModal.bind(this), 2000)
+=======
+>>>>>>> master
 			this._modalPosition();
 		},
 		_modalPosition: function () {
@@ -634,6 +638,9 @@ $(document).ready(function() {
         }
     }
     radioBox.init();
+<<<<<<< HEAD
+=======
+>>>>>>> master
 >>>>>>> master
 });
 

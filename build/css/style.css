@@ -2720,7 +2720,6 @@ select::-ms-expand { display: none; }
 .table-simple { width: 60%; margin: 20px 0 12px; min-width: 500px; }
 .table-simple_width { width: 100%; }
 .table-simple.table-simple_no-marg { margin-top: 0; }
-.table-simple.table-simple_no-space { margin-top: 0; margin-bottom: 0; }
 .table-simple.table-simple_no-bord { border-bottom: 0; }
 .table-simple thead tr { background: #a7c66d; height: 38px; }
 .table-simple thead th { font-weight: 300; color: #fff; }

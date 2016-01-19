@@ -171,6 +171,7 @@
 	var map = AmCharts.makeChart("chartdiv3", {
 		"type": "map",
 	  	"theme": "light",
+	  	"language": "ru",
 		dataProvider: dataProvider,
 		areasSettings: {
 			autoZoom: false,
