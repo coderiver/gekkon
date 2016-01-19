@@ -62,16 +62,33 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap's JavaScript requires j
 "use strict";
 $(document).ready(function() {
 	
-	$('.js-show-password').on('mousedown', function () {
-		var input = $(this).siblings('.js-password-input');
-		input.attr("type", "text");
-		return false;
-	});
+	
+		$('.js-show-password').hover(
+			function(){
+				$('.js-show-password').on('mousedown', function () {
+					$(this).addClass("is-active");
+					var input = $(this).siblings('.js-password-input');
+					input.attr("type", "text");
+					return false;
+				});
+				$('.js-show-password').on('mouseup', function () {
+					$(this).removeClass("is-active");
+					var input = $(this).siblings('.js-password-input');
+					input.attr("type", "password");
+					return false;
+				});
+			},
+			function(){
+				$(this).removeClass("is-active");
+				var input = $(this).siblings('.js-password-input');
+				input.attr("type", "password");
+				return false;
+			}
+		);
+		
+	
 
-	$('.js-show-password').on('mouseup', function () {
-		var input = $(this).siblings('.js-password-input');
-		input.attr("type", "password");
-	});
+	
 
 	$("body").on("click", ".js-select-text", function(event) {
 
@@ -555,10 +572,7 @@ $(document).ready(function() {
 		},
 		_showModal: function() {
 			this._$modal.addClass("is-active");
-<<<<<<< HEAD
 			setTimeout(this.hideBtnModal.bind(this), 2000)
-=======
->>>>>>> master
 			this._modalPosition();
 		},
 		_modalPosition: function () {
@@ -638,9 +652,5 @@ $(document).ready(function() {
         }
     }
     radioBox.init();
-<<<<<<< HEAD
-=======
->>>>>>> master
->>>>>>> master
 });
 
