@@ -84,8 +84,8 @@ $(document).ready(function() {
 			$('a[href="'+this._tab+'"').tab('show');
 			console.log(top);
 			$('html, body').animate({
-	            scrollTop: top
-	        }, 500);
+				scrollTop: top
+			}, 500);
 			return false;
 		}
 	}
@@ -270,15 +270,15 @@ $(document).ready(function() {
 		},
 		_showModal: function() {
 			this._$modal.addClass("is-active");
-            this._modalPosition();
+			this._modalPosition();
 		},
-        _modalPosition: function () {
-            var windowWidth = $(window).width();
-            var width = +this._$parent.outerWidth();
-            this._$modal.css({
-                right: (windowWidth-width)/2
-            })
-        },
+		_modalPosition: function () {
+			var windowWidth = $(window).width();
+			var width = +this._$parent.outerWidth();
+			this._$modal.css({
+				right: (windowWidth-width)/2
+			})
+		},
 		_stopPropagation: function(event) {
 			event.stopPropagation();
 		}
@@ -295,6 +295,34 @@ $(document).ready(function() {
 	//input file
 	$('#file').on('change', function(e){
 		$(this).siblings("span").text(e.target.files[0].name);
+	});
+
+	//mask
+	$('[type="tel"]').mask("+9 (999) 999 - 99 - 99");
+
+	function scrollbarWidth() {
+		var block = $('<div>').css({'height':'50px','width':'50px'}),
+			indicator = $('<div>').css({'height':'200px'});
+			$('body').append(block.append(indicator));
+		var w1 = $('div', block).innerWidth();
+			block.css('overflow-y', 'scroll');
+		var w2 = $('div', block).innerWidth();
+			$(block).remove();
+		return (w1 - w2);
+	}
+
+	$('.modal').on('show.bs.modal', function() {
+		setTimeout(function() {
+			$('.header__nav').css({
+				"padding-right": document.body.style['padding-right'],
+			});
+		}, 0);
+	});
+
+	$('.modal').on('hidden.bs.modal', function() {
+		$('.header__nav').css({
+			"padding-right": "",
+		});
 	});
 
 	var radioBox = {
@@ -321,4 +349,5 @@ $(document).ready(function() {
         }
     }
     radioBox.init();
+>>>>>>> master
 });
