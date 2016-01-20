@@ -2718,7 +2718,7 @@ select::-ms-expand { display: none; }
 .table-simple tbody tr:last-child { border-bottom: 1px solid #a7c66d; }
 .table-simple__sort { background: none; width: 8px; color: #fff; }
 .table-simple__sort.table-simple__sort_space { margin-left: 3px; }
-.table-simple__sort:hover { background: #799a2a; }
+.table-simple__sort:hover { color: #799a2a; }
 
 .table-simple_bold-th thead th { font-weight: 700; }
 
