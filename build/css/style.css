@@ -3101,6 +3101,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .total__footer.total__footer_nopb { padding-bottom: 0; }
 .total__footer .link { display: inline-block; margin-top: 56px; }
 .total__footer .link.link_m { margin-top: 18px; }
+.total__footer .link.link_tmargin { margin-top: 108px; }
 .total__footer .link.link_i-small span { font-size: 13px; position: relative; top: -2px; }
 .total__footer .note-text { margin-bottom: 20px; }
 .total__footer img { max-width: 100%; display: block; }
