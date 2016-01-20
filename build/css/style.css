@@ -2383,6 +2383,7 @@ p.increase { font-size: 18px; }
 .cols-counter .col { display: inline-block; vertical-align: top; width: 33%; padding-right: 12px; }
 
 .form-group label { font-size: 15px; font-weight: 300; }
+.form-group label .required-text { position: relative; left: auto; top: -0.5em; }
 .form-group.is-high-select .control-label { padding-top: 4px; }
 .form-group.is-high-select select.form-control { height: 34px; padding: 6px 12px; }
 .form-group .note-text { font-size: 15px; color: #777; }
@@ -2452,10 +2453,10 @@ select::-ms-expand { display: none; }
 .nav-tabs li > a:hover { border-color: transparent; background: none; color: #000; }
 .nav-tabs li > a > span { border-bottom: 1px dotted; }
 
-.required-text { color: #ea4924; }
+.required-text { color: #ea4924; position: absolute; top: 10px; left: 0; }
 
 .required-feild { position: relative; padding-left: 9px; }
-.required-feild .required-text { position: absolute; top: 0.5em; left: 1px; }
+.required-feild .required-text { top: 0.5em; left: 1px; }
 
 .form-inline_raty { margin-bottom: 15px; }
 .form-inline_raty .raty { display: inline-block; vertical-align: middle; margin: 0 0 5px 15px; }
@@ -2546,9 +2547,11 @@ select::-ms-expand { display: none; }
 .banner__text span { font-size: 35px; font-weight: 700; }
 .slider-info__title { display: table; width: 100%; line-height: 1; }
 .slider-info__title span { display: table-cell; vertical-align: middle; width: 106px; font-size: 83px; color: #a7c66d; }
-.slider-info__title span:before { display: block; margin: 0; }
+.slider-info__title span:before { display: block; margin: 0; height: 64px; }
 .slider-info__title strong { display: table-cell; vertical-align: middle; font-size: 25px; }
 .slider-info__text { margin: 15px 0 28px; font-size: 15px; font-weight: 300; }
+
+.desktop.retina .slider-info__title span:before { height: auto; }
 
 .map-nav { margin-bottom: 15px; }
 
@@ -2702,19 +2705,19 @@ select::-ms-expand { display: none; }
 .table-wrap { overflow: auto; }
 
 .article { color: #353130; font-size: 14px; line-height: 1.4; }
-.article ol { line-height: 1.7; counter-reset: list; }
-.article ol li { position: relative; margin-bottom: 15px; padding-left: 0; }
+.article ol { line-height: 1.74; counter-reset: list; }
+.article ol li { position: relative; padding-left: 0; }
 .article ol li:before { content: counter(list) "."; counter-increment: list; line-height: 1; color: #353130; display: inline-block; margin-right: 5px; font-weight: 300; font-size: 15px; }
-.article ol li ol { counter-reset: sublist; margin-top: 10px; padding-left: 42px; }
-.article ol li ol li { margin-bottom: 15px; padding-left: 0; }
+.article ol li ol { counter-reset: sublist; padding-left: 36px; }
+.article ol li ol li { padding-left: 0; }
 .article ol li ol li:before { content: counter(list) "." counter(sublist) "."; counter-increment: sublist; display: none; }
-.article ol li ol ol { padding-left: 39px; counter-reset: sublist2; }
-.article ol li ol ol li { margin-bottom: 15px; padding-left: 0; }
+.article ol li ol ol { padding-left: 36px; counter-reset: sublist2; }
+.article ol li ol ol li { padding-left: 0; }
 .article ol li ol ol li:before { content: counter(list) "." counter(sublist) "." counter(sublist2); counter-increment: sublist2; }
-.article ul { line-height: 1.8; }
-.article ul li { position: relative; padding-left: 13px; margin-top: 10px; }
-.article ul li li { padding-left: 29px; margin-top: 4px; }
-.article ul li li li { padding-left: 40px; }
+.article ul { line-height: 1.7; }
+.article ul li { position: relative; padding-left: 13px; }
+.article ul li li { padding-left: 38px; }
+.article ul li li li { padding-left: 38px; }
 .article ul > li:before { content: ""; position: absolute; left: 0; top: 7px; width: 7px; height: 7px; -webkit-border-radius: 50%; border-radius: 50%; background: #799a2a; }
 .article ul > li li:before { display: none; }
 .article img { max-width: 100%; height: auto; margin: 25px 0 16px; }
@@ -3262,8 +3265,10 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .banner__text{ font-size: 25px; }
  .slider-info{ margin-bottom: 60px; }
  .slider-info__title span{ font-size: 40px; width: 50px; }
+ .slider-info__title span:before{ height: 30px; }
  .slider-info__title strong{ font-size: 16px; }
  .slider-info .slick-slide{ padding-right: 20px; }
+ .desktop.retina .slider-info__title span:before{ height: auto; }
  .benefit > span{ font-size: 55px; height: 91px; line-height: 91px; }
  .benefit__title{ font-size: 20px; }
  .header__nav .tel{ font-size: 18px; }

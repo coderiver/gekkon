@@ -139,11 +139,10 @@
 	font-size: 14px
 	line-height: 1.4
 	ol
-		line-height: 1.7
+		line-height: 1.74
 		counter-reset: list
 		li
 			position: relative
-			margin-bottom: 15px
 			padding-left: 0
 			&:before
 				content: counter(list)"."
@@ -156,35 +155,30 @@
 				font-size: 15px
 			ol
 				counter-reset: sublist
-				margin-top: 10px
-				padding-left: 42px
+				padding-left: 36px
 				li
-					margin-bottom: 15px
 					padding-left: 0
 					&:before
 						content: counter(list)"."counter(sublist)"."
 						counter-increment: sublist
 						display: none
 				ol
-					padding-left: 39px
+					padding-left: 36px
 					counter-reset: sublist2
 					li
-						margin-bottom: 15px
 						padding-left: 0
 						&:before
 							content: counter(list)"."counter(sublist)"."counter(sublist2)
 							counter-increment: sublist2
 	ul
-		line-height: 1.8
+		line-height: 1.7
 		li
 			position: relative
 			padding-left: 13px
-			margin-top: 10px
 			li
-				padding-left: 29px
-				margin-top: 4px
+				padding-left: 38px
 				li
-					padding-left: 40px
+					padding-left: 38px
 		& > li
 			&:before
 				content: ""

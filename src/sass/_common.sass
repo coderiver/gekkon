@@ -956,9 +956,11 @@ p.increase
 .form-group
 	label
 		font-size: 15px
-		// position: relative
-		// top: -1px
 		+light
+		.required-text
+			position: relative
+			left: auto
+			top: -0.5em 
 	&.is-high-select
 		.control-label
 			padding-top: 4px
@@ -1185,13 +1187,15 @@ select
 				border-bottom: 1px dotted
 .required-text
 	color: $hot
+	position: absolute
+	top: 10px
+	left: 0
 .required-feild
 	position: relative
 	padding-left: 9px
 	+r(768)
 		margin-top: 10px
 	.required-text
-		position: absolute
 		top: 0.5em
 		left: 1px
 .form-inline_raty

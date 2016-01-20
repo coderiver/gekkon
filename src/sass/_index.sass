@@ -59,9 +59,12 @@
 			&:before
 				display: block
 				margin: 0
+				height: 64px
 			+r(767)
 				font-size: 40px
 				width: 50px
+				&:before
+					height: 30px
 		strong
 			display: table-cell
 			vertical-align: middle
@@ -75,6 +78,16 @@
 	.slick-slide
 		+r(767)
 			padding-right: 20px
+.desktop
+	&.retina
+		.slider-info
+			&__title
+				span
+					&:before
+						height: auto
+					+r(767)
+						&:before
+							height: auto
 .map-nav
 	margin-bottom: 15px
 .section-items

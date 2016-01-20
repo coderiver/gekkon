@@ -2082,31 +2082,37 @@
 					<div class="h2">Перезвоните мне</div>
 				</div>
 				<div class="modal-body">
-					<form>
-						<div class="form-group">
-							<label for="callName">Имя:<sup class="required-text">*</sup></label>
-							<input type="text" class="form-control" id="callName" required="">
-						</div>
-						<div class="form-group">
-							<label for="callTel">Телефон:<sup class="required-text">*</sup></label>
-							<input type="tel" class="form-control" id="callTel" required="">
-						</div>
-						<div class="form-group">
-							<label for="callText">Что вы хотите обсудить:</label>
-							<textarea class="form-control" id="callText" rows="5"></textarea>
-						</div>
-						<div class="form-group">
-							<div class="row">
-								<div class="col-sm-6">
-									<button class="btn btn-default btn-block" type="submit">Отправить</button>
-								</div>
-								<div class="col-sm-6">
-									  <sup class="required-text">*</sup> Обязательные для заполнения поля
-								</div>
+					<form action="#">
+						<!-- add class is-hidden after ajax success -->
+						<div class="js-ajax-send-box">
+							<div class="form-group">
+								<label for="callName">Имя:<sup class="required-text">*</sup></label>
+								<input type="text" class="form-control" id="callName" required="">
 							</div>
-						</div>				
+							<div class="form-group">
+								<label for="callTel">Телефон:<sup class="required-text">*</sup></label>
+								<input type="tel" class="form-control" id="callTel" required="">
+							</div>
+							<div class="form-group">
+								<label for="callText">Что вы хотите обсудить:</label>
+								<textarea class="form-control" id="callText" rows="5"></textarea>
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-6">
+										<button class="btn btn-default btn-block" type="submit">Отправить</button>
+									</div>
+									<div class="col-sm-6">
+										  <sup class="required-text">*</sup> Обязательные для заполнения поля
+									</div>
+								</div>
+							</div>	
+						</div>
+						<!-- remove class is-hidden after ajax success -->
+						<div class="js-ajax-result-box is-hidden">
+							<div class="text-left"><span class="icon-exclamation11"></span>Спасибо, мы перезвоним вам.</div>		
+						</div>
 					</form>
-					<div class="text-center"><span class="icon-exclamation11"></span>Спасибо, мы перезвоним вам.</div>
 				</div>
 			</div>
 		</div>
