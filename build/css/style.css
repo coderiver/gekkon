@@ -2105,7 +2105,7 @@ p.increase { font-size: 18px; }
 .title span { color: #799a2a; }
 
 .h1 { margin: 21px 0 16px; font-size: 40px; font-weight: 300; line-height: 1.2; }
-.h1.h1_b-marg { margin: 27px 0 40px; }
+.h1.h1_b-marg { margin: 13px 0 40px; }
 .h1.h1_b-marg + .img-nav { margin-top: 0; }
 .h1 span { color: #799a2a; }
 
