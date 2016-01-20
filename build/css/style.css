@@ -2240,9 +2240,9 @@ p.increase { font-size: 18px; }
 .visit-card li { margin-bottom: 15px; }
 
 .soc { font-size: 0; }
-.soc a { display: inline-block; background: #fff; margin-right: 10px; -webkit-transition: color 0.3s; transition: color 0.3s; line-height: 1; position: relative; z-index: 2; font-size: 28px; }
+.soc a { display: inline-block; margin-right: 10px; -webkit-transition: color 0.3s; transition: color 0.3s; line-height: 1; position: relative; z-index: 2; font-size: 28px; }
 .soc a:hover { text-decoration: none; }
-.soc a:after { content: ""; position: absolute; top: 1px; bottom: 1px; left: 1px; right: 1px; background: #fff; z-index: -1; }
+.soc a:after { content: ""; position: absolute; top: 4px; bottom: 4px; left: 4px; right: 4px; background: #fff; z-index: -1; }
 .soc_small { font-size: 20px; }
 .soc_small span { font-size: 15px; }
 .soc span { display: block; margin-bottom: 10px; }
@@ -2269,6 +2269,8 @@ p.increase { font-size: 18px; }
 .tabs-link h3 { margin: 0; }
 .tabs-link a { display: inline-block; border-bottom: 1px dotted; }
 .tabs-link a:hover { color: #000; text-decoration: none; }
+
+.tabs-link_action li.active { margin-right: 30px; }
 
 .tabs-view { margin: -35px 0 0; padding: 0 20px; line-height: 1.2; font-size: 15px; font-weight: 300; }
 .tabs-view li { display: inline-block; margin-left: 25px; vertical-align: middle; }
@@ -2664,6 +2666,7 @@ select::-ms-expand { display: none; }
 .pagination > li.active > span:hover, .pagination > li.active > span:focus, .pagination > li.active > span:active { background: transparent; }
 .pagination > li:first-child, .pagination > li:last-child { font-size: 24px; line-height: 1; position: relative; top: -1px; }
 .pagination .disabled { pointer-events: none; }
+.pagination .disabled:hover a { text-decoration: none; }
 
 .breadcrumb { margin-bottom: 0; font-size: 13px; background: transparent; padding-left: 0; margin-top: -18px; }
 .breadcrumb > li + li:before { content: ">"; color: inherit; }
