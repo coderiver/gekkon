@@ -7,7 +7,7 @@
 //=include lib/jq-mask.js
 //=include lib/slick.min.js
 //=include lib/jquery.fancybox.js
-//=include lib/fotorama.js
+//=include lib/head.js
 //=include additional.js
 //=include init.plugins.js
 //=include common.js

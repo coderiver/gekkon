@@ -1,6 +1,5 @@
-"use strict";
 $(document).ready(function() {
-
+	"use strict";
 	$(document).on("click", function() {
 		connect.hide();
 		btnCart.hideBtnModal();
@@ -157,19 +156,17 @@ $(document).ready(function() {
 			var index = checkbox.parents(".slick-slide").data("slick-index");
 			if(checkbox.is(":checked")) {
 				checkbox.parents(this._parentClass).addClass("is-active");
-				goToSlide.init({
-					slider: ".js-slider-items",
-					slideIndex: index
-				});
+				console.log(event.target);
+				// goToSlide.init({
+				// 	slider: ".js-slider-items",
+				// 	slideIndex: index
+				// });
 			}
 			else {
 				checkbox.parents(this._parentClass).removeClass("is-active");
 			}
 		}
 	}
-	$("strong").on("click", function() {
-		$(".js-slider-items").slick("slickGoTo", 7);
-	});
 	checkbox.init({
 		parent: ".js-check",
 		checkbox: ".js-checkbox"
@@ -201,7 +198,6 @@ $(document).ready(function() {
 					group.prop('checked', true).parents(".js-check").addClass("is-active");
 				}
 			}
-			console.log(el.data("group-target"))
 			event.stopPropagation();
 		}
 	}
@@ -274,6 +270,7 @@ $(document).ready(function() {
 		},
 		_showModal: function() {
 			this._$modal.addClass("is-active");
+			setTimeout(this.hideBtnModal.bind(this), 2000)
 			this._modalPosition();
 		},
 		_modalPosition: function () {
@@ -300,6 +297,7 @@ $(document).ready(function() {
 	$('#file').on('change', function(e){
 		$(this).siblings("span").text(e.target.files[0].name);
 	});
+
 	//mask
 	$('[type="tel"]').mask("+9 (999) 999 - 99 - 99");
 
@@ -328,6 +326,29 @@ $(document).ready(function() {
 		});
 	});
 
-
+	var radioBox = {
+        init: function() {
+        	this.$el = $(".js-radio");
+            this._bindEvent();
+        },
+        _bindEvent: function() {
+            this.$el.on("change", this._checkState.bind(this))
+        },
+        _checkState: function(event) {
+            var $el = $(event.target);
+            var $targetToShow = $("."+$el.data("show"));
+            var $targetToHide = $("."+$el.data("hide"));
+            console.log("change")
+            //if ($(event.target).is(":checked")) {
+                $targetToShow.removeClass("is-hidden");
+                $targetToHide.addClass("is-hidden");
+            //}
+            // else {
+            //     $targetToShow.addClass("is-disabled");
+            //     $targetToHide.addClass("is-disabled");
+            // }
+        }
+    }
+    radioBox.init();
 
 });
