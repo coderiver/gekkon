@@ -1381,12 +1381,12 @@ select
 			vertical-align: middle
 
 .table-product
-	&.table_c-content
-		td, th
-			&:nth-last-child(1),
-			&:nth-last-child(2),
-			&:nth-last-child(3)
-				text-align: center
+	th
+		&:nth-child(5)
+			width: 80px
+	td, th
+		&.is-center
+			text-align: center
 
 .table-packing
 	//margin-bottom: 50px
