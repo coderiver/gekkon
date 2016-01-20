@@ -2943,8 +2943,9 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .view a.is-active { color: #a7c66d; }
 
 .catalog { margin-bottom: 40px; font-size: 15px; }
-.catalog__img { margin-bottom: 10px; }
-.catalog__img img { display: block; width: 100%; height: auto; }
+.catalog__img { margin-bottom: 10px; overflow: hidden; }
+.catalog__img img { display: block; width: 100%; height: auto; -webkit-transition: -webkit-transform 0.35s ease-out; transition: transform 0.35s ease-out; }
+.catalog__img:hover img { -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
 .catalog__title { margin-bottom: 20px; font-weight: 700; font-size: 18px; }
 .catalog__title span { color: #777; font-weight: 300; font-size: 15px; }
 .catalog__list { font-weight: 300; }
