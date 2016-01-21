@@ -637,11 +637,16 @@ p.increase
 .post_box
 	border: 1px solid $btn
 	padding: 15px 15px 33px
+	+r(1023)
+		margin: 20px 0 
 	.btn
 		+r(767)
 			display: block
 			width: 100%
 			text-align: center
+	.post__img
+		+r(1023)
+			margin: 0
 .meta
 	font-size: 13px
 	+light
@@ -674,7 +679,7 @@ p.increase
 	&__name
 		height: 87px
 		overflow: hidden
-		+r(767)
+		+r(1023)
 			height: 80px
 	&__link
 		display: inline-block
@@ -733,6 +738,7 @@ p.increase
 	margin-bottom: 20px
 	padding: 10px 0
 	width: 100%
+	table-layout: fixed
 	+r(767)
 		display: block
 	&.item_marked
@@ -788,6 +794,8 @@ p.increase
 		text-decoration: line-through
 		+r(1024)
 			font-size: 12px
+		+r(768)
+			display: block
 	&__new
 		color: #b2002e
 	.price__weight
@@ -840,13 +848,15 @@ p.increase
 		+light
 		color: $text
 		margin-left: 10px
-
+		+r(1024)
+			font-size: 15px
 .price_small
 	font-size: 15px
 .price_light
 	+light
 .badge
 	position: absolute
+	z-index: 2
 	right: 20px
 	top: 15px
 	padding: 3px 5px 2px
@@ -1285,6 +1295,8 @@ select
 .tab-content
 	.tab-content
 		padding-top: 30px
+		+r(767)
+			padding: 0
 
 
 .link-solid
@@ -1377,7 +1389,7 @@ select
 			width: 100px
 		&.is-bold
 			+bold
-		span
+		span:not(.rub)
 			vertical-align: middle
 
 .table-product
@@ -1415,10 +1427,9 @@ select
 .fancybox-button
 	display: inline-block
 	vertical-align: top
-	margin: 0 3px 10px 0 
+	margin: 0 3px 15px 0 
 .form-section
 	padding: 20px 
-	background: #F2F2F2 
 .icon-eye-off
 	&.is-active
 		&:before

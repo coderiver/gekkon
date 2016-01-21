@@ -146,6 +146,8 @@
 				> span
 					&:before
 						top: 3px
+		.btn-dots_icon
+			padding-bottom: 4px
 .plan-box
 	margin: 55px 0
 	.h2
@@ -223,11 +225,18 @@
 		padding: 3px 15px
 		img
 			display: inline-block
+
 	.btn-wrap
 		margin: 20px
 		.btn
 			min-width: 225px
 			text-align: center
+	&_mobile
+		.slick-prev, 
+		.slick-next
+			top: -60px
+			+r(767)
+				top: -15px
 .btn-wrap
 	text-align: center
 	
@@ -239,15 +248,10 @@
 			margin: 10px 0 
 			.tab-pane__collapse
 				display: none
-				&.collapse
+				padding-top: 20px
+				&[aria-expanded="false"]
+					display: none
+				&[aria-expanded="true"]
 					display: block
-.btn-accord
-	display: block
-	padding: 10px 
-	border-bottom: 1px solid $btn
-	color: $btn  
-	width: 100%
-	text-align: left
-	background: none
 	
 	 
