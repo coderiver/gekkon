@@ -11,6 +11,8 @@
 			vertical-align: top
 			font-size: 15px
 			float: none
+.simple-wrp
+	margin-bottom: 58px
 .pagination
 	& > li
 		display: inline-block
@@ -62,6 +64,8 @@
 		color: #c2c2c2
 		text-align: center
 		transition: color 250ms
+		&.no_b-marg
+			margin-bottom: 0
 		+r(767)
 			// height: 80px
 		&.is-active
@@ -150,6 +154,7 @@
 		li
 			position: relative
 			padding-left: 0
+			line-height: 1.4
 			&:before
 				content: counter(list)"."
 				counter-increment: list
@@ -181,6 +186,7 @@
 		li
 			position: relative
 			padding-left: 13px
+			line-height: 1.4
 			li
 				padding-left: 38px
 				li
@@ -190,7 +196,7 @@
 				content: ""
 				position: absolute
 				left: 0
-				top: 7px
+				top: 6px
 				width: 7px
 				height: 7px
 				border-radius: 50%
@@ -318,6 +324,9 @@
 					max-width: none
 		img
 			max-width: 100%
+	&__text
+		.add-b-space
+			margin-bottom: 30px
 .gift-promo-img
 	i
 		color: $primary
