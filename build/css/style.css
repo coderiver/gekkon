@@ -2458,7 +2458,7 @@ select::-ms-expand { display: none; }
 .required-text { color: #ea4924; position: absolute; top: 10px; left: 0; }
 
 .required-feild { position: relative; padding-left: 9px; }
-.required-feild .required-text { top: 0.5em; left: 1px; }
+.required-feild .required-text { position: absolute; top: 11px; left: 0; }
 
 .form-inline_raty { margin-bottom: 15px; }
 .form-inline_raty .raty { display: inline-block; vertical-align: middle; margin: 0 0 5px 15px; }
@@ -2471,6 +2471,7 @@ select::-ms-expand { display: none; }
 .date .form-group .control-label { padding-top: 4px; text-align: left; }
 .date__sep { display: block; margin-top: 6px; text-align: center; }
 .date__input { position: relative; }
+.date__input input { cursor: pointer; }
 .date__input span { position: absolute; right: 7px; top: 7px; font-size: 20px; pointer-events: none; }
 
 .form-sort { margin: 40px 0 0; }
@@ -3413,6 +3414,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .item_list .item__img .number, .item_list .item__main .number, .item_list .item__action .number{ float: left; position: static; }
  .cols-counter[data-cols="3"]{ -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; }
  .cols-counter .col{ width: 100%; padding-right: 0; }
+ .form-group .btn-default{ font-size: 15px; }
  .banner__img{ display: none; }
  .banner__title{ font-size: 35px; line-height: 1; text-shadow: 0 0 2px #fff; }
  .slider-info{ margin-bottom: 60px; }

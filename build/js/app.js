@@ -125,6 +125,7 @@ $(document).ready(function() {
 		autoplaySpeed: 5000,
 		pauseOnHover: true,
 		pauseOnDotsHover: true,
+		adaptiveHeight: true,
 		responsive: [
 			{
 				breakpoint: 768,

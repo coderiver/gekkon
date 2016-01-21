@@ -993,6 +993,9 @@ p.increase
 			top: 50%
 			right: 10px
 			transform: translate(0, -50%)
+	.btn-default
+		+r(1023)
+			font-size: 15px
 .field-password
 	position: relative
 	input
@@ -1209,8 +1212,9 @@ select
 	+r(768)
 		margin-top: 10px
 	.required-text
-		top: 0.5em
-		left: 1px
+		position: absolute
+		top: 11px
+		left: 0
 .form-inline_raty
 	margin-bottom: 15px
 	.raty
@@ -1244,6 +1248,8 @@ select
 		text-align: center
 	&__input
 		position: relative
+		input
+			cursor: pointer
 		span
 			position: absolute
 			right: 7px
