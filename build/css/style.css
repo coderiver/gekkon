@@ -2652,6 +2652,7 @@ select::-ms-expand { display: none; }
 
 .img-nav { margin: 10px 0 35px; font-size: 13px; }
 .img-nav__link { display: block; margin: 0 auto 20px; color: #c2c2c2; text-align: center; -webkit-transition: color 250ms; transition: color 250ms; }
+.img-nav__link.no_b-marg { margin-bottom: 0; }
 .img-nav__link.is-active { color: #a7c66d; }
 .img-nav__link.is-active .img-nav__text { color: #799a2a; font-weight: 700; }
 .img-nav__link:hover { text-decoration: none; }
