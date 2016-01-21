@@ -3452,6 +3452,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .col-md-offset-0{ margin-left: 0; }
  .modal-lg{ width: 415px; } }
 @media only screen and (max-width: 1024px){
+ .item{ padding: 0 20px; }
  .form-control{ font-size: 16px; }
  textarea{ font-size: 16px; }
  select.form-control{ height: 26px; }
@@ -3462,6 +3463,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .testing-slide{ height: auto; }
  .testing-slide__box{ position: static; background: #fff; padding: 20px; width: auto; height: auto; -webkit-border-radius: 20px; border-radius: 20px; border: 3px dashed #a7c66d; } }
 @media only screen and (max-width: 1280px){
+ .item{ padding: 0 10px; }
  select.form-control.form-control_numb{ padding-left: 0; padding-right: 20px; }
  select.form-control{ padding-left: 3px; }
  .select i{ right: 0; }
