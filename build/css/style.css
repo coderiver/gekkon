@@ -2498,21 +2498,20 @@ select::-ms-expand { display: none; }
 .table-product tr.b_bot, .table-packing tr.b_bot { border-bottom: 2px dotted #dbdada; }
 .table-product th, .table-packing th { background-color: #a7c66d; color: white; height: 38px; line-height: 38px; vertical-align: middle; }
 .table-product th:nth-child(1), .table-packing th:nth-child(1) { padding-left: 12px; width: 901px; }
-.table-product th:nth-child(2), .table-packing th:nth-child(2) { width: 100px; }
-.table-product th:nth-child(3), .table-packing th:nth-child(3) { width: 100px; }
+.table-product th:nth-child(2), .table-product th:nth-child(3), .table-packing th:nth-child(2), .table-packing th:nth-child(3) { width: 100px; }
 .table-product th:nth-child(4), .table-packing th:nth-child(4) { width: 80px; }
+.table-product th:nth-child(5), .table-packing th:nth-child(5) { width: 80px; }
 .table-product td, .table-packing td { height: 86px; vertical-align: middle; }
 .table-product td:nth-child(1), .table-packing td:nth-child(1) { width: 100px; }
 .table-product td.is-bold, .table-packing td.is-bold { font-weight: 700; }
 .table-product td span, .table-packing td span { vertical-align: middle; }
-
-.table-product th:nth-child(5) { width: 80px; }
-.table-product td.is-center, .table-product th.is-center { text-align: center; }
-.table-product .number { vertical-align: middle; }
+.table-product td .number, .table-packing td .number { vertical-align: middle; }
+.table-product td.is-center, .table-product th.is-center, .table-packing td.is-center, .table-packing th.is-center { text-align: center; }
 
 .table-packing { margin-bottom: 50px; }
 .table-packing td { vertical-align: middle; }
-.table-packing td .number { vertical-align: middle; }
+.table-packing td:nth-child(3), .table-packing td:nth-child(4) { width: 100px; }
+.table-packing td:nth-child(5), .table-packing td:nth-child(6) { width: 80px; }
 .table-packing__pic { display: inline-block; vertical-align: middle; width: 200px; padding: 0 20px 0 90px; text-align: center; }
 .table-packing__pic img { max-width: 100%; }
 .table-packing__link { display: inline-block; vertical-align: middle; }
@@ -2531,7 +2530,7 @@ select::-ms-expand { display: none; }
 .slider-info__title span { display: table-cell; vertical-align: middle; width: 110px; font-size: 83px; color: #a7c66d; }
 .slider-info__title span:before { display: block; margin: 0; }
 .slider-info__title strong { display: table-cell; vertical-align: middle; font-size: 25px; }
-.slider-info__text { margin: 20px 0 30px; font-size: 15px; font-weight: 300; }
+.slider-info__text { margin: 8px 0 30px; font-size: 15px; font-weight: 300; }
 
 .map-nav { margin-bottom: 15px; }
 
@@ -2687,7 +2686,7 @@ select::-ms-expand { display: none; }
 
 .article { color: #353130; font-size: 14px; line-height: 1.4; }
 .article ol { line-height: 1.7; counter-reset: list; }
-.article ol li { position: relative; margin-bottom: 15px; padding-left: 0; }
+.article ol li { position: relative; margin-bottom: 15px; padding-left: 0; line-height: 1.4; }
 .article ol li:before { content: counter(list) "."; counter-increment: list; line-height: 1; color: #353130; display: inline-block; margin-right: 5px; font-weight: 300; font-size: 15px; }
 .article ol li ol { counter-reset: sublist; margin-top: 10px; padding-left: 42px; }
 .article ol li ol li { margin-bottom: 15px; padding-left: 0; }
@@ -2696,10 +2695,10 @@ select::-ms-expand { display: none; }
 .article ol li ol ol li { margin-bottom: 15px; padding-left: 0; }
 .article ol li ol ol li:before { content: counter(list) "." counter(sublist) "." counter(sublist2); counter-increment: sublist2; }
 .article ul { line-height: 1.8; }
-.article ul li { position: relative; padding-left: 13px; margin-top: 10px; }
+.article ul li { position: relative; padding-left: 13px; margin-top: 10px; line-height: 1.4; }
 .article ul li li { padding-left: 29px; margin-top: 4px; }
 .article ul li li li { padding-left: 40px; }
-.article ul > li:before { content: ""; position: absolute; left: 0; top: 7px; width: 7px; height: 7px; -webkit-border-radius: 50%; border-radius: 50%; background: #799a2a; }
+.article ul > li:before { content: ""; position: absolute; left: 0; top: 6px; width: 7px; height: 7px; -webkit-border-radius: 50%; border-radius: 50%; background: #799a2a; }
 .article ul > li li:before { display: none; }
 .article img { max-width: 100%; height: auto; margin: 25px 0 16px; }
 .article h3 { font-weight: 700; }

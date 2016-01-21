@@ -1296,11 +1296,12 @@ select
 		&:nth-child(1)
 			padding-left: 12px
 			width: 901px
-		&:nth-child(2)
-			width: 100px
+		&:nth-child(2),
 		&:nth-child(3)
 			width: 100px
 		&:nth-child(4)
+			width: 80px
+		&:nth-child(5)
 			width: 80px
 	td
 		height: 86px
@@ -1311,23 +1312,20 @@ select
 			+bold
 		span
 			vertical-align: middle
-
-.table-product
-	th
-		&:nth-child(5)
-			width: 80px
+		.number 
+			vertical-align: middle
 	td, th
 		&.is-center
 			text-align: center
-	.number 
-		vertical-align: middle
 
 .table-packing
 	margin-bottom: 50px
 	td 
 		vertical-align: middle
-		.number
-			vertical-align: middle
+		&:nth-child(3), &:nth-child(4)
+			width: 100px
+		&:nth-child(5), &:nth-child(6)
+			width: 80px
 	&__pic
 		display: inline-block
 		vertical-align: middle
