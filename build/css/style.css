@@ -3400,10 +3400,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .steps li{ width: auto; padding: 0 20px; background: none; }
  .steps li:before{ display: none; }
  .steps li:after{ display: none; } }
-@media screen and (min-width: 768px){
- .jumbotron{ padding-top: 48px; padding-bottom: 48px; }
- .container .jumbotron, .container-fluid .jumbotron{ padding-left: 60px; padding-right: 60px; }
- .jumbotron h1, .jumbotron .h1{ font-size: 68px; } }
 @media only screen and (max-width: 1023px){
  .payments__list img{ margin-right: 1px; }
  .item_list .item__img .number, .item_list .item__main .number, .item_list .item__action .number{ float: left; position: static; }
@@ -3509,28 +3505,14 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  textarea{ font-size: 16px; }
  select.form-control{ height: 26px; }
  .select.is-mod{ max-width: none; }
-<<<<<<< HEAD
- .select i{ right: 8px; } }
-=======
  .select i{ right: 8px; }
  .logo strong{ bottom: -5px; left: 40px; font-size: 11px; font-size: 10px; line-height: 1; } }
-@media only screen and (max-width: 1180px){
- .order-row__img{ display: none; } }
 @media only screen and (max-width: 1200px){
  .product-info .country span{ display: block; } }
->>>>>>> master
 @media only screen and (max-width: 1279px){
  .nav a{ padding: 0 5px; }
  .testing-slide{ height: auto; }
  .testing-slide__box{ position: static; background: #fff; padding: 20px; width: auto; height: auto; -webkit-border-radius: 20px; border-radius: 20px; border: 3px dashed #a7c66d; } }
-<<<<<<< HEAD
-@media only screen and (max-width: 1280px){
- select.form-control.form-control_numb{ padding-left: 0; padding-right: 20px; }
- select.form-control{ padding-left: 3px; }
- .select i{ right: 0; }
- .order-row__img{ display: none; } }
-=======
->>>>>>> master
 @media (min-width: 1280px){
  .container{ width: 1200px; }
  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{ float: left; }
@@ -3596,7 +3578,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 @media only screen and (max-width: 1280px){
  select.form-control.form-control_numb{ padding-left: 0; padding-right: 20px; }
  select.form-control{ padding-left: 3px; }
- .select i{ right: 0; } }
+ .select i{ right: 0; }
+ .order-row__img{ display: none; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px){
