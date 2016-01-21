@@ -110,7 +110,7 @@ p.increase
 	+light
 	line-height: 1.2
 	&.h1_b-marg
-		margin: 27px 0 40px
+		margin: 13px 0 40px
 		& + .img-nav
 			margin-top: 0
 	span
@@ -1351,10 +1351,10 @@ select
 	&.table_marg
 		margin-top: 13px
 	tr
-		&.b_bot
-			border-bottom: 2px dotted #dbdada
 		&:last-child
 			border-bottom: 1px solid #a7c66d
+		&.b_bot
+			border-bottom: 2px dotted #dbdada
 	th
 		background-color: #a7c66d
 		color: white
@@ -1387,6 +1387,8 @@ select
 	td, th
 		&.is-center
 			text-align: center
+	.number 
+		vertical-align: middle
 
 .table-packing
 	//margin-bottom: 50px
@@ -1397,8 +1399,11 @@ select
 	&__pic
 		display: inline-block
 		vertical-align: middle
-		width: 150px
+		width: 200px
+		padding: 0 20px 0 90px
 		text-align: center
+		img
+			max-width: 100%
 	&__link
 		// max-width: 160px
 		display: inline-block

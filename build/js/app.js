@@ -606,7 +606,7 @@ $(document).ready(function() {
 	});
 
 	//mask
-	$('[type="tel"]').mask("+9 (999) 999 - 99 - 99");
+	$('[type="tel"]').mask("+7 (999) 999 - 99 - 99");
 
 	function scrollbarWidth() {
 		var block = $('<div>').css({'height':'50px','width':'50px'}),

@@ -32,10 +32,16 @@
 	font-size: 15px
 	&__img
 		margin-bottom: 10px
+		overflow: hidden
 		img
 			display: block
 			width: 100%
 			height: auto
+			transition: transform .35s ease-out
+		&:hover
+			img
+				transform: scale(1.1)
+				
 	&__title
 		margin-bottom: 20px
 		+bold

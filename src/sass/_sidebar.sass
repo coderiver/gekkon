@@ -30,6 +30,9 @@
 				width: 100%
 	.checkbox-list
 		margin-bottom: 20px
+		.checkbox 
+			span 
+				+light
 	+r(1023)
 		position: fixed
 		z-index: 10
@@ -46,11 +49,14 @@
 			label
 				font-size: 15px
 				> span
+					+r(768)
+						font-size: 15px
 					color: #fff 
 					&:before 
 						border-color: #fff
 					&:after
 						color: #fff
+
 		.list-nav
 			a
 				color: #fff
