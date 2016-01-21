@@ -46,10 +46,12 @@
 			transform: translateX(0)
 		.checkbox
 			color: #fff
-			label 
+			label
+				font-size: 15px
 				> span
 					+r(768)
 						font-size: 15px
+					color: #fff 
 					&:before 
 						border-color: #fff
 					&:after
@@ -82,6 +84,9 @@
 	color: $btn 
 	line-height: 28px
 	white-space: nowrap
+	span
+		+r(767)
+			display: none
 	&:before
 		content: "" 
 		position: absolute

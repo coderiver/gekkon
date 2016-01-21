@@ -8,13 +8,17 @@
 			vertical-align: middle
 			max-height: 100%
 	&__main
-		height: 530px
-		+r(1023)
-			height: 250px
+		height: 530px			
+		@media only screen and (min-device-width : 769px) and (max-device-width : 1024px)
+			height: 400px
 			margin-bottom: 20px
-		.slick-slide
-			img
-				+r(1023)
+			.slick-slide
+				img
+					max-height: 400px
+		@media only screen and (min-device-width : 320px) and (max-device-width : 768px)
+			height: 250px
+			.slick-slide
+				img
 					max-height: 250px
 		.slick-prev,
 		.slick-next
@@ -58,7 +62,10 @@
 	+r(767)
 		.text-right
 			text-align: left
-
+	.country
+		+r(1200)
+			span
+				display: block
 .country
 	img
 		vertical-align: bottom
@@ -78,7 +85,7 @@
 			display: inline-block
 			vertical-align: middle
 			&:before
-				content: "\e831"
+				content: "\e806"
 				+icon
 				margin: 0
 		.star-off-png
@@ -139,6 +146,8 @@
 				> span
 					&:before
 						top: 3px
+		.btn-dots_icon
+			padding-bottom: 4px
 .plan-box
 	margin: 55px 0
 	.h2
@@ -148,6 +157,8 @@
 	&_mt
 		margin-top: 0
 .cat-list
+	+r(767)
+		margin-bottom: 20px
 	&__group
 		position: relative
 		margin-bottom: 10px
@@ -202,6 +213,8 @@
 		margin-top: -2px
 .slider-items
 	position: relative
+	+r(767)
+		padding-top: 35px
 	+ .slider-items
 		margin-top: 50px
 	.tabs-link
@@ -212,10 +225,33 @@
 		padding: 3px 15px
 		img
 			display: inline-block
+
 	.btn-wrap
 		margin: 20px
 		.btn
 			min-width: 225px
 			text-align: center
+	&_mobile
+		.slick-prev, 
+		.slick-next
+			top: -60px
+			+r(767)
+				top: -15px
 .btn-wrap
 	text-align: center
+	
+.tab-content
+	+r(767)
+		margin: 30px 0 0 
+		> .tab-pane
+			display: block
+			margin: 10px 0 
+			.tab-pane__collapse
+				display: none
+				padding-top: 20px
+				&[aria-expanded="false"]
+					display: none
+				&[aria-expanded="true"]
+					display: block
+	
+	 

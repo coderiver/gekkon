@@ -47,10 +47,12 @@ body
 	background: #fbf8da url(../img/body-bg.png) 0 0 repeat
 	&.no-scroll
 		overflow: hidden
-
+input
+	border-radius: 0
 p.increase
 	font-size: 18px
-
+.is-hidden
+	display: none
 // common blocks
 .wrap
 	+clr
@@ -114,7 +116,7 @@ p.increase
 	span
 		color: $btn
 	+r(767)
-		font-size: 35px
+		font-size: 30px
 .h2
 	font-size: 30px
 	+light
@@ -236,8 +238,15 @@ p.increase
 		+light
 	&_icon
 		border: 0
+		position: relative
+		padding-left: 30px
+		text-align: left
+		i
+			position: absolute
+			left: 0
+			top: 0
 		span
-			display: inline-block
+			display: inline
 			border-bottom: 1px dotted
 	&_big
 		font-size: 20px
@@ -286,22 +295,40 @@ p.increase
 	box-shadow: none
 	color: $btn
 	transition: color, background, border, .3s
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+		transition: none
 	&:hover
 		background: $primary
 		color: #fff
 		border-color: $primary
+		&:active
+			background: darken($primary, 10%)
+			border-color: darken($primary, 10%)
+			color: #fff
+			outline: none
+			box-shadow: none
 	&:active,
 	&:focus
 		background: darken($primary, 10%)
 		border-color: darken($primary, 10%)
 		color: #fff
 		outline: none
+		box-shadow: none
+	&:active
 		&:focus
+			background: darken($primary, 10%)
+			border-color: darken($primary, 10%)
+			color: #fff
+			outline: none
+			box-shadow: none
+	@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+		&:hover
 			background: darken($primary, 10%)
 			border-color: darken($primary, 10%)
 			color: #fff
 			box-shadow: none
 			outline: none
+		
 .btn-default
 	padding-left: 33px
 	padding-right: 33px
@@ -418,7 +445,9 @@ p.increase
 		+roboto
 		+reg
 		color: $text
-		line-height: 21px
+		line-height: normal
+		appearance: none
+		border-radius: 0 
 		+placeholder
 			color: #959595
 	&__btn
@@ -474,7 +503,6 @@ p.increase
 	font-size: 0
 	a
 		display: inline-block
-		background: #fff
 		margin-right: 10px
 		+tr(color .3s)
 		line-height: 1
@@ -486,10 +514,10 @@ p.increase
 		&:after
 			content: ''
 			position: absolute
-			top: 1px
-			bottom: 1px
-			left: 1px
-			right: 1px
+			top: 4px
+			bottom: 4px
+			left: 4px
+			right: 4px
 			background: #fff
 			z-index: -1
 
@@ -529,29 +557,43 @@ p.increase
 		display: inline-block
 		vertical-align: middle
 		&.active
+			cursor: default
 			a
 				border-color: transparent
 				color: $text
 				+bold
+				cursor: default
 	h3
 		margin: 0
+		+r(767)
+			font-size: 18px 
 	a
 		display: inline-block
 		border-bottom: 1px dotted
 		&:hover
 			color: #000
 			text-decoration: none
+.tabs-link_action
+	li
+		&.active
+			margin-right: 30px
 .tabs-view
 	margin: -35px 0 0
 	padding: 0 20px
 	line-height: 1.2
 	font-size: 15px
 	+light
+	+r(767)
+		margin: 0 
 	li
 		display: inline-block
 		margin-left: 25px
 		vertical-align: middle
+		
 		&.active
+			cursor: default
+			a
+				cursor: default
 			span
 				border-color: transparent
 				color: $text
@@ -582,24 +624,32 @@ p.increase
 		line-height: 1.66
 		font-size: 15px
 		+light
-		+ .post__img
+		& + .post__img
 			margin-top: 20px
+		
 	&__head
 		margin-bottom: 17px
 		a
 			font-size: 20px
 			+r(767)
 				font-size: 18px
+		& + .post__main
+			margin-top: -7px 
 	.title
 		margin-bottom: 20px
 .post_box
 	border: 1px solid $btn
 	padding: 15px 15px 33px
+	+r(1023)
+		margin: 20px 0 
 	.btn
 		+r(767)
 			display: block
 			width: 100%
 			text-align: center
+	.post__img
+		+r(1023)
+			margin: 0
 .meta
 	font-size: 13px
 	+light
@@ -636,11 +686,13 @@ p.increase
 	&__name
 		height: 87px
 		overflow: hidden
+		+r(1023)
+			height: 80px
 	&__link
 		display: inline-block
 		font-size: 20px
 		+light
-		+r(767)
+		+r(1024)
 			font-size: 18px
 		&:hover
 			text-decoration: none
@@ -653,6 +705,8 @@ p.increase
 		+clr
 		.price
 			float: left
+			+r(1024)
+				margin-top: 10px
 		.number
 			float: right
 			margin-top: 4px
@@ -676,6 +730,8 @@ p.increase
 	&:hover
 		box-shadow: 0 0 0 3px $marked
 .item_small
+	+r(767)
+		margin-bottom: 0
 	.item__link
 		font-size: 15px
 	.item__name
@@ -689,6 +745,7 @@ p.increase
 	margin-bottom: 20px
 	padding: 10px 0
 	width: 100%
+	table-layout: fixed
 	+r(767)
 		display: block
 	&.item_marked
@@ -736,14 +793,16 @@ p.increase
 	font-size: 25px
 	+bold
 	line-height: 1
-	+r(1023)
-		font-size: 20px
+	+r(1024)
+		font-size: 15px
 	&__old
 		display: inline-block
 		font-size: 15px
 		text-decoration: line-through
-		+r(1023)
-			top: 0
+		+r(1024)
+			font-size: 12px
+		+r(768)
+			display: block
 	&__new
 		color: #b2002e
 	.price__weight
@@ -769,6 +828,8 @@ p.increase
 			color: $text
 			pointer-events: none
 			margin-top: -3px
+			+r(1024)
+				margin-top: -7px
 		select
 			opacity: 0
 			position: absolute
@@ -794,13 +855,15 @@ p.increase
 		+light
 		color: $text
 		margin-left: 10px
-
+		+r(1024)
+			font-size: 15px
 .price_small
 	font-size: 15px
 .price_light
 	+light
 .badge
 	position: absolute
+	z-index: 2
 	right: 20px
 	top: 15px
 	padding: 3px 5px 2px
@@ -913,9 +976,11 @@ p.increase
 .form-group
 	label
 		font-size: 15px
-		// position: relative
-		// top: -1px
 		+light
+		.required-text
+			position: relative
+			left: auto
+			top: -0.5em 
 	&.is-high-select
 		.control-label
 			padding-top: 4px
@@ -935,6 +1000,9 @@ p.increase
 			top: 50%
 			right: 10px
 			transform: translate(0, -50%)
+	.btn-default
+		+r(1023)
+			font-size: 15px
 .field-password
 	position: relative
 	input
@@ -992,6 +1060,7 @@ select
 			padding-left: 3px
 	&.is-big
 		height: 34px
+		padding: 0 13px 
 	&::-ms-expand
 		display: none
 
@@ -1105,9 +1174,12 @@ select
 
 .nav-tabs
 	margin: 40px 0
+	+r(767)
+		display: none
 	li
 		&:before
 			display: none
+		    
 		&.active
 			> a
 				background: #fff
@@ -1119,18 +1191,28 @@ select
 					color: $text
 				> span
 					border: 0
+			&:after
+				content: ""
+				position: absolute
+				height: 3px
+				left: 1px
+				right: 1px
+				bottom: -1px 
+				background: #fff
 		> a
 			margin: 0
 			padding: 15px 50px
 			&:hover
 				border-color: transparent
 				background: none
-				> span
-					// border-color: transparent
+				color: #000
 			> span
 				border-bottom: 1px dotted
 .required-text
 	color: $hot
+	position: absolute
+	top: 10px
+	left: 0
 .required-feild
 	position: relative
 	padding-left: 9px
@@ -1138,8 +1220,8 @@ select
 		margin-top: 10px
 	.required-text
 		position: absolute
-		top: 0.5em
-		left: 1px
+		top: 11px
+		left: 0
 .form-inline_raty
 	margin-bottom: 15px
 	.raty
@@ -1155,8 +1237,8 @@ select
 		margin: 0
 	.close
 		position: absolute
-		right: 13px
-		top: 17px
+		right: 11px
+		top: 18px
 		font-size: 15px
 		color: $text
 		opacity: 1
@@ -1173,6 +1255,8 @@ select
 		text-align: center
 	&__input
 		position: relative
+		input
+			cursor: pointer
 		span
 			position: absolute
 			right: 7px
@@ -1224,6 +1308,8 @@ select
 .tab-content
 	.tab-content
 		padding-top: 30px
+		+r(767)
+			padding: 0
 
 
 .link-solid
@@ -1238,6 +1324,12 @@ select
 		float: left
 		.checkbox
 			padding-left: 5px
+			
+			b
+				display: block
+				overflow: hidden
+				text-overflow: ellipsis 
+				font-weight: normal
 		+r(767)
 			width: 100%
 			float: none
@@ -1247,6 +1339,7 @@ select
 	position: fixed
 	top: 65px
 	right: 0
+	margin-right: 10px
 	z-index: 10
 	background: #fff
 	border: 1px solid $btn
@@ -1310,7 +1403,7 @@ select
 			width: 100px
 		&.is-bold
 			+bold
-		span
+		span:not(.rub)
 			vertical-align: middle
 		.number 
 			vertical-align: middle
@@ -1319,7 +1412,7 @@ select
 			text-align: center
 
 .table-packing
-	margin-bottom: 50px
+	//margin-bottom: 50px
 	td 
 		vertical-align: middle
 		&:nth-child(3), &:nth-child(4)
@@ -1342,4 +1435,13 @@ select
 			text-decoration: none
 			span
 				text-decoration: underline
-				
+.fancybox-button
+	display: inline-block
+	vertical-align: top
+	margin: 0 3px 15px 0 
+.form-section
+	padding: 20px 
+.icon-eye-off
+	&.is-active
+		&:before
+			content: "\e800"

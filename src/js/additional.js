@@ -1,16 +1,33 @@
 "use strict";
 $(document).ready(function() {
 	
-	$('.js-show-password').on('mousedown', function () {
-		var input = $(this).siblings('.js-password-input');
-		input.attr("type", "text");
-		return false;
-	});
+	
+		$('.js-show-password').hover(
+			function(){
+				$('.js-show-password').on('mousedown', function () {
+					$(this).addClass("is-active");
+					var input = $(this).siblings('.js-password-input');
+					input.attr("type", "text");
+					return false;
+				});
+				$('.js-show-password').on('mouseup', function () {
+					$(this).removeClass("is-active");
+					var input = $(this).siblings('.js-password-input');
+					input.attr("type", "password");
+					return false;
+				});
+			},
+			function(){
+				$(this).removeClass("is-active");
+				var input = $(this).siblings('.js-password-input');
+				input.attr("type", "password");
+				return false;
+			}
+		);
+		
+	
 
-	$('.js-show-password').on('mouseup', function () {
-		var input = $(this).siblings('.js-password-input');
-		input.attr("type", "password");
-	});
+	
 
 	$("body").on("click", ".js-select-text", function(event) {
 
