@@ -2087,7 +2087,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 @font-face { font-family: PTRoubleSans; src: url("fonts/PTRoubleSans.eot"); src: url("fonts/PTRoubleSans.eot?#iefix") format("embedded-opentype"), url("fonts/PTRoubleSans.woff2") format("woff2"), url("fonts/PTRoubleSans.woff") format("woff"), url("fonts/PTRoubleSans.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 html.no-scroll { overflow: hidden; }
 
-body { min-width: 320px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.5rem; line-height: 1.4; color: #353130; background: #fbf8da url(../img/body-bg.png) 0 0 repeat; }
+body { min-width: 320px; font-family: "Roboto", Arial, sans-serif; font-weight: 300; font-size: 1.5rem; line-height: 1.4; color: #353130; background: #fbf8da url(../img/body-bg.jpg) 0 0 repeat; }
 body.no-scroll { overflow: hidden; }
 
 input { -webkit-border-radius: 0; border-radius: 0; }
