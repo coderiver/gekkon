@@ -104,21 +104,11 @@ $(document).ready(function() {
 	$(".js-slider-mobile").each(function () {
 		var self = $(this);
 		self.slick({
-			slidesToShow: 4,
-			slidesToScroll: 4,
+			slidesToShow: 2,
+			slidesToScroll: 2,
 			infinite: true,
 			appendArrows: self.parents(".slider-items"),
-			responsive: [{
-					breakpoint: 10000,
-					settings: "unslick"
-				},
-				{
-					breakpoint: 1023,
-					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 2
-					}
-				},
+			responsive: [
 				{
 					breakpoint: 767,
 					settings: {

@@ -232,15 +232,28 @@
 			min-width: 225px
 			text-align: center
 	&_mobile
+		display: none 
+		+r(1023)
+			display: block
 		.slick-prev, 
 		.slick-next
 			top: -60px
 			+r(767)
 				top: -15px
+		.slick-slider
+			margin: 0
+		.slick-list
+			padding: 5px 
+		.item
+			margin: 0
+	&_desktop
+	
+		+r(1023)
+			display: none
 .btn-wrap
 	text-align: center
 	
-.tab-content
+.tab-content_accord
 	+r(767)
 		margin: 30px 0 0 
 		> .tab-pane

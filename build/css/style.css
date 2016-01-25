@@ -3074,7 +3074,11 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .slider-items .slick-slide img { display: inline-block; }
 .slider-items .btn-wrap { margin: 20px; }
 .slider-items .btn-wrap .btn { min-width: 225px; text-align: center; }
+.slider-items_mobile { display: none; }
 .slider-items_mobile .slick-prev, .slider-items_mobile .slick-next { top: -60px; }
+.slider-items_mobile .slick-slider { margin: 0; }
+.slider-items_mobile .slick-list { padding: 5px; }
+.slider-items_mobile .item { margin: 0; }
 
 .btn-wrap { text-align: center; }
 
@@ -3308,13 +3312,14 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .cat-list{ margin-bottom: 20px; }
  .slider-items{ padding-top: 35px; }
  .slider-items_mobile .slick-prev, .slider-items_mobile .slick-next{ top: -15px; }
- .tab-content{ margin: 30px 0 0; }
- .tab-content > .tab-pane{ display: block; margin: 10px 0; }
- .tab-content > .tab-pane .tab-pane__collapse{ display: none; padding-top: 20px; }
- .tab-content > .tab-pane .tab-pane__collapse[aria-expanded="false"]{ display: none; }
- .tab-content > .tab-pane .tab-pane__collapse[aria-expanded="true"]{ display: block; }
+ .tab-content_accord{ margin: 30px 0 0; }
+ .tab-content_accord > .tab-pane{ display: block; margin: 10px 0; }
+ .tab-content_accord > .tab-pane .tab-pane__collapse{ display: none; padding-top: 20px; }
+ .tab-content_accord > .tab-pane .tab-pane__collapse[aria-expanded="false"]{ display: none; }
+ .tab-content_accord > .tab-pane .tab-pane__collapse[aria-expanded="true"]{ display: block; }
  .total__footer .link{ margin: 20px 0; }
- .menu-fixed__in{ width: 100%; } }
+ .menu-fixed__in{ width: 100%; }
+ .map{ margin-top: 2rem; } }
 @media only screen and (min-width: 768px){
  .item-about__header i{ float: left; }
  .item-about__header span{ overflow: hidden; display: block; padding-top: 7px; } }
@@ -3455,6 +3460,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .sidebar .btn-dots{ color: #fff; }
  .sort__title{ margin-bottom: 20px; }
  .carousel{ margin-bottom: 40px; }
+ .slider-items_mobile{ display: block; }
+ .slider-items_desktop{ display: none; }
  .steps li{ text-align: center; font-size: 13px; padding: 0 5px; }
  .table-simple_cart .item .item_list .item__img, .table-simple_cart .item .item_list .item__main{ display: block; float: none; }
  .table-simple_cart .item .item_list .item__main{ width: 100%; } }
