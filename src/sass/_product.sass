@@ -213,6 +213,7 @@
 		margin-top: -2px
 .slider-items
 	position: relative
+	padding-top: 35px
 	+r(767)
 		padding-top: 35px
 	+ .slider-items
@@ -247,9 +248,11 @@
 		.item
 			margin: 0
 	&_desktop
-	
 		+r(1023)
 			display: none
+		+ .slider-items
+			margin-top: 0
+
 .btn-wrap
 	text-align: center
 	

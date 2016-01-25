@@ -2091,6 +2091,7 @@ body { min-width: 320px; font-family: "Roboto", Arial, sans-serif; font-weight: 
 body.no-scroll { overflow: hidden; }
 
 input { -webkit-border-radius: 0; border-radius: 0; }
+input::-ms-clear { display: none; }
 
 p.increase { font-size: 18px; }
 
@@ -3068,7 +3069,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 .review-form .h2 { margin-top: -2px; }
 
-.slider-items { position: relative; }
+.slider-items { position: relative; padding-top: 35px; }
 .slider-items + .slider-items { margin-top: 50px; }
 .slider-items .tabs-link { margin-bottom: 30px; }
 .slider-items .slick-slider { margin: -3px -15px; }
@@ -3081,6 +3082,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .slider-items_mobile .slick-slider { margin: 0; }
 .slider-items_mobile .slick-list { padding: 5px; }
 .slider-items_mobile .item { margin: 0; }
+.slider-items_desktop + .slider-items { margin-top: 0; }
 
 .btn-wrap { text-align: center; }
 
