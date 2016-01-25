@@ -2303,7 +2303,7 @@ p.increase { font-size: 18px; }
 
 .item { position: relative; margin-bottom: 43px; padding: 0 20px; -webkit-transition: -webkit-box-shadow 0.2s; transition: box-shadow 0.2s; }
 .item:hover, .item.is-active { -webkit-box-shadow: 0 0 0 3px #799a2a; box-shadow: 0 0 0 3px #799a2a; }
-.item__img { position: relative; padding: 15px 0; height: 158px; text-align: center; font-size: 0; display: block; overflow: hidden; }
+.item__img { position: relative; padding: 15px 0; height: 158px; text-align: center; font-size: 0; display: block; z-index: 1; overflow: hidden; }
 .item__img:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .item__img img { display: inline-block; vertical-align: middle; max-width: 100%; max-height: 100%; }
 .item__main { padding-bottom: 20px; }
@@ -2340,7 +2340,7 @@ p.increase { font-size: 18px; }
 .item_list .btn { margin: 20px 0; }
 
 .price { font-size: 25px; font-weight: 700; line-height: 1; }
-.price__old { display: inline-block; font-size: 15px; text-decoration: line-through; }
+.price__old { display: block; font-size: 15px; text-decoration: line-through; }
 .price__new { color: #b2002e; }
 .price .price__weight { font-size: 13px; font-weight: 300; color: #353130; }
 .price_select { border-bottom: 1px dotted #799a2a; position: relative; }
@@ -2556,7 +2556,7 @@ select::-ms-expand { display: none; }
 .slider-info__title span { display: table-cell; vertical-align: middle; width: 106px; font-size: 83px; color: #a7c66d; }
 .slider-info__title span:before { display: block; margin: 0; height: 64px; }
 .slider-info__title strong { display: table-cell; vertical-align: middle; font-size: 25px; }
-.slider-info__text { margin: 8px 0 30px; font-size: 15px; font-weight: 300; }
+.slider-info__text { margin: 13px 0 30px; font-size: 15px; font-weight: 300; }
 
 .desktop.retina .slider-info__title span:before { height: auto; }
 
@@ -2679,7 +2679,7 @@ select::-ms-expand { display: none; }
 .breadcrumb > li + li:before { content: ">"; color: inherit; }
 .breadcrumb > .active { color: #333; }
 
-.img-nav { margin: 10px 0 35px; font-size: 13px; }
+.img-nav { margin: 10px 0 28px; font-size: 13px; }
 .img-nav__link { display: block; margin: 0 auto 20px; color: #c2c2c2; text-align: center; -webkit-transition: color 250ms; transition: color 250ms; }
 .img-nav__link.no_b-marg { margin-bottom: 0; }
 .img-nav__link.is-active { color: #a7c66d; }
