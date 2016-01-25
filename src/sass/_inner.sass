@@ -848,6 +848,18 @@ input[type=number]
 			display: block
 			width: 100%
 			float: none
+		&:first-child
+			.set-result
+				&:before
+					display: none
+		&:last-child
+			.set-result
+				&:before
+					content: '='
+	.set-result
+		position: relative
+		padding-top: 15px
+		padding-left: 15px
 		&:before
 			content: '+'
 			font-size: 20px
@@ -860,15 +872,6 @@ input[type=number]
 				top: -25px
 				left: 50%
 				margin-left: -10px
-		&:first-child
-			&:before
-				display: none
-		&:last-child
-			&:before
-				content: '='
-	.set-result
-		padding-top: 15px
-		padding-left: 15px
 		+r(1023)
 			text-align: center
 	+r(1023)
