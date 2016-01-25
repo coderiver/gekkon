@@ -2473,7 +2473,7 @@ select::-ms-expand { display: none; }
 .date .form-group .control-label { padding-top: 4px; text-align: left; }
 .date__sep { display: block; margin-top: 6px; text-align: center; }
 .date__input { position: relative; }
-.date__input input { cursor: pointer; }
+.date__input input { cursor: pointer; background: none; position: relative; z-index: 2; }
 .date__input span { position: absolute; right: 7px; top: 7px; font-size: 20px; pointer-events: none; }
 
 .form-sort { margin: 40px 0 0; }
@@ -3412,7 +3412,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .container .jumbotron, .container-fluid .jumbotron{ padding-left: 60px; padding-right: 60px; }
  .jumbotron h1, .jumbotron .h1{ font-size: 68px; } }
 @media only screen and (max-width: 768px){
- .price__old{ display: block; }
  .required-feild{ margin-top: 10px; }
  .steps li{ width: auto; padding: 0 20px; background: none; }
  .steps li:before{ display: none; }

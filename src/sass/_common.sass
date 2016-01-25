@@ -802,8 +802,6 @@ p.increase
 		text-decoration: line-through
 		+r(1024)
 			font-size: 12px
-		+r(768)
-			display: block
 	&__new
 		color: #b2002e
 	.price__weight
@@ -1258,12 +1256,17 @@ select
 		position: relative
 		input
 			cursor: pointer
+			background: none
+			position: relative
+			z-index: 2 
+			cursor: pointer
 		span
 			position: absolute
 			right: 7px
 			top: 7px
 			font-size: 20px
 			pointer-events: none
+			
 .form-sort
 	margin: 40px 0 0
 	+r(767)
