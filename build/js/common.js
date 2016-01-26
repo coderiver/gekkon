@@ -82,7 +82,6 @@ $(document).ready(function() {
 			this._tab = $(event.target).data("tab");
 			var top = $('a[href="'+this._tab+'"]').offset().top;
 			$('a[href="'+this._tab+'"').tab('show');
-			console.log(top);
 			$('html, body').animate({
 				scrollTop: top
 			}, 500);
@@ -350,5 +349,32 @@ $(document).ready(function() {
         }
     }
     radioBox.init();
+
+    var concat = {
+    	init: function() {
+    		this.$el = $(".js-concat-btn");
+    	    this._bindEvent();
+    	},
+    	_bindEvent: function() {
+    	    this.$el.on("click", this._changeStates.bind(this))
+    	},
+    	_changeStates: function(event) {
+    	    var el = $(event.currentTarget);
+    	    var elTextVisible = el.data("text-visible");
+    	    var elTextHidden = el.data("text-hidden");
+    	    var parent = el.parents(".js-concat");
+    	    if(!parent.hasClass("is-active")) {
+    	    	parent.addClass("is-active");
+    	    	el.text(elTextHidden)
+    	    }
+    	    else {
+    	    	parent.removeClass("is-active");
+    	    	el.text(elTextVisible);
+
+    	    }
+    	    event.stopPropagation();
+    	}
+    }
+    concat.init();
 
 });

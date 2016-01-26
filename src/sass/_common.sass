@@ -217,6 +217,10 @@ p.increase
 		border-left: 1px solid #ddd
 	&__minus
 		border-right: 1px solid #ddd
+.mobile
+	.btn-dots
+		&:hover
+			color: $btn
 .btn-dots
 	display: inline-block
 	line-height: 1.1
@@ -240,6 +244,7 @@ p.increase
 		+light
 	&_icon
 		border: 0
+		padding-bottom: 2px
 		position: relative
 		padding-left: 30px
 		text-align: left
@@ -662,6 +667,10 @@ p.increase
 .ie
 	.item
 		transform: translate3d(0,0,0)
+.mobile
+	.item
+		&:hover
+			box-shadow: none
 .item
 	position: relative
 	margin-bottom: 43px
@@ -766,6 +775,7 @@ p.increase
 			display: block
 		.wrap
 			position: relative
+			padding-right: 80px
 		.number
 			position: absolute
 			right: 0
@@ -1088,10 +1098,6 @@ select
 		font-size: 21px
 		cursor: pointer
 		pointer-events: none
-		+r(1280)
-			right: 0
-		+r(1024)
-			right: 8px
 .list
 	li
 		position: relative
@@ -1319,7 +1325,8 @@ select
 		padding-top: 30px
 		+r(767)
 			padding: 0
-
+	.country-list
+		margin-top: 0
 
 .link-solid
 	border-bottom: 1px solid

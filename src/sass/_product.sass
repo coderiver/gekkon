@@ -62,10 +62,6 @@
 	+r(767)
 		.text-right
 			text-align: left
-	.country
-		+r(1200)
-			span
-				display: block
 .country
 	img
 		vertical-align: bottom
@@ -197,6 +193,9 @@
 	&.is-concated
 		.btn-dots
 			display: block
+	&.is-active
+		.review__hidden
+			display: inline
 	&__head
 		position: relative
 		margin-bottom: 15px
@@ -206,6 +205,8 @@
 		font-weight: bold
 	&__body
 		margin-bottom: 15px
+	&__hidden
+		display: none
 	.btn-dots
 		display: none
 .review-form
@@ -220,8 +221,8 @@
 		margin-top: 50px
 	.tabs-link
 		margin-bottom: 30px
-	.slick-slider
-		margin: -3px -15px
+	.slick-list
+		padding: 3px 
 	.slick-slide
 		padding: 3px 15px
 		img

@@ -711,7 +711,8 @@
 											<span class="meta meta_small">Осталось 3 шт</span>
 										</div>
 										<div class="box__item">
-											<button type="button" class="btn btn-default">В корзину</button>
+											
+											<button class="btn btn-default js-btn-cart" data-text="В корзине" type="button">В корзину</button>
 											<p>Вы можете выбрать <a href="#" class="link-solid">подарочную упаковку</a> для этого продукта в корзине</p>
 										</div>
 									</div>
@@ -928,10 +929,11 @@
 												</div>
 											</div>
 										</div>
-										<div class="review__body js-concat-text">
+										<div class="review__body">
 											При всей своей любви к маслам как средству ухода за волосами за три года регулярного применения масляных масок я так и не попробовала самого популярного масла - оливкового. У меня дома всегда стоит бутылка оливкового масла, но идет оно в салаты или для жарки
+											<span class="review__hidden js-concat-hidden">маслам как средству ухода за волосами за три года регулярного применения масляных масок я так и не попробовала самого популярного масла - оливкового</span>
 										</div>
-										<button class="btn-dots btn-dots_light js-concat-btn" data-text="Скрыть" type="button">Читать полностью</button>
+										<button class="btn-dots btn-dots_light js-concat-btn" data-text-hidden="Скрыть" type="button" data-text-visible="Читать полностью">Читать полностью</button>
 									</div>
 									<div class="review js-concat">
 										<div class="review__head">
@@ -1149,258 +1151,250 @@
 					</div>
 				</div>
 				<div class="slider-items">
-					<div class="row">
-						<div class="col-xs-12">
-							<ul class="tabs-link tabs-link_action">
-								<li class="active">
-									<h3><strong>Продукты в рецепте</strong></h3>
-								</li>
-								<li>
-									<button class="btn-dots btn-dots_light js-check-target" type="button" data-group-target="js-test">Выделить все</button>
-								</li>
-							</ul>
+					<ul class="tabs-link tabs-link_action">
+						<li class="active">
+							<h3><strong>Продукты в рецепте</strong></h3>
+						</li>
+						<li>
+							<button class="btn-dots btn-dots_light js-check-target" type="button" data-group-target="js-test">Выделить все</button>
+						</li>
+					</ul>
+					<div class="js-slider-items">
+						<div>
+							<div class="item js-check">
+								<div class="checkbox checkbox_big">
+									<label>
+										<input type="checkbox" class="js-checkbox" data-target-name="js-test-1 js-test">
+										<span></span>
+									</label>
+								</div>
+								<a class="item__img" href="#">
+									<img src="img/item2.jpg" alt="img">
+								</a>
+								<div class="item__main">
+									<div class="item__name">
+										<a href="gekkon-01-03-product-page.html" class="item__link">	
+											<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания">
+											<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+											<div class="badge badge_new-green">New!</div>
+										</a>
+									</div>
+									<div class="item__action">
+										<div class="price">1 200 <span class="rub">в</span></div>
+										<div class="number js-number" data-max-number="100">
+											<button class="number__minus js-minus-number" type="button">-</button>
+											<input type="text" class="number__input" value="1">
+											<button class="number__plus js-plus-number" type="button">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="js-slider-items">
-								<div>
-									<div class="item js-check">
-										<div class="checkbox checkbox_big">
-											<label>
-												<input type="checkbox" class="js-checkbox" data-target-name="js-test-1 js-test">
-												<span></span>
-											</label>
-										</div>
-										<a class="item__img" href="#">
-											<img src="img/item2.jpg" alt="img">
+						<div>
+							<div class="item js-check">
+								<div class="checkbox checkbox_big">
+									<label>
+										<input type="checkbox" class="js-checkbox" data-target-name="js-test-2 js-test">
+										<span></span>
+									</label>
+								</div>
+								<a class="item__img" href="#">
+									<img src="img/item3.jpg" alt="img">
+								</a>
+								<div class="item__main">
+									<div class="item__name">
+										<a href="gekkon-01-03-product-page.html" class="item__link">	
+											<img src="img/flags/PL.png" width="24" alt="Польша" title="Польша">
+											<span>Масло сливочное «Крестьянское», 170 гр</span>
 										</a>
-										<div class="item__main">
-											<div class="item__name">
-												<a href="gekkon-01-03-product-page.html" class="item__link">	
-													<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания">
-													<span>Сыр из козьего молока «Бургос», 500 гр.</span>
-													<div class="badge badge_new-green">New!</div>
-												</a>
-											</div>
-											<div class="item__action">
-												<div class="price">1 200 <span class="rub">в</span></div>
-												<div class="number js-number" data-max-number="100">
-													<button class="number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="number__input" value="1">
-													<button class="number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
+									</div>
+									<div class="item__action">
+										<div class="price">
+											<span class="price__old">540 <span class="rub">в</span></span>
+											<span class="price__new">320 <span class="rub">в</span></span>
+										</div>
+										<div class="number js-number" data-max-number="100">
+											<button class="number__minus js-minus-number" type="button">-</button>
+											<input type="text" class="number__input" value="1">
+											<button class="number__plus js-plus-number" type="button">+</button>
 										</div>
 									</div>
 								</div>
-								<div>
-									<div class="item js-check">
-										<div class="checkbox checkbox_big">
-											<label>
-												<input type="checkbox" class="js-checkbox" data-target-name="js-test-2 js-test">
-												<span></span>
-											</label>
-										</div>
-										<a class="item__img" href="#">
-											<img src="img/item3.jpg" alt="img">
+							</div>
+						</div>
+						<div>
+							<div class="item js-check">
+								<div class="checkbox checkbox_big">
+									<label>
+										<input type="checkbox" class="js-checkbox" data-target-name="js-test-3 js-test">
+										<span></span>
+									</label>
+								</div>
+								<a class="item__img" href="#">
+									<img src="img/item4.jpg" alt="img">
+								</a>
+								<div class="item__main">
+									<div class="item__name">
+										<a href="gekkon-01-03-product-page.html" class="item__link">	
+											<img src="img/flags/NO.png" width="24" alt="Новегия" title="Новегия">
+											<span>Биомороженое в рожке сливочное, 90 гр.</span>
 										</a>
-										<div class="item__main">
-											<div class="item__name">
-												<a href="gekkon-01-03-product-page.html" class="item__link">	
-													<img src="img/flags/PL.png" width="24" alt="Польша" title="Польша">
-													<span>Масло сливочное «Крестьянское», 170 гр</span>
-												</a>
-											</div>
-											<div class="item__action">
-												<div class="price">
-													<span class="price__old">540 <span class="rub">в</span></span>
-													<span class="price__new">320 <span class="rub">в</span></span>
-												</div>
-												<div class="number js-number" data-max-number="100">
-													<button class="number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="number__input" value="1">
-													<button class="number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
+									</div>
+									<div class="item__action">
+										<div class="price">320 <span class="rub">в</span></div>
+										<div class="number js-number" data-max-number="100">
+											<button class="number__minus js-minus-number" type="button">-</button>
+											<input type="text" class="number__input" value="1">
+											<button class="number__plus js-plus-number" type="button">+</button>
 										</div>
 									</div>
 								</div>
-								<div>
-									<div class="item js-check">
-										<div class="checkbox checkbox_big">
-											<label>
-												<input type="checkbox" class="js-checkbox" data-target-name="js-test-3 js-test">
-												<span></span>
-											</label>
-										</div>
-										<a class="item__img" href="#">
-											<img src="img/item4.jpg" alt="img">
+							</div>
+						</div>
+						<div>
+							<div class="item js-check">
+								<div class="checkbox checkbox_big">
+									<label>
+										<input type="checkbox" class="js-checkbox" data-target-name="js-test-4 js-test">
+										<span></span>
+									</label>
+								</div>
+								<a class="item__img" href="#">
+									<img src="img/item5.jpg" alt="img">
+								</a>
+								<div class="item__main">
+									<div class="item__name">
+										<a href="gekkon-01-03-product-page.html" class="item__link">	
+											<img src="img/flags/FI.png" width="24" alt="Финляндия" title="Финляндия">
+											<span>Соль Fleur de sel de Guerande Danival, 500 гр.</span>
 										</a>
-										<div class="item__main">
-											<div class="item__name">
-												<a href="gekkon-01-03-product-page.html" class="item__link">	
-													<img src="img/flags/NO.png" width="24" alt="Новегия" title="Новегия">
-													<span>Биомороженое в рожке сливочное, 90 гр.</span>
-												</a>
-											</div>
-											<div class="item__action">
-												<div class="price">320 <span class="rub">в</span></div>
-												<div class="number js-number" data-max-number="100">
-													<button class="number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="number__input" value="1">
-													<button class="number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
+									</div>
+									<div class="item__action">
+										<div class="price">320 <span class="rub">в</span></div>
+										<div class="number js-number" data-max-number="100">
+											<button class="number__minus js-minus-number" type="button">-</button>
+											<input type="text" class="number__input" value="1">
+											<button class="number__plus js-plus-number" type="button">+</button>
 										</div>
 									</div>
 								</div>
-								<div>
-									<div class="item js-check">
-										<div class="checkbox checkbox_big">
-											<label>
-												<input type="checkbox" class="js-checkbox" data-target-name="js-test-4 js-test">
-												<span></span>
-											</label>
-										</div>
-										<a class="item__img" href="#">
-											<img src="img/item5.jpg" alt="img">
+							</div>
+						</div>
+						<div>
+							<div class="item js-check">
+								<div class="checkbox checkbox_big">
+									<label>
+										<input type="checkbox" class="js-checkbox" data-target-name="js-test-5 js-test">
+										<span></span>
+									</label>
+								</div>
+								<a class="item__img" href="#">
+									<img src="img/item2.jpg" alt="img">
+								</a>
+								<div class="item__main">
+									<div class="item__name">
+										<a href="gekkon-01-03-product-page.html" class="item__link">	
+											<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания">
+											<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+											<div class="badge badge_new-green">New!</div>
 										</a>
-										<div class="item__main">
-											<div class="item__name">
-												<a href="gekkon-01-03-product-page.html" class="item__link">	
-													<img src="img/flags/FI.png" width="24" alt="Финляндия" title="Финляндия">
-													<span>Соль Fleur de sel de Guerande Danival, 500 гр.</span>
-												</a>
-											</div>
-											<div class="item__action">
-												<div class="price">320 <span class="rub">в</span></div>
-												<div class="number js-number" data-max-number="100">
-													<button class="number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="number__input" value="1">
-													<button class="number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
+									</div>
+									<div class="item__action">
+										<div class="price">1 200 <span class="rub">в</span></div>
+										<div class="number js-number" data-max-number="100">
+											<button class="number__minus js-minus-number" type="button">-</button>
+											<input type="text" class="number__input" value="1">
+											<button class="number__plus js-plus-number" type="button">+</button>
 										</div>
 									</div>
 								</div>
-								<div>
-									<div class="item js-check">
-										<div class="checkbox checkbox_big">
-											<label>
-												<input type="checkbox" class="js-checkbox" data-target-name="js-test-5 js-test">
-												<span></span>
-											</label>
-										</div>
-										<a class="item__img" href="#">
-											<img src="img/item2.jpg" alt="img">
+							</div>
+						</div>
+						<div>
+							<div class="item js-check">
+								<div class="checkbox checkbox_big">
+									<label>
+										<input type="checkbox" class="js-checkbox" data-target-name="js-test-6 js-test">
+										<span></span>
+									</label>
+								</div>
+								<a class="item__img" href="#">
+									<img src="img/item3.jpg" alt="img">
+								</a>
+								<div class="item__main">
+									<div class="item__name">
+										<a href="gekkon-01-03-product-page.html" class="item__link">	
+											<img src="img/flags/PL.png" width="24" alt="Польша" title="Польша">
+											<span>Масло сливочное «Крестьянское», 170 гр</span>
 										</a>
-										<div class="item__main">
-											<div class="item__name">
-												<a href="gekkon-01-03-product-page.html" class="item__link">	
-													<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания">
-													<span>Сыр из козьего молока «Бургос», 500 гр.</span>
-													<div class="badge badge_new-green">New!</div>
-												</a>
-											</div>
-											<div class="item__action">
-												<div class="price">1 200 <span class="rub">в</span></div>
-												<div class="number js-number" data-max-number="100">
-													<button class="number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="number__input" value="1">
-													<button class="number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
+									</div>
+									<div class="item__action">
+										<div class="price">
+											<span class="price__old">540 <span class="rub">в</span></span>
+											<span class="price__new">320 <span class="rub">в</span></span>
+										</div>
+										<div class="number js-number" data-max-number="100">
+											<button class="number__minus js-minus-number" type="button">-</button>
+											<input type="text" class="number__input" value="1">
+											<button class="number__plus js-plus-number" type="button">+</button>
 										</div>
 									</div>
 								</div>
-								<div>
-									<div class="item js-check">
-										<div class="checkbox checkbox_big">
-											<label>
-												<input type="checkbox" class="js-checkbox" data-target-name="js-test-6 js-test">
-												<span></span>
-											</label>
-										</div>
-										<a class="item__img" href="#">
-											<img src="img/item3.jpg" alt="img">
+							</div>
+						</div>
+						<div>
+							<div class="item js-check">
+								<div class="checkbox checkbox_big">
+									<label>
+										<input type="checkbox" class="js-checkbox" data-target-name="js-test-7 js-test">
+										<span></span>
+									</label>
+								</div>
+								<a class="item__img" href="#">
+									<img src="img/item4.jpg" alt="img">
+								</a>
+								<div class="item__main">
+									<div class="item__name">
+										<a href="gekkon-01-03-product-page.html" class="item__link">	
+											<img src="img/flags/NO.png" width="24" alt="Новегия" title="Новегия">
+											<span>Биомороженое в рожке сливочное, 90 гр.</span>
 										</a>
-										<div class="item__main">
-											<div class="item__name">
-												<a href="gekkon-01-03-product-page.html" class="item__link">	
-													<img src="img/flags/PL.png" width="24" alt="Польша" title="Польша">
-													<span>Масло сливочное «Крестьянское», 170 гр</span>
-												</a>
-											</div>
-											<div class="item__action">
-												<div class="price">
-													<span class="price__old">540 <span class="rub">в</span></span>
-													<span class="price__new">320 <span class="rub">в</span></span>
-												</div>
-												<div class="number js-number" data-max-number="100">
-													<button class="number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="number__input" value="1">
-													<button class="number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
+									</div>
+									<div class="item__action">
+										<div class="price">320 <span class="rub">в</span></div>
+										<div class="number js-number" data-max-number="100">
+											<button class="number__minus js-minus-number" type="button">-</button>
+											<input type="text" class="number__input" value="1">
+											<button class="number__plus js-plus-number" type="button">+</button>
 										</div>
 									</div>
 								</div>
-								<div>
-									<div class="item js-check">
-										<div class="checkbox checkbox_big">
-											<label>
-												<input type="checkbox" class="js-checkbox" data-target-name="js-test-7 js-test">
-												<span></span>
-											</label>
-										</div>
-										<a class="item__img" href="#">
-											<img src="img/item4.jpg" alt="img">
-										</a>
-										<div class="item__main">
-											<div class="item__name">
-												<a href="gekkon-01-03-product-page.html" class="item__link">	
-													<img src="img/flags/NO.png" width="24" alt="Новегия" title="Новегия">
-													<span>Биомороженое в рожке сливочное, 90 гр.</span>
-												</a>
-											</div>
-											<div class="item__action">
-												<div class="price">320 <span class="rub">в</span></div>
-												<div class="number js-number" data-max-number="100">
-													<button class="number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="number__input" value="1">
-													<button class="number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
-										</div>
-									</div>
+							</div>
+						</div>
+						<div>
+							<div class="item js-check">
+								<div class="checkbox checkbox_big">
+									<label>
+										<input type="checkbox" class="js-checkbox" data-target-name="js-test-8 js-test">
+										<span></span>
+									</label>
 								</div>
-								<div>
-									<div class="item js-check">
-										<div class="checkbox checkbox_big">
-											<label>
-												<input type="checkbox" class="js-checkbox" data-target-name="js-test-8 js-test">
-												<span></span>
-											</label>
-										</div>
-										<a class="item__img" href="#">
-											<img src="img/item5.jpg" alt="img">
+								<a class="item__img" href="#">
+									<img src="img/item5.jpg" alt="img">
+								</a>
+								<div class="item__main">
+									<div class="item__name">
+										<a href="gekkon-01-03-product-page.html" class="item__link">	
+											<img src="img/flags/FI.png" width="24" alt="Финляндия" title="Финляндия">
+											<span>Соль Fleur de sel de Guerande Danival, 500 гр.</span>
 										</a>
-										<div class="item__main">
-											<div class="item__name">
-												<a href="gekkon-01-03-product-page.html" class="item__link">	
-													<img src="img/flags/FI.png" width="24" alt="Финляндия" title="Финляндия">
-													<span>Соль Fleur de sel de Guerande Danival, 500 гр.</span>
-												</a>
-											</div>
-											<div class="item__action">
-												<div class="price">320 <span class="rub">в</span></div>
-												<div class="number js-number" data-max-number="100">
-													<button class="number__minus js-minus-number" type="button">-</button>
-													<input type="text" class="number__input" value="1">
-													<button class="number__plus js-plus-number" type="button">+</button>
-												</div>
-											</div>
+									</div>
+									<div class="item__action">
+										<div class="price">320 <span class="rub">в</span></div>
+										<div class="number js-number" data-max-number="100">
+											<button class="number__minus js-minus-number" type="button">-</button>
+											<input type="text" class="number__input" value="1">
+											<button class="number__plus js-plus-number" type="button">+</button>
 										</div>
 									</div>
 								</div>
@@ -1412,119 +1406,119 @@
 					</div>
 				</div>
 				
+
+				<div class="h1 h1_mb">Вы смотрели</div>
 				<div class="row">
-					<div class="col-xs-12"><div class="h1 h1_mb">Вы смотрели</div></div>
-					<div class="row">
-						<div class="col-md-2 col-sm-4 col-xs-6">
-							<div class="item item_small">
-								<a class="item__img" href="#">
-									<img src="img/item2.jpg" alt="img">
-								</a>
-								<div class="item__main">
-									<div class="item__name">
-										<a href="gekkon-01-03-product-page.html" class="item__link">	
-											<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
-											<span>Сыр из козьего молока «Бургос», 500 гр.</span>
-										</a>
-									</div>
-									<div class="item__action">
-										<div class="price">1 200 <span class="rub">в</span></div>
-									</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<div class="item item_small">
+							<a class="item__img" href="#">
+								<img src="img/item2.jpg" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="gekkon-01-03-product-page.html" class="item__link">	
+										<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+										<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+									</a>
+								</div>
+								<div class="item__action">
+									<div class="price">1 200 <span class="rub">в</span></div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 col-sm-4 col-xs-6">
-							<div class="item item_small">
-								<a class="item__img" href="#">
-									<img src="img/item2.jpg" alt="img">
-								</a>
-								<div class="item__main">
-									<div class="item__name">
-										<a href="gekkon-01-03-product-page.html" class="item__link">	
-											<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
-											<span>Сыр из козьего молока «Бургос», 500 гр.</span>
-										</a>
-									</div>
-									<div class="item__action">
-										<div class="price">1 200 <span class="rub">в</span></div>
-									</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<div class="item item_small">
+							<a class="item__img" href="#">
+								<img src="img/item2.jpg" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="gekkon-01-03-product-page.html" class="item__link">	
+										<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+										<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+									</a>
+								</div>
+								<div class="item__action">
+									<div class="price">1 200 <span class="rub">в</span></div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 col-sm-4 col-xs-6">
-							<div class="item item_small">
-								<a class="item__img" href="#">
-									<img src="img/item2.jpg" alt="img">
-								</a>
-								<div class="item__main">
-									<div class="item__name">
-										<a href="gekkon-01-03-product-page.html" class="item__link">	
-											<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
-											<span>Сыр из козьего молока «Бургос», 500 гр.</span>
-										</a>
-									</div>
-									<div class="item__action">
-										<div class="price">1 200 <span class="rub">в</span></div>
-									</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<div class="item item_small">
+							<a class="item__img" href="#">
+								<img src="img/item2.jpg" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="gekkon-01-03-product-page.html" class="item__link">	
+										<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+										<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+									</a>
+								</div>
+								<div class="item__action">
+									<div class="price">1 200 <span class="rub">в</span></div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 col-sm-4 col-xs-6">
-							<div class="item item_small">
-								<a class="item__img" href="#">
-									<img src="img/item2.jpg" alt="img">
-								</a>
-								<div class="item__main">
-									<div class="item__name">
-										<a href="gekkon-01-03-product-page.html" class="item__link">	
-											<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
-											<span>Сыр из козьего молока «Бургос», 500 гр.</span>
-										</a>
-									</div>
-									<div class="item__action">
-										<div class="price">1 200 <span class="rub">в</span></div>
-									</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<div class="item item_small">
+							<a class="item__img" href="#">
+								<img src="img/item2.jpg" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="gekkon-01-03-product-page.html" class="item__link">	
+										<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+										<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+									</a>
+								</div>
+								<div class="item__action">
+									<div class="price">1 200 <span class="rub">в</span></div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 col-sm-4 col-xs-6">
-							<div class="item item_small">
-								<a class="item__img" href="#">
-									<img src="img/item2.jpg" alt="img">
-								</a>
-								<div class="item__main">
-									<div class="item__name">
-										<a href="gekkon-01-03-product-page.html" class="item__link">	
-											<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
-											<span>Сыр из козьего молока «Бургос», 500 гр.</span>
-										</a>
-									</div>
-									<div class="item__action">
-										<div class="price">1 200 <span class="rub">в</span></div>
-									</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<div class="item item_small">
+							<a class="item__img" href="#">
+								<img src="img/item2.jpg" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="gekkon-01-03-product-page.html" class="item__link">	
+										<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+										<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+									</a>
+								</div>
+								<div class="item__action">
+									<div class="price">1 200 <span class="rub">в</span></div>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-2 col-sm-4 col-xs-6">
-							<div class="item item_small">
-								<a class="item__img" href="#">
-									<img src="img/item2.jpg" alt="img">
-								</a>
-								<div class="item__main">
-									<div class="item__name">
-										<a href="gekkon-01-03-product-page.html" class="item__link">	
-											<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
-											<span>Сыр из козьего молока «Бургос», 500 гр.</span>
-										</a>
-									</div>
-									<div class="item__action">
-										<div class="price">1 200 <span class="rub">в</span></div>
-									</div>
+					</div>
+					<div class="col-md-2 col-sm-4 col-xs-6">
+						<div class="item item_small">
+							<a class="item__img" href="#">
+								<img src="img/item2.jpg" alt="img">
+							</a>
+							<div class="item__main">
+								<div class="item__name">
+									<a href="gekkon-01-03-product-page.html" class="item__link">	
+										<img src="img/flags/ES.png" width="24" alt="Испания" title="Испания"> 
+										<span>Сыр из козьего молока «Бургос», 500 гр.</span>
+									</a>
+								</div>
+								<div class="item__action">
+									<div class="price">1 200 <span class="rub">в</span></div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</div>

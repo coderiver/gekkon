@@ -144,7 +144,8 @@
 											<span class="meta meta_small">Осталось 3 шт</span>
 										</div>
 										<div class="box__item">
-											<button type="button" class="btn btn-default">В корзину</button>
+											
+											<button class="btn btn-default js-btn-cart" data-text="В корзине" type="button">В корзину</button>
 											<p>Вы можете выбрать <a href="#" class="link-solid">подарочную упаковку</a> для этого продукта в корзине</p>
 										</div>
 									</div>
@@ -361,10 +362,11 @@
 												</div>
 											</div>
 										</div>
-										<div class="review__body js-concat-text">
+										<div class="review__body">
 											При всей своей любви к маслам как средству ухода за волосами за три года регулярного применения масляных масок я так и не попробовала самого популярного масла - оливкового. У меня дома всегда стоит бутылка оливкового масла, но идет оно в салаты или для жарки
+											<span class="review__hidden js-concat-hidden">маслам как средству ухода за волосами за три года регулярного применения масляных масок я так и не попробовала самого популярного масла - оливкового</span>
 										</div>
-										<button class="btn-dots btn-dots_light js-concat-btn" data-text="Скрыть" type="button">Читать полностью</button>
+										<button class="btn-dots btn-dots_light js-concat-btn" data-text-hidden="Скрыть" type="button" data-text-visible="Читать полностью">Читать полностью</button>
 									</div>
 									<div class="review js-concat">
 										<div class="review__head">
@@ -582,10 +584,10 @@
 					</div>
 				</div>
 				//=include partials/items-slider-products.html
-				<div class="row">
-					<div class="col-xs-12"><div class="h1 h1_mb">Вы смотрели</div></div>
-					//=include partials/last-items.html
-				</div>
+
+				<div class="h1 h1_mb">Вы смотрели</div>
+				//=include partials/last-items.html
+
 			</div>
 		</div>
 	</div>
