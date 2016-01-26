@@ -152,6 +152,8 @@
 		margin: 0 0 20px
 	&_mt
 		margin-top: 0
+		.cat-list
+			margin-bottom: 30px
 .cat-list
 	+r(767)
 		margin-bottom: 20px
@@ -239,9 +241,7 @@
 			display: block
 		.slick-prev, 
 		.slick-next
-			top: -60px
-			+r(767)
-				top: -15px
+			top: 0
 		.slick-slider
 			margin: 0
 		.slick-list
@@ -253,10 +253,20 @@
 			display: none
 		+ .slider-items
 			margin-top: 0
-
+.section-items
+	.slider-items_mobile
+		padding-top: 0
+		+r(767)
+			padding-top: 35px
+		.slick-prev, 
+		.slick-next
+			top: -60px
+			+r(767)
+				top: 0
 .btn-wrap
 	text-align: center
 	
+
 .tab-content_accord
 	+r(767)
 		margin: 30px 0 0 

@@ -106,7 +106,6 @@ $(document).ready(function() {
 		self.slick({
 			slidesToShow: 2,
 			slidesToScroll: 2,
-			infinite: true,
 			appendArrows: self.parents(".slider-items"),
 			responsive: [
 				{
@@ -118,10 +117,6 @@ $(document).ready(function() {
 				}
 			]
 		});
-	});
-	$(window).resize(function(){
-		console.log("resize");
-		$('.js-slider-mobile').slick('reinit');
 	});
 
 	$(".js-raty").raty({

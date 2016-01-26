@@ -124,6 +124,16 @@
 			transition: transform .35s ease-out
 			+r(1024)
 				width: 100%
+		iframe
+			+rm(768)
+				+r(1023)
+					min-height: 400px
+			+rm(480)
+				+r(767)
+					min-height: 300px
+			+rm(320)
+				+r(479)
+					min-height: 250px
 		&:hover
 			img
 				transform: scale(1.1)
@@ -302,7 +312,6 @@
 .sidebar
 	h2
 		margin-bottom: 30px
-
 .gift-box
 	&__header
 		margin-bottom: 20px

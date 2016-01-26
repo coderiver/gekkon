@@ -1,5 +1,6 @@
 .sidebar
 	position: relative
+	
 	&__group
 		margin-bottom: 45px
 		position: relative
@@ -67,6 +68,10 @@
 					color: #fff 
 		.btn-dots
 			color: #fff 
+	&_static
+		+r(1023)
+			position: static
+			transform: none
 .sort-result
 	display: none
 	position: absolute
