@@ -3141,6 +3141,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .table_order .item__name { height: auto; }
 .table_order .item__link { font-size: 15px; }
 
+.total { position: relative; }
 .total_mb { margin-bottom: 40px; }
 .total__head { padding: 20px 0; text-align: right; }
 .total__list { display: block; text-align: left; margin: 0; }
@@ -3164,6 +3165,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .total__footer .link.link_i-small span { font-size: 13px; position: relative; top: -2px; }
 .total__footer .note-text { margin-bottom: 20px; font-size: 15px; }
 .total__footer img { max-width: 100%; display: block; }
+.total .link_total-back { position: absolute; bottom: 0; left: 0; }
 
 .icon-digit-1 { display: inline-block; vertical-align: middle; margin-right: 20px; background-image: url("../img/icons.png"); width: 42px; height: 40px; background-position: 0px -147px; }
 
@@ -3185,6 +3187,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 .link-cancel { color: #ea4924; }
 .link-cancel:hover { color: #ea4924; }
+
+.form-horizontal .control-label.text-left { text-align: left; }
 
 .menu-fixed { position: fixed; z-index: 10; top: 0; right: 0; bottom: 0; left: 0; -webkit-transition: -webkit-transform 0.3s; transition: transform 0.3s; -webkit-transform: translateX(100%); -ms-transform: translateX(100%); transform: translateX(100%); }
 .menu-fixed.is-active { -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
@@ -3328,6 +3332,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .tab-content_accord > .tab-pane .tab-pane__collapse[aria-expanded="false"]{ display: none; }
  .tab-content_accord > .tab-pane .tab-pane__collapse[aria-expanded="true"]{ display: block; }
  .total__footer .link{ margin: 20px 0; }
+ .total .link_total-back{ position: static; margin-top: 20px; display: inline-block; }
  .menu-fixed__in{ width: 100%; }
  .map{ margin-top: 2rem; } }
 @media only screen and (min-width: 768px){

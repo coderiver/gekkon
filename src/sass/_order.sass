@@ -160,6 +160,7 @@
 		&__link
 			font-size: 15px
 .total
+	position: relative
 	&_mb
 		margin-bottom: 40px
 	&__head
@@ -220,6 +221,14 @@
 		img
 			max-width: 100%
 			display: block
+	.link_total-back
+		position: absolute
+		bottom: 0
+		left: 0
+		+r(767)
+			position: static
+			margin-top: 20px
+			display: inline-block
 @for $i from 1 through 4
 	.icon-digit-#{$i}
 		display: inline-block
@@ -256,3 +265,8 @@
 	color: $hot
 	&:hover
 		color: $hot
+
+.form-horizontal 
+	.control-label
+		&.text-left
+			text-align: left
