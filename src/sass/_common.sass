@@ -1549,7 +1549,10 @@ select
 	td, th
 		&.is-center
 			text-align: center
-
+.table-product
+	&.table-product_mod
+		th:nth-last-child(4)
+			width: 120px
 .table-packing
 	//margin-bottom: 50px
 	td 
@@ -1584,3 +1587,33 @@ select
 	&.is-active
 		&:before
 			content: "\e800"
+
+.sel-list
+	cursor: pointer
+	margin-bottom: 0
+	> li
+		position: relative
+		i
+			position: absolute
+			right: 5px
+			top: 50%
+			transform: translateY(-50%) 
+			font-size: 21px
+		ul
+			position: absolute
+			top: 100%
+			left: 0
+			width: 112px
+			border: 1px solid #B9B9B9
+			background-color: #FFF
+			z-index: 1
+			display: none
+			&.is-active
+				display: block
+			li
+				padding: 5px 10px
+				&:before
+					display: none
+					padding-left: 0
+				&:hover
+					text-decoration: underline

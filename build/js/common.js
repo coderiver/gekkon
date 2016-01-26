@@ -302,6 +302,10 @@ $(document).ready(function() {
 	//mask
 	$('[type="tel"]').mask("+7 (999) 999 - 99 - 99");
 
+	$('.js-select-price').on('click', function(){
+		$(this).find("ul").toggleClass('is-active');
+	});
+
 	function scrollbarWidth() {
 		var block = $('<div>').css({'height':'50px','width':'50px'}),
 			indicator = $('<div>').css({'height':'200px'});

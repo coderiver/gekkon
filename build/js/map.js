@@ -425,13 +425,3 @@ AmCharts.themes.light = {
 		});
 	});
 })();
-
-
-
-
-
-
-
-
-
-
