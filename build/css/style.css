@@ -2093,6 +2093,43 @@ body.no-scroll { overflow: hidden; }
 input { -webkit-border-radius: 0; border-radius: 0; }
 input::-ms-clear { display: none; }
 
+ol:not([class]) { line-height: 1.74; counter-reset: list; }
+ol:not([class]) li { position: relative; padding-left: 0; line-height: 1.4; }
+ol:not([class]) li:before { content: counter(list) "."; counter-increment: list; line-height: 1; color: #353130; display: inline-block; margin-right: 5px; font-weight: 300; font-size: 15px; }
+ol:not([class]) li ol { counter-reset: sublist; padding-left: 36px; }
+ol:not([class]) li ol li { padding-left: 0; }
+ol:not([class]) li ol li:before { content: counter(list) "." counter(sublist) "."; counter-increment: sublist; display: none; }
+ol:not([class]) li ol ol { padding-left: 36px; counter-reset: sublist2; }
+ol:not([class]) li ol ol li { padding-left: 0; }
+ol:not([class]) li ol ol li:before { content: counter(list) "." counter(sublist) "." counter(sublist2); counter-increment: sublist2; }
+
+ul:not([class]) { line-height: 1.7; }
+ul:not([class]) li { position: relative; padding-left: 13px; line-height: 1.4; }
+ul:not([class]) li li { padding-left: 38px; }
+ul:not([class]) li li li { padding-left: 38px; }
+ul:not([class]) > li:before { content: ""; position: absolute; left: 0; top: 6px; width: 7px; height: 7px; -webkit-border-radius: 50%; border-radius: 50%; background: #799a2a; }
+ul:not([class]) > li li:before { display: none; }
+
+h1:not([class]) { margin: 21px 0 16px; font-size: 40px; font-weight: 300; line-height: 1.2; }
+h1:not([class]) span { color: #799a2a; }
+
+h2:not([class]) { font-size: 30px; font-weight: 300; line-height: 1.2; }
+h2:not([class]) span { color: #799a2a; }
+
+h3:not([class]) { font-size: 20px; font-weight: 300; line-height: 1.2; }
+h3:not([class]) span { color: #799a2a; }
+
+p:not([class]) img[align="left"] { float: left; margin: 0 15px 15px 0; }
+p:not([class]) img[align="right"] { float: right; margin: 0 0 15px 15px; }
+
+table:not([class]) { width: 100%; margin: 20px 0 12px; min-width: 500px; }
+table:not([class]) thead tr { background: #a7c66d; height: 38px; }
+table:not([class]) thead th { font-weight: 300; color: #fff; }
+table:not([class]) th, table:not([class]) td { vertical-align: middle; text-align: center; }
+table:not([class]) th:first-child, table:not([class]) td:first-child { padding-left: 15px; text-align: left; }
+table:not([class]) tbody tr { height: 40px; border-bottom: 1px dashed #ddd; }
+table:not([class]) tbody tr:last-child { border-bottom: 1px solid #a7c66d; }
+
 p.increase { font-size: 18px; }
 
 .is-hidden { display: none; }
@@ -3028,9 +3065,9 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .raty__icons .star-off-png:before, .raty__icons .star-on-png:before { content: ""; font-family: "trb"; font-style: normal; font-weight: normal; speak: none; display: inline-block; text-decoration: inherit; width: 1em; margin-right: .2em; text-align: center; font-variant: normal; text-transform: none; line-height: 1em; margin-left: .2em; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; margin: 0; }
 .raty__icons .star-off-png { color: #cecece; }
 .raty__icons .star-on-png { color: #fec71d; }
-.raty .btn-dots { margin-left: 15px; }
 .raty_small .raty__icons { font-size: 15px; }
 .raty_small .btn-dots { font-size: 13px; }
+.raty_review .raty__icons { margin-right: 15px; }
 
 .info-text { font-size: 15px; font-weight: 300; }
 .info-text_denger { color: #ea4924; }
@@ -3281,6 +3318,9 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .hidden-xs{ display: none !important; }
  .navbar .navbar-nav .open .dropdown-menu > .active > a, .navbar .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar .navbar-nav .open .dropdown-menu > .active > a:focus{ color: #fff; background-image: -webkit-linear-gradient(top, #799a2a 0, #698625 100%); background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #799a2a), to(#698625)); background-image: linear-gradient(to bottom, #799a2a 0, #698625 100%); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff799a2a', endColorstr='#ff698625', GradientType=0); } }
 @media only screen and (max-width: 767px){
+ h1:not([class]){ font-size: 30px; }
+ h2:not([class]){ font-size: 25px; }
+ h3:not([class]){ font-size: 18px; }
  .title_h1{ font-size: 30px; }
  .title_h2{ font-size: 20px; }
  .title_h3{ font-size: 18px; }

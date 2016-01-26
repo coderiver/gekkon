@@ -51,6 +51,125 @@ input
 	border-radius: 0
 	&::-ms-clear
 		display: none
+ol
+	&:not([class])
+		line-height: 1.74
+		counter-reset: list
+		li
+			position: relative
+			padding-left: 0
+			line-height: 1.4
+			&:before
+				content: counter(list)"."
+				counter-increment: list
+				line-height: 1
+				color: $text
+				display: inline-block
+				margin-right: 5px
+				+light
+				font-size: 15px
+			ol
+				counter-reset: sublist
+				padding-left: 36px
+				li
+					padding-left: 0
+					&:before
+						content: counter(list)"."counter(sublist)"."
+						counter-increment: sublist
+						display: none
+				ol
+					padding-left: 36px
+					counter-reset: sublist2
+					li
+						padding-left: 0
+						&:before
+							content: counter(list)"."counter(sublist)"."counter(sublist2)
+							counter-increment: sublist2
+ul
+	&:not([class])
+		line-height: 1.7
+		li
+			position: relative
+			padding-left: 13px
+			line-height: 1.4
+			li
+				padding-left: 38px
+				li
+					padding-left: 38px
+		& > li
+			&:before
+				content: ""
+				position: absolute
+				left: 0
+				top: 6px
+				width: 7px
+				height: 7px
+				border-radius: 50%
+				background: $btn
+			li
+				&:before
+					display: none
+h1
+	&:not([class])
+		margin: 21px 0 16px
+		font-size: 40px
+		+light
+		line-height: 1.2
+		span
+			color: $btn
+		+r(767)
+			font-size: 30px
+h2
+	&:not([class])
+		font-size: 30px
+		+light
+		line-height: 1.2
+		span
+			color: $btn
+		+r(767)
+			font-size: 25px
+h3
+	&:not([class])
+		font-size: 20px
+		+light
+		line-height: 1.2
+		span
+			color: $btn
+		+r(767)
+			font-size: 18px
+p
+	&:not([class])
+		img
+			&[align="left"]
+				float: left
+				margin: 0 15px 15px 0
+			&[align="right"]
+				float: right
+				margin: 0 0 15px 15px
+table
+	&:not([class])
+		width: 100%
+		margin: 20px 0 12px
+		min-width: 500px
+		thead
+			tr
+				background: $primary
+				height: 38px
+			th
+				+light
+				color: #fff
+		th,td
+			vertical-align: middle
+			text-align: center
+			&:first-child
+				padding-left: 15px
+				text-align: left
+		tbody
+			tr
+				height: 40px
+				border-bottom: 1px dashed #ddd
+				&:last-child
+					border-bottom: 1px solid $primary
 p.increase
 	font-size: 18px
 .is-hidden

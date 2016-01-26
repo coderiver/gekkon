@@ -83,6 +83,7 @@ $(document).ready(function() {
 			console.log(this._tab);
 			var top = $('a[href="'+this._tab+'"]').offset().top;
 			$('a[href="'+this._tab+'"').tab('show');
+			$('a[href="'+this._tab+'"').collapse('show');
 			$('html, body').animate({
 				scrollTop: top
 			}, 500);
