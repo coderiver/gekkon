@@ -301,10 +301,18 @@ $(document).ready(function() {
 
 	//mask
 	$('[type="tel"]').mask("+7 (999) 999 - 99 - 99");
-
-	$('.js-select-price').on('click', function(){
-		$(this).find("ul").toggleClass('is-active');
-	});
+	// $('.js-select-price').on('click', function(){
+	// 	$(".js-select-price").find("ul").removeClass('is-active');
+	// });
+	$('.js-select-price').on('click', function(e){
+		e.stopPropagation();
+        $('.js-select-price').find("ul").removeClass('is-active');
+        $(this).find("ul").toggleClass('is-active');
+    });
+    $('body').on('click', function(){
+        $('.js-select-price').find("ul").removeClass('is-active');
+    });
+	
 
 	function scrollbarWidth() {
 		var block = $('<div>').css({'height':'50px','width':'50px'}),
