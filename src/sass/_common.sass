@@ -671,6 +671,8 @@ p.increase
 	.item
 		&:hover
 			box-shadow: none
+		+r(1024)
+			padding: 0
 .item
 	position: relative
 	margin-bottom: 43px
@@ -680,6 +682,7 @@ p.increase
 		padding: 0 10px
 	+r(1024)
 		padding: 0 20px
+		
 	&:hover,
 	&.is-active
 		box-shadow: 0 0 0 3px $btn

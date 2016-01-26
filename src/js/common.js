@@ -80,6 +80,7 @@ $(document).ready(function() {
 		_switchTab: function(event) {
 			var el = $(event.target);
 			this._tab = $(event.target).data("tab");
+			console.log(this._tab);
 			var top = $('a[href="'+this._tab+'"]').offset().top;
 			$('a[href="'+this._tab+'"').tab('show');
 			$('html, body').animate({

@@ -68,7 +68,9 @@
 	display: inline-block
 	margin-top: 13px
 	color: $text 
-	
+	+r(767)
+		width: 95px
+		margin-top: 17px
 	&:hover
 		color: $text 
 	strong
@@ -88,7 +90,9 @@
 		white-space: nowrap
 	img
 		display: block
-
+		+r(767)
+			width: 100%
+			height: auto
 .menu
 	&__item
 		&:hover

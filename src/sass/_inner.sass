@@ -842,21 +842,24 @@ input[type=number]
 
 .row_set
 	display: table
-	@media only screen and (min-device-width : 768px) and (max-device-width : 1023px)
-		display: block
+	+rm(768)
+		+r(1023)
+			display: block
 	& > div
 		display: table-cell
 		vertical-align: middle
 		float: none
-		@media only screen and (min-device-width : 768px) and (max-device-width : 1023px)
-			display: block
-			float: left
-			text-align: center
-			width: 50%
-		@media only screen and (min-device-width : 320px) and (max-device-width : 767px)
-			display: block
-			width: 100%
-			float: none
+		+rm(768)
+			+r(1023)
+				display: block
+				float: left
+				text-align: center
+				width: 50%
+		+rm(320)
+			+r(767)
+				display: block
+				width: 100%
+				float: none
 		&:first-child
 			.set-result
 				&:before
