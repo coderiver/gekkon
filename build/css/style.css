@@ -3388,6 +3388,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .additional{ display: block; }
  .additional__icon, .additional__text{ display: block; width: 100%; text-align: center; }
  .sort-result span{ display: none; }
+ .view.view_marg{ margin-top: 20px !important; }
  .product-info .text-right{ text-align: left; }
  .box__head .meta{ display: block; margin-left: 0px; }
  .cat-list{ margin-bottom: 20px; }
@@ -3544,6 +3545,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .sidebar_static{ position: static; -webkit-transform: none; -ms-transform: none; transform: none; }
  .sort__title{ margin-bottom: 20px; }
  .sort .view{ margin-top: 20px; }
+ .view.view_marg{ margin-top: 0; }
  .carousel{ margin-bottom: 40px; }
  .slider-items_mobile{ display: block; }
  .slider-items_desktop{ display: none; }

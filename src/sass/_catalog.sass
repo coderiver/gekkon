@@ -22,6 +22,11 @@
 			margin-top: 20px
 .view
 	text-align: right
+	&.view_marg
+		+r(1023)
+			margin-top: 0
+		+r(767)
+			margin-top: 20px !important
 	span, a
 		display: inline-block
 		color: $text
