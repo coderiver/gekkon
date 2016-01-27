@@ -172,6 +172,10 @@ table
 					border-bottom: 1px solid $primary
 p.increase
 	font-size: 18px
+.text-underline
+	text-decoration: underline
+	&:hover
+		text-decoration: none
 .is-hidden
 	display: none
 // common blocks
@@ -710,11 +714,16 @@ p.increase
 	font-size: 15px
 	+light
 	+r(767)
-		margin: 0 
+		margin: 0 0 20px
+		text-align: left
+		padding: 0
 	li
 		display: inline-block
 		margin-left: 25px
 		vertical-align: middle
+		&:first-child
+			+r(767)
+				margin-left: 0
 		
 		&.active
 			cursor: default
@@ -1547,12 +1556,10 @@ select
 		.number 
 			vertical-align: middle
 	td, th
+		&.w-add
+			width: 120px
 		&.is-center
 			text-align: center
-.table-product
-	&.table-product_mod
-		th:nth-last-child(4)
-			width: 120px
 .table-packing
 	//margin-bottom: 50px
 	td 
@@ -1561,6 +1568,8 @@ select
 			width: 100px
 		&:nth-child(5), &:nth-child(6)
 			width: 80px
+		&.w-add
+			width: 120px
 	&__pic
 		display: inline-block
 		vertical-align: middle
@@ -1593,17 +1602,20 @@ select
 	margin-bottom: 0
 	> li
 		position: relative
+		text-decoration: underline
+		&:hover
+			text-decoration: none
 		i
-			position: absolute
-			right: 5px
-			top: 50%
-			transform: translateY(-50%) 
-			font-size: 21px
+			// position: absolute
+			// right: 10px
+			// top: 20%
+			font-size: 16px
+			vertical-align: middle
 		ul
 			position: absolute
 			top: 100%
 			left: 0
-			width: 112px
+			width: 115px
 			border: 1px solid #B9B9B9
 			background-color: #FFF
 			z-index: 1
