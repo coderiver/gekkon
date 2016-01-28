@@ -593,16 +593,13 @@ $(document).ready(function() {
 
 	//mask
 	$('[type="tel"]').mask("+7 (999) 999 - 99 - 99");
-	// $('.js-select-price').on('click', function(){
-	// 	$(".js-select-price").find("ul").removeClass('is-active');
-	// });
 	$('.js-select-price').on('click', function(e){
 		e.stopPropagation();
-        $('.js-select-price').find("ul").removeClass('is-active');
-        $(this).find("ul").toggleClass('is-active');
-    });
-    $('body').on('click', function(){
-        $('.js-select-price').find("ul").removeClass('is-active');
+		var $this = $(this);
+        $this.find("ul").toggleClass('is-active');
+        $('body').one('click', function(){
+            $this.find("ul").removeClass('is-active');
+        });
     });
 	
 

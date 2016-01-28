@@ -2598,9 +2598,10 @@ select::-ms-expand { display: none; }
 .sel-list > li { position: relative; text-decoration: underline; }
 .sel-list > li:hover { text-decoration: none; }
 .sel-list > li i { font-size: 16px; vertical-align: middle; }
-.sel-list > li ul { position: absolute; top: 100%; left: 0; width: 115px; border: 1px solid #B9B9B9; background-color: #FFF; z-index: 1; display: none; }
+.sel-list > li ul { position: absolute; top: 100%; left: 0; width: 115px; border: 1px solid #B9B9B9; background-color: #FFF; z-index: 1; display: none; padding: 5px 0; }
 .sel-list > li ul.is-active { display: block; }
-.sel-list > li ul li { padding: 5px 10px; }
+.sel-list > li ul li { padding: 0 5px; }
+.sel-list > li ul li:last-child .checkbox { margin-bottom: 0; }
 .sel-list > li ul li:before { display: none; padding-left: 0; }
 .sel-list > li ul li:hover { text-decoration: underline; }
 

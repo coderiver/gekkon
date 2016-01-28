@@ -1620,12 +1620,17 @@ select
 			background-color: #FFF
 			z-index: 1
 			display: none
+			padding: 5px 0
 			&.is-active
 				display: block
 			li
-				padding: 5px 10px
+				padding: 0 5px
+				&:last-child
+					.checkbox
+						margin-bottom: 0
 				&:before
 					display: none
 					padding-left: 0
 				&:hover
 					text-decoration: underline
+
