@@ -3409,11 +3409,9 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .jumbotron{ padding-top: 48px; padding-bottom: 48px; }
  .container .jumbotron, .container-fluid .jumbotron{ padding-left: 60px; padding-right: 60px; }
  .jumbotron h1, .jumbotron .h1{ font-size: 68px; } }
-@media only screen and (max-width: 768px){
- .required-field{ margin-top: 10px; }
- .steps li{ width: auto; padding: 0 20px; background: none; }
- .steps li:before{ display: none; }
- .steps li:after{ display: none; } }
+@media only screen and (min-width: 768px){
+ .item-about__header i{ float: left; }
+ .item-about__header span{ overflow: hidden; display: block; padding-top: 7px; } }
 @media (min-width: 768px){
  .lead{ font-size: 22.5px; }
  .dl-horizontal dt{ float: left; width: 160px; clear: left; text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -3498,9 +3496,12 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .modal-dialog{ width: 415px; margin: 30px auto; }
  .modal-content{ -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
  .modal-sm{ width: 300px; } }
-@media only screen and (min-width: 768px){
- .item-about__header i{ float: left; }
- .item-about__header span{ overflow: hidden; display: block; padding-top: 7px; } }
+@media only screen and (max-width: 768px){
+ .add-spacing{ padding: 0 10px; }
+ .required-field{ margin-top: 10px; }
+ .steps li{ width: auto; padding: 0 20px; background: none; }
+ .steps li:before{ display: none; }
+ .steps li:after{ display: none; } }
 @media only screen and (max-width: 1023px){
  .payments__list img{ margin-right: 1px; }
  .post_box{ margin: 20px 0; }
