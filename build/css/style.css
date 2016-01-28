@@ -3313,7 +3313,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .hidden-print{ display: none !important; } }
 @media only screen and (max-width: 480px){
  .raty__icons{ font-size: 19px; }
- .raty_small .btn-dots_mob{ display: block; }
  .raty_review .raty__icons{ margin-right: 5px; }
  .steps{ border: 0; height: auto; line-height: 1; }
  .steps li{ display: inline-block; float: none; }
