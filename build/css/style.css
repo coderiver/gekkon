@@ -3392,7 +3392,6 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .additional__icon, .additional__text{ display: block; width: 100%; text-align: center; }
  .sort-result span{ display: none; }
  .view.view_marg{ margin-top: 20px !important; }
- .product-info .text-right{ text-align: left; }
  .box__head .meta{ display: block; margin-left: 0px; }
  .cat-list{ margin-bottom: 20px; }
  .slider-items{ padding-top: 35px; }
