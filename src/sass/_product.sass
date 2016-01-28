@@ -76,6 +76,8 @@
 		font-size: 20px
 		height: 20px
 		line-height: 1
+		+r(480)
+			font-size: 19px
 		.star-off-png,
 		.star-on-png
 			display: inline-block
@@ -93,9 +95,14 @@
 			font-size: 15px
 		.btn-dots
 			font-size: 13px
+		.btn-dots_mob
+			+r(480)
+				display: block
 	&_review
 		.raty__icons
 			margin-right: 15px
+			+r(480)
+				margin-right: 5px
 .info-text
 	font-size: 15px
 	+light

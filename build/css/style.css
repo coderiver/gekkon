@@ -3281,6 +3281,10 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 .mybubble .country-list__header { font-weight: 700; margin-right: 25px; text-transform: uppercase; font-size: 17px; }
 .mybubble .country-list__body { margin: 0 0 0 -30px; }
 .mybubble .country-list__info { margin-bottom: 0; }
+@media screen and (-webkit-min-device-pixel-ratio: 0){
+ input[type="date"].form-control, input[type="time"].form-control, input[type="datetime-local"].form-control, input[type="month"].form-control{ line-height: 34px; }
+ input[type="date"].input-sm, input[type="time"].input-sm, input[type="datetime-local"].input-sm, input[type="month"].input-sm, .input-group-sm input[type="date"], .input-group-sm input[type="time"], .input-group-sm input[type="datetime-local"], .input-group-sm input[type="month"]{ line-height: 31px; }
+ input[type="date"].input-lg, input[type="time"].input-lg, input[type="datetime-local"].input-lg, input[type="month"].input-lg, .input-group-lg input[type="date"], .input-group-lg input[type="time"], .input-group-lg input[type="datetime-local"], .input-group-lg input[type="month"]{ line-height: 48px; } }
 @media print{
  *, *:before, *:after{ background: transparent !important; color: #000 !important; -webkit-box-shadow: none !important; box-shadow: none !important; text-shadow: none !important; }
  a, a:visited{ text-decoration: underline; }
@@ -3307,12 +3311,10 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .visible-print-inline{ display: inline !important; }
  .visible-print-inline-block{ display: inline-block !important; }
  .hidden-print{ display: none !important; } }
-@media screen and (-webkit-min-device-pixel-ratio: 0){
- input[type="date"].form-control, input[type="time"].form-control, input[type="datetime-local"].form-control, input[type="month"].form-control{ line-height: 34px; }
- input[type="date"].input-sm, input[type="time"].input-sm, input[type="datetime-local"].input-sm, input[type="month"].input-sm, .input-group-sm input[type="date"], .input-group-sm input[type="time"], .input-group-sm input[type="datetime-local"], .input-group-sm input[type="month"]{ line-height: 31px; }
- input[type="date"].input-lg, input[type="time"].input-lg, input[type="datetime-local"].input-lg, input[type="month"].input-lg, .input-group-lg input[type="date"], .input-group-lg input[type="time"], .input-group-lg input[type="datetime-local"], .input-group-lg input[type="month"]{ line-height: 48px; } }
 @media only screen and (max-width: 480px){
- .banner__text{ font-size: 20px; }
+ .raty__icons{ font-size: 19px; }
+ .raty_small .btn-dots_mob{ display: block; }
+ .raty_review .raty__icons{ margin-right: 5px; }
  .steps{ border: 0; height: auto; line-height: 1; }
  .steps li{ display: inline-block; float: none; }
  .steps li > span{ display: block; padding: 10px 0; } }
@@ -3361,6 +3363,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .item_list .item__action{ width: 100%; }
  .cols-counter[data-cols="2"]{ -webkit-column-count: 1; -moz-column-count: 1; column-count: 1; }
  .nav-tabs{ display: none; }
+ .required-field{ margin-top: 10px; }
  .form-sort{ margin: 10px 0; }
  .tab-content .tab-content{ padding: 0; }
  .checkbox-list .checkbox-col{ width: 100%; float: none; }
@@ -3405,10 +3408,11 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .total .link_total-back{ position: static; margin-top: 20px; display: inline-block; }
  .menu-fixed__in{ width: 100%; }
  .map{ margin-top: 2rem; } }
-@media screen and (min-width: 768px){
- .jumbotron{ padding-top: 48px; padding-bottom: 48px; }
- .container .jumbotron, .container-fluid .jumbotron{ padding-left: 60px; padding-right: 60px; }
- .jumbotron h1, .jumbotron .h1{ font-size: 68px; } }
+@media only screen and (max-width: 768px){
+ .add-spacing{ padding: 0 10px; }
+ .steps li{ width: auto; padding: 0 20px; background: none; }
+ .steps li:before{ display: none; }
+ .steps li:after{ display: none; } }
 @media only screen and (min-width: 768px){
  .item-about__header i{ float: left; }
  .item-about__header span{ overflow: hidden; display: block; padding-top: 7px; } }
@@ -3496,12 +3500,10 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .modal-dialog{ width: 415px; margin: 30px auto; }
  .modal-content{ -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
  .modal-sm{ width: 300px; } }
-@media only screen and (max-width: 768px){
- .add-spacing{ padding: 0 10px; }
- .required-field{ margin-top: 10px; }
- .steps li{ width: auto; padding: 0 20px; background: none; }
- .steps li:before{ display: none; }
- .steps li:after{ display: none; } }
+@media screen and (min-width: 768px){
+ .jumbotron{ padding-top: 48px; padding-bottom: 48px; }
+ .container .jumbotron, .container-fluid .jumbotron{ padding-left: 60px; padding-right: 60px; }
+ .jumbotron h1, .jumbotron .h1{ font-size: 68px; } }
 @media only screen and (max-width: 1023px){
  .payments__list img{ margin-right: 1px; }
  .post_box{ margin: 20px 0; }
@@ -3699,6 +3701,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .recipes-item__img iframe{ min-height: 250px; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
+@media screen and (min-width: 320px) and (max-width: 480px){
+ .banner__text{ font-size: 20px; } }
 @media only screen and (min-width: 320px) and (max-width: 767px){
  .row_set > div{ display: block; width: 100%; float: none; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px){
@@ -3712,6 +3716,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
  .sidebar__in{ width: 100%; } }
 @media only screen and (max-width: 1023px) and (max-width: 768px){
  .sidebar .checkbox label > span{ font-size: 15px; } }
+@media screen and (min-width: 320px) and (max-width: 1024px){
+ .banner__title{ font-size: 33px; width: 100%; } }
 @media only screen and (min-width: 768px) and (max-width: 1023px){
  .recipes-item__img iframe{ min-height: 400px; }
  .row_set{ display: block; }
