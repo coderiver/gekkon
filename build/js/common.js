@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	"use strict";
+	document.createElement( "picture" );
 	$(document).on("click", function() {
 		connect.hide();
 		btnCart.hideBtnModal();

@@ -8,6 +8,7 @@
 //=include lib/slick.min.js
 //=include lib/jquery.fancybox.js
 //=include lib/head.js
+//=include lib/picturefill.min.js
 //=include additional.js
 //=include init.plugins.js
 //=include common.js
