@@ -49,8 +49,9 @@ body
 		overflow: hidden
 input
 	border-radius: 0
-	&::-ms-clear
-		display: none
+	&::-ms-clear,
+	&::-ms-reveal
+		display: none !important
 ol
 	&:not([class])
 		line-height: 1.74
@@ -936,6 +937,12 @@ p.increase
 		width: 30%
 		+r(767)
 			width: 100%
+		.wrap
+			+r(1023)
+				position: relative
+				top: -17px
+			+r(767)
+				top: auto
 	.item__name
 		height: 60px
 		margin-bottom: 5px
@@ -962,7 +969,6 @@ p.increase
 		color: $text
 	&_select
 		border-bottom: 1px dotted $btn
-		position: relative
 		&:hover
 			border-color: $text
 	&__select

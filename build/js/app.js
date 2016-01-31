@@ -90,6 +90,13 @@ $(document).ready(function() {
 				return false;
 			}
 		);
+
+		$('.js-show-password').on('touchstart', function () {
+			$(this).addClass("is-active");
+			var input = $(this).siblings('.js-password-input');
+			input.attr("type", "text");
+			return false;
+		});
 		
 	
 
@@ -108,8 +115,11 @@ $(document).ready(function() {
 	});
 
 	$('select').on('change', function() {
-		var val = $(this).find('option:selected').val();
-		$(this).siblings(".js-select-text").text(val);
+		var option = $(this).find('option:selected');
+		var val = option.val();
+		var text = option.data("text");
+		$(this).siblings(".js-select-text").text(text);
+		$(this).parents(".price").find(".js-select-val").text(val);
 	});
 	
 });	

@@ -226,12 +226,12 @@
 	position: relative
 	padding-top: 35px
 	+r(767)
-		padding-top: 35px
+		padding-top: 0
 	+ .slider-items
 		margin-top: 50px
 	.tabs-link
 		margin-bottom: 30px
-		+r(414)
+		+r(767)
 			margin-top: -45px
 			li
 				display: block
@@ -265,6 +265,13 @@
 			display: none
 		+ .slider-items
 			margin-top: 0
+	&_simple
+		.slick-prev, 
+		.slick-next
+			+r(767)
+				top: 45px
+		.slick-slider
+			margin-top: 45px
 .section-items
 	.slider-items_mobile
 		padding-top: 0

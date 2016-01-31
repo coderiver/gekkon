@@ -8,6 +8,11 @@
 	line-height: 46px
 	color: $text
 	font-size: 18px
+	+r(768)
+		display: table
+		width: 100%
+		line-height: 1.2
+		
 	+r(480)
 		border: 0
 		height: auto
@@ -23,9 +28,11 @@
 			font-size: 13px
 			padding: 0 5px
 		+r(768)
-			width: auto
+			display: table-cell
+			float: none
 			padding: 0 20px
 			background: none
+			vertical-align: middle
 		+r(480)
 			display: inline-block
 			float: none
