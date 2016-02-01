@@ -81,7 +81,6 @@ $(document).ready(function() {
 		_switchTab: function(event) {
 			var el = $(event.target);
 			this._tab = $(event.target).data("tab");
-			console.log(this._tab);
 			var top = $('a[href="'+this._tab+'"]').offset().top;
 			$('a[href="'+this._tab+'"').tab('show');
 			$('a[href="'+this._tab+'"').collapse('show');
@@ -156,16 +155,18 @@ $(document).ready(function() {
 		_changeStates: function(event) {
 			var checkbox = $(event.currentTarget);
 			var index = checkbox.parents(".slick-slide").data("slick-index");
+			var checkboxParent = checkbox.parents(this._parentClass);
 			if(checkbox.is(":checked")) {
-				checkbox.parents(this._parentClass).addClass("is-active");
-				console.log(event.target);
+				checkboxParent.addClass("is-active");
+				console.log(checkbox);
 				// goToSlide.init({
 				// 	slider: ".js-slider-items",
-				// 	slideIndex: index
+				// 	slideIndex: 5
 				// });
+				//console.log(index);
 			}
 			else {
-				checkbox.parents(this._parentClass).removeClass("is-active");
+				checkboxParent.removeClass("is-active");
 			}
 		}
 	}
@@ -187,8 +188,20 @@ $(document).ready(function() {
 			var target = $('[data-target-name*="'+el.data("target")+'"]');
 			var group = $('[data-target-name*="'+el.data("group-target")+'"]');
 			var groupChecked = $('[data-target-name*="'+el.data("group-target")+'"]:checked');
-			if (target.length) {
-				target.trigger("click");
+			if (target.is(":checked")) {
+				target.prop('checked', false);
+				target.parents(".js-check").removeClass("is-active");
+
+			}
+			else {
+				var index = target.parents(".slick-slide").data("slick-index");
+				target.prop('checked', true);
+				target.parents(".js-check").addClass("is-active");
+				goToSlide.init({
+					slider: ".js-slider-items",
+					slideIndex: index
+				});
+				console.log(index);
 			}
 			if (group.length) {
 				if (el.hasClass("is-active")) {
@@ -212,7 +225,7 @@ $(document).ready(function() {
 			this._goTo();
 		},
 		_goTo: function () {
-			this._$slider.slick("slickGoTo", this._slideIndex)
+			this._$slider.slick("slickGoTo", this._slideIndex);
 		}
 	}
 
@@ -300,8 +313,6 @@ $(document).ready(function() {
 		$(this).siblings("span").text(e.target.files[0].name);
 	});
 
-	//mask
-	$('[type="tel"]').mask("+7 (999) 999 - 99 - 99");
 	$('.js-select-price').on('click', function(e){
 		e.stopPropagation();
 		var $this = $(this);
@@ -349,7 +360,6 @@ $(document).ready(function() {
             var $el = $(event.target);
             var $targetToShow = $("."+$el.data("show"));
             var $targetToHide = $("."+$el.data("hide"));
-            console.log("change")
             //if ($(event.target).is(":checked")) {
                 $targetToShow.removeClass("is-hidden");
                 $targetToHide.addClass("is-hidden");
