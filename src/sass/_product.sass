@@ -20,10 +20,11 @@
 			.slick-slide
 				img
 					max-height: 250px
-		.slick-prev,
 		.slick-next
 			position: absolute
 			top: 0
+			left: 0
+			right: 0
 			width: 50%
 			height: 100%
 			border: 0
@@ -31,9 +32,10 @@
 			&:before
 				display: none
 		.slick-prev
-			left: 0
+			display: none !important
 		.slick-next
-			right: 0
+			width: 100%
+			left: 0
 	&__nav
 		height: 86px
 		.slick-slide
