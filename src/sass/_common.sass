@@ -1241,6 +1241,25 @@ select
 		font-size: 21px
 		cursor: pointer
 		pointer-events: none
+	.select-custom
+		position: relative
+		> span 
+			text-indent: 4px
+			display: inline-block
+		&__dropdown
+			left: -1px
+			right: -1px
+			top: 106%
+			background-color: #FFF
+			border: 1px solid #9a9a9a
+			border-top: 0
+			z-index: 10
+			position: absolute
+			padding-top: 5px
+			margin-bottom: 0
+			li
+				padding: 0 16px
+
 .list
 	li
 		position: relative
