@@ -211,7 +211,7 @@ $(document).ready(function() {
 		self.slick({
 			slidesToShow: 4,
 			slidesToScroll: 1,
-			infinite: false,
+			infinite: true,
 			appendArrows: self.parents(".slider-items"),
 			responsive: [
 				{
@@ -360,8 +360,8 @@ $(document).ready(function() {
 				var val = +$(this).val();
 				if(!val) {
 					$(this).val(function(index,value){
-									return value.substr(0,value.length-1);
-								})
+						return value.substr(0,value.length-1);
+					})
 				}
 			});
 		});
@@ -470,12 +470,6 @@ $(document).ready(function() {
 			var checkboxParent = checkbox.parents(this._parentClass);
 			if(checkbox.is(":checked")) {
 				checkboxParent.addClass("is-active");
-				console.log(checkbox);
-				// goToSlide.init({
-				// 	slider: ".js-slider-items",
-				// 	slideIndex: 5
-				// });
-				//console.log(index);
 			}
 			else {
 				checkboxParent.removeClass("is-active");
@@ -513,7 +507,6 @@ $(document).ready(function() {
 					slider: ".js-slider-items",
 					slideIndex: index
 				});
-				console.log(index);
 			}
 			if (group.length) {
 				if (el.hasClass("is-active")) {
@@ -533,14 +526,29 @@ $(document).ready(function() {
 	var goToSlide = {
 		init: function(options) {
 			this._$slider = $(options.slider);
-			this._slideIndex = $(options.slideIndex);
+			this._slideIndex = options.slideIndex;
 			this._goTo();
 		},
 		_goTo: function () {
 			this._$slider.slick("slickGoTo", this._slideIndex);
+			console.log("goTo "+this._slideIndex);
+			this._$slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+			  console.log("currentSlide "+currentSlide)
+			});
 		}
 	}
 
+	var scrollTo = {
+		init: function(target) {
+			this._$target = $(target);
+			this._scrollTo();
+		},
+		_scrollTo: function () {
+			$('html, body').animate({
+	            scrollTop: this._$target.offset().top
+	        }, 500);
+		}
+	}
 
 	var toggler = {
 		init: function(option) {
