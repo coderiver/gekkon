@@ -81,7 +81,7 @@ $(document).ready(function() {
 		self.slick({
 			slidesToShow: 4,
 			slidesToScroll: 1,
-			infinite: false,
+			infinite: true,
 			appendArrows: self.parents(".slider-items"),
 			responsive: [
 				{
